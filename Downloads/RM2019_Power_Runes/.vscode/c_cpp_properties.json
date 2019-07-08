@@ -1,0 +1,56 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/various/cpp_wrappers",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/rt/include",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/lib/include",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/license",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/compilers/GCC",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/include",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/common/oslib/include",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/osal/rt",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/common/ARMCMx",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/DMAv2",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/GPIOv2",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/USARTv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/SPIv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/OTGv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/CANv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/ADCv2",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/SPIv1",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/various/shell",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/lib/streams",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/src/ssd1306",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/src/peripherals",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/src/ext_hw",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/src",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/ADCv2",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/CMSIS/DSP/Include",
+                "${workspaceFolder}/config",
+                "${workspaceFolder}/board",
+                "${workspaceFolder}",
+                "${workspaceFolder}/RM18A-ChibiOS18-Core/src"
+            ],
+            "defines": [
+                "ARM_MATH_CM4",
+                "CHPRINTF_USE_FLOAT",
+                "SHELL_CONFIG_FILE",
+                "BOARD_OTG_NOVBUSSENS",
+                "HAL_USE_I2C"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

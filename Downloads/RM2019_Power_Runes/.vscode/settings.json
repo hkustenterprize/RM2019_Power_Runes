@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.tpp": "cpp",
+        "hal.h": "c",
+        "hal_usb.h": "c",
+        "*.tcc": "cpp",
+        "oledfont.h": "c",
+        "can_manager.h": "c",
+        "ch.h": "c",
+        "sh1106.h": "c"
+    },
+    "git.ignoreLimitWarning": true,
+    "C_Cpp.errorSquiggles": "Disabled"
+}

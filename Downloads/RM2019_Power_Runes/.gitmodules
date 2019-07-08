@@ -1,0 +1,3 @@
+[submodule "RM18A-ChibiOS18-Core"]
+	path = RM18A-ChibiOS18-Core
+	url = git@github.com:hkustenterprize/RM18A-ChibiOS18-Core.git
