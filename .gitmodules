@@ -1,0 +1,6 @@
+[submodule "Downloads/RM2019_Power_Runes-master/RM18A-ChibiOS18-Core"]
+	path = Downloads/RM2019_Power_Runes-master/RM18A-ChibiOS18-Core
+	url = git@github.com:hkustenterprize/RM18A-ChibiOS18-Core.git
+[submodule "Downloads/RM2019_Power_Runes-master/RM2019_Power_Runes/RM18A-ChibiOS18-Core"]
+	path = Downloads/RM2019_Power_Runes-master/RM2019_Power_Runes/RM18A-ChibiOS18-Core
+	url = git@github.com:hkustenterprize/RM18A-ChibiOS18-Core.git
