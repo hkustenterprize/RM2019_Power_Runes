@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc7ompF3.s 			page 1
+ARM GAS  /tmp/cclQ1kbt.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
   55              		.p2align 2,,3
   56              		.global	chPoolLoadArray
   57              		.syntax unified
-ARM GAS  /tmp/cc7ompF3.s 			page 2
+ARM GAS  /tmp/cclQ1kbt.s 			page 2
 
 
   58              		.thumb
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  112              		.thumb
  113              		.syntax unified
  114              	.LBE145:
-ARM GAS  /tmp/cc7ompF3.s 			page 3
+ARM GAS  /tmp/cclQ1kbt.s 			page 3
 
 
  115              	.LBE146:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  169              		.size	chPoolLoadArray, .-chPoolLoadArray
  170              		.section	.text.chPoolAllocI,"ax",%progbits
  171              		.align	1
-ARM GAS  /tmp/cc7ompF3.s 			page 4
+ARM GAS  /tmp/cclQ1kbt.s 			page 4
 
 
  172              		.p2align 2,,3
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  226              		.type	chPoolAlloc, %function
  227              	chPoolAlloc:
  228              	.LFB297:
-ARM GAS  /tmp/cc7ompF3.s 			page 5
+ARM GAS  /tmp/cclQ1kbt.s 			page 5
 
 
  229              		.loc 1 161 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  283              	.LBB194:
  284              	.LBB195:
  285              		.loc 2 493 0
-ARM GAS  /tmp/cc7ompF3.s 			page 6
+ARM GAS  /tmp/cclQ1kbt.s 			page 6
 
 
  286 0012 0023     		movs	r3, #0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  340              		.loc 1 169 0
  341 002c 08BD     		pop	{r3, pc}
  342              		.cfi_endproc
-ARM GAS  /tmp/cc7ompF3.s 			page 7
+ARM GAS  /tmp/cclQ1kbt.s 			page 7
 
 
  343              	.LFE297:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  397 0002 83F31188 		MSR basepri, r3
  398              	@ 0 "" 2
  399              	.LVL27:
-ARM GAS  /tmp/cc7ompF3.s 			page 8
+ARM GAS  /tmp/cclQ1kbt.s 			page 8
 
 
  400              		.thumb
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  454              		.size	chPoolFree, .-chPoolFree
  455              		.section	.text.chGuardedPoolObjectInitAligned,"ax",%progbits
  456              		.align	1
-ARM GAS  /tmp/cc7ompF3.s 			page 9
+ARM GAS  /tmp/cclQ1kbt.s 			page 9
 
 
  457              		.p2align 2,,3
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  511              	.LFB301:
  512              		.loc 1 247 0
  513              		.cfi_startproc
-ARM GAS  /tmp/cc7ompF3.s 			page 10
+ARM GAS  /tmp/cclQ1kbt.s 			page 10
 
 
  514              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  568              	.LBE229:
  569              	.LBE230:
  570              	.LBE231:
-ARM GAS  /tmp/cc7ompF3.s 			page 11
+ARM GAS  /tmp/cclQ1kbt.s 			page 11
 
 
  571              	.LBE241:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  625              		.loc 1 254 0
  626 002e 1D44     		add	r5, r5, r3
  627              	.LVL42:
-ARM GAS  /tmp/cc7ompF3.s 			page 12
+ARM GAS  /tmp/cclQ1kbt.s 			page 12
 
 
  628              		.loc 1 251 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  682 0010 E360     		str	r3, [r4, #12]
  683              	.L43:
  684              	.LBE256:
-ARM GAS  /tmp/cc7ompF3.s 			page 13
+ARM GAS  /tmp/cclQ1kbt.s 			page 13
 
 
  685              	.LBE255:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  739              		.thumb_func
  740              		.fpu fpv4-sp-d16
  741              		.type	chGuardedPoolAllocTimeout, %function
-ARM GAS  /tmp/cc7ompF3.s 			page 14
+ARM GAS  /tmp/cclQ1kbt.s 			page 14
 
 
  742              	chGuardedPoolAllocTimeout:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  796 0012 28B1     		cbz	r0, .L53
  797              		.loc 1 138 0
  798 0014 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/cc7ompF3.s 			page 15
+ARM GAS  /tmp/cclQ1kbt.s 			page 15
 
 
  799 0016 E360     		str	r3, [r4, #12]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  853              	.LBB304:
  854              	.LBB303:
  855              		.loc 2 493 0
-ARM GAS  /tmp/cc7ompF3.s 			page 16
+ARM GAS  /tmp/cclQ1kbt.s 			page 16
 
 
  856 002c 0023     		movs	r3, #0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  910              		.syntax unified
  911              	@ 493 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
  912 0004 82F31188 		MSR basepri, r2
-ARM GAS  /tmp/cc7ompF3.s 			page 17
+ARM GAS  /tmp/cclQ1kbt.s 			page 17
 
 
  913              	@ 0 "" 2
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  967              		.file 4 "/usr/lib/gcc/arm-none-eabi/7.3.1/include/stddef.h"
  968              		.file 5 "/usr/arm-none-eabi/include/machine/_default_types.h"
  969              		.file 6 "/usr/arm-none-eabi/include/sys/_stdint.h"
-ARM GAS  /tmp/cc7ompF3.s 			page 18
+ARM GAS  /tmp/cclQ1kbt.s 			page 18
 
 
  970              		.file 7 "./RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/compilers/GCC/chtypes.h"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1024 0053 03       		.uleb128 0x3
  1025 0054 5E000000 		.4byte	.LASF5
  1026 0058 05       		.byte	0x5
-ARM GAS  /tmp/cc7ompF3.s 			page 19
+ARM GAS  /tmp/cclQ1kbt.s 			page 19
 
 
  1027 0059 2B       		.byte	0x2b
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1081 00c5 86020000 		.4byte	.LASF17
  1082 00c9 06       		.byte	0x6
  1083 00ca 24       		.byte	0x24
-ARM GAS  /tmp/cc7ompF3.s 			page 20
+ARM GAS  /tmp/cclQ1kbt.s 			page 20
 
 
  1084 00cb 6C000000 		.4byte	0x6c
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1138 0143 73020000 		.4byte	.LASF28
  1139 0147 07       		.byte	0x7
  1140 0148 33       		.byte	0x33
-ARM GAS  /tmp/cc7ompF3.s 			page 21
+ARM GAS  /tmp/cclQ1kbt.s 			page 21
 
 
  1141 0149 CF000000 		.4byte	0xcf
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1195 01b8 3D070000 		.4byte	.LASF36
  1196 01bc 09       		.byte	0x9
  1197 01bd A4       		.byte	0xa4
-ARM GAS  /tmp/cc7ompF3.s 			page 22
+ARM GAS  /tmp/cclQ1kbt.s 			page 22
 
 
  1198 01be 3F070000 		.4byte	0x73f
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1252 022e 21010000 		.4byte	0x121
  1253 0232 3C       		.byte	0x3c
  1254 0233 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc7ompF3.s 			page 23
+ARM GAS  /tmp/cclQ1kbt.s 			page 23
 
 
  1255 0234 1A030000 		.4byte	.LASF45
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1309 02a4 04       		.byte	0x4
  1310 02a5 00       		.byte	0
  1311 02a6 03       		.uleb128 0x3
-ARM GAS  /tmp/cc7ompF3.s 			page 24
+ARM GAS  /tmp/cclQ1kbt.s 			page 24
 
 
  1312 02a7 16000000 		.4byte	.LASF54
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1366 031a 1E030000 		.4byte	0x31e
  1367 031e 0E       		.uleb128 0xe
  1368 031f 29030000 		.4byte	0x329
-ARM GAS  /tmp/cc7ompF3.s 			page 25
+ARM GAS  /tmp/cclQ1kbt.s 			page 25
 
 
  1369 0323 0F       		.uleb128 0xf
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1423 0395 10       		.byte	0x10
  1424 0396 09       		.byte	0x9
  1425 0397 4901     		.2byte	0x149
-ARM GAS  /tmp/cc7ompF3.s 			page 26
+ARM GAS  /tmp/cclQ1kbt.s 			page 26
 
 
  1426 0399 D2030000 		.4byte	0x3d2
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1480 040c 51040000 		.4byte	0x451
  1481 0410 0B       		.uleb128 0xb
  1482 0411 5D010000 		.4byte	.LASF70
-ARM GAS  /tmp/cc7ompF3.s 			page 27
+ARM GAS  /tmp/cclQ1kbt.s 			page 27
 
 
  1483 0415 09       		.byte	0x9
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1537 048c 0F       		.byte	0xf
  1538 048d 00       		.byte	0
  1539 048e 05       		.uleb128 0x5
-ARM GAS  /tmp/cc7ompF3.s 			page 28
+ARM GAS  /tmp/cclQ1kbt.s 			page 28
 
 
  1540 048f 7E040000 		.4byte	0x47e
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1594 0505 00       		.byte	0
  1595 0506 0A       		.uleb128 0xa
  1596 0507 73313700 		.ascii	"s17\000"
-ARM GAS  /tmp/cc7ompF3.s 			page 29
+ARM GAS  /tmp/cclQ1kbt.s 			page 29
 
 
  1597 050b 0E       		.byte	0xe
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1651 0580 0E       		.byte	0xe
  1652 0581 6501     		.2byte	0x165
  1653 0583 BE040000 		.4byte	0x4be
-ARM GAS  /tmp/cc7ompF3.s 			page 30
+ARM GAS  /tmp/cclQ1kbt.s 			page 30
 
 
  1654 0587 28       		.byte	0x28
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1708 05f8 4C       		.byte	0x4c
  1709 05f9 0A       		.uleb128 0xa
  1710 05fa 723800   		.ascii	"r8\000"
-ARM GAS  /tmp/cc7ompF3.s 			page 31
+ARM GAS  /tmp/cclQ1kbt.s 			page 31
 
 
  1711 05fd 0E       		.byte	0xe
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1765 0666 17       		.uleb128 0x17
  1766 0667 3D000000 		.4byte	.LASF85
  1767 066b 09       		.byte	0x9
-ARM GAS  /tmp/cc7ompF3.s 			page 32
+ARM GAS  /tmp/cclQ1kbt.s 			page 32
 
 
  1768 066c CD       		.byte	0xcd
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1822 06df 636E7400 		.ascii	"cnt\000"
  1823 06e3 10       		.byte	0x10
  1824 06e4 37       		.byte	0x37
-ARM GAS  /tmp/cc7ompF3.s 			page 33
+ARM GAS  /tmp/cclQ1kbt.s 			page 33
 
 
  1825 06e5 42010000 		.4byte	0x142
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1879 0750 C701     		.2byte	0x1c7
  1880 0752 F8030000 		.4byte	0x3f8
  1881 0756 13       		.uleb128 0x13
-ARM GAS  /tmp/cc7ompF3.s 			page 34
+ARM GAS  /tmp/cclQ1kbt.s 			page 34
 
 
  1882 0757 C9040000 		.4byte	0x4c9
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1936 07c4 B4000000 		.4byte	0xb4
  1937 07c8 0A       		.byte	0xa
  1938 07c9 08       		.uleb128 0x8
-ARM GAS  /tmp/cc7ompF3.s 			page 35
+ARM GAS  /tmp/cclQ1kbt.s 			page 35
 
 
  1939 07ca 76050000 		.4byte	.LASF105
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  1993 0836 A4010000 		.4byte	.LASF114
  1994 083a 13       		.byte	0x13
  1995 083b 45       		.byte	0x45
-ARM GAS  /tmp/cc7ompF3.s 			page 36
+ARM GAS  /tmp/cclQ1kbt.s 			page 36
 
 
  1996 083c B4000000 		.4byte	0xb4
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2050 08ae 29030000 		.4byte	0x329
  2051 08b2 C1080000 		.4byte	0x8c1
  2052 08b6 0F       		.uleb128 0xf
-ARM GAS  /tmp/cc7ompF3.s 			page 37
+ARM GAS  /tmp/cclQ1kbt.s 			page 37
 
 
  2053 08b7 2C000000 		.4byte	0x2c
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2107 0920 40       		.byte	0x40
  2108 0921 56090000 		.4byte	0x956
  2109 0925 08       		.uleb128 0x8
-ARM GAS  /tmp/cc7ompF3.s 			page 38
+ARM GAS  /tmp/cclQ1kbt.s 			page 38
 
 
  2110 0926 28010000 		.4byte	.LASF50
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2164 0992 10       		.byte	0x10
  2165 0993 15       		.byte	0x15
  2166 0994 A9       		.byte	0xa9
-ARM GAS  /tmp/cc7ompF3.s 			page 39
+ARM GAS  /tmp/cclQ1kbt.s 			page 39
 
 
  2167 0995 BE090000 		.4byte	0x9be
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2221 0a04 BE       		.byte	0xbe
  2222 0a05 DF090000 		.4byte	0x9df
  2223 0a09 0D       		.uleb128 0xd
-ARM GAS  /tmp/cc7ompF3.s 			page 40
+ARM GAS  /tmp/cclQ1kbt.s 			page 40
 
 
  2224 0a0a 17080000 		.4byte	.LASF137
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2278 0a7f 1F060000 		.4byte	.LASF145
  2279 0a83 15       		.byte	0x15
  2280 0a84 6F01     		.2byte	0x16f
-ARM GAS  /tmp/cc7ompF3.s 			page 41
+ARM GAS  /tmp/cclQ1kbt.s 			page 41
 
 
  2281 0a86 FE090000 		.4byte	0x9fe
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2335 0b06 1E000000 		.4byte	.LLST49
  2336 0b0a 23       		.uleb128 0x23
  2337 0b0b 7000     		.ascii	"p\000"
-ARM GAS  /tmp/cc7ompF3.s 			page 42
+ARM GAS  /tmp/cclQ1kbt.s 			page 42
 
 
  2338 0b0d 01       		.byte	0x1
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2392 0b9d C5000000 		.4byte	.LLST53
  2393 0ba1 27       		.uleb128 0x27
  2394 0ba2 48010000 		.4byte	.Ldebug_ranges0+0x148
-ARM GAS  /tmp/cc7ompF3.s 			page 43
+ARM GAS  /tmp/cclQ1kbt.s 			page 43
 
 
  2395 0ba6 28       		.uleb128 0x28
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2449 0c1a 60010000 		.4byte	.Ldebug_ranges0+0x160
  2450 0c1e 0E       		.byte	0xe
  2451 0c1f 7502     		.2byte	0x275
-ARM GAS  /tmp/cc7ompF3.s 			page 44
+ARM GAS  /tmp/cclQ1kbt.s 			page 44
 
 
  2452 0c21 26       		.uleb128 0x26
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2506 0c99 01       		.byte	0x1
  2507 0c9a F7       		.byte	0xf7
  2508 0c9b 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/cc7ompF3.s 			page 45
+ARM GAS  /tmp/cclQ1kbt.s 			page 45
 
 
  2509 0c9f 6E010000 		.4byte	.LLST32
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2563 0d30 78120000 		.4byte	0x1278
  2564 0d34 10000000 		.4byte	.LBB232
  2565 0d38 C0000000 		.4byte	.Ldebug_ranges0+0xc0
-ARM GAS  /tmp/cc7ompF3.s 			page 46
+ARM GAS  /tmp/cclQ1kbt.s 			page 46
 
 
  2566 0d3c 01       		.byte	0x1
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2620 0dcb 00       		.byte	0
  2621 0dcc 00       		.byte	0
  2622 0dcd 2B       		.uleb128 0x2b
-ARM GAS  /tmp/cc7ompF3.s 			page 47
+ARM GAS  /tmp/cclQ1kbt.s 			page 47
 
 
  2623 0dce 22000000 		.4byte	.LVL38
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2677 0e46 02000000 		.4byte	.LBB220
  2678 0e4a 0A000000 		.4byte	.LBE220-.LBB220
  2679 0e4e 01       		.byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 48
+ARM GAS  /tmp/cclQ1kbt.s 			page 48
 
 
  2680 0e4f E6       		.byte	0xe6
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2734 0ebd 56090000 		.4byte	0x956
  2735 0ec1 39       		.uleb128 0x39
  2736 0ec2 ED010000 		.4byte	.LASF154
-ARM GAS  /tmp/cc7ompF3.s 			page 49
+ARM GAS  /tmp/cclQ1kbt.s 			page 49
 
 
  2737 0ec6 01       		.byte	0x1
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2791 0f42 40       		.uleb128 0x40
  2792 0f43 93120000 		.4byte	0x1293
  2793 0f47 02000000 		.4byte	.LBB178
-ARM GAS  /tmp/cc7ompF3.s 			page 50
+ARM GAS  /tmp/cclQ1kbt.s 			page 50
 
 
  2794 0f4b 30000000 		.4byte	.Ldebug_ranges0+0x30
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2848 0fd4 12000000 		.4byte	.LBB191
  2849 0fd8 60000000 		.4byte	.Ldebug_ranges0+0x60
  2850 0fdc 01       		.byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 51
+ARM GAS  /tmp/cclQ1kbt.s 			page 51
 
 
  2851 0fdd A6       		.byte	0xa6
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2905 1059 2E       		.uleb128 0x2e
  2906 105a B9080000 		.4byte	.LASF160
  2907 105e 01       		.byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 52
+ARM GAS  /tmp/cclQ1kbt.s 			page 52
 
 
  2908 105f 6A       		.byte	0x6a
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  2962 10e4 04000000 		.4byte	.LBB141
  2963 10e8 00000000 		.4byte	.Ldebug_ranges0+0
  2964 10ec 01       		.byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 53
+ARM GAS  /tmp/cclQ1kbt.s 			page 53
 
 
  2965 10ed D1       		.byte	0xd1
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3019 1172 26       		.uleb128 0x26
  3020 1173 D70E0000 		.4byte	0xed7
  3021 1177 87040000 		.4byte	.LLST8
-ARM GAS  /tmp/cc7ompF3.s 			page 54
+ARM GAS  /tmp/cclQ1kbt.s 			page 54
 
 
  3022 117b 26       		.uleb128 0x26
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3076 11f5 13       		.uleb128 0x13
  3077 11f6 3A070000 		.4byte	0x73a
  3078 11fa 05120000 		.4byte	0x1205
-ARM GAS  /tmp/cc7ompF3.s 			page 55
+ARM GAS  /tmp/cclQ1kbt.s 			page 55
 
 
  3079 11fe 14       		.uleb128 0x14
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3133 1272 D2       		.byte	0xd2
  3134 1273 29030000 		.4byte	0x329
  3135 1277 00       		.byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 56
+ARM GAS  /tmp/cclQ1kbt.s 			page 56
 
 
  3136 1278 45       		.uleb128 0x45
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3190 12ea D1110000 		.4byte	0x11d1
  3191 12ee 01       		.uleb128 0x1
  3192 12ef 52       		.byte	0x52
-ARM GAS  /tmp/cc7ompF3.s 			page 57
+ARM GAS  /tmp/cclQ1kbt.s 			page 57
 
 
  3193 12f0 49       		.uleb128 0x49
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3247 136e 990E0000 		.4byte	0xe99
  3248 1372 00000000 		.4byte	.LFB299
  3249 1376 14000000 		.4byte	.LFE299-.LFB299
-ARM GAS  /tmp/cc7ompF3.s 			page 58
+ARM GAS  /tmp/cclQ1kbt.s 			page 58
 
 
  3250 137a 01       		.uleb128 0x1
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3304 13fd 00       		.byte	0
  3305 13fe 41       		.uleb128 0x41
  3306 13ff 78120000 		.4byte	0x1278
-ARM GAS  /tmp/cc7ompF3.s 			page 59
+ARM GAS  /tmp/cclQ1kbt.s 			page 59
 
 
  3307 1403 0A000000 		.4byte	.LBB209
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3361 1490 28       		.uleb128 0x28
  3362 1491 14130000 		.4byte	0x1314
  3363 1495 4C       		.uleb128 0x4c
-ARM GAS  /tmp/cc7ompF3.s 			page 60
+ARM GAS  /tmp/cclQ1kbt.s 			page 60
 
 
  3364 1496 11100000 		.4byte	0x1011
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3418 150f 06000000 		.4byte	.LBE311-.LBB311
  3419 1513 12       		.byte	0x12
  3420 1514 6301     		.2byte	0x163
-ARM GAS  /tmp/cc7ompF3.s 			page 61
+ARM GAS  /tmp/cclQ1kbt.s 			page 61
 
 
  3421 1516 32       		.uleb128 0x32
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3475 159d 50       		.byte	0x50
  3476 159e 00       		.byte	0
  3477 159f 00       		.byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 62
+ARM GAS  /tmp/cclQ1kbt.s 			page 62
 
 
  3478 15a0 33       		.uleb128 0x33
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3532              		.section	.debug_abbrev,"",%progbits
  3533              	.Ldebug_abbrev0:
  3534 0000 01       		.uleb128 0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 63
+ARM GAS  /tmp/cclQ1kbt.s 			page 63
 
 
  3535 0001 11       		.uleb128 0x11
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3589 0037 26       		.uleb128 0x26
  3590 0038 00       		.byte	0
  3591 0039 49       		.uleb128 0x49
-ARM GAS  /tmp/cc7ompF3.s 			page 64
+ARM GAS  /tmp/cclQ1kbt.s 			page 64
 
 
  3592 003a 13       		.uleb128 0x13
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3646 0070 00       		.byte	0
  3647 0071 0A       		.uleb128 0xa
  3648 0072 0D       		.uleb128 0xd
-ARM GAS  /tmp/cc7ompF3.s 			page 65
+ARM GAS  /tmp/cclQ1kbt.s 			page 65
 
 
  3649 0073 00       		.byte	0
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3703 00a9 01       		.byte	0x1
  3704 00aa 27       		.uleb128 0x27
  3705 00ab 19       		.uleb128 0x19
-ARM GAS  /tmp/cc7ompF3.s 			page 66
+ARM GAS  /tmp/cclQ1kbt.s 			page 66
 
 
  3706 00ac 01       		.uleb128 0x1
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3760 00e2 01       		.byte	0x1
  3761 00e3 49       		.uleb128 0x49
  3762 00e4 13       		.uleb128 0x13
-ARM GAS  /tmp/cc7ompF3.s 			page 67
+ARM GAS  /tmp/cclQ1kbt.s 			page 67
 
 
  3763 00e5 01       		.uleb128 0x1
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3817 011b 00       		.byte	0
  3818 011c 03       		.uleb128 0x3
  3819 011d 0E       		.uleb128 0xe
-ARM GAS  /tmp/cc7ompF3.s 			page 68
+ARM GAS  /tmp/cclQ1kbt.s 			page 68
 
 
  3820 011e 3A       		.uleb128 0x3a
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3874 0154 1D       		.uleb128 0x1d
  3875 0155 2E       		.uleb128 0x2e
  3876 0156 01       		.byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 69
+ARM GAS  /tmp/cclQ1kbt.s 			page 69
 
 
  3877 0157 3F       		.uleb128 0x3f
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3931 018d 19       		.uleb128 0x19
  3932 018e 49       		.uleb128 0x49
  3933 018f 13       		.uleb128 0x13
-ARM GAS  /tmp/cc7ompF3.s 			page 70
+ARM GAS  /tmp/cclQ1kbt.s 			page 70
 
 
  3934 0190 11       		.uleb128 0x11
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  3988 01c7 00       		.byte	0
  3989 01c8 24       		.uleb128 0x24
  3990 01c9 1D       		.uleb128 0x1d
-ARM GAS  /tmp/cc7ompF3.s 			page 71
+ARM GAS  /tmp/cclQ1kbt.s 			page 71
 
 
  3991 01ca 01       		.byte	0x1
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4045 0200 0B       		.uleb128 0xb
  4046 0201 01       		.byte	0x1
  4047 0202 31       		.uleb128 0x31
-ARM GAS  /tmp/cc7ompF3.s 			page 72
+ARM GAS  /tmp/cclQ1kbt.s 			page 72
 
 
  4048 0203 13       		.uleb128 0x13
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4102 023e 00       		.byte	0
  4103 023f 2E       		.uleb128 0x2e
  4104 0240 2E       		.uleb128 0x2e
-ARM GAS  /tmp/cc7ompF3.s 			page 73
+ARM GAS  /tmp/cclQ1kbt.s 			page 73
 
 
  4105 0241 01       		.byte	0x1
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4159 0278 11       		.uleb128 0x11
  4160 0279 01       		.uleb128 0x1
  4161 027a 12       		.uleb128 0x12
-ARM GAS  /tmp/cc7ompF3.s 			page 74
+ARM GAS  /tmp/cclQ1kbt.s 			page 74
 
 
  4162 027b 06       		.uleb128 0x6
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4216 02b3 0B       		.uleb128 0xb
  4217 02b4 3B       		.uleb128 0x3b
  4218 02b5 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc7ompF3.s 			page 75
+ARM GAS  /tmp/cclQ1kbt.s 			page 75
 
 
  4219 02b6 49       		.uleb128 0x49
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4273 02ef 27       		.uleb128 0x27
  4274 02f0 19       		.uleb128 0x19
  4275 02f1 20       		.uleb128 0x20
-ARM GAS  /tmp/cc7ompF3.s 			page 76
+ARM GAS  /tmp/cclQ1kbt.s 			page 76
 
 
  4276 02f2 0B       		.uleb128 0xb
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4330 0328 0E       		.uleb128 0xe
  4331 0329 00       		.byte	0
  4332 032a 00       		.byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 77
+ARM GAS  /tmp/cclQ1kbt.s 			page 77
 
 
  4333 032b 3E       		.uleb128 0x3e
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4387 0362 13       		.uleb128 0x13
  4388 0363 00       		.byte	0
  4389 0364 00       		.byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 78
+ARM GAS  /tmp/cclQ1kbt.s 			page 78
 
 
  4390 0365 41       		.uleb128 0x41
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4444 039b 31       		.uleb128 0x31
  4445 039c 13       		.uleb128 0x13
  4446 039d 02       		.uleb128 0x2
-ARM GAS  /tmp/cc7ompF3.s 			page 79
+ARM GAS  /tmp/cclQ1kbt.s 			page 79
 
 
  4447 039e 17       		.uleb128 0x17
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4501 03d4 01       		.byte	0x1
  4502 03d5 31       		.uleb128 0x31
  4503 03d6 13       		.uleb128 0x13
-ARM GAS  /tmp/cc7ompF3.s 			page 80
+ARM GAS  /tmp/cclQ1kbt.s 			page 80
 
 
  4504 03d7 11       		.uleb128 0x11
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4558 040e 4D       		.uleb128 0x4d
  4559 040f 2E       		.uleb128 0x2e
  4560 0410 00       		.byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 81
+ARM GAS  /tmp/cclQ1kbt.s 			page 81
 
 
  4561 0411 3F       		.uleb128 0x3f
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4615 0034 01       		.uleb128 0x1
  4616 0035 51       		.byte	0x51
  4617 0036 9F       		.byte	0x9f
-ARM GAS  /tmp/cc7ompF3.s 			page 82
+ARM GAS  /tmp/cclQ1kbt.s 			page 82
 
 
  4618 0037 00000000 		.4byte	0
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4672 00ba 0100     		.2byte	0x1
  4673 00bc 54       		.byte	0x54
  4674 00bd 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 83
+ARM GAS  /tmp/cclQ1kbt.s 			page 83
 
 
  4675 00c1 00000000 		.4byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4729 0145 00000000 		.4byte	.LVL34
  4730 0149 12000000 		.4byte	.LVL35
  4731 014d 0100     		.2byte	0x1
-ARM GAS  /tmp/cc7ompF3.s 			page 84
+ARM GAS  /tmp/cclQ1kbt.s 			page 84
 
 
  4732 014f 51       		.byte	0x51
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4786 01db 00000000 		.4byte	0
  4787              	.LLST38:
  4788 01df 26000000 		.4byte	.LVL39
-ARM GAS  /tmp/cc7ompF3.s 			page 85
+ARM GAS  /tmp/cclQ1kbt.s 			page 85
 
 
  4789 01e3 2A000000 		.4byte	.LVL40
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4843 026c 51       		.byte	0x51
  4844 026d 0E000000 		.4byte	.LVL32
  4845 0271 15000000 		.4byte	.LVL33-1
-ARM GAS  /tmp/cc7ompF3.s 			page 86
+ARM GAS  /tmp/cclQ1kbt.s 			page 86
 
 
  4846 0275 0200     		.2byte	0x2
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4900 02f6 9F       		.byte	0x9f
  4901 02f7 00000000 		.4byte	0
  4902 02fb 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 87
+ARM GAS  /tmp/cclQ1kbt.s 			page 87
 
 
  4903              	.LLST14:
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  4957 0384 F3       		.byte	0xf3
  4958 0385 01       		.uleb128 0x1
  4959 0386 50       		.byte	0x50
-ARM GAS  /tmp/cc7ompF3.s 			page 88
+ARM GAS  /tmp/cclQ1kbt.s 			page 88
 
 
  4960 0387 9F       		.byte	0x9f
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5014 0410 01       		.sleb128 1
  5015 0411 9F       		.byte	0x9f
  5016 0412 22000000 		.4byte	.LVL8
-ARM GAS  /tmp/cc7ompF3.s 			page 89
+ARM GAS  /tmp/cclQ1kbt.s 			page 89
 
 
  5017 0416 24000000 		.4byte	.LFE295
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5071 04a4 50       		.byte	0x50
  5072 04a5 00000000 		.4byte	0
  5073 04a9 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 90
+ARM GAS  /tmp/cclQ1kbt.s 			page 90
 
 
  5074              	.LLST10:
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5128 0530 50       		.byte	0x50
  5129 0531 9F       		.byte	0x9f
  5130 0532 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 91
+ARM GAS  /tmp/cclQ1kbt.s 			page 91
 
 
  5131 0536 00000000 		.4byte	0
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5185              	.LLST44:
  5186 05c0 00000000 		.4byte	.LVL44
  5187 05c4 07000000 		.4byte	.LVL45-1
-ARM GAS  /tmp/cc7ompF3.s 			page 92
+ARM GAS  /tmp/cclQ1kbt.s 			page 92
 
 
  5188 05c8 0100     		.2byte	0x1
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5242 063f 0C       		.uleb128 0xc
  5243 0640 9F       		.byte	0x9f
  5244 0641 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 93
+ARM GAS  /tmp/cclQ1kbt.s 			page 93
 
 
  5245 0645 00000000 		.4byte	0
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5299 06c5 11000000 		.4byte	.LVL70-1
  5300 06c9 0100     		.2byte	0x1
  5301 06cb 50       		.byte	0x50
-ARM GAS  /tmp/cc7ompF3.s 			page 94
+ARM GAS  /tmp/cclQ1kbt.s 			page 94
 
 
  5302 06cc 11000000 		.4byte	.LVL70-1
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5356 0044 16000000 		.4byte	.LFE300-.LFB300
  5357 0048 00000000 		.4byte	.LFB301
  5358 004c 38000000 		.4byte	.LFE301-.LFB301
-ARM GAS  /tmp/cc7ompF3.s 			page 95
+ARM GAS  /tmp/cclQ1kbt.s 			page 95
 
 
  5359 0050 00000000 		.4byte	.LFB302
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5413 00b0 12000000 		.4byte	.LBB241
  5414 00b4 16000000 		.4byte	.LBE241
  5415 00b8 00000000 		.4byte	0
-ARM GAS  /tmp/cc7ompF3.s 			page 96
+ARM GAS  /tmp/cclQ1kbt.s 			page 96
 
 
  5416 00bc 00000000 		.4byte	0
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5470 0194 2E000000 		.4byte	.LFE297
  5471 0198 00000000 		.4byte	.LFB298
  5472 019c 08000000 		.4byte	.LFE298
-ARM GAS  /tmp/cc7ompF3.s 			page 97
+ARM GAS  /tmp/cclQ1kbt.s 			page 97
 
 
  5473 01a0 00000000 		.4byte	.LFB299
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5505      6C416464 
  5505      00
  5506              	.LASF5:
-ARM GAS  /tmp/cc7ompF3.s 			page 98
+ARM GAS  /tmp/cclQ1kbt.s 			page 98
 
 
  5507 005e 5F5F7569 		.ascii	"__uint8_t\000"
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5531      6D736700 
  5532              	.LASF62:
  5533 00f7 76697274 		.ascii	"virtual_timers_list_t\000"
-ARM GAS  /tmp/cc7ompF3.s 			page 99
+ARM GAS  /tmp/cclQ1kbt.s 			page 99
 
 
  5533      75616C5F 
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5559      6500
  5560              	.LASF11:
  5561 018d 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  /tmp/cc7ompF3.s 			page 100
+ARM GAS  /tmp/cclQ1kbt.s 			page 100
 
 
  5561      20696E74 
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5586              	.LASF156:
  5587 0228 63684775 		.ascii	"chGuardedPoolAllocTimeout\000"
  5587      61726465 
-ARM GAS  /tmp/cc7ompF3.s 			page 101
+ARM GAS  /tmp/cclQ1kbt.s 			page 101
 
 
  5587      64506F6F 
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5615 02c0 74696D65 		.ascii	"timeout\000"
  5615      6F757400 
  5616              	.LASF130:
-ARM GAS  /tmp/cc7ompF3.s 			page 102
+ARM GAS  /tmp/cclQ1kbt.s 			page 102
 
 
  5617 02c8 6D656D6F 		.ascii	"memory_pool_t\000"
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5644 036f 63685F73 		.ascii	"ch_system_t\000"
  5644      79737465 
  5644      6D5F7400 
-ARM GAS  /tmp/cc7ompF3.s 			page 103
+ARM GAS  /tmp/cclQ1kbt.s 			page 103
 
 
  5645              	.LASF106:
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5672      696D6572 
  5672      735F6C69 
  5673              	.LASF2:
-ARM GAS  /tmp/cc7ompF3.s 			page 104
+ARM GAS  /tmp/cclQ1kbt.s 			page 104
 
 
  5674 0418 6C6F6E67 		.ascii	"long double\000"
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5696              	.LASF14:
  5697 04dd 5F5F7569 		.ascii	"__uint64_t\000"
  5697      6E743634 
-ARM GAS  /tmp/cc7ompF3.s 			page 105
+ARM GAS  /tmp/cclQ1kbt.s 			page 105
 
 
  5697      5F7400
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5725 057f 6F66665F 		.ascii	"off_stklimit\000"
  5725      73746B6C 
  5725      696D6974 
-ARM GAS  /tmp/cc7ompF3.s 			page 106
+ARM GAS  /tmp/cclQ1kbt.s 			page 106
 
 
  5725      00
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5751      61645F77 
  5751      6100
  5752              	.LASF103:
-ARM GAS  /tmp/cc7ompF3.s 			page 107
+ARM GAS  /tmp/cclQ1kbt.s 			page 107
 
 
  5753 0616 74696D65 		.ascii	"timesize\000"
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5773 073d 77616261 		.ascii	"wabase\000"
  5773      736500
  5774              	.LASF96:
-ARM GAS  /tmp/cc7ompF3.s 			page 108
+ARM GAS  /tmp/cclQ1kbt.s 			page 108
 
 
  5775 0744 63686172 		.ascii	"char\000"
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5801 07d2 63685F6D 		.ascii	"ch_mutex\000"
  5801      75746578 
  5801      00
-ARM GAS  /tmp/cc7ompF3.s 			page 109
+ARM GAS  /tmp/cclQ1kbt.s 			page 109
 
 
  5802              	.LASF108:
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5828              	.LASF38:
  5829 0873 666C6167 		.ascii	"flags\000"
  5829      7300
-ARM GAS  /tmp/cc7ompF3.s 			page 110
+ARM GAS  /tmp/cclQ1kbt.s 			page 110
 
 
  5830              	.LASF144:
@@ -6587,33 +6587,33 @@ ARM GAS  /tmp/cc7ompF3.s 			page 1
  5851 08ed 6E657874 		.ascii	"nextmem\000"
  5851      6D656D00 
  5852              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q3-update) 7.3.1 20180622 (release) [AR
-ARM GAS  /tmp/cc7ompF3.s 			page 111
+ARM GAS  /tmp/cclQ1kbt.s 			page 111
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chmempools.c
-     /tmp/cc7ompF3.s:18     .text.chPoolObjectInitAligned:0000000000000000 $t
-     /tmp/cc7ompF3.s:26     .text.chPoolObjectInitAligned:0000000000000000 chPoolObjectInitAligned
-     /tmp/cc7ompF3.s:54     .text.chPoolLoadArray:0000000000000000 $t
-     /tmp/cc7ompF3.s:62     .text.chPoolLoadArray:0000000000000000 chPoolLoadArray
-     /tmp/cc7ompF3.s:171    .text.chPoolAllocI:0000000000000000 $t
-     /tmp/cc7ompF3.s:179    .text.chPoolAllocI:0000000000000000 chPoolAllocI
-     /tmp/cc7ompF3.s:219    .text.chPoolAlloc:0000000000000000 $t
-     /tmp/cc7ompF3.s:227    .text.chPoolAlloc:0000000000000000 chPoolAlloc
-     /tmp/cc7ompF3.s:346    .text.chPoolFreeI:0000000000000000 $t
-     /tmp/cc7ompF3.s:354    .text.chPoolFreeI:0000000000000000 chPoolFreeI
-     /tmp/cc7ompF3.s:373    .text.chPoolFree:0000000000000000 $t
-     /tmp/cc7ompF3.s:381    .text.chPoolFree:0000000000000000 chPoolFree
-     /tmp/cc7ompF3.s:456    .text.chGuardedPoolObjectInitAligned:0000000000000000 $t
-     /tmp/cc7ompF3.s:464    .text.chGuardedPoolObjectInitAligned:0000000000000000 chGuardedPoolObjectInitAligned
-     /tmp/cc7ompF3.s:502    .text.chGuardedPoolLoadArray:0000000000000000 $t
-     /tmp/cc7ompF3.s:510    .text.chGuardedPoolLoadArray:0000000000000000 chGuardedPoolLoadArray
-     /tmp/cc7ompF3.s:646    .text.chGuardedPoolAllocTimeoutS:0000000000000000 $t
-     /tmp/cc7ompF3.s:654    .text.chGuardedPoolAllocTimeoutS:0000000000000000 chGuardedPoolAllocTimeoutS
-     /tmp/cc7ompF3.s:734    .text.chGuardedPoolAllocTimeout:0000000000000000 $t
-     /tmp/cc7ompF3.s:742    .text.chGuardedPoolAllocTimeout:0000000000000000 chGuardedPoolAllocTimeout
-     /tmp/cc7ompF3.s:885    .text.chGuardedPoolFree:0000000000000000 $t
-     /tmp/cc7ompF3.s:893    .text.chGuardedPoolFree:0000000000000000 chGuardedPoolFree
+     /tmp/cclQ1kbt.s:18     .text.chPoolObjectInitAligned:0000000000000000 $t
+     /tmp/cclQ1kbt.s:26     .text.chPoolObjectInitAligned:0000000000000000 chPoolObjectInitAligned
+     /tmp/cclQ1kbt.s:54     .text.chPoolLoadArray:0000000000000000 $t
+     /tmp/cclQ1kbt.s:62     .text.chPoolLoadArray:0000000000000000 chPoolLoadArray
+     /tmp/cclQ1kbt.s:171    .text.chPoolAllocI:0000000000000000 $t
+     /tmp/cclQ1kbt.s:179    .text.chPoolAllocI:0000000000000000 chPoolAllocI
+     /tmp/cclQ1kbt.s:219    .text.chPoolAlloc:0000000000000000 $t
+     /tmp/cclQ1kbt.s:227    .text.chPoolAlloc:0000000000000000 chPoolAlloc
+     /tmp/cclQ1kbt.s:346    .text.chPoolFreeI:0000000000000000 $t
+     /tmp/cclQ1kbt.s:354    .text.chPoolFreeI:0000000000000000 chPoolFreeI
+     /tmp/cclQ1kbt.s:373    .text.chPoolFree:0000000000000000 $t
+     /tmp/cclQ1kbt.s:381    .text.chPoolFree:0000000000000000 chPoolFree
+     /tmp/cclQ1kbt.s:456    .text.chGuardedPoolObjectInitAligned:0000000000000000 $t
+     /tmp/cclQ1kbt.s:464    .text.chGuardedPoolObjectInitAligned:0000000000000000 chGuardedPoolObjectInitAligned
+     /tmp/cclQ1kbt.s:502    .text.chGuardedPoolLoadArray:0000000000000000 $t
+     /tmp/cclQ1kbt.s:510    .text.chGuardedPoolLoadArray:0000000000000000 chGuardedPoolLoadArray
+     /tmp/cclQ1kbt.s:646    .text.chGuardedPoolAllocTimeoutS:0000000000000000 $t
+     /tmp/cclQ1kbt.s:654    .text.chGuardedPoolAllocTimeoutS:0000000000000000 chGuardedPoolAllocTimeoutS
+     /tmp/cclQ1kbt.s:734    .text.chGuardedPoolAllocTimeout:0000000000000000 $t
+     /tmp/cclQ1kbt.s:742    .text.chGuardedPoolAllocTimeout:0000000000000000 chGuardedPoolAllocTimeout
+     /tmp/cclQ1kbt.s:885    .text.chGuardedPoolFree:0000000000000000 $t
+     /tmp/cclQ1kbt.s:893    .text.chGuardedPoolFree:0000000000000000 chGuardedPoolFree
 
 UNDEFINED SYMBOLS
 chSemObjectInit

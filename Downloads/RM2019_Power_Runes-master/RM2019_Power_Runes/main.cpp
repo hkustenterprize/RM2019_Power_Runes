@@ -72,30 +72,30 @@ volatile uint16_t raw_gyro[3] = {0};
 volatile uint8_t DelX = 3;
 
 //static uint16_t readword(uint8_t address)
-static uint16_t readword(uint8_t address)
-{
-    static uint16_t data = 0;
-    data = ((uint16_t)address) << 8;
-    //spiAcquireBus(ADIS16470_SPID);            //request from user specified address
-    //spiSelect(ADIS16470_SPID);
-    //spiStartExchange(ADIS16470_SPID, sizeof(data), &address, &data);
-    g_rpm_1 = 123;
-    //spiSend(&SPID4, 1, &address);
-    //g_rpm_1 = 123;
-    //spiUnselect(ADIS16470_SPID);
-    //spiStop(ADIS16470_SPID);
+// static uint16_t readword(uint8_t address) //SPI
+// {
+//     static uint16_t data = 0;
+//     data = ((uint16_t)address) << 8;
+//     //spiAcquireBus(ADIS16470_SPID);            //request from user specified address
+//     //spiSelect(ADIS16470_SPID);
+//     //spiStartExchange(ADIS16470_SPID, sizeof(data), &address, &data);
+//     g_rpm_1 = 123;
+//     //spiSend(&SPID4, 1, &address);
+//     //g_rpm_1 = 123;
+//     //spiUnselect(ADIS16470_SPID);
+//     //spiStop(ADIS16470_SPID);
 
-    //chThdSleep(20); //stall time specified by data sheet
+//     //chThdSleep(20); //stall time specified by data sheet
 
-    //spiSelect(ADIS16470_SPID);                //read word
-    spiReceive(&SPID4, 1, &data);
-    //spiUnselect(ADIS16470_SPID);
-    //spiReleaseBus(ADIS16470_SPID);
+//     //spiSelect(ADIS16470_SPID);                //read word
+//     spiReceive(&SPID4, 1, &data);
+//     //spiUnselect(ADIS16470_SPID);
+//     //spiReleaseBus(ADIS16470_SPID);
 
-    //chThdSleep(TIME_US2I(16));                    //stall time specified by data sheet
+//     //chThdSleep(TIME_US2I(16));                    //stall time specified by data sheet
 
-    return data;
-}
+//     return data;
+// }
 
 static const SPIConfig SPI1_Config = {
     false,
@@ -107,33 +107,33 @@ static const SPIConfig SPI1_Config_1 = {
     NULL,
     SPI_CR1_MSTR | SPI_CR1_DFF | SPI_CR1_BR_2 | SPI_CR1_BR_0 | SPI_CR1_CPHA | SPI_CR1_CPOL | SPI_CR1_BIDIOE | SPI_CR1_BIDIMODE,
     0};
-/*static const I2CConfig i2cfg1 = {
-    OPMODE_I2C,
-    400000,
-    FAST_DUTY_CYCLE_2};
-*/
 static const I2CConfig i2cfg1 = {
-    0,
-    LINE_I1,
-    LINE_I2,
+    1,
+    400000,
     2};
+
+// static const I2CConfig i2cfg1 = {
+//     0,
+//     LINE_I1,
+//     LINE_I2,
+//     2};
     
 static uint16_t temp = 0x02;
-uint16_t readRegister(uint16_t addr)
-{
-    spiStart(&SPID4, &SPI1_Config_1);
-    //cs = 0;                                 //Set chip select low/active
-    addr = addr & 0x7F; //Set MSB to 0 to indicate read operation
-    // spiSend(&SPID4, 1, &addr); //Write the given address
-    temp = 0x02;
-    // chThdSleep(10);
-    // spiReceive(&SPID4, 2, &temp);    //Throw dummy byte after sending address to receieve data
-    //cs = 1;                                 //Set chip select back to high/inactive
-    // spiStop(&SPID4);
-    //spiStart(&SPID4, &SPI1_Config_1);
-    spiExchange(&SPID4, 1, &addr, &temp);
-    return temp; //Returns 8-bit data from register
-}
+// uint16_t readRegister(uint16_t addr)
+// {
+//     spiStart(&SPID4, &SPI1_Config_1);
+//     //cs = 0;                                 //Set chip select low/active
+//     addr = addr & 0x7F; //Set MSB to 0 to indicate read operation
+//     // spiSend(&SPID4, 1, &addr); //Write the given address
+//     temp = 0x02;
+//     // chThdSleep(10);
+//     // spiReceive(&SPID4, 2, &temp);    //Throw dummy byte after sending address to receieve data
+//     //cs = 1;                                 //Set chip select back to high/inactive
+//     // spiStop(&SPID4);
+//     //spiStart(&SPID4, &SPI1_Config_1);
+//     spiExchange(&SPID4, 1, &addr, &temp);
+//     return temp; //Returns 8-bit data from register
+// }
 
 
 /**
@@ -162,7 +162,7 @@ uint16_t readRegister(uint16_t addr)
  *
  * @api
  */
-/*msg_t i2cMasterTransmitTimeout2(I2CDriver *i2cp,
+msg_t i2cMasterTransmitTimeout2(I2CDriver *i2cp,
                                i2caddr_t addr,
                                const uint8_t *txbuf,
                                size_t txbytes,
@@ -192,10 +192,10 @@ uint16_t readRegister(uint16_t addr)
   }
   osalSysUnlock();
   return rdymsg;
-}*/
+}
 
 
-/*
+
 static uint16_t temp2 = 0x02;
 static volatile msg_t msg;
 uint8_t readi2c(uint16_t addr)
@@ -205,45 +205,45 @@ uint8_t readi2c(uint16_t addr)
     // size_t temp2size = sizeof(temp2);
     static volatile uint16_t reg;
     static volatile uint16_t read;
-    reg = 0x14;
-    read = 0;
-    msg = i2cMasterTransmitTimeout2(&I2CD2,
-                                   0x0079U,
-                                   (uint8_t *)&reg,
-                                   1,
-                                   (uint8_t *)&read,
-                                   1,
-                                   TIME_MS2I(200));
-    i2c_write_bit(&I2CD2,1);
+    // reg = 0x14;
+    // read = 0;
+    // msg = i2cMasterTransmitTimeout2(&I2CD2,
+    //                                0x0079U,
+    //                                (uint8_t *)&reg,
+    //                                1,
+    //                                (uint8_t *)&read,
+    //                                1,
+    //                                TIME_MS2I(200));
+    // i2c_write_bit(&I2CD2,1);
     
     return read;
-}*/
+}
 
-//static THD_WORKING_AREA(PAT9125ELThd_wa, 1024);
-//static THD_FUNCTION(PAT9125ELThd, p)
-//{
+static THD_WORKING_AREA(PAT9125ELThd_wa, 1024);
+static THD_FUNCTION(PAT9125ELThd, p)
+{
 
-//    (void)p;
+   (void)p;
 
-    //i2cStart(&I2CD2, &i2cfg1);
-  //  while (!chThdShouldTerminateX())
-   // {
-    //    DelX = 3;
-    //    g_rpm_1 = 123;
+    i2cStart(&I2CD2, &i2cfg1);
+   while (!chThdShouldTerminateX())
+   {
+       DelX = 3;
+       g_rpm_1 = 123;
         //DelX = readword(Product_ID1);
         //DelX = readRegister(Delta_X_Lo);
-        //DelX = readi2c(0x0A);
+        // DelX = readi2c(0x0A);
         //spiSend(&SPID4, 2, &fdsfdsfd);
-        //g_rpm_1 = 123;
+        g_rpm_1 = 123;
         //adis16470_update(&adis16470);
         //adis16470_get_gyro_raw(raw_gyro);
-        //chThdSleep(TIME_US2I(16));
-    //    chThdSleepMilliseconds(2);
+        chThdSleep(TIME_US2I(16));
+       chThdSleepMilliseconds(2);
         //adis16470.counter = readword(0x22);
 
-        //chThdSleep(ADIS16470_UPDATE_PERIOD);
-   // }
-//}
+        chThdSleep(ADIS16470_UPDATE_PERIOD);
+   }
+}
 
 int main(void)
 {
@@ -287,7 +287,7 @@ int main(void)
 
     //spiStart(&SPID4, &SPI1_Config);
 
-    //chThdCreateStatic(PAT9125ELThd_wa, sizeof(PAT9125ELThd_wa),
+    // chThdCreateStatic(PAT9125ELThd_wa, sizeof(PAT9125ELThd_wa),
     //                  NORMALPRIO + 9, PAT9125ELThd, NULL);
 
     //palSetLineMode(LINE_OLED_5_SCLK, PAL_MODE_ALTERNATE(5));
