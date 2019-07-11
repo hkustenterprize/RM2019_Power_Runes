@@ -1,5 +1,9 @@
 #include "i2c.hpp"
 
+/*
+  Belows are software i2c, developed by Tong Cheng, @ztangaj
+*/
+
 #define SWI2C_RMSK 0x01 //read mask (bit0 = 1)
 #define SWI2C_WMSK 0x00 //write mask (bit0 = 0)
 #define SWI2C_ASHF 0x01 //address shift (<< 1)
@@ -352,6 +356,10 @@ uint8_t pat9125_update_y2(void)
   return 1;
 }
 
+/*
+  Belows are hardware i2c, use PCA9685 PWM driver chip
+*/
+
 uint8_t rxBuffer[32];
 uint8_t rxBufferIndex = 0;
 uint8_t rxBufferLength = 0;
@@ -368,9 +376,8 @@ uint8_t txBufferLength = 0;
  * communicate with
  *  @param  addr The 7-bit I2C address to locate this chip, default is 0x40
  */
-Adafruit_PWMServoDriver::Adafruit_PWMServoDriver(/*TwoWire *i2c, */ uint8_t addr)
+Adafruit_PWMServoDriver::Adafruit_PWMServoDriver(uint8_t addr)
 {
-  // _i2c = i2c;
   _i2caddr = addr;
 }
 
@@ -387,7 +394,6 @@ void delay(uint8_t second)
  */
 void Adafruit_PWMServoDriver::begin(uint8_t prescale)
 {
-  //   _i2c->begin();
   reset();
   if (prescale)
   {
@@ -513,9 +519,12 @@ uint8_t Adafruit_PWMServoDriver::getPWM(uint8_t num)
 {
   // _i2c->requestFrom((int)_i2caddr, LED0_ON_L + 4 * num, (int)4);
   uint8_t data = 0;
-  swi2c_readByte_A8((int)_i2caddr, 0x00, &data); //not yet done
+  uint8_t txbuf[1] = {LED0_ON_L + 4 * num};
+  uint8_t rxbuf[1];
+  // swi2c_readByte_A8((int)_i2caddr, 0x00, &data); //not yet done
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf, 1);
   // return _i2c->read();
-  return data;
+  return rxbuf[0];
 }
 
 /*!
@@ -604,8 +613,6 @@ void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off)
   Serial.print("->");
   Serial.println(off);
 #endif
-
-  // _i2c->beginTransmission(0x40);
   // swi2c_start();
   // swi2c_write(SWI2C_WMSK | ((0x40 & SWI2C_DMSK) << SWI2C_ASHF));
   // swi2c_ack();
@@ -620,8 +627,6 @@ void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off)
   // swi2c_write((off >> 8) );//& 0b111);
   // swi2c_ack();
   // swi2c_stop();
-  // _i2c->endTransmission();
-  // endTransmission();
   uint8_t txbuf[5] = {
   LED0_ON_L + 4 * num,
   on, on >> 8, off, off >> 8};
@@ -690,24 +695,12 @@ uint8_t Adafruit_PWMServoDriver::read8(uint8_t addr)
   uint8_t txbuf[1]={addr};
   uint8_t rxbuf[1];
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
-  return rxbuf[1];
+  return rxbuf[0];
 
-
-  // _i2c->requestFrom((uint8_t)_i2caddr, (uint8_t)1);//not yet done
-  // return _i2c->read();
 }
 
 void Adafruit_PWMServoDriver::write8(uint8_t addr, uint8_t d)
 {
-  // _i2c->beginTransmission(_i2caddr);
-  // Adafruit_PWMServoDriver(_i2caddr);
-  // _i2c->write(addr);
-  // write(addr);
-  // _i2c->write(d);
-  // write(d);
-  // _i2c->endTransmission();
-  // endTransmission();
-
   uint8_t txbuf[2] = {
       addr,
       d};
@@ -724,40 +717,11 @@ static THD_FUNCTION(PAT9125ELThd, p)
 
   while (!chThdShouldTerminateX())
   {
-    //PAT9125init();
-    //swi2c_readByte_A8(PAT9125_I2C_ADDR,0x03,&mydata);
 
-    palSetLine(LINE_C);
-    palSetLine(LINE_F);
-
-    // Drive each PWM in a 'wave'
-    // for (uint16_t i=0; i<4096; i += 8) {
     for (uint8_t pwmnum = 0; pwmnum < 16; pwmnum++)
     {
       pwm.setPWM(pwmnum, 0, 4000);
     }
-    // }
-    // pwm.setPWMFreq(1000);
-    // pwm.setPWM(0, 0, 4096);
-    // pat9125_b = pat9125_rd_reg(0);
-    // uint8_t ucMotion = pat9125_rd_reg(PAT9125_MOTION);
-    // pat9125_b = pat9125_rd_reg(PAT9125_FRAME);
-    // pat9125_s = pat9125_rd_reg(PAT9125_SHUTTER);
-    // if (ucMotion & 0x80)
-    // {
-
-    //   uint8_t ucXL = pat9125_rd_reg(PAT9125_DELTA_XL);
-    //   uint8_t ucYL = pat9125_rd_reg(PAT9125_DELTA_YL);
-    //   uint8_t ucXYH = pat9125_rd_reg(PAT9125_DELTA_XYH);
-    //   int16_t iDX = ucXL | ((ucXYH << 4) & 0xf00);
-    //   int16_t iDY = ucYL | ((ucXYH << 8) & 0xf00);
-    //   if (iDX & 0x800) iDX -= 4096;
-    //   if (iDY & 0x800) iDY -= 4096;
-    //   position -= iDY;
-    //   pat9125_x += iDX;
-    //   pat9125_y -= iDY; //negative number, because direction switching does not work
-    // }
-    //else  Param_DebugHalt(&errormsg);
 
     chThdSleepMilliseconds(10);
   }
@@ -765,22 +729,16 @@ static THD_FUNCTION(PAT9125ELThd, p)
 
 void myi2cstart()
 {
-
-  //palSetLineMode(LINE_K1, PAL_MODE_OUTPUT_PUSHPULL);
-  //palSetLineMode(LINE_K2, PAL_MODE_ALTERNATE(5));
-  palSetLineMode(LINE_C, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
-  palSetLineMode(LINE_F, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
-  //palSetLineMode(LINE_A, PAL_MODE_ALTERNATE(4));
-  //palSetLineMode(LINE_B, PAL_MODE_ALTERNATE(4));
-  palSetLineMode(LINE_A, PAL_MODE_OUTPUT_OPENDRAIN);
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_PUSHPULL);
-  palSetLine(LINE_A);
-  position = 1;
+  // palSetLineMode(LINE_C, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
+  // palSetLineMode(LINE_F, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
+  // palSetLineMode(LINE_A, PAL_MODE_OUTPUT_OPENDRAIN);
+  // palSetLineMode(LINE_B, PAL_MODE_OUTPUT_PUSHPULL);
+  // palSetLine(LINE_A);
   // Adafruit_PWMServoDriver(0x40);
   pwm.begin();
   pwm.setPWMFreq(1600); // This is the maximum PWM frequency
 
-  PAT9125init();
+  // PAT9125init();
   chThdCreateStatic(PAT9125ELThd_wa, sizeof(PAT9125ELThd_wa),
                     NORMALPRIO + 9, PAT9125ELThd, NULL);
 }
@@ -791,7 +749,7 @@ uint8_t pat9125_wr_reg_verify(uint8_t addr, uint8_t data)
   return pat9125_rd_reg(addr) == data;
 }
 /*
-want to use PAT9125CL,
+want to use software i2c,
 1 (VLD) to LINE_C
 3 (VDD) to LINE_F
 4 (GND) to GND
