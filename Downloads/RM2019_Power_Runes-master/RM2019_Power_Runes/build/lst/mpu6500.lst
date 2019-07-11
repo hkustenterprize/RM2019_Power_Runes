@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccUGHOPy.s 			page 1
+ARM GAS  /tmp/cchUepLE.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
   55              	.LBB64:
   56              		.file 2 "./RM18A-ChibiOS18-Core/chibios/os/rt/include/chthreads.h"
   57              		.loc 2 274 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 2
+ARM GAS  /tmp/cchUepLE.s 			page 2
 
 
   58 000c 4F4E     		ldr	r6, .L25+8
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  112 0060 424C     		ldr	r4, .L25+40
  113 0062 DFF81481 		ldr	r8, .L25+52
  114              	.LBB68:
-ARM GAS  /tmp/ccUGHOPy.s 			page 3
+ARM GAS  /tmp/cchUepLE.s 			page 3
 
 
  115              		.loc 1 338 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  169 00ce B0EE480A 		vmov.f32	s0, s16
  170 00d2 5046     		mov	r0, r10
  171 00d4 FFF7FEFF 		bl	pid_update
-ARM GAS  /tmp/ccUGHOPy.s 			page 4
+ARM GAS  /tmp/cchUepLE.s 			page 4
 
 
  172              	.LVL9:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  226              		.loc 1 353 0
  227 0130 0022     		movs	r2, #0
  228 0132 A8F80020 		strh	r2, [r8]	@ movhi
-ARM GAS  /tmp/ccUGHOPy.s 			page 5
+ARM GAS  /tmp/cchUepLE.s 			page 5
 
 
  229 0136 D8E7     		b	.L11
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  283              	.L28:
  284 0004 00000000 		.word	.LANCHOR2
  285              		.cfi_endproc
-ARM GAS  /tmp/ccUGHOPy.s 			page 6
+ARM GAS  /tmp/cchUepLE.s 			page 6
 
 
  286              	.LFE338:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  340              		.align	2
  341              	.L34:
  342 0008 00000000 		.word	.LANCHOR4
-ARM GAS  /tmp/ccUGHOPy.s 			page 7
+ARM GAS  /tmp/cchUepLE.s 			page 7
 
 
  343              		.cfi_endproc
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  397              		.loc 1 176 0
  398 0030 94F83C30 		ldrb	r3, [r4, #60]	@ zero_extendqisi2
  399 0034 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
-ARM GAS  /tmp/ccUGHOPy.s 			page 8
+ARM GAS  /tmp/cchUepLE.s 			page 8
 
 
  400 0036 9A42     		cmp	r2, r3
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  454 0012 8846     		mov	r8, r1
  455 0014 1646     		mov	r6, r2
  456              		.loc 1 247 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 9
+ARM GAS  /tmp/cchUepLE.s 			page 9
 
 
  457 0016 89F80030 		strb	r3, [r9]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  511              		.loc 1 263 0
  512 007e A279     		ldrb	r2, [r4, #6]	@ zero_extendqisi2
  513 0080 E379     		ldrb	r3, [r4, #7]	@ zero_extendqisi2
-ARM GAS  /tmp/ccUGHOPy.s 			page 10
+ARM GAS  /tmp/cchUepLE.s 			page 10
 
 
  514 0082 43EA0223 		orr	r3, r3, r2, lsl #8
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  568 0008 0446     		mov	r4, r0
  569              		.loc 1 208 0
  570 000a FFF7FEFF 		bl	mpu6500_getDataRaw
-ARM GAS  /tmp/ccUGHOPy.s 			page 11
+ARM GAS  /tmp/cchUepLE.s 			page 11
 
 
  571              	.LVL25:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  625              		.loc 1 222 0
  626 0080 77EEE37A 		vsub.f32	s15, s15, s7
  627              		.loc 1 213 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 12
+ARM GAS  /tmp/cchUepLE.s 			page 12
 
 
  628 0084 25EE245A 		vmul.f32	s10, s10, s9
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  682              	.LBE81:
  683              	.LBE82:
  684              		.loc 1 227 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 13
+ARM GAS  /tmp/cchUepLE.s 			page 13
 
 
  685 00c6 013B     		subs	r3, r3, #1
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  739              	.LFB345:
  740              		.loc 1 280 0
  741              		.cfi_startproc
-ARM GAS  /tmp/ccUGHOPy.s 			page 14
+ARM GAS  /tmp/cchUepLE.s 			page 14
 
 
  742              		@ args = 0, pretend = 0, frame = 40
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  796              	.LBE134:
  797              	.LBE133:
  798              		.loc 1 284 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 15
+ARM GAS  /tmp/cchUepLE.s 			page 15
 
 
  799 001c 93F82130 		ldrb	r3, [r3, #33]	@ zero_extendqisi2
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  853              		.loc 1 217 0
  854 008a F8EEE55A 		vcvt.f32.s32	s11, s11
  855              		.loc 1 221 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 16
+ARM GAS  /tmp/cchUepLE.s 			page 16
 
 
  856 008e B8EEC66A 		vcvt.f32.s32	s12, s12
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  910              	.LBE130:
  911              	.LBE131:
  912              		.loc 1 227 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 17
+ARM GAS  /tmp/cchUepLE.s 			page 17
 
 
  913 00d8 013B     		subs	r3, r3, #1
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  967 0138 1C4B     		ldr	r3, .L76+36
  968 013a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  969 013c 84F83C30 		strb	r3, [r4, #60]
-ARM GAS  /tmp/ccUGHOPy.s 			page 18
+ARM GAS  /tmp/cchUepLE.s 			page 18
 
 
  970              	.L57:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1024              		@ sp needed
  1025 015c BDEC028B 		vldm	sp!, {d8}
  1026              		.cfi_restore 80
-ARM GAS  /tmp/ccUGHOPy.s 			page 19
+ARM GAS  /tmp/cchUepLE.s 			page 19
 
 
  1027              		.cfi_restore 81
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1081              	.LBE145:
  1082              	.LBE148:
  1083              	.LBE165:
-ARM GAS  /tmp/ccUGHOPy.s 			page 20
+ARM GAS  /tmp/cchUepLE.s 			page 20
 
 
  1084              		.loc 1 299 0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1138              	.LVL54:
  1139 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
  1140              		.cfi_def_cfa_offset 32
-ARM GAS  /tmp/ccUGHOPy.s 			page 21
+ARM GAS  /tmp/cchUepLE.s 			page 21
 
 
  1141              		.cfi_offset 4, -32
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1195              		.loc 1 194 0
  1196 0032 DFED4A8A 		vldr.32	s17, .L80+4
  1197 0036 9FED4A8A 		vldr.32	s16, .L80+8
-ARM GAS  /tmp/ccUGHOPy.s 			page 22
+ARM GAS  /tmp/cchUepLE.s 			page 22
 
 
  1198              	.LBE173:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1252 009a 8021     		movs	r1, #128
  1253 009c FFF7FEFF 		bl	_pal_lld_setgroupmode
  1254              	.LVL62:
-ARM GAS  /tmp/ccUGHOPy.s 			page 23
+ARM GAS  /tmp/cchUepLE.s 			page 23
 
 
  1255              		.loc 1 376 0
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1309 00f8 1D4B     		ldr	r3, .L80+24
  1310 00fa 2B60     		str	r3, [r5]
  1311              		.loc 1 406 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 24
+ARM GAS  /tmp/cchUepLE.s 			page 24
 
 
  1312 00fc 4FF00508 		mov	r8, #5
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1366 0156 00BF     		.align	2
  1367              	.L80:
  1368 0158 00000000 		.word	.LANCHOR2
-ARM GAS  /tmp/ccUGHOPy.s 			page 25
+ARM GAS  /tmp/cchUepLE.s 			page 25
 
 
  1369 015c 00007042 		.word	1114636288
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1415              		.section	.bss.imuRXData,"aw",%nobits
  1416              		.align	2
  1417              		.set	.LANCHOR6,. + 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 26
+ARM GAS  /tmp/cchUepLE.s 			page 26
 
 
  1418              		.type	imuRXData, %object
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1456      00000000 
  1457              		.section	.data.imu_setState,"aw",%progbits
  1458              		.set	.LANCHOR4,. + 0
-ARM GAS  /tmp/ccUGHOPy.s 			page 27
+ARM GAS  /tmp/cchUepLE.s 			page 27
 
 
  1459              		.type	imu_setState, %object
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1513              		.file 41 "./RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_serial.h"
  1514              		.file 42 "./RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.h"
  1515              		.file 43 "./RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_spi.h"
-ARM GAS  /tmp/ccUGHOPy.s 			page 28
+ARM GAS  /tmp/cchUepLE.s 			page 28
 
 
  1516              		.file 44 "./RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.h"
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1570 0053 04       		.byte	0x4
  1571 0054 87170000 		.4byte	.LASF3
  1572 0058 02       		.uleb128 0x2
-ARM GAS  /tmp/ccUGHOPy.s 			page 29
+ARM GAS  /tmp/cchUepLE.s 			page 29
 
 
  1573 0059 01       		.byte	0x1
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1627 00c5 08       		.byte	0x8
  1628 00c6 07       		.byte	0x7
  1629 00c7 941D0000 		.4byte	.LASF17
-ARM GAS  /tmp/ccUGHOPy.s 			page 30
+ARM GAS  /tmp/cchUepLE.s 			page 30
 
 
  1630 00cb 04       		.uleb128 0x4
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1684 0143 CA100000 		.4byte	.LASF27
  1685 0147 08       		.byte	0x8
  1686 0148 2C       		.byte	0x2c
-ARM GAS  /tmp/ccUGHOPy.s 			page 31
+ARM GAS  /tmp/cchUepLE.s 			page 31
 
 
  1687 0149 CB000000 		.4byte	0xcb
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1741 01be 09       		.uleb128 0x9
  1742 01bf 63747800 		.ascii	"ctx\000"
  1743 01c3 0A       		.byte	0xa
-ARM GAS  /tmp/ccUGHOPy.s 			page 32
+ARM GAS  /tmp/cchUepLE.s 			page 32
 
 
  1744 01c4 91       		.byte	0x91
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1798 022f 0801     		.2byte	0x108
  1799 0231 89020000 		.4byte	0x289
  1800 0235 28       		.byte	0x28
-ARM GAS  /tmp/ccUGHOPy.s 			page 33
+ARM GAS  /tmp/cchUepLE.s 			page 33
 
 
  1801 0236 0B       		.uleb128 0xb
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1855 02a7 83020000 		.4byte	0x283
  1856 02ab 00       		.byte	0
  1857 02ac 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 34
+ARM GAS  /tmp/cchUepLE.s 			page 34
 
 
  1858 02ad 04       		.uleb128 0x4
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1912 031d FA070000 		.4byte	.LASF37
  1913 0321 0A       		.byte	0xa
  1914 0322 6501     		.2byte	0x165
-ARM GAS  /tmp/ccUGHOPy.s 			page 35
+ARM GAS  /tmp/cchUepLE.s 			page 35
 
 
  1915 0324 83020000 		.4byte	0x283
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  1969 0395 D9090000 		.4byte	.LASF64
  1970 0399 0A       		.byte	0xa
  1971 039a 3C01     		.2byte	0x13c
-ARM GAS  /tmp/ccUGHOPy.s 			page 36
+ARM GAS  /tmp/cchUepLE.s 			page 36
 
 
  1972 039c 93040000 		.4byte	0x493
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2026 040f 60       		.byte	0x60
  2027 0410 14040000 		.4byte	0x414
  2028 0414 0D       		.uleb128 0xd
-ARM GAS  /tmp/ccUGHOPy.s 			page 37
+ARM GAS  /tmp/cchUepLE.s 			page 37
 
 
  2029 0415 091C0000 		.4byte	.LASF70
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2083 0488 04       		.uleb128 0x4
  2084 0489 E2030000 		.4byte	.LASF77
  2085 048d 0B       		.byte	0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 38
+ARM GAS  /tmp/cchUepLE.s 			page 38
 
 
  2086 048e 6D       		.byte	0x6d
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2140 050a 0D       		.byte	0xd
  2141 050b 4F       		.byte	0x4f
  2142 050c 00050000 		.4byte	0x500
-ARM GAS  /tmp/ccUGHOPy.s 			page 39
+ARM GAS  /tmp/cchUepLE.s 			page 39
 
 
  2143 0510 15       		.uleb128 0x15
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2197 0578 F1090000 		.4byte	.LASF89
  2198 057c 0E       		.byte	0xe
  2199 057d D4       		.byte	0xd4
-ARM GAS  /tmp/ccUGHOPy.s 			page 40
+ARM GAS  /tmp/cchUepLE.s 			page 40
 
 
  2200 057e 11010000 		.4byte	0x111
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2254 05ea 11010000 		.4byte	0x111
  2255 05ee 44       		.byte	0x44
  2256 05ef 08       		.uleb128 0x8
-ARM GAS  /tmp/ccUGHOPy.s 			page 41
+ARM GAS  /tmp/cchUepLE.s 			page 41
 
 
  2257 05f0 F71E0000 		.4byte	.LASF97
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2311 0658 0E       		.byte	0xe
  2312 0659 FB       		.byte	0xfb
  2313 065a 90060000 		.4byte	0x690
-ARM GAS  /tmp/ccUGHOPy.s 			page 42
+ARM GAS  /tmp/cchUepLE.s 			page 42
 
 
  2314 065e 09       		.uleb128 0x9
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2368 06cd 2003     		.2byte	0x320
  2369 06cf 0E       		.byte	0xe
  2370 06d0 1101     		.2byte	0x111
-ARM GAS  /tmp/ccUGHOPy.s 			page 43
+ARM GAS  /tmp/cchUepLE.s 			page 43
 
 
  2371 06d2 02080000 		.4byte	0x802
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2425 074a 20       		.byte	0x20
  2426 074b 19       		.uleb128 0x19
  2427 074c 48100000 		.4byte	.LASF111
-ARM GAS  /tmp/ccUGHOPy.s 			page 44
+ARM GAS  /tmp/cchUepLE.s 			page 44
 
 
  2428 0750 0E       		.byte	0xe
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2482 07ce 0E       		.byte	0xe
  2483 07cf 2501     		.2byte	0x125
  2484 07d1 06010000 		.4byte	0x106
-ARM GAS  /tmp/ccUGHOPy.s 			page 45
+ARM GAS  /tmp/cchUepLE.s 			page 45
 
 
  2485 07d5 1802     		.2byte	0x218
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2539 0851 00       		.byte	0
  2540 0852 16       		.uleb128 0x16
  2541 0853 AE0C0000 		.4byte	.LASF123
-ARM GAS  /tmp/ccUGHOPy.s 			page 46
+ARM GAS  /tmp/cchUepLE.s 			page 46
 
 
  2542 0857 0E       		.byte	0xe
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2596 08cb 43000000 		.4byte	0x43
  2597 08cf 01       		.byte	0x1
  2598 08d0 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 47
+ARM GAS  /tmp/cchUepLE.s 			page 47
 
 
  2599 08d1 05       		.uleb128 0x5
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2653 0946 0E       		.byte	0xe
  2654 0947 7502     		.2byte	0x275
  2655 0949 11010000 		.4byte	0x111
-ARM GAS  /tmp/ccUGHOPy.s 			page 48
+ARM GAS  /tmp/cchUepLE.s 			page 48
 
 
  2656 094d 18       		.byte	0x18
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2710 09bd 0B       		.uleb128 0xb
  2711 09be 87070000 		.4byte	.LASF133
  2712 09c2 0E       		.byte	0xe
-ARM GAS  /tmp/ccUGHOPy.s 			page 49
+ARM GAS  /tmp/cchUepLE.s 			page 49
 
 
  2713 09c3 2503     		.2byte	0x325
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2767 0a34 11010000 		.4byte	0x111
  2768 0a38 08       		.byte	0x8
  2769 0a39 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccUGHOPy.s 			page 50
+ARM GAS  /tmp/cchUepLE.s 			page 50
 
 
  2770 0a3a 43523100 		.ascii	"CR1\000"
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2824 0ab1 09       		.uleb128 0x9
  2825 0ab2 737000   		.ascii	"sp\000"
  2826 0ab5 0F       		.byte	0xf
-ARM GAS  /tmp/ccUGHOPy.s 			page 51
+ARM GAS  /tmp/cchUepLE.s 			page 51
 
 
  2827 0ab6 8A       		.byte	0x8a
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2881 0b2a 10       		.byte	0x10
  2882 0b2b 6201     		.2byte	0x162
  2883 0b2d 8F0A0000 		.4byte	0xa8f
-ARM GAS  /tmp/ccUGHOPy.s 			page 52
+ARM GAS  /tmp/cchUepLE.s 			page 52
 
 
  2884 0b31 1C       		.byte	0x1c
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2938 0ba5 40       		.byte	0x40
  2939 0ba6 0A       		.uleb128 0xa
  2940 0ba7 723500   		.ascii	"r5\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 53
+ARM GAS  /tmp/cchUepLE.s 			page 53
 
 
  2941 0baa 10       		.byte	0x10
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  2995 0c14 1B0D0000 		.4byte	0xd1b
  2996 0c18 0A       		.uleb128 0xa
  2997 0c19 43523100 		.ascii	"CR1\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 54
+ARM GAS  /tmp/cchUepLE.s 			page 54
 
 
  2998 0c1d 11       		.byte	0x11
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3052 0c91 11       		.byte	0x11
  3053 0c92 FF01     		.2byte	0x1ff
  3054 0c94 11010000 		.4byte	0x111
-ARM GAS  /tmp/ccUGHOPy.s 			page 55
+ARM GAS  /tmp/cchUepLE.s 			page 55
 
 
  3055 0c98 24       		.byte	0x24
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3109 0d0c 54       		.byte	0x54
  3110 0d0d 0B       		.uleb128 0xb
  3111 0d0e 0B130000 		.4byte	.LASF153
-ARM GAS  /tmp/ccUGHOPy.s 			page 56
+ARM GAS  /tmp/cchUepLE.s 			page 56
 
 
  3112 0d12 11       		.byte	0x11
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3166 0d80 0A       		.byte	0xa
  3167 0d81 E7       		.byte	0xe7
  3168 0d82 58010000 		.4byte	0x158
-ARM GAS  /tmp/ccUGHOPy.s 			page 57
+ARM GAS  /tmp/cchUepLE.s 			page 57
 
 
  3169 0d86 1C       		.uleb128 0x1c
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3223 0df3 A80C0000 		.4byte	.LASF167
  3224 0df7 14       		.byte	0x14
  3225 0df8 3C       		.byte	0x3c
-ARM GAS  /tmp/ccUGHOPy.s 			page 58
+ARM GAS  /tmp/cchUepLE.s 			page 58
 
 
  3226 0df9 83020000 		.4byte	0x283
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3280 0e69 00       		.byte	0
  3281 0e6a 08       		.uleb128 0x8
  3282 0e6b FB060000 		.4byte	.LASF171
-ARM GAS  /tmp/ccUGHOPy.s 			page 59
+ARM GAS  /tmp/cchUepLE.s 			page 59
 
 
  3283 0e6f 16       		.byte	0x16
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3337 0edb 16       		.byte	0x16
  3338 0edc 3F       		.byte	0x3f
  3339 0edd CB000000 		.4byte	0xcb
-ARM GAS  /tmp/ccUGHOPy.s 			page 60
+ARM GAS  /tmp/cchUepLE.s 			page 60
 
 
  3340 0ee1 0E       		.byte	0xe
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3394 0f4d 47       		.byte	0x47
  3395 0f4e 560E0000 		.4byte	0xe56
  3396 0f52 06       		.uleb128 0x6
-ARM GAS  /tmp/ccUGHOPy.s 			page 61
+ARM GAS  /tmp/cchUepLE.s 			page 61
 
 
  3397 0f53 470F0000 		.4byte	0xf47
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3451 0fc5 04       		.byte	0x4
  3452 0fc6 08       		.uleb128 0x8
  3453 0fc7 59220000 		.4byte	.LASF196
-ARM GAS  /tmp/ccUGHOPy.s 			page 62
+ARM GAS  /tmp/cchUepLE.s 			page 62
 
 
  3454 0fcb 18       		.byte	0x18
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3508 1037 33000000 		.4byte	0x33
  3509 103b 0F       		.uleb128 0xf
  3510 103c 43000000 		.4byte	0x43
-ARM GAS  /tmp/ccUGHOPy.s 			page 63
+ARM GAS  /tmp/cchUepLE.s 			page 63
 
 
  3511 1040 00       		.byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3565 10a6 3A020000 		.4byte	.LASF54
  3566 10aa 1A       		.byte	0x1a
  3567 10ab 41       		.byte	0x41
-ARM GAS  /tmp/ccUGHOPy.s 			page 64
+ARM GAS  /tmp/cchUepLE.s 			page 64
 
 
  3568 10ac 97100000 		.4byte	0x1097
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3622 1118 11       		.uleb128 0x11
  3623 1119 1C0E0000 		.4byte	0xe1c
  3624 111d 28110000 		.4byte	0x1128
-ARM GAS  /tmp/ccUGHOPy.s 			page 65
+ARM GAS  /tmp/cchUepLE.s 			page 65
 
 
  3625 1121 12       		.uleb128 0x12
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3679 1191 0B       		.uleb128 0xb
  3680 1192 21170000 		.4byte	.LASF218
  3681 1196 1B       		.byte	0x1b
-ARM GAS  /tmp/ccUGHOPy.s 			page 66
+ARM GAS  /tmp/cchUepLE.s 			page 66
 
 
  3682 1197 5301     		.2byte	0x153
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3736 120d 00       		.byte	0
  3737 120e 0B       		.uleb128 0xb
  3738 120f 170F0000 		.4byte	.LASF227
-ARM GAS  /tmp/ccUGHOPy.s 			page 67
+ARM GAS  /tmp/cchUepLE.s 			page 67
 
 
  3739 1213 1C       		.byte	0x1c
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3793 1288 9002     		.2byte	0x290
  3794 128a 7D120000 		.4byte	0x127d
  3795 128e 20       		.uleb128 0x20
-ARM GAS  /tmp/ccUGHOPy.s 			page 68
+ARM GAS  /tmp/cchUepLE.s 			page 68
 
 
  3796 128f 33000000 		.4byte	0x33
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3850 1310 CB000000 		.4byte	0xcb
  3851 1314 0F       		.uleb128 0xf
  3852 1315 93040000 		.4byte	0x493
-ARM GAS  /tmp/ccUGHOPy.s 			page 69
+ARM GAS  /tmp/cchUepLE.s 			page 69
 
 
  3853 1319 00       		.byte	0
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3907 139a 00       		.byte	0
  3908 139b 0C       		.uleb128 0xc
  3909 139c 04       		.byte	0x4
-ARM GAS  /tmp/ccUGHOPy.s 			page 70
+ARM GAS  /tmp/cchUepLE.s 			page 70
 
 
  3910 139d 82130000 		.4byte	0x1382
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  3964 140c 08       		.uleb128 0x8
  3965 140d FA180000 		.4byte	.LASF243
  3966 1411 1D       		.byte	0x1d
-ARM GAS  /tmp/ccUGHOPy.s 			page 71
+ARM GAS  /tmp/cchUepLE.s 			page 71
 
 
  3967 1412 54       		.byte	0x54
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4021 147e 1F       		.byte	0x1f
  4022 147f 5C       		.byte	0x5c
  4023 1480 E6000000 		.4byte	0xe6
-ARM GAS  /tmp/ccUGHOPy.s 			page 72
+ARM GAS  /tmp/cchUepLE.s 			page 72
 
 
  4024 1484 00       		.byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4078 14e9 0C       		.byte	0xc
  4079 14ea 09       		.uleb128 0x9
  4080 14eb 49445200 		.ascii	"IDR\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 73
+ARM GAS  /tmp/cchUepLE.s 			page 73
 
 
  4081 14ef 1F       		.byte	0x1f
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4135 155e 43000000 		.4byte	0x43
  4136 1562 0F       		.byte	0xf
  4137 1563 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 74
+ARM GAS  /tmp/cchUepLE.s 			page 74
 
 
  4138 1564 13       		.uleb128 0x13
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4192 15d1 4B1A0000 		.4byte	.LASF271
  4193 15d5 21       		.byte	0x21
  4194 15d6 A7       		.byte	0xa7
-ARM GAS  /tmp/ccUGHOPy.s 			page 75
+ARM GAS  /tmp/cchUepLE.s 			page 75
 
 
  4195 15d7 B3170000 		.4byte	0x17b3
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4249 1643 57       		.byte	0x57
  4250 1644 4D160000 		.4byte	0x164d
  4251 1648 06       		.uleb128 0x6
-ARM GAS  /tmp/ccUGHOPy.s 			page 76
+ARM GAS  /tmp/cchUepLE.s 			page 76
 
 
  4252 1649 3D160000 		.4byte	0x163d
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4306 16b8 91       		.byte	0x91
  4307 16b9 06010000 		.4byte	0x106
  4308 16bd 0C       		.byte	0xc
-ARM GAS  /tmp/ccUGHOPy.s 			page 77
+ARM GAS  /tmp/cchUepLE.s 			page 77
 
 
  4309 16be 09       		.uleb128 0x9
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4363 172b 16       		.uleb128 0x16
  4364 172c A61A0000 		.4byte	.LASF294
  4365 1730 22       		.byte	0x22
-ARM GAS  /tmp/ccUGHOPy.s 			page 78
+ARM GAS  /tmp/cchUepLE.s 			page 78
 
 
  4366 1731 3301     		.2byte	0x133
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4420 17a4 B3170000 		.4byte	0x17b3
  4421 17a8 0F       		.uleb128 0xf
  4422 17a9 8C170000 		.4byte	0x178c
-ARM GAS  /tmp/ccUGHOPy.s 			page 79
+ARM GAS  /tmp/cchUepLE.s 			page 79
 
 
  4423 17ad 0F       		.uleb128 0xf
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4477 1819 24       		.byte	0x24
  4478 181a 4801     		.2byte	0x148
  4479 181c 96180000 		.4byte	0x1896
-ARM GAS  /tmp/ccUGHOPy.s 			page 80
+ARM GAS  /tmp/cchUepLE.s 			page 80
 
 
  4480 1820 0B       		.uleb128 0xb
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4534 1895 00       		.byte	0
  4535 1896 04       		.uleb128 0x4
  4536 1897 4F030000 		.4byte	.LASF314
-ARM GAS  /tmp/ccUGHOPy.s 			page 81
+ARM GAS  /tmp/cchUepLE.s 			page 81
 
 
  4537 189b 24       		.byte	0x24
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4591 190e 13       		.uleb128 0x13
  4592 190f 621E0000 		.4byte	.LASF316
  4593 1913 24       		.byte	0x24
-ARM GAS  /tmp/ccUGHOPy.s 			page 82
+ARM GAS  /tmp/cchUepLE.s 			page 82
 
 
  4594 1914 AE01     		.2byte	0x1ae
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4648 1985 9C190000 		.4byte	0x199c
  4649 1989 23       		.uleb128 0x23
  4650 198a C4040000 		.4byte	.LASF327
-ARM GAS  /tmp/ccUGHOPy.s 			page 83
+ARM GAS  /tmp/cchUepLE.s 			page 83
 
 
  4651 198e 01       		.byte	0x1
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4705 19fd 26       		.byte	0x26
  4706 19fe 8C01     		.2byte	0x18c
  4707 1a00 C9190000 		.4byte	0x19c9
-ARM GAS  /tmp/ccUGHOPy.s 			page 84
+ARM GAS  /tmp/cchUepLE.s 			page 84
 
 
  4708 1a04 08       		.byte	0x8
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4762 1a79 63190000 		.4byte	0x1963
  4763 1a7d 20       		.byte	0x20
  4764 1a7e 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 85
+ARM GAS  /tmp/cchUepLE.s 			page 85
 
 
  4765 1a7f 32080000 		.4byte	.LASF342
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4819 1af1 23       		.uleb128 0x23
  4820 1af2 440F0000 		.4byte	.LASF349
  4821 1af6 02       		.byte	0x2
-ARM GAS  /tmp/ccUGHOPy.s 			page 86
+ARM GAS  /tmp/cchUepLE.s 			page 86
 
 
  4822 1af7 00       		.byte	0
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4876 1b6a 74696D00 		.ascii	"tim\000"
  4877 1b6e 28       		.byte	0x28
  4878 1b6f 8302     		.2byte	0x283
-ARM GAS  /tmp/ccUGHOPy.s 			page 87
+ARM GAS  /tmp/cchUepLE.s 			page 87
 
 
  4879 1b71 781C0000 		.4byte	0x1c78
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4933 1be7 771B0000 		.4byte	0x1b77
  4934 1beb 04       		.byte	0x4
  4935 1bec 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 88
+ARM GAS  /tmp/cchUepLE.s 			page 88
 
 
  4936 1bed 16       		.uleb128 0x16
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  4990 1c61 16       		.uleb128 0x16
  4991 1c62 6E0B0000 		.4byte	.LASF366
  4992 1c66 28       		.byte	0x28
-ARM GAS  /tmp/ccUGHOPy.s 			page 89
+ARM GAS  /tmp/cchUepLE.s 			page 89
 
 
  4993 1c67 5E02     		.2byte	0x25e
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5047 1cdd 7C       		.byte	0x7c
  5048 1cde 29       		.byte	0x29
  5049 1cdf 7B       		.byte	0x7b
-ARM GAS  /tmp/ccUGHOPy.s 			page 90
+ARM GAS  /tmp/cchUepLE.s 			page 90
 
 
  5050 1ce0 4F1D0000 		.4byte	0x1d4f
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5104 1d4d 78       		.byte	0x78
  5105 1d4e 00       		.byte	0
  5106 1d4f 1E       		.uleb128 0x1e
-ARM GAS  /tmp/ccUGHOPy.s 			page 91
+ARM GAS  /tmp/cchUepLE.s 			page 91
 
 
  5107 1d50 53443700 		.ascii	"SD7\000"
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5161 1dc0 29       		.byte	0x29
  5162 1dc1 71       		.byte	0x71
  5163 1dc2 58130000 		.4byte	0x1358
-ARM GAS  /tmp/ccUGHOPy.s 			page 92
+ARM GAS  /tmp/cchUepLE.s 			page 92
 
 
  5164 1dc6 1C       		.byte	0x1c
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5218 1e32 2B       		.byte	0x2b
  5219 1e33 7A       		.byte	0x7a
  5220 1e34 011E0000 		.4byte	0x1e01
-ARM GAS  /tmp/ccUGHOPy.s 			page 93
+ARM GAS  /tmp/cchUepLE.s 			page 93
 
 
  5221 1e38 04       		.uleb128 0x4
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5275 1ea4 F8110000 		.4byte	.LASF343
  5276 1ea8 2B       		.byte	0x2b
  5277 1ea9 D9       		.byte	0xd9
-ARM GAS  /tmp/ccUGHOPy.s 			page 94
+ARM GAS  /tmp/cchUepLE.s 			page 94
 
 
  5278 1eaa 06010000 		.4byte	0x106
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5332 1f16 1A1F0000 		.4byte	0x1f1a
  5333 1f1a 0E       		.uleb128 0xe
  5334 1f1b 251F0000 		.4byte	0x1f25
-ARM GAS  /tmp/ccUGHOPy.s 			page 95
+ARM GAS  /tmp/cchUepLE.s 			page 95
 
 
  5335 1f1f 0F       		.uleb128 0xf
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5389 1f8e 62       		.byte	0x62
  5390 1f8f A61F0000 		.4byte	0x1fa6
  5391 1f93 23       		.uleb128 0x23
-ARM GAS  /tmp/ccUGHOPy.s 			page 96
+ARM GAS  /tmp/cchUepLE.s 			page 96
 
 
  5392 1f94 81000000 		.4byte	.LASF407
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5446 2006 2E       		.byte	0x2e
  5447 2007 7702     		.2byte	0x277
  5448 2009 7B1F0000 		.4byte	0x1f7b
-ARM GAS  /tmp/ccUGHOPy.s 			page 97
+ARM GAS  /tmp/cchUepLE.s 			page 97
 
 
  5449 200d 00       		.byte	0
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5503 2082 1C       		.byte	0x1c
  5504 2083 0B       		.uleb128 0xb
  5505 2084 13020000 		.4byte	.LASF345
-ARM GAS  /tmp/ccUGHOPy.s 			page 98
+ARM GAS  /tmp/cchUepLE.s 			page 98
 
 
  5506 2088 2E       		.byte	0x2e
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5560 20ff 0F       		.uleb128 0xf
  5561 2100 DC1F0000 		.4byte	0x1fdc
  5562 2104 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 99
+ARM GAS  /tmp/cchUepLE.s 			page 99
 
 
  5563 2105 17       		.uleb128 0x17
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5617 2177 63723300 		.ascii	"cr3\000"
  5618 217b 2E       		.byte	0x2e
  5619 217c 6D02     		.2byte	0x26d
-ARM GAS  /tmp/ccUGHOPy.s 			page 100
+ARM GAS  /tmp/cchUepLE.s 			page 100
 
 
  5620 217e E6000000 		.4byte	0xe6
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5674 21f8 B001     		.2byte	0x1b0
  5675 21fa E6000000 		.4byte	0xe6
  5676 21fe 08       		.byte	0x8
-ARM GAS  /tmp/ccUGHOPy.s 			page 101
+ARM GAS  /tmp/cchUepLE.s 			page 101
 
 
  5677 21ff 0B       		.uleb128 0xb
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5731 2274 0B       		.uleb128 0xb
  5732 2275 22140000 		.4byte	.LASF446
  5733 2279 30       		.byte	0x30
-ARM GAS  /tmp/ccUGHOPy.s 			page 102
+ARM GAS  /tmp/cchUepLE.s 			page 102
 
 
  5734 227a DE01     		.2byte	0x1de
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5788 22ef 00       		.byte	0
  5789 22f0 23       		.uleb128 0x23
  5790 22f1 F1070000 		.4byte	.LASF454
-ARM GAS  /tmp/ccUGHOPy.s 			page 103
+ARM GAS  /tmp/cchUepLE.s 			page 103
 
 
  5791 22f5 01       		.byte	0x1
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5845 2361 07       		.byte	0x7
  5846 2362 01       		.byte	0x1
  5847 2363 6A000000 		.4byte	0x6a
-ARM GAS  /tmp/ccUGHOPy.s 			page 104
+ARM GAS  /tmp/cchUepLE.s 			page 104
 
 
  5848 2367 2F       		.byte	0x2f
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5902 23d6 C9230000 		.4byte	0x23c9
  5903 23da 16       		.uleb128 0x16
  5904 23db F1220000 		.4byte	.LASF479
-ARM GAS  /tmp/ccUGHOPy.s 			page 105
+ARM GAS  /tmp/cchUepLE.s 			page 105
 
 
  5905 23df 2F       		.byte	0x2f
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  5959 2458 62240000 		.4byte	0x2462
  5960 245c 0F       		.uleb128 0xf
  5961 245d F7230000 		.4byte	0x23f7
-ARM GAS  /tmp/ccUGHOPy.s 			page 106
+ARM GAS  /tmp/cchUepLE.s 			page 106
 
 
  5962 2461 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6016 24d1 23130000 		.4byte	.LASF488
  6017 24d5 31       		.byte	0x31
  6018 24d6 30       		.byte	0x30
-ARM GAS  /tmp/ccUGHOPy.s 			page 107
+ARM GAS  /tmp/cchUepLE.s 			page 107
 
 
  6019 24d7 11010000 		.4byte	0x111
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6073 2543 0C       		.byte	0xc
  6074 2544 08       		.uleb128 0x8
  6075 2545 C4150000 		.4byte	.LASF497
-ARM GAS  /tmp/ccUGHOPy.s 			page 108
+ARM GAS  /tmp/cchUepLE.s 			page 108
 
 
  6076 2549 31       		.byte	0x31
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6130 25b2 52       		.byte	0x52
  6131 25b3 11010000 		.4byte	0x111
  6132 25b7 0C       		.byte	0xc
-ARM GAS  /tmp/ccUGHOPy.s 			page 109
+ARM GAS  /tmp/cchUepLE.s 			page 109
 
 
  6133 25b8 08       		.uleb128 0x8
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6187 2624 13230000 		.4byte	.LASF508
  6188 2628 31       		.byte	0x31
  6189 2629 61       		.byte	0x61
-ARM GAS  /tmp/ccUGHOPy.s 			page 110
+ARM GAS  /tmp/cchUepLE.s 			page 110
 
 
  6190 262a 11010000 		.4byte	0x111
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6244 2696 11010000 		.4byte	0x111
  6245 269a 30       		.byte	0x30
  6246 269b 08       		.uleb128 0x8
-ARM GAS  /tmp/ccUGHOPy.s 			page 111
+ARM GAS  /tmp/cchUepLE.s 			page 111
 
 
  6247 269c 5C0E0000 		.4byte	.LASF518
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6301 270d 53040000 		.4byte	.LASF526
  6302 2711 31       		.byte	0x31
  6303 2712 7A       		.byte	0x7a
-ARM GAS  /tmp/ccUGHOPy.s 			page 112
+ARM GAS  /tmp/cchUepLE.s 			page 112
 
 
  6304 2713 11010000 		.4byte	0x111
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6358 2787 45290000 		.4byte	0x2945
  6359 278b 0007     		.2byte	0x700
  6360 278d 26       		.uleb128 0x26
-ARM GAS  /tmp/ccUGHOPy.s 			page 113
+ARM GAS  /tmp/cchUepLE.s 			page 113
 
 
  6361 278e 01190000 		.4byte	.LASF535
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6415 2803 D7050000 		.4byte	.LASF544
  6416 2807 31       		.byte	0x31
  6417 2808 96       		.byte	0x96
-ARM GAS  /tmp/ccUGHOPy.s 			page 114
+ARM GAS  /tmp/cchUepLE.s 			page 114
 
 
  6418 2809 11010000 		.4byte	0x111
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6472 287e 5A290000 		.4byte	0x295a
  6473 2882 C008     		.2byte	0x8c0
  6474 2884 27       		.uleb128 0x27
-ARM GAS  /tmp/ccUGHOPy.s 			page 115
+ARM GAS  /tmp/cchUepLE.s 			page 115
 
 
  6475 2885 696500   		.ascii	"ie\000"
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6529 28fb 11       		.uleb128 0x11
  6530 28fc 11010000 		.4byte	0x111
  6531 2900 0B290000 		.4byte	0x290b
-ARM GAS  /tmp/ccUGHOPy.s 			page 116
+ARM GAS  /tmp/cchUepLE.s 			page 116
 
 
  6532 2904 12       		.uleb128 0x12
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6586 297f 11       		.uleb128 0x11
  6587 2980 11010000 		.4byte	0x111
  6588 2984 8F290000 		.4byte	0x298f
-ARM GAS  /tmp/ccUGHOPy.s 			page 117
+ARM GAS  /tmp/cchUepLE.s 			page 117
 
 
  6589 2988 12       		.uleb128 0x12
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6643 29fd 17       		.uleb128 0x17
  6644 29fe 10       		.byte	0x10
  6645 29ff 30       		.byte	0x30
-ARM GAS  /tmp/ccUGHOPy.s 			page 118
+ARM GAS  /tmp/cchUepLE.s 			page 118
 
 
  6646 2a00 0C01     		.2byte	0x10c
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6700 2a76 08       		.byte	0x8
  6701 2a77 0B       		.uleb128 0xb
  6702 2a78 D10E0000 		.4byte	.LASF566
-ARM GAS  /tmp/ccUGHOPy.s 			page 119
+ARM GAS  /tmp/cchUepLE.s 			page 119
 
 
  6703 2a7c 30       		.byte	0x30
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6757 2aee 7001     		.2byte	0x170
  6758 2af0 1D2B0000 		.4byte	0x2b1d
  6759 2af4 14       		.byte	0x14
-ARM GAS  /tmp/ccUGHOPy.s 			page 120
+ARM GAS  /tmp/cchUepLE.s 			page 120
 
 
  6760 2af5 0B       		.uleb128 0xb
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6814 2b69 08       		.byte	0x8
  6815 2b6a 0B       		.uleb128 0xb
  6816 2b6b 19020000 		.4byte	.LASF585
-ARM GAS  /tmp/ccUGHOPy.s 			page 121
+ARM GAS  /tmp/cchUepLE.s 			page 121
 
 
  6817 2b6f 30       		.byte	0x30
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6871 2be4 E11A0000 		.4byte	.LASF590
  6872 2be8 33       		.byte	0x33
  6873 2be9 72       		.byte	0x72
-ARM GAS  /tmp/ccUGHOPy.s 			page 122
+ARM GAS  /tmp/cchUepLE.s 			page 122
 
 
  6874 2bea A0000000 		.4byte	0xa0
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6928 2c5a 33       		.byte	0x33
  6929 2c5b AF       		.byte	0xaf
  6930 2c5c CD2B0000 		.4byte	0x2bcd
-ARM GAS  /tmp/ccUGHOPy.s 			page 123
+ARM GAS  /tmp/cchUepLE.s 			page 123
 
 
  6931 2c60 0C       		.uleb128 0xc
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  6985 2cca 11       		.uleb128 0x11
  6986 2ccb 662C0000 		.4byte	0x2c66
  6987 2ccf DA2C0000 		.4byte	0x2cda
-ARM GAS  /tmp/ccUGHOPy.s 			page 124
+ARM GAS  /tmp/cchUepLE.s 			page 124
 
 
  6988 2cd3 12       		.uleb128 0x12
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7042 2d3f 34       		.byte	0x34
  7043 2d40 40       		.byte	0x40
  7044 2d41 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/ccUGHOPy.s 			page 125
+ARM GAS  /tmp/cchUepLE.s 			page 125
 
 
  7045 2d45 1C       		.byte	0x1c
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7099 2db4 34       		.byte	0x34
  7100 2db5 56       		.byte	0x56
  7101 2db6 E02D0000 		.4byte	0x2de0
-ARM GAS  /tmp/ccUGHOPy.s 			page 126
+ARM GAS  /tmp/cchUepLE.s 			page 126
 
 
  7102 2dba 00       		.byte	0
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7156 2e26 04       		.byte	0x4
  7157 2e27 00       		.byte	0
  7158 2e28 0C       		.uleb128 0xc
-ARM GAS  /tmp/ccUGHOPy.s 			page 127
+ARM GAS  /tmp/cchUepLE.s 			page 127
 
 
  7159 2e29 04       		.byte	0x4
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7213 2e92 C92F0000 		.4byte	0x2fc9
  7214 2e96 1C       		.byte	0x1c
  7215 2e97 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 128
+ARM GAS  /tmp/cchUepLE.s 			page 128
 
 
  7216 2e98 06       		.uleb128 0x6
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7270 2f0d 2C000000 		.4byte	0x2c
  7271 2f11 1C       		.byte	0x1c
  7272 2f12 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 129
+ARM GAS  /tmp/cchUepLE.s 			page 129
 
 
  7273 2f13 47200000 		.4byte	.LASF640
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7327 2f88 C9020000 		.4byte	.LASF648
  7328 2f8c 34       		.byte	0x34
  7329 2f8d 9701     		.2byte	0x197
-ARM GAS  /tmp/ccUGHOPy.s 			page 130
+ARM GAS  /tmp/cchUepLE.s 			page 130
 
 
  7330 2f8f 61330000 		.4byte	0x3361
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7384 2ffc 2C000000 		.4byte	0x2c
  7385 3000 08       		.byte	0x8
  7386 3001 08       		.uleb128 0x8
-ARM GAS  /tmp/ccUGHOPy.s 			page 131
+ARM GAS  /tmp/cchUepLE.s 			page 131
 
 
  7387 3002 33020000 		.4byte	.LASF627
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7441 306e 7F180000 		.4byte	.LASF658
  7442 3072 34       		.byte	0x34
  7443 3073 CB       		.byte	0xcb
-ARM GAS  /tmp/ccUGHOPy.s 			page 132
+ARM GAS  /tmp/cchUepLE.s 			page 132
 
 
  7444 3074 7E310000 		.4byte	0x317e
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7498 30e0 552C0000 		.4byte	0x2c55
  7499 30e4 58       		.byte	0x58
  7500 30e5 08       		.uleb128 0x8
-ARM GAS  /tmp/ccUGHOPy.s 			page 133
+ARM GAS  /tmp/cchUepLE.s 			page 133
 
 
  7501 30e6 2C010000 		.4byte	.LASF664
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7555 3164 0C       		.uleb128 0xc
  7556 3165 04       		.byte	0x4
  7557 3166 46310000 		.4byte	0x3146
-ARM GAS  /tmp/ccUGHOPy.s 			page 134
+ARM GAS  /tmp/cchUepLE.s 			page 134
 
 
  7558 316a 20       		.uleb128 0x20
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7612 31e4 00       		.byte	0
  7613 31e5 0C       		.uleb128 0xc
  7614 31e6 04       		.byte	0x4
-ARM GAS  /tmp/ccUGHOPy.s 			page 135
+ARM GAS  /tmp/cchUepLE.s 			page 135
 
 
  7615 31e7 B0310000 		.4byte	0x31b0
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7669 325d 0B       		.uleb128 0xb
  7670 325e 3C080000 		.4byte	.LASF677
  7671 3262 34       		.byte	0x34
-ARM GAS  /tmp/ccUGHOPy.s 			page 136
+ARM GAS  /tmp/cchUepLE.s 			page 136
 
 
  7672 3263 5C01     		.2byte	0x15c
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7726 32d8 1C       		.byte	0x1c
  7727 32d9 0B       		.uleb128 0xb
  7728 32da 90190000 		.4byte	.LASF686
-ARM GAS  /tmp/ccUGHOPy.s 			page 137
+ARM GAS  /tmp/cchUepLE.s 			page 137
 
 
  7729 32de 34       		.byte	0x34
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7783 3350 0C       		.uleb128 0xc
  7784 3351 04       		.byte	0x4
  7785 3352 DA2C0000 		.4byte	0x2cda
-ARM GAS  /tmp/ccUGHOPy.s 			page 138
+ARM GAS  /tmp/cchUepLE.s 			page 138
 
 
  7786 3356 0E       		.uleb128 0xe
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7840 33cb 13340000 		.4byte	0x3413
  7841 33cf 09       		.uleb128 0x9
  7842 33d0 613100   		.ascii	"a1\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 139
+ARM GAS  /tmp/cchUepLE.s 			page 139
 
 
  7843 33d3 35       		.byte	0x35
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7897 343b 23       		.uleb128 0x23
  7898 343c B21D0000 		.4byte	.LASF701
  7899 3440 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 140
+ARM GAS  /tmp/cchUepLE.s 			page 140
 
 
  7900 3441 23       		.uleb128 0x23
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  7954 34aa 1D       		.byte	0x1d
  7955 34ab 85340000 		.4byte	0x3485
  7956 34af 01       		.byte	0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 141
+ARM GAS  /tmp/cchUepLE.s 			page 141
 
 
  7957 34b0 00       		.byte	0
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8011 351c 23       		.uleb128 0x23
  8012 351d A00A0000 		.4byte	.LASF721
  8013 3521 05       		.byte	0x5
-ARM GAS  /tmp/ccUGHOPy.s 			page 142
+ARM GAS  /tmp/cchUepLE.s 			page 142
 
 
  8014 3522 00       		.byte	0
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8068 3590 2E350000 		.4byte	0x352e
  8069 3594 15       		.uleb128 0x15
  8070 3595 60       		.byte	0x60
-ARM GAS  /tmp/ccUGHOPy.s 			page 143
+ARM GAS  /tmp/cchUepLE.s 			page 143
 
 
  8071 3596 36       		.byte	0x36
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8125 3602 50       		.byte	0x50
  8126 3603 89350000 		.4byte	0x3589
  8127 3607 3E       		.byte	0x3e
-ARM GAS  /tmp/ccUGHOPy.s 			page 144
+ARM GAS  /tmp/cchUepLE.s 			page 144
 
 
  8128 3608 08       		.uleb128 0x8
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8182 367a 57       		.byte	0x57
  8183 367b 7F360000 		.4byte	0x367f
  8184 367f 0C       		.uleb128 0xc
-ARM GAS  /tmp/ccUGHOPy.s 			page 145
+ARM GAS  /tmp/cchUepLE.s 			page 145
 
 
  8185 3680 04       		.byte	0x4
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8239 36e9 1C       		.byte	0x1c
  8240 36ea 08       		.uleb128 0x8
  8241 36eb 43060000 		.4byte	.LASF753
-ARM GAS  /tmp/ccUGHOPy.s 			page 146
+ARM GAS  /tmp/cchUepLE.s 			page 146
 
 
  8242 36ef 37       		.byte	0x37
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8296 3755 01       		.byte	0x1
  8297 3756 68       		.byte	0x68
  8298 3757 8C370000 		.4byte	0x378c
-ARM GAS  /tmp/ccUGHOPy.s 			page 147
+ARM GAS  /tmp/cchUepLE.s 			page 147
 
 
  8299 375b 23       		.uleb128 0x23
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8353 37c4 2D       		.uleb128 0x2d
  8354 37c5 8E000000 		.4byte	.LASF778
  8355 37c9 01       		.byte	0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 148
+ARM GAS  /tmp/cchUepLE.s 			page 148
 
 
  8356 37ca 7E       		.byte	0x7e
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8410 383f 28380000 		.4byte	0x3828
  8411 3843 05       		.uleb128 0x5
  8412 3844 03       		.byte	0x3
-ARM GAS  /tmp/ccUGHOPy.s 			page 149
+ARM GAS  /tmp/cchUepLE.s 			page 149
 
 
  8413 3845 00000000 		.4byte	gyro_lpf
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8467 38c4 00000000 		.4byte	.LLST11
  8468 38c8 31       		.uleb128 0x31
  8469 38c9 38410000 		.4byte	0x4138
-ARM GAS  /tmp/ccUGHOPy.s 			page 150
+ARM GAS  /tmp/cchUepLE.s 			page 150
 
 
  8470 38cd 04000000 		.4byte	.LBB169
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8524 3925 90       		.byte	0x90
  8525 3926 41       		.uleb128 0x41
  8526 3927 03       		.uleb128 0x3
-ARM GAS  /tmp/ccUGHOPy.s 			page 151
+ARM GAS  /tmp/cchUepLE.s 			page 151
 
 
  8527 3928 F5       		.byte	0xf5
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8581 396d 51       		.uleb128 0x51
  8582 396e 25       		.uleb128 0x25
  8583 396f 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 152
+ARM GAS  /tmp/cchUepLE.s 			page 152
 
 
  8584 3970 00       		.byte	0
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8638 39c5 50       		.byte	0x50
  8639 39c6 02       		.uleb128 0x2
  8640 39c7 78       		.byte	0x78
-ARM GAS  /tmp/ccUGHOPy.s 			page 153
+ARM GAS  /tmp/cchUepLE.s 			page 153
 
 
  8641 39c8 00       		.sleb128 0
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8695 3a14 BE000000 		.4byte	.LVL65
  8696 3a18 CF430000 		.4byte	0x43cf
  8697 3a1c 273A0000 		.4byte	0x3a27
-ARM GAS  /tmp/ccUGHOPy.s 			page 154
+ARM GAS  /tmp/cchUepLE.s 			page 154
 
 
  8698 3a20 35       		.uleb128 0x35
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8752 3a78 833A0000 		.4byte	0x3a83
  8753 3a7c 35       		.uleb128 0x35
  8754 3a7d 01       		.uleb128 0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 155
+ARM GAS  /tmp/cchUepLE.s 			page 155
 
 
  8755 3a7e 50       		.byte	0x50
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8809 3ad8 01       		.uleb128 0x1
  8810 3ad9 50       		.byte	0x50
  8811 3ada 02       		.uleb128 0x2
-ARM GAS  /tmp/ccUGHOPy.s 			page 156
+ARM GAS  /tmp/cchUepLE.s 			page 156
 
 
  8812 3adb 74       		.byte	0x74
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8866 3b36 50       		.byte	0x50
  8867 3b37 03       		.uleb128 0x3
  8868 3b38 76       		.byte	0x76
-ARM GAS  /tmp/ccUGHOPy.s 			page 157
+ARM GAS  /tmp/cchUepLE.s 			page 157
 
 
  8869 3b39 D400     		.sleb128 84
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8923 3b8a 01       		.uleb128 0x1
  8924 3b8b 52       		.byte	0x52
  8925 3b8c 02       		.uleb128 0x2
-ARM GAS  /tmp/ccUGHOPy.s 			page 158
+ARM GAS  /tmp/cchUepLE.s 			page 158
 
 
  8926 3b8d 08       		.byte	0x8
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  8980 3bf6 5001     		.2byte	0x150
  8981 3bf8 DB000000 		.4byte	0xdb
  8982 3bfc 05       		.uleb128 0x5
-ARM GAS  /tmp/ccUGHOPy.s 			page 159
+ARM GAS  /tmp/cchUepLE.s 			page 159
 
 
  8983 3bfd 03       		.byte	0x3
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9037 3c5b 50       		.byte	0x50
  9038 3c5c 02       		.uleb128 0x2
  9039 3c5d 75       		.byte	0x75
-ARM GAS  /tmp/ccUGHOPy.s 			page 160
+ARM GAS  /tmp/cchUepLE.s 			page 160
 
 
  9040 3c5e 00       		.sleb128 0
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9094 3cbf 00       		.byte	0
  9095 3cc0 34       		.uleb128 0x34
  9096 3cc1 34000000 		.4byte	.LVL3
-ARM GAS  /tmp/ccUGHOPy.s 			page 161
+ARM GAS  /tmp/cchUepLE.s 			page 161
 
 
  9097 3cc5 36440000 		.4byte	0x4436
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9151 3d1c 04       		.byte	0x4
  9152 3d1d 0000AF45 		.4byte	0x45af0000
  9153 3d21 35       		.uleb128 0x35
-ARM GAS  /tmp/ccUGHOPy.s 			page 162
+ARM GAS  /tmp/cchUepLE.s 			page 162
 
 
  9154 3d22 02       		.uleb128 0x2
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9208 3d90 3D       		.uleb128 0x3d
  9209 3d91 37420000 		.4byte	0x4237
  9210 3d95 02000000 		.4byte	.LBB116
-ARM GAS  /tmp/ccUGHOPy.s 			page 163
+ARM GAS  /tmp/cchUepLE.s 			page 163
 
 
  9211 3d99 50000000 		.4byte	.Ldebug_ranges0+0x50
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9265 3e1e 50       		.byte	0x50
  9266 3e1f 02       		.uleb128 0x2
  9267 3e20 74       		.byte	0x74
-ARM GAS  /tmp/ccUGHOPy.s 			page 164
+ARM GAS  /tmp/cchUepLE.s 			page 164
 
 
  9268 3e21 00       		.sleb128 0
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9322 3e75 50       		.byte	0x50
  9323 3e76 05       		.uleb128 0x5
  9324 3e77 03       		.byte	0x3
-ARM GAS  /tmp/ccUGHOPy.s 			page 165
+ARM GAS  /tmp/cchUepLE.s 			page 165
 
 
  9325 3e78 00000000 		.4byte	.LANCHOR7
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9379 3ee8 E6410000 		.4byte	0x41e6
  9380 3eec 40010000 		.4byte	.LBB137
  9381 3ef0 B0000000 		.4byte	.Ldebug_ranges0+0xb0
-ARM GAS  /tmp/ccUGHOPy.s 			page 166
+ARM GAS  /tmp/cchUepLE.s 			page 166
 
 
  9382 3ef4 01       		.byte	0x1
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9436 3f7c 06000000 		.4byte	.LBE158-.LBB158
  9437 3f80 10       		.byte	0x10
  9438 3f81 6202     		.2byte	0x262
-ARM GAS  /tmp/ccUGHOPy.s 			page 167
+ARM GAS  /tmp/cchUepLE.s 			page 167
 
 
  9439 3f83 3E       		.uleb128 0x3e
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9493 3ffe 00       		.sleb128 0
  9494 3fff 00       		.byte	0
  9495 4000 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 168
+ARM GAS  /tmp/cchUepLE.s 			page 168
 
 
  9496 4001 47       		.uleb128 0x47
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9550 4071 CF430000 		.4byte	0x43cf
  9551 4075 80400000 		.4byte	0x4080
  9552 4079 35       		.uleb128 0x35
-ARM GAS  /tmp/ccUGHOPy.s 			page 169
+ARM GAS  /tmp/cchUepLE.s 			page 169
 
 
  9553 407a 01       		.uleb128 0x1
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9607 40c8 01       		.uleb128 0x1
  9608 40c9 50       		.byte	0x50
  9609 40ca 02       		.uleb128 0x2
-ARM GAS  /tmp/ccUGHOPy.s 			page 170
+ARM GAS  /tmp/cchUepLE.s 			page 170
 
 
  9610 40cb 75       		.byte	0x75
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9664 413d 01       		.byte	0x1
  9665 413e B9       		.byte	0xb9
  9666 413f 01       		.byte	0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 171
+ARM GAS  /tmp/cchUepLE.s 			page 171
 
 
  9667 4140 50410000 		.4byte	0x4150
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9721 41ab 01       		.byte	0x1
  9722 41ac 9D       		.byte	0x9d
  9723 41ad 00000000 		.4byte	.LFB339
-ARM GAS  /tmp/ccUGHOPy.s 			page 172
+ARM GAS  /tmp/cchUepLE.s 			page 172
 
 
  9724 41b1 0C000000 		.4byte	.LFE339-.LFB339
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9778 422a 03       		.byte	0x3
  9779 422b 51       		.uleb128 0x51
  9780 422c 7D110000 		.4byte	.LASF810
-ARM GAS  /tmp/ccUGHOPy.s 			page 173
+ARM GAS  /tmp/cchUepLE.s 			page 173
 
 
  9781 4230 39       		.byte	0x39
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9835 42a0 7F010000 		.4byte	.LLST6
  9836 42a4 33       		.uleb128 0x33
  9837 42a5 11410000 		.4byte	0x4111
-ARM GAS  /tmp/ccUGHOPy.s 			page 174
+ARM GAS  /tmp/cchUepLE.s 			page 174
 
 
  9838 42a9 02       		.uleb128 0x2
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9892 430c 58440000 		.4byte	0x4458
  9893 4310 1B430000 		.4byte	0x431b
  9894 4314 35       		.uleb128 0x35
-ARM GAS  /tmp/ccUGHOPy.s 			page 175
+ARM GAS  /tmp/cchUepLE.s 			page 175
 
 
  9895 4315 01       		.uleb128 0x1
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  9949 436c 77430000 		.4byte	0x4377
  9950 4370 35       		.uleb128 0x35
  9951 4371 01       		.uleb128 0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 176
+ARM GAS  /tmp/cchUepLE.s 			page 176
 
 
  9952 4372 50       		.byte	0x50
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10006 43dc CE030000 		.4byte	.LASF821
  10007 43e0 CE030000 		.4byte	.LASF821
  10008 43e4 2B       		.byte	0x2b
-ARM GAS  /tmp/ccUGHOPy.s 			page 177
+ARM GAS  /tmp/cchUepLE.s 			page 177
 
 
  10009 43e5 0502     		.2byte	0x205
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10063 4461 14       		.byte	0x14
  10064 4462 67       		.byte	0x67
  10065 4463 59       		.uleb128 0x59
-ARM GAS  /tmp/ccUGHOPy.s 			page 178
+ARM GAS  /tmp/cchUepLE.s 			page 178
 
 
  10066 4464 44030000 		.4byte	.LASF833
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10120 000c 17       		.uleb128 0x17
  10121 000d 11       		.uleb128 0x11
  10122 000e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 179
+ARM GAS  /tmp/cchUepLE.s 			page 179
 
 
  10123 000f 10       		.uleb128 0x10
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10177 0045 13       		.uleb128 0x13
  10178 0046 01       		.byte	0x1
  10179 0047 03       		.uleb128 0x3
-ARM GAS  /tmp/ccUGHOPy.s 			page 180
+ARM GAS  /tmp/cchUepLE.s 			page 180
 
 
  10180 0048 0E       		.uleb128 0xe
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10234 007e 00       		.byte	0
  10235 007f 00       		.byte	0
  10236 0080 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 181
+ARM GAS  /tmp/cchUepLE.s 			page 181
 
 
  10237 0081 0D       		.uleb128 0xd
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10291 00b7 10       		.uleb128 0x10
  10292 00b8 0F       		.uleb128 0xf
  10293 00b9 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 182
+ARM GAS  /tmp/cchUepLE.s 			page 182
 
 
  10294 00ba 0B       		.uleb128 0xb
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10348 00f0 00       		.byte	0
  10349 00f1 00       		.byte	0
  10350 00f2 15       		.uleb128 0x15
-ARM GAS  /tmp/ccUGHOPy.s 			page 183
+ARM GAS  /tmp/cchUepLE.s 			page 183
 
 
  10351 00f3 13       		.uleb128 0x13
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10405 0129 03       		.uleb128 0x3
  10406 012a 0E       		.uleb128 0xe
  10407 012b 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccUGHOPy.s 			page 184
+ARM GAS  /tmp/cchUepLE.s 			page 184
 
 
  10408 012c 0B       		.uleb128 0xb
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10462 0162 0E       		.uleb128 0xe
  10463 0163 3A       		.uleb128 0x3a
  10464 0164 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 185
+ARM GAS  /tmp/cchUepLE.s 			page 185
 
 
  10465 0165 3B       		.uleb128 0x3b
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10519 019b 01       		.byte	0x1
  10520 019c 3E       		.uleb128 0x3e
  10521 019d 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccUGHOPy.s 			page 186
+ARM GAS  /tmp/cchUepLE.s 			page 186
 
 
  10522 019e 0B       		.uleb128 0xb
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10576 01d4 03       		.uleb128 0x3
  10577 01d5 0E       		.uleb128 0xe
  10578 01d6 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccUGHOPy.s 			page 187
+ARM GAS  /tmp/cchUepLE.s 			page 187
 
 
  10579 01d7 0B       		.uleb128 0xb
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10633 020d 00       		.byte	0
  10634 020e 2B       		.uleb128 0x2b
  10635 020f 13       		.uleb128 0x13
-ARM GAS  /tmp/ccUGHOPy.s 			page 188
+ARM GAS  /tmp/cchUepLE.s 			page 188
 
 
  10636 0210 00       		.byte	0
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10690 0246 0B       		.uleb128 0xb
  10691 0247 3B       		.uleb128 0x3b
  10692 0248 05       		.uleb128 0x5
-ARM GAS  /tmp/ccUGHOPy.s 			page 189
+ARM GAS  /tmp/cchUepLE.s 			page 189
 
 
  10693 0249 27       		.uleb128 0x27
@@ -11338,7 +11338,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10747 0280 00       		.byte	0
  10748 0281 33       		.uleb128 0x33
  10749 0282 34       		.uleb128 0x34
-ARM GAS  /tmp/ccUGHOPy.s 			page 190
+ARM GAS  /tmp/cchUepLE.s 			page 190
 
 
  10750 0283 00       		.byte	0
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10804 02c1 19       		.uleb128 0x19
  10805 02c2 01       		.uleb128 0x1
  10806 02c3 13       		.uleb128 0x13
-ARM GAS  /tmp/ccUGHOPy.s 			page 191
+ARM GAS  /tmp/cchUepLE.s 			page 191
 
 
  10807 02c4 00       		.byte	0
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10861 02fa 00       		.byte	0
  10862 02fb 00       		.byte	0
  10863 02fc 3C       		.uleb128 0x3c
-ARM GAS  /tmp/ccUGHOPy.s 			page 192
+ARM GAS  /tmp/cchUepLE.s 			page 192
 
 
  10864 02fd 1D       		.uleb128 0x1d
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10918 0333 58       		.uleb128 0x58
  10919 0334 0B       		.uleb128 0xb
  10920 0335 59       		.uleb128 0x59
-ARM GAS  /tmp/ccUGHOPy.s 			page 193
+ARM GAS  /tmp/cchUepLE.s 			page 193
 
 
  10921 0336 0B       		.uleb128 0xb
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  10975 036c 00       		.byte	0
  10976 036d 31       		.uleb128 0x31
  10977 036e 13       		.uleb128 0x13
-ARM GAS  /tmp/ccUGHOPy.s 			page 194
+ARM GAS  /tmp/cchUepLE.s 			page 194
 
 
  10978 036f 11       		.uleb128 0x11
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11032 03a5 18       		.uleb128 0x18
  11033 03a6 9742     		.uleb128 0x2117
  11034 03a8 19       		.uleb128 0x19
-ARM GAS  /tmp/ccUGHOPy.s 			page 195
+ARM GAS  /tmp/cchUepLE.s 			page 195
 
 
  11035 03a9 01       		.uleb128 0x1
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11089 03df 00       		.byte	0
  11090 03e0 4B       		.uleb128 0x4b
  11091 03e1 05       		.uleb128 0x5
-ARM GAS  /tmp/ccUGHOPy.s 			page 196
+ARM GAS  /tmp/cchUepLE.s 			page 196
 
 
  11092 03e2 00       		.byte	0
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11146 0418 11       		.uleb128 0x11
  11147 0419 01       		.uleb128 0x1
  11148 041a 12       		.uleb128 0x12
-ARM GAS  /tmp/ccUGHOPy.s 			page 197
+ARM GAS  /tmp/cchUepLE.s 			page 197
 
 
  11149 041b 06       		.uleb128 0x6
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11203 0453 3A       		.uleb128 0x3a
  11204 0454 0B       		.uleb128 0xb
  11205 0455 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccUGHOPy.s 			page 198
+ARM GAS  /tmp/cchUepLE.s 			page 198
 
 
  11206 0456 0B       		.uleb128 0xb
@@ -11878,7 +11878,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11260 048c 55       		.uleb128 0x55
  11261 048d 05       		.uleb128 0x5
  11262 048e 00       		.byte	0
-ARM GAS  /tmp/ccUGHOPy.s 			page 199
+ARM GAS  /tmp/cchUepLE.s 			page 199
 
 
  11263 048f 03       		.uleb128 0x3
@@ -11938,7 +11938,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11317 04c6 00       		.byte	0
  11318 04c7 59       		.uleb128 0x59
  11319 04c8 2E       		.uleb128 0x2e
-ARM GAS  /tmp/ccUGHOPy.s 			page 200
+ARM GAS  /tmp/cchUepLE.s 			page 200
 
 
  11320 04c9 00       		.byte	0
@@ -11998,7 +11998,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11374 002c 00000000 		.4byte	.LVL0
  11375 0030 0C000000 		.4byte	.LVL1
  11376 0034 0100     		.2byte	0x1
-ARM GAS  /tmp/ccUGHOPy.s 			page 201
+ARM GAS  /tmp/cchUepLE.s 			page 201
 
 
  11377 0036 50       		.byte	0x50
@@ -12058,7 +12058,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11431 00b7 00000000 		.4byte	0
  11432              	.LLST10:
  11433 00bb 6E010000 		.4byte	.LVL50
-ARM GAS  /tmp/ccUGHOPy.s 			page 202
+ARM GAS  /tmp/cchUepLE.s 			page 202
 
 
  11434 00bf 74010000 		.4byte	.LVL51
@@ -12118,7 +12118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11488 0147 F3       		.byte	0xf3
  11489 0148 01       		.uleb128 0x1
  11490 0149 52       		.byte	0x52
-ARM GAS  /tmp/ccUGHOPy.s 			page 203
+ARM GAS  /tmp/cchUepLE.s 			page 203
 
 
  11491 014a 9F       		.byte	0x9f
@@ -12178,7 +12178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11545 0058 00000000 		.4byte	0
  11546 005c 00000000 		.4byte	0
  11547              		.section	.debug_ranges,"",%progbits
-ARM GAS  /tmp/ccUGHOPy.s 			page 204
+ARM GAS  /tmp/cchUepLE.s 			page 204
 
 
  11548              	.Ldebug_ranges0:
@@ -12238,7 +12238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11602 00d4 00000000 		.4byte	0
  11603 00d8 04000000 		.4byte	.LBB169
  11604 00dc 0A000000 		.4byte	.LBE169
-ARM GAS  /tmp/ccUGHOPy.s 			page 205
+ARM GAS  /tmp/cchUepLE.s 			page 205
 
 
  11605 00e0 12000000 		.4byte	.LBB175
@@ -12298,7 +12298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11646              	.LASF375:
  11647 0031 6576656E 		.ascii	"event\000"
  11647      7400
-ARM GAS  /tmp/ccUGHOPy.s 			page 206
+ARM GAS  /tmp/cchUepLE.s 			page 206
 
 
  11648              	.LASF688:
@@ -12358,7 +12358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11672              	.LASF785:
  11673 00cd 6D707536 		.ascii	"mpu6500_tempCtrl_thd_wa\000"
  11673      3530305F 
-ARM GAS  /tmp/ccUGHOPy.s 			page 207
+ARM GAS  /tmp/cchUepLE.s 			page 207
 
 
  11673      74656D70 
@@ -12418,7 +12418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11700              	.LASF770:
  11701 0169 444C5046 		.ascii	"DLPF_3600HZ\000"
  11701      5F333630 
-ARM GAS  /tmp/ccUGHOPy.s 			page 208
+ARM GAS  /tmp/cchUepLE.s 			page 208
 
 
  11701      30485A00 
@@ -12478,7 +12478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11730              	.LASF519:
  11731 01f5 47434346 		.ascii	"GCCFG\000"
  11731      4700
-ARM GAS  /tmp/ccUGHOPy.s 			page 209
+ARM GAS  /tmp/cchUepLE.s 			page 209
 
 
  11732              	.LASF150:
@@ -12538,7 +12538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11761      494E5F57 
  11761      41495449 
  11761      4E475F54 
-ARM GAS  /tmp/ccUGHOPy.s 			page 210
+ARM GAS  /tmp/cchUepLE.s 			page 210
 
 
  11762              	.LASF296:
@@ -12598,7 +12598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11791 0313 696D755F 		.ascii	"imu_Thd\000"
  11791      54686400 
  11792              	.LASF528:
-ARM GAS  /tmp/ccUGHOPy.s 			page 211
+ARM GAS  /tmp/cchUepLE.s 			page 211
 
 
  11793 031b 48505458 		.ascii	"HPTXSTS\000"
@@ -12658,7 +12658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11819      616C5F74 
  11819      696D6572 
  11819      735F6C69 
-ARM GAS  /tmp/ccUGHOPy.s 			page 212
+ARM GAS  /tmp/cchUepLE.s 			page 212
 
 
  11820              	.LASF231:
@@ -12718,7 +12718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11851 0440 6C617374 		.ascii	"last_err\000"
  11851      5F657272 
  11851      00
-ARM GAS  /tmp/ccUGHOPy.s 			page 213
+ARM GAS  /tmp/cchUepLE.s 			page 213
 
 
  11852              	.LASF425:
@@ -12778,7 +12778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11879 04cf 72657376 		.ascii	"resvd80C\000"
  11879      64383043 
  11879      00
-ARM GAS  /tmp/ccUGHOPy.s 			page 214
+ARM GAS  /tmp/cchUepLE.s 			page 214
 
 
  11880              	.LASF47:
@@ -12838,7 +12838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11907      6C697374 
  11907      5F7400
  11908              	.LASF245:
-ARM GAS  /tmp/ccUGHOPy.s 			page 215
+ARM GAS  /tmp/cchUepLE.s 			page 215
 
 
  11909 056f 696E7075 		.ascii	"input_queue_t\000"
@@ -12898,7 +12898,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11934              	.LASF318:
  11935 0600 4932435F 		.ascii	"I2C_UNINIT\000"
  11935      554E494E 
-ARM GAS  /tmp/ccUGHOPy.s 			page 216
+ARM GAS  /tmp/cchUepLE.s 			page 216
 
 
  11935      495400
@@ -12958,7 +12958,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11959      5F7400
  11960              	.LASF549:
  11961 06a9 72657376 		.ascii	"resvd838\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 217
+ARM GAS  /tmp/cchUepLE.s 			page 217
 
 
  11961      64383338 
@@ -13018,7 +13018,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  11986      5200
  11987              	.LASF347:
  11988 0765 50574D5F 		.ascii	"PWM_UNINIT\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 218
+ARM GAS  /tmp/cchUepLE.s 			page 218
 
 
  11988      554E494E 
@@ -13078,7 +13078,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12016      53544F50 
  12016      00
  12017              	.LASF37:
-ARM GAS  /tmp/ccUGHOPy.s 			page 219
+ARM GAS  /tmp/cchUepLE.s 			page 219
 
 
  12018 07fa 6E657765 		.ascii	"newer\000"
@@ -13138,7 +13138,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12048 0884 5F5F746D 		.ascii	"__tm_isdst\000"
  12048      5F697364 
  12048      737400
-ARM GAS  /tmp/ccUGHOPy.s 			page 220
+ARM GAS  /tmp/cchUepLE.s 			page 220
 
 
  12049              	.LASF142:
@@ -13198,7 +13198,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12074 0920 72656164 		.ascii	"ready_list_t\000"
  12074      795F6C69 
  12074      73745F74 
-ARM GAS  /tmp/ccUGHOPy.s 			page 221
+ARM GAS  /tmp/cchUepLE.s 			page 221
 
 
  12074      00
@@ -13258,7 +13258,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12100      656D5F64 
  12100      65627567 
  12100      5F7400
-ARM GAS  /tmp/ccUGHOPy.s 			page 222
+ARM GAS  /tmp/cchUepLE.s 			page 222
 
 
  12101              	.LASF146:
@@ -13318,7 +13318,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12132      3200
  12133              	.LASF277:
  12134 0a44 646D6173 		.ascii	"dmastp\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 223
+ARM GAS  /tmp/cchUepLE.s 			page 223
 
 
  12134      747000
@@ -13378,7 +13378,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12158      00
  12159              	.LASF610:
  12160 0ad9 5F5F746D 		.ascii	"__tm_year\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 224
+ARM GAS  /tmp/cchUepLE.s 			page 224
 
 
  12160      5F796561 
@@ -13438,7 +13438,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12185              	.LASF366:
  12186 0b6e 50574D43 		.ascii	"PWMConfig\000"
  12186      6F6E6669 
-ARM GAS  /tmp/ccUGHOPy.s 			page 225
+ARM GAS  /tmp/cchUepLE.s 			page 225
 
 
  12186      6700
@@ -13498,7 +13498,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12212      6C697374 
  12212      00
  12213              	.LASF365:
-ARM GAS  /tmp/ccUGHOPy.s 			page 226
+ARM GAS  /tmp/cchUepLE.s 			page 226
 
 
  12214 0c16 64696572 		.ascii	"dier\000"
@@ -13558,7 +13558,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12242      52617700 
  12243              	.LASF780:
  12244 0c9e 696D7552 		.ascii	"imuRXData\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 227
+ARM GAS  /tmp/cchUepLE.s 			page 227
 
 
  12244      58446174 
@@ -13618,7 +13618,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12274      64313800 
  12275              	.LASF830:
  12276 0d3a 7069645F 		.ascii	"pid_init\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 228
+ARM GAS  /tmp/cchUepLE.s 			page 228
 
 
  12276      696E6974 
@@ -13678,7 +13678,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12303              	.LASF637:
  12304 0dcf 5F656D65 		.ascii	"_emergency\000"
  12304      7267656E 
-ARM GAS  /tmp/ccUGHOPy.s 			page 229
+ARM GAS  /tmp/cchUepLE.s 			page 229
 
 
  12304      637900
@@ -13738,7 +13738,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12333              	.LASF607:
  12334 0e64 5F5F746D 		.ascii	"__tm_hour\000"
  12334      5F686F75 
-ARM GAS  /tmp/ccUGHOPy.s 			page 230
+ARM GAS  /tmp/cchUepLE.s 			page 230
 
 
  12334      7200
@@ -13798,7 +13798,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12362 0efa 65703073 		.ascii	"ep0state\000"
  12362      74617465 
  12362      00
-ARM GAS  /tmp/ccUGHOPy.s 			page 231
+ARM GAS  /tmp/cchUepLE.s 			page 231
 
 
  12363              	.LASF204:
@@ -13858,7 +13858,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12390 0f91 70697065 		.ascii	"pipe_list\000"
  12390      5F6C6973 
  12390      7400
-ARM GAS  /tmp/ccUGHOPy.s 			page 232
+ARM GAS  /tmp/cchUepLE.s 			page 232
 
 
  12391              	.LASF567:
@@ -13918,7 +13918,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12418 1027 61786573 		.ascii	"axes_config_t\000"
  12418      5F636F6E 
  12418      6669675F 
-ARM GAS  /tmp/ccUGHOPy.s 			page 233
+ARM GAS  /tmp/cchUepLE.s 			page 233
 
 
  12418      7400
@@ -13978,7 +13978,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12447              	.LASF713:
  12448 10b6 61786573 		.ascii	"axes_status_t\000"
  12448      5F737461 
-ARM GAS  /tmp/ccUGHOPy.s 			page 234
+ARM GAS  /tmp/cchUepLE.s 			page 234
 
 
  12448      7475735F 
@@ -14038,7 +14038,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12474      564500
  12475              	.LASF732:
  12476 114f 494D555F 		.ascii	"IMU_TEMPERATURE_UNSTABLE\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 235
+ARM GAS  /tmp/cchUepLE.s 			page 235
 
 
  12476      54454D50 
@@ -14098,7 +14098,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12501              	.LASF690:
  12502 11e9 5F776372 		.ascii	"_wcrtomb_state\000"
  12502      746F6D62 
-ARM GAS  /tmp/ccUGHOPy.s 			page 236
+ARM GAS  /tmp/cchUepLE.s 			page 236
 
 
  12502      5F737461 
@@ -14158,7 +14158,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12528      454400
  12529              	.LASF255:
  12530 1292 4C4F434B 		.ascii	"LOCKR\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 237
+ARM GAS  /tmp/cchUepLE.s 			page 237
 
 
  12530      5200
@@ -14218,7 +14218,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12560 1317 73706955 		.ascii	"spiUnselect\000"
  12560      6E73656C 
  12560      65637400 
-ARM GAS  /tmp/ccUGHOPy.s 			page 238
+ARM GAS  /tmp/cchUepLE.s 			page 238
 
 
  12561              	.LASF488:
@@ -14278,7 +14278,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12586      545F5355 
  12586      5350454E 
  12586      4400
-ARM GAS  /tmp/ccUGHOPy.s 			page 239
+ARM GAS  /tmp/cchUepLE.s 			page 239
 
 
  12587              	.LASF19:
@@ -14338,7 +14338,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12617              	.LASF679:
  12618 1443 5F667265 		.ascii	"_freelist\000"
  12618      656C6973 
-ARM GAS  /tmp/ccUGHOPy.s 			page 240
+ARM GAS  /tmp/cchUepLE.s 			page 240
 
 
  12618      7400
@@ -14398,7 +14398,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12644      54797065 
  12644      44656600 
  12645              	.LASF105:
-ARM GAS  /tmp/ccUGHOPy.s 			page 241
+ARM GAS  /tmp/cchUepLE.s 			page 241
 
 
  12646 14e9 52444852 		.ascii	"RDHR\000"
@@ -14458,7 +14458,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12674      00
  12675              	.LASF592:
  12676 1573 5F5F7763 		.ascii	"__wch\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 242
+ARM GAS  /tmp/cchUepLE.s 			page 242
 
 
  12676      6800
@@ -14518,7 +14518,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12702      00
  12703              	.LASF588:
  12704 1604 5F4C4F43 		.ascii	"_LOCK_RECURSIVE_T\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 243
+ARM GAS  /tmp/cchUepLE.s 			page 243
 
 
  12704      4B5F5245 
@@ -14578,7 +14578,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12731              	.LASF278:
  12732 168e 646D616D 		.ascii	"dmamode\000"
  12732      6F646500 
-ARM GAS  /tmp/ccUGHOPy.s 			page 244
+ARM GAS  /tmp/cchUepLE.s 			page 244
 
 
  12733              	.LASF718:
@@ -14638,7 +14638,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12765              	.LASF502:
  12766 1719 444F4550 		.ascii	"DOEPINT\000"
  12766      494E5400 
-ARM GAS  /tmp/ccUGHOPy.s 			page 245
+ARM GAS  /tmp/cchUepLE.s 			page 245
 
 
  12767              	.LASF218:
@@ -14698,7 +14698,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12794 17a8 6576656E 		.ascii	"eventmask_t\000"
  12794      746D6173 
  12794      6B5F7400 
-ARM GAS  /tmp/ccUGHOPy.s 			page 246
+ARM GAS  /tmp/cchUepLE.s 			page 246
 
 
  12795              	.LASF273:
@@ -14758,7 +14758,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12822 183e 5553425F 		.ascii	"USB_EVENT_ADDRESS\000"
  12822      4556454E 
  12822      545F4144 
-ARM GAS  /tmp/ccUGHOPy.s 			page 247
+ARM GAS  /tmp/cchUepLE.s 			page 247
 
 
  12822      44524553 
@@ -14818,7 +14818,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12848 18de 41504250 		.ascii	"APBPrescTable\000"
  12848      72657363 
  12848      5461626C 
-ARM GAS  /tmp/ccUGHOPy.s 			page 248
+ARM GAS  /tmp/cchUepLE.s 			page 248
 
 
  12848      6500
@@ -14878,7 +14878,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12876      6F757400 
  12877              	.LASF233:
  12878 197d 5F73746D 		.ascii	"_stm32_dma_streams\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 249
+ARM GAS  /tmp/cchUepLE.s 			page 249
 
 
  12878      33325F64 
@@ -14938,7 +14938,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12905              	.LASF710:
  12906 1a12 61786973 		.ascii	"axis_reverse_t\000"
  12906      5F726576 
-ARM GAS  /tmp/ccUGHOPy.s 			page 250
+ARM GAS  /tmp/cchUepLE.s 			page 250
 
 
  12906      65727365 
@@ -14998,7 +14998,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12934      00
  12935              	.LASF294:
  12936 1aa6 6164635F 		.ascii	"adc_channels_num_t\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 251
+ARM GAS  /tmp/cchUepLE.s 			page 251
 
 
  12936      6368616E 
@@ -15058,7 +15058,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12964      6D54696D 
  12964      655800
  12965              	.LASF570:
-ARM GAS  /tmp/ccUGHOPy.s 			page 252
+ARM GAS  /tmp/cchUepLE.s 			page 252
 
 
  12966 1b3f 5553424F 		.ascii	"USBOutEndpointState\000"
@@ -15118,7 +15118,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  12991              	.LASF12:
  12992 1bd8 5F5F696E 		.ascii	"__int32_t\000"
  12992      7433325F 
-ARM GAS  /tmp/ccUGHOPy.s 			page 253
+ARM GAS  /tmp/cchUepLE.s 			page 253
 
 
  12992      7400
@@ -15178,7 +15178,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13019              	.LASF728:
  13020 1c70 494D555F 		.ascii	"IMU_WARNING\000"
  13020      5741524E 
-ARM GAS  /tmp/ccUGHOPy.s 			page 254
+ARM GAS  /tmp/cchUepLE.s 			page 254
 
 
  13020      494E4700 
@@ -15238,7 +15238,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13048      766500
  13049              	.LASF696:
  13050 1d01 5F676C6F 		.ascii	"_global_impure_ptr\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 255
+ARM GAS  /tmp/cchUepLE.s 			page 255
 
 
  13050      62616C5F 
@@ -15298,7 +15298,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13076      206C6F6E 
  13076      6720756E 
  13076      7369676E 
-ARM GAS  /tmp/ccUGHOPy.s 			page 256
+ARM GAS  /tmp/cchUepLE.s 			page 256
 
 
  13076      65642069 
@@ -15358,7 +15358,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13106      00
  13107              	.LASF742:
  13108 1e32 6572726F 		.ascii	"error\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 257
+ARM GAS  /tmp/cchUepLE.s 			page 257
 
 
  13108      7200
@@ -15418,7 +15418,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13134      00
  13135              	.LASF354:
  13136 1ec7 6368616E 		.ascii	"channels\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 258
+ARM GAS  /tmp/cchUepLE.s 			page 258
 
 
  13136      6E656C73 
@@ -15478,7 +15478,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13163              	.LASF693:
  13164 1f4e 5F5F7366 		.ascii	"__sf_fake_stdout\000"
  13164      5F66616B 
-ARM GAS  /tmp/ccUGHOPy.s 			page 259
+ARM GAS  /tmp/cchUepLE.s 			page 259
 
 
  13164      655F7374 
@@ -15538,7 +15538,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13188      00
  13189              	.LASF665:
  13190 2002 5F666C61 		.ascii	"_flags2\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 260
+ARM GAS  /tmp/cchUepLE.s 			page 260
 
 
  13190      67733200 
@@ -15598,7 +15598,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13214      5461626C 
  13214      6500
  13215              	.LASF841:
-ARM GAS  /tmp/ccUGHOPy.s 			page 261
+ARM GAS  /tmp/cchUepLE.s 			page 261
 
 
  13216 20a4 474E5520 		.ascii	"GNU C11 7.3.1 20180622 (release) [ARM/embedded-7-br"
@@ -15658,7 +15658,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13236      725F6362 
  13236      00
  13237              	.LASF50:
-ARM GAS  /tmp/ccUGHOPy.s 			page 262
+ARM GAS  /tmp/cchUepLE.s 			page 262
 
 
  13238 21d1 74687265 		.ascii	"thread_reference_t\000"
@@ -15718,7 +15718,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13263              	.LASF405:
  13264 2260 55415254 		.ascii	"UART_READY\000"
  13264      5F524541 
-ARM GAS  /tmp/ccUGHOPy.s 			page 263
+ARM GAS  /tmp/cchUepLE.s 			page 263
 
 
  13264      445900
@@ -15778,7 +15778,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13296 22e1 5F6D756C 		.ascii	"_mult\000"
  13296      7400
  13297              	.LASF9:
-ARM GAS  /tmp/ccUGHOPy.s 			page 264
+ARM GAS  /tmp/cchUepLE.s 			page 264
 
 
  13298 22e7 73686F72 		.ascii	"short int\000"
@@ -15838,7 +15838,7 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13326      7A6500
  13327              	.LASF409:
  13328 2379 55415254 		.ascii	"UART_TX_COMPLETE\000"
-ARM GAS  /tmp/ccUGHOPy.s 			page 265
+ARM GAS  /tmp/cchUepLE.s 			page 265
 
 
  13328      5F54585F 
@@ -15868,58 +15868,58 @@ ARM GAS  /tmp/ccUGHOPy.s 			page 1
  13340      74617465 
  13340      5F7400
  13341              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q3-update) 7.3.1 20180622 (release) [AR
-ARM GAS  /tmp/ccUGHOPy.s 			page 266
+ARM GAS  /tmp/cchUepLE.s 			page 266
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 mpu6500.c
-     /tmp/ccUGHOPy.s:18     .text.mpu6500_tempCtrl_thd:0000000000000000 $t
-     /tmp/ccUGHOPy.s:25     .text.mpu6500_tempCtrl_thd:0000000000000000 mpu6500_tempCtrl_thd
-     /tmp/ccUGHOPy.s:244    .text.mpu6500_tempCtrl_thd:0000000000000144 $d
-     /tmp/ccUGHOPy.s:263    .text.mpu6500_getData:0000000000000000 $t
-     /tmp/ccUGHOPy.s:271    .text.mpu6500_getData:0000000000000000 mpu6500_getData
-     /tmp/ccUGHOPy.s:284    .text.mpu6500_getData:0000000000000004 $d
-     /tmp/ccUGHOPy.s:289    .text.mpu6500_sleep:0000000000000000 $t
-     /tmp/ccUGHOPy.s:297    .text.mpu6500_sleep:0000000000000000 mpu6500_sleep
-     /tmp/ccUGHOPy.s:313    .text.mpu6500_sleep:0000000000000008 $d
-     /tmp/ccUGHOPy.s:318    .text.mpu6500_useGyro:0000000000000000 $t
-     /tmp/ccUGHOPy.s:326    .text.mpu6500_useGyro:0000000000000000 mpu6500_useGyro
-     /tmp/ccUGHOPy.s:342    .text.mpu6500_useGyro:0000000000000008 $d
-     /tmp/ccUGHOPy.s:347    .text.mpu6500_resume:0000000000000000 $t
-     /tmp/ccUGHOPy.s:355    .text.mpu6500_resume:0000000000000000 mpu6500_resume
-     /tmp/ccUGHOPy.s:409    .text.mpu6500_resume:0000000000000040 $d
-     /tmp/ccUGHOPy.s:415    .text.mpu6500_getDataRaw:0000000000000000 $t
-     /tmp/ccUGHOPy.s:423    .text.mpu6500_getDataRaw:0000000000000000 mpu6500_getDataRaw
-     /tmp/ccUGHOPy.s:532    .text.mpu6500_getDataRaw:00000000000000a8 $d
-     /tmp/ccUGHOPy.s:540    .text.mpu6500_update:0000000000000000 $t
-     /tmp/ccUGHOPy.s:548    .text.mpu6500_update:0000000000000000 mpu6500_update
-     /tmp/ccUGHOPy.s:724    .text.mpu6500_update:000000000000010c $d
-     /tmp/ccUGHOPy.s:731    .text.mpu6500_Thd:0000000000000000 $t
-     /tmp/ccUGHOPy.s:738    .text.mpu6500_Thd:0000000000000000 mpu6500_Thd
-     /tmp/ccUGHOPy.s:1109   .text.mpu6500_Thd:0000000000000188 $d
-     /tmp/ccUGHOPy.s:1124   .text.mpu6500_start:0000000000000000 $t
-     /tmp/ccUGHOPy.s:1132   .text.mpu6500_start:0000000000000000 mpu6500_start
-     /tmp/ccUGHOPy.s:1368   .text.mpu6500_start:0000000000000158 $d
-     /tmp/ccUGHOPy.s:1385   .rodata:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1402   .bss.g_IMU1:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1406   .bss.g_IMU1:0000000000000000 g_IMU1
-     /tmp/ccUGHOPy.s:1409   .bss.gyro_lpf:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1413   .bss.gyro_lpf:0000000000000000 gyro_lpf
-     /tmp/ccUGHOPy.s:1416   .bss.imuRXData:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1420   .bss.imuRXData:0000000000000000 imuRXData
-     /tmp/ccUGHOPy.s:1423   .bss.imuTXData:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1427   .bss.imuTXData:0000000000000000 imuTXData
-     /tmp/ccUGHOPy.s:1430   .bss.mpu6500_Thd_wa:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1434   .bss.mpu6500_Thd_wa:0000000000000000 mpu6500_Thd_wa
-     /tmp/ccUGHOPy.s:1437   .bss.mpu6500_tempCtrl_thd_wa:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1441   .bss.mpu6500_tempCtrl_thd_wa:0000000000000000 mpu6500_tempCtrl_thd_wa
-     /tmp/ccUGHOPy.s:1444   .bss.pid_output.10987:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1448   .bss.pid_output.10987:0000000000000000 pid_output.10987
-     /tmp/ccUGHOPy.s:1451   .bss.temp_pid.10985:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1455   .bss.temp_pid.10985:0000000000000000 temp_pid.10985
-     /tmp/ccUGHOPy.s:1461   .data.imu_setState:0000000000000000 imu_setState
-     /tmp/ccUGHOPy.s:1464   .rodata.MPU6500_SPI_cfg:0000000000000000 $d
-     /tmp/ccUGHOPy.s:1468   .rodata.MPU6500_SPI_cfg:0000000000000000 MPU6500_SPI_cfg
+     /tmp/cchUepLE.s:18     .text.mpu6500_tempCtrl_thd:0000000000000000 $t
+     /tmp/cchUepLE.s:25     .text.mpu6500_tempCtrl_thd:0000000000000000 mpu6500_tempCtrl_thd
+     /tmp/cchUepLE.s:244    .text.mpu6500_tempCtrl_thd:0000000000000144 $d
+     /tmp/cchUepLE.s:263    .text.mpu6500_getData:0000000000000000 $t
+     /tmp/cchUepLE.s:271    .text.mpu6500_getData:0000000000000000 mpu6500_getData
+     /tmp/cchUepLE.s:284    .text.mpu6500_getData:0000000000000004 $d
+     /tmp/cchUepLE.s:289    .text.mpu6500_sleep:0000000000000000 $t
+     /tmp/cchUepLE.s:297    .text.mpu6500_sleep:0000000000000000 mpu6500_sleep
+     /tmp/cchUepLE.s:313    .text.mpu6500_sleep:0000000000000008 $d
+     /tmp/cchUepLE.s:318    .text.mpu6500_useGyro:0000000000000000 $t
+     /tmp/cchUepLE.s:326    .text.mpu6500_useGyro:0000000000000000 mpu6500_useGyro
+     /tmp/cchUepLE.s:342    .text.mpu6500_useGyro:0000000000000008 $d
+     /tmp/cchUepLE.s:347    .text.mpu6500_resume:0000000000000000 $t
+     /tmp/cchUepLE.s:355    .text.mpu6500_resume:0000000000000000 mpu6500_resume
+     /tmp/cchUepLE.s:409    .text.mpu6500_resume:0000000000000040 $d
+     /tmp/cchUepLE.s:415    .text.mpu6500_getDataRaw:0000000000000000 $t
+     /tmp/cchUepLE.s:423    .text.mpu6500_getDataRaw:0000000000000000 mpu6500_getDataRaw
+     /tmp/cchUepLE.s:532    .text.mpu6500_getDataRaw:00000000000000a8 $d
+     /tmp/cchUepLE.s:540    .text.mpu6500_update:0000000000000000 $t
+     /tmp/cchUepLE.s:548    .text.mpu6500_update:0000000000000000 mpu6500_update
+     /tmp/cchUepLE.s:724    .text.mpu6500_update:000000000000010c $d
+     /tmp/cchUepLE.s:731    .text.mpu6500_Thd:0000000000000000 $t
+     /tmp/cchUepLE.s:738    .text.mpu6500_Thd:0000000000000000 mpu6500_Thd
+     /tmp/cchUepLE.s:1109   .text.mpu6500_Thd:0000000000000188 $d
+     /tmp/cchUepLE.s:1124   .text.mpu6500_start:0000000000000000 $t
+     /tmp/cchUepLE.s:1132   .text.mpu6500_start:0000000000000000 mpu6500_start
+     /tmp/cchUepLE.s:1368   .text.mpu6500_start:0000000000000158 $d
+     /tmp/cchUepLE.s:1385   .rodata:0000000000000000 $d
+     /tmp/cchUepLE.s:1402   .bss.g_IMU1:0000000000000000 $d
+     /tmp/cchUepLE.s:1406   .bss.g_IMU1:0000000000000000 g_IMU1
+     /tmp/cchUepLE.s:1409   .bss.gyro_lpf:0000000000000000 $d
+     /tmp/cchUepLE.s:1413   .bss.gyro_lpf:0000000000000000 gyro_lpf
+     /tmp/cchUepLE.s:1416   .bss.imuRXData:0000000000000000 $d
+     /tmp/cchUepLE.s:1420   .bss.imuRXData:0000000000000000 imuRXData
+     /tmp/cchUepLE.s:1423   .bss.imuTXData:0000000000000000 $d
+     /tmp/cchUepLE.s:1427   .bss.imuTXData:0000000000000000 imuTXData
+     /tmp/cchUepLE.s:1430   .bss.mpu6500_Thd_wa:0000000000000000 $d
+     /tmp/cchUepLE.s:1434   .bss.mpu6500_Thd_wa:0000000000000000 mpu6500_Thd_wa
+     /tmp/cchUepLE.s:1437   .bss.mpu6500_tempCtrl_thd_wa:0000000000000000 $d
+     /tmp/cchUepLE.s:1441   .bss.mpu6500_tempCtrl_thd_wa:0000000000000000 mpu6500_tempCtrl_thd_wa
+     /tmp/cchUepLE.s:1444   .bss.pid_output.10987:0000000000000000 $d
+     /tmp/cchUepLE.s:1448   .bss.pid_output.10987:0000000000000000 pid_output.10987
+     /tmp/cchUepLE.s:1451   .bss.temp_pid.10985:0000000000000000 $d
+     /tmp/cchUepLE.s:1455   .bss.temp_pid.10985:0000000000000000 temp_pid.10985
+     /tmp/cchUepLE.s:1461   .data.imu_setState:0000000000000000 imu_setState
+     /tmp/cchUepLE.s:1464   .rodata.MPU6500_SPI_cfg:0000000000000000 $d
+     /tmp/cchUepLE.s:1468   .rodata.MPU6500_SPI_cfg:0000000000000000 MPU6500_SPI_cfg
 
 UNDEFINED SYMBOLS
 _pal_lld_setgroupmode
@@ -15928,7 +15928,7 @@ pid_init
 pid_load_param
 pwmEnableChannel
 pid_update
-ARM GAS  /tmp/ccUGHOPy.s 			page 267
+ARM GAS  /tmp/cchUepLE.s 			page 267
 
 
 chThdSleep

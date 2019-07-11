@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdG71er.s 			page 1
+ARM GAS  /tmp/ccO6m6Rk.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
   55              		@ link register save eliminated.
   56              	.LVL1:
   57              		.loc 1 71 0
-ARM GAS  /tmp/ccdG71er.s 			page 2
+ARM GAS  /tmp/ccO6m6Rk.s 			page 2
 
 
   58 0000 0023     		movs	r3, #0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  112              	.LBE109:
  113              	.LBE108:
  114              	.LBE107:
-ARM GAS  /tmp/ccdG71er.s 			page 3
+ARM GAS  /tmp/ccO6m6Rk.s 			page 3
 
 
  115              		.loc 1 95 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  169              		.size	adcStart, .-adcStart
  170              		.section	.text.adcStop,"ax",%progbits
  171              		.align	1
-ARM GAS  /tmp/ccdG71er.s 			page 4
+ARM GAS  /tmp/ccO6m6Rk.s 			page 4
 
 
  172              		.p2align 2,,3
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  226 000e 0122     		movs	r2, #1
  227              		.loc 1 125 0
  228 0010 0023     		movs	r3, #0
-ARM GAS  /tmp/ccdG71er.s 			page 5
+ARM GAS  /tmp/ccO6m6Rk.s 			page 5
 
 
  229              		.loc 1 126 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  283              	.LBB141:
  284              	.LBB142:
  285              	.LBB143:
-ARM GAS  /tmp/ccdG71er.s 			page 6
+ARM GAS  /tmp/ccO6m6Rk.s 			page 6
 
 
  286              		.loc 3 493 0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  340              		.size	adcStartConversion, .-adcStartConversion
  341 001e 00BF     		.section	.text.adcStartConversionI,"ax",%progbits
  342              		.align	1
-ARM GAS  /tmp/ccdG71er.s 			page 7
+ARM GAS  /tmp/ccO6m6Rk.s 			page 7
 
 
  343              		.p2align 2,,3
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  397              	.LBB153:
  398              	.LBB154:
  399              	.LBB155:
-ARM GAS  /tmp/ccdG71er.s 			page 8
+ARM GAS  /tmp/ccO6m6Rk.s 			page 8
 
 
  400              	.LBB156:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  454              	.LBB163:
  455              	.LBB164:
  456              	.LBB165:
-ARM GAS  /tmp/ccdG71er.s 			page 9
+ARM GAS  /tmp/ccO6m6Rk.s 			page 9
 
 
  457              	.LBB166:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  511              		.thumb_func
  512              		.fpu fpv4-sp-d16
  513              		.type	adcStopConversionI, %function
-ARM GAS  /tmp/ccdG71er.s 			page 10
+ARM GAS  /tmp/ccO6m6Rk.s 			page 10
 
 
  514              	adcStopConversionI:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  568              		.size	adcStopConversionI, .-adcStopConversionI
  569              		.section	.text.adcConvert,"ax",%progbits
  570              		.align	1
-ARM GAS  /tmp/ccdG71er.s 			page 11
+ARM GAS  /tmp/ccO6m6Rk.s 			page 11
 
 
  571              		.p2align 2,,3
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  625              	.LBE182:
  626              	.LBB184:
  627              	.LBB185:
-ARM GAS  /tmp/ccdG71er.s 			page 12
+ARM GAS  /tmp/ccO6m6Rk.s 			page 12
 
 
  628              		.loc 2 735 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  682              	.LVL40:
  683 0002 FFF7FEBF 		b	chMtxLock
  684              	.LVL41:
-ARM GAS  /tmp/ccdG71er.s 			page 13
+ARM GAS  /tmp/ccO6m6Rk.s 			page 13
 
 
  685              	.LBE193:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  739              		.file 22 "./RM18A-ChibiOS18-Core/chibios/os/rt/include/chevents.h"
  740              		.file 23 "./RM18A-ChibiOS18-Core/chibios/os/oslib/include/chmemcore.h"
  741              		.file 24 "./RM18A-ChibiOS18-Core/chibios/os/oslib/include/chmempools.h"
-ARM GAS  /tmp/ccdG71er.s 			page 14
+ARM GAS  /tmp/ccO6m6Rk.s 			page 14
 
 
  742              		.file 25 "./RM18A-ChibiOS18-Core/chibios/os/oslib/include/chfactory.h"
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  796 0045 05       		.byte	0x5
  797 0046 9E0D0000 		.4byte	.LASF1
  798 004a 05       		.uleb128 0x5
-ARM GAS  /tmp/ccdG71er.s 			page 15
+ARM GAS  /tmp/ccO6m6Rk.s 			page 15
 
 
  799 004b 08       		.byte	0x8
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  853 00b4 07       		.byte	0x7
  854 00b5 1F120000 		.4byte	.LASF15
  855 00b9 03       		.uleb128 0x3
-ARM GAS  /tmp/ccdG71er.s 			page 16
+ARM GAS  /tmp/ccO6m6Rk.s 			page 16
 
 
  856 00ba FA040000 		.4byte	.LASF16
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  910 0135 07       		.byte	0x7
  911 0136 2E       		.byte	0x2e
  912 0137 E9000000 		.4byte	0xe9
-ARM GAS  /tmp/ccdG71er.s 			page 17
+ARM GAS  /tmp/ccO6m6Rk.s 			page 17
 
 
  913 013b 03       		.uleb128 0x3
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  967 01ad 08       		.uleb128 0x8
  968 01ae E0170000 		.4byte	.LASF34
  969 01b2 09       		.byte	0x9
-ARM GAS  /tmp/ccdG71er.s 			page 18
+ARM GAS  /tmp/ccO6m6Rk.s 			page 18
 
 
  970 01b3 93       		.byte	0x93
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1024 021f 0E01     		.2byte	0x10e
  1025 0221 90020000 		.4byte	0x290
  1026 0225 2C       		.byte	0x2c
-ARM GAS  /tmp/ccdG71er.s 			page 19
+ARM GAS  /tmp/ccO6m6Rk.s 			page 19
 
 
  1027 0226 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1081 0296 45       		.byte	0x45
  1082 0297 9B020000 		.4byte	0x29b
  1083 029b 07       		.uleb128 0x7
-ARM GAS  /tmp/ccdG71er.s 			page 20
+ARM GAS  /tmp/ccO6m6Rk.s 			page 20
 
 
  1084 029c 92120000 		.4byte	.LASF53
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1138 030d 100C0000 		.4byte	.LASF35
  1139 0311 09       		.byte	0x9
  1140 0312 6601     		.2byte	0x166
-ARM GAS  /tmp/ccdG71er.s 			page 21
+ARM GAS  /tmp/ccO6m6Rk.s 			page 21
 
 
  1141 0314 66020000 		.4byte	0x266
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1195 0385 F6150000 		.4byte	.LASF62
  1196 0389 09       		.byte	0x9
  1197 038a 3D01     		.2byte	0x13d
-ARM GAS  /tmp/ccdG71er.s 			page 22
+ARM GAS  /tmp/ccO6m6Rk.s 			page 22
 
 
  1198 038c 27030000 		.4byte	0x327
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1252 03fe 7001     		.2byte	0x170
  1253 0400 12040000 		.4byte	0x412
  1254 0404 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccdG71er.s 			page 23
+ARM GAS  /tmp/ccO6m6Rk.s 			page 23
 
 
  1255 0405 AC060000 		.4byte	.LASF68
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1309 0477 CA0D0000 		.4byte	.LASF75
  1310 047b 0A       		.byte	0xa
  1311 047c 79       		.byte	0x79
-ARM GAS  /tmp/ccdG71er.s 			page 24
+ARM GAS  /tmp/ccO6m6Rk.s 			page 24
 
 
  1312 047d E9000000 		.4byte	0xe9
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1366 04f5 CC       		.byte	0xcc
  1367 04f6 F4000000 		.4byte	0xf4
  1368 04fa 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 25
+ARM GAS  /tmp/ccO6m6Rk.s 			page 25
 
 
  1369 04fb 09       		.uleb128 0x9
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1423 0567 09       		.uleb128 0x9
  1424 0568 4C545200 		.ascii	"LTR\000"
  1425 056c 0D       		.byte	0xd
-ARM GAS  /tmp/ccdG71er.s 			page 26
+ARM GAS  /tmp/ccO6m6Rk.s 			page 26
 
 
  1426 056d D6       		.byte	0xd6
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1480 05d8 DF       		.byte	0xdf
  1481 05d9 F4000000 		.4byte	0xf4
  1482 05dd 4C       		.byte	0x4c
-ARM GAS  /tmp/ccdG71er.s 			page 27
+ARM GAS  /tmp/ccO6m6Rk.s 			page 27
 
 
  1483 05de 00       		.byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1537 0647 0D       		.byte	0xd
  1538 0648 FE       		.byte	0xfe
  1539 0649 F4000000 		.4byte	0xf4
-ARM GAS  /tmp/ccdG71er.s 			page 28
+ARM GAS  /tmp/ccO6m6Rk.s 			page 28
 
 
  1540 064d 04       		.byte	0x4
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1594 06bc 4D535200 		.ascii	"MSR\000"
  1595 06c0 0D       		.byte	0xd
  1596 06c1 1401     		.2byte	0x114
-ARM GAS  /tmp/ccdG71er.s 			page 29
+ARM GAS  /tmp/ccO6m6Rk.s 			page 29
 
 
  1597 06c3 F4000000 		.4byte	0xf4
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1651 0739 FA070000 		.4byte	0x7fa
  1652 073d B001     		.2byte	0x1b0
  1653 073f 19       		.uleb128 0x19
-ARM GAS  /tmp/ccdG71er.s 			page 30
+ARM GAS  /tmp/ccO6m6Rk.s 			page 30
 
 
  1654 0740 5A060000 		.4byte	.LASF109
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1708 07be 86060000 		.4byte	.LASF117
  1709 07c2 0D       		.byte	0xd
  1710 07c3 2701     		.2byte	0x127
-ARM GAS  /tmp/ccdG71er.s 			page 31
+ARM GAS  /tmp/ccO6m6Rk.s 			page 31
 
 
  1711 07c5 81040000 		.4byte	0x481
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1765 083f 0A       		.uleb128 0xa
  1766 0840 435200   		.ascii	"CR\000"
  1767 0843 0D       		.byte	0xd
-ARM GAS  /tmp/ccdG71er.s 			page 32
+ARM GAS  /tmp/ccO6m6Rk.s 			page 32
 
 
  1768 0844 7301     		.2byte	0x173
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1822 08bd 00       		.byte	0
  1823 08be 04       		.uleb128 0x4
  1824 08bf AE080000 		.4byte	0x8ae
-ARM GAS  /tmp/ccdG71er.s 			page 33
+ARM GAS  /tmp/ccO6m6Rk.s 			page 33
 
 
  1825 08c3 17       		.uleb128 0x17
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1879 0934 D50B0000 		.4byte	.LASF126
  1880 0938 0D       		.byte	0xd
  1881 0939 7702     		.2byte	0x277
-ARM GAS  /tmp/ccdG71er.s 			page 34
+ARM GAS  /tmp/ccO6m6Rk.s 			page 34
 
 
  1882 093b F4000000 		.4byte	0xf4
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1936 09ae 14       		.byte	0x14
  1937 09af 0B       		.uleb128 0xb
  1938 09b0 CD140000 		.4byte	.LASF131
-ARM GAS  /tmp/ccdG71er.s 			page 35
+ARM GAS  /tmp/ccO6m6Rk.s 			page 35
 
 
  1939 09b4 0D       		.byte	0xd
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  1993 0a24 5403     		.2byte	0x354
  1994 0a26 F4000000 		.4byte	0xf4
  1995 0a2a 10       		.byte	0x10
-ARM GAS  /tmp/ccdG71er.s 			page 36
+ARM GAS  /tmp/ccO6m6Rk.s 			page 36
 
 
  1996 0a2b 0A       		.uleb128 0xa
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2050 0a9c 5901     		.2byte	0x159
  2051 0a9e E10B0000 		.4byte	0xbe1
  2052 0aa2 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccdG71er.s 			page 37
+ARM GAS  /tmp/ccO6m6Rk.s 			page 37
 
 
  2053 0aa3 73313600 		.ascii	"s16\000"
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2107 0b18 73323500 		.ascii	"s25\000"
  2108 0b1c 0F       		.byte	0xf
  2109 0b1d 6401     		.2byte	0x164
-ARM GAS  /tmp/ccdG71er.s 			page 38
+ARM GAS  /tmp/ccO6m6Rk.s 			page 38
 
 
  2110 0b1f 670A0000 		.4byte	0xa67
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2164 0b91 670A0000 		.4byte	0xa67
  2165 0b95 48       		.byte	0x48
  2166 0b96 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccdG71er.s 			page 39
+ARM GAS  /tmp/ccO6m6Rk.s 			page 39
 
 
  2167 0b97 723700   		.ascii	"r7\000"
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2221 0c05 F4000000 		.4byte	0xf4
  2222 0c09 04       		.byte	0x4
  2223 0c0a 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccdG71er.s 			page 40
+ARM GAS  /tmp/ccO6m6Rk.s 			page 40
 
 
  2224 0c0b EA130000 		.4byte	.LASF141
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2278 0c7f 41525200 		.ascii	"ARR\000"
  2279 0c83 10       		.byte	0x10
  2280 0c84 0102     		.2byte	0x201
-ARM GAS  /tmp/ccdG71er.s 			page 41
+ARM GAS  /tmp/ccO6m6Rk.s 			page 41
 
 
  2281 0c86 F4000000 		.4byte	0xf4
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2335 0cf9 0A02     		.2byte	0x20a
  2336 0cfb E70B0000 		.4byte	0xbe7
  2337 0cff 15       		.uleb128 0x15
-ARM GAS  /tmp/ccdG71er.s 			page 42
+ARM GAS  /tmp/ccO6m6Rk.s 			page 42
 
 
  2338 0d00 04       		.byte	0x4
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2392 0d6f F9       		.byte	0xf9
  2393 0d70 E30D0000 		.4byte	0xde3
  2394 0d74 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccdG71er.s 			page 43
+ARM GAS  /tmp/ccO6m6Rk.s 			page 43
 
 
  2395 0d75 24030000 		.4byte	.LASF160
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2449 0de2 00       		.byte	0
  2450 0de3 0C       		.uleb128 0xc
  2451 0de4 04       		.byte	0x4
-ARM GAS  /tmp/ccdG71er.s 			page 44
+ARM GAS  /tmp/ccO6m6Rk.s 			page 44
 
 
  2452 0de5 B20D0000 		.4byte	0xdb2
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2506 0e55 B9000000 		.4byte	0xb9
  2507 0e59 05       		.byte	0x5
  2508 0e5a 08       		.uleb128 0x8
-ARM GAS  /tmp/ccdG71er.s 			page 45
+ARM GAS  /tmp/ccO6m6Rk.s 			page 45
 
 
  2509 0e5b F6130000 		.4byte	.LASF169
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2563 0ec7 5B0C0000 		.4byte	.LASF178
  2564 0ecb 15       		.byte	0x15
  2565 0ecc 41       		.byte	0x41
-ARM GAS  /tmp/ccdG71er.s 			page 46
+ARM GAS  /tmp/ccO6m6Rk.s 			page 46
 
 
  2566 0ecd B9000000 		.4byte	0xb9
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2620 0f3f 13       		.byte	0x13
  2621 0f40 34       		.byte	0x34
  2622 0f41 B20D0000 		.4byte	0xdb2
-ARM GAS  /tmp/ccdG71er.s 			page 47
+ARM GAS  /tmp/ccO6m6Rk.s 			page 47
 
 
  2623 0f45 0C       		.uleb128 0xc
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2677 0fb1 08       		.uleb128 0x8
  2678 0fb2 91190000 		.4byte	.LASF51
  2679 0fb6 16       		.byte	0x16
-ARM GAS  /tmp/ccdG71er.s 			page 48
+ARM GAS  /tmp/ccO6m6Rk.s 			page 48
 
 
  2680 0fb7 4B       		.byte	0x4b
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2734 1023 F50F0000 		.4byte	0xff5
  2735 1027 14       		.uleb128 0x14
  2736 1028 63190000 		.4byte	.LASF199
-ARM GAS  /tmp/ccdG71er.s 			page 49
+ARM GAS  /tmp/ccO6m6Rk.s 			page 49
 
 
  2737 102c 17       		.byte	0x17
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2791 1095 07       		.uleb128 0x7
  2792 1096 AB010000 		.4byte	.LASF205
  2793 109a 10       		.byte	0x10
-ARM GAS  /tmp/ccdG71er.s 			page 50
+ARM GAS  /tmp/ccO6m6Rk.s 			page 50
 
 
  2794 109b 19       		.byte	0x19
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2848 1107 95160000 		.4byte	.LASF208
  2849 110b 19       		.byte	0x19
  2850 110c BE       		.byte	0xbe
-ARM GAS  /tmp/ccdG71er.s 			page 51
+ARM GAS  /tmp/ccO6m6Rk.s 			page 51
 
 
  2851 110d E7100000 		.4byte	0x10e7
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2905 1185 40       		.byte	0x40
  2906 1186 0B       		.uleb128 0xb
  2907 1187 99090000 		.4byte	.LASF217
-ARM GAS  /tmp/ccdG71er.s 			page 52
+ARM GAS  /tmp/ccO6m6Rk.s 			page 52
 
 
  2908 118b 19       		.byte	0x19
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  2962 11fe B9000000 		.4byte	0xb9
  2963 1202 0B       		.byte	0xb
  2964 1203 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 53
+ARM GAS  /tmp/ccO6m6Rk.s 			page 53
 
 
  2965 1204 0C       		.uleb128 0xc
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3019 1281 04       		.byte	0x4
  3020 1282 67120000 		.4byte	0x1267
  3021 1286 20       		.uleb128 0x20
-ARM GAS  /tmp/ccdG71er.s 			page 54
+ARM GAS  /tmp/ccO6m6Rk.s 			page 54
 
 
  3022 1287 3B010000 		.4byte	0x13b
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3076 130b 00       		.byte	0
  3077 130c 0C       		.uleb128 0xc
  3078 130d 04       		.byte	0x4
-ARM GAS  /tmp/ccdG71er.s 			page 55
+ARM GAS  /tmp/ccO6m6Rk.s 			page 55
 
 
  3079 130e EE120000 		.4byte	0x12ee
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3133 1389 1B       		.byte	0x1b
  3134 138a 4E       		.byte	0x4e
  3135 138b 16100000 		.4byte	0x1016
-ARM GAS  /tmp/ccdG71er.s 			page 56
+ARM GAS  /tmp/ccO6m6Rk.s 			page 56
 
 
  3136 138f 0C       		.byte	0xc
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3190 13fb F2180000 		.4byte	.LASF240
  3191 13ff 1B       		.byte	0x1b
  3192 1400 6D       		.byte	0x6d
-ARM GAS  /tmp/ccdG71er.s 			page 57
+ARM GAS  /tmp/ccO6m6Rk.s 			page 57
 
 
  3193 1401 55130000 		.4byte	0x1355
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3247 1471 22       		.uleb128 0x22
  3248 1472 930C0000 		.4byte	.LASF249
  3249 1476 04       		.byte	0x4
-ARM GAS  /tmp/ccdG71er.s 			page 58
+ARM GAS  /tmp/ccO6m6Rk.s 			page 58
 
 
  3250 1477 22       		.uleb128 0x22
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3304 14e3 5B020000 		.4byte	0x25b
  3305 14e7 14       		.byte	0x14
  3306 14e8 08       		.uleb128 0x8
-ARM GAS  /tmp/ccdG71er.s 			page 59
+ARM GAS  /tmp/ccO6m6Rk.s 			page 59
 
 
  3307 14e9 7C0E0000 		.4byte	.LASF259
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3361 1558 1E       		.byte	0x1e
  3362 1559 7F       		.byte	0x7f
  3363 155a FB150000 		.4byte	0x15fb
-ARM GAS  /tmp/ccdG71er.s 			page 60
+ARM GAS  /tmp/ccO6m6Rk.s 			page 60
 
 
  3364 155e 08       		.uleb128 0x8
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3418 15ca 09       		.uleb128 0x9
  3419 15cb 6C747200 		.ascii	"ltr\000"
  3420 15cf 1E       		.byte	0x1e
-ARM GAS  /tmp/ccdG71er.s 			page 61
+ARM GAS  /tmp/ccO6m6Rk.s 			page 61
 
 
  3421 15d0 91       		.byte	0x91
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3475 1640 13       		.uleb128 0x13
  3476 1641 42100000 		.4byte	.LASF282
  3477 1645 1F       		.byte	0x1f
-ARM GAS  /tmp/ccdG71er.s 			page 62
+ARM GAS  /tmp/ccO6m6Rk.s 			page 62
 
 
  3478 1646 C701     		.2byte	0x1c7
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3532 16b6 D9160000 		.4byte	0x16d9
  3533 16ba 22       		.uleb128 0x22
  3534 16bb C60E0000 		.4byte	.LASF285
-ARM GAS  /tmp/ccdG71er.s 			page 63
+ARM GAS  /tmp/ccO6m6Rk.s 			page 63
 
 
  3535 16bf 00       		.byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3589 1730 0B       		.uleb128 0xb
  3590 1731 C6010000 		.4byte	.LASF294
  3591 1735 21       		.byte	0x21
-ARM GAS  /tmp/ccdG71er.s 			page 64
+ARM GAS  /tmp/ccO6m6Rk.s 			page 64
 
 
  3592 1736 8C01     		.2byte	0x18c
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3646 17aa 08       		.byte	0x8
  3647 17ab 21       		.byte	0x21
  3648 17ac 3601     		.2byte	0x136
-ARM GAS  /tmp/ccdG71er.s 			page 65
+ARM GAS  /tmp/ccO6m6Rk.s 			page 65
 
 
  3649 17ae CD170000 		.4byte	0x17cd
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3703 1822 6F080000 		.4byte	.LASF304
  3704 1826 03       		.byte	0x3
  3705 1827 22       		.uleb128 0x22
-ARM GAS  /tmp/ccdG71er.s 			page 66
+ARM GAS  /tmp/ccO6m6Rk.s 			page 66
 
 
  3706 1828 E3030000 		.4byte	.LASF305
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3760 1899 35010000 		.4byte	.LASF315
  3761 189d 02       		.byte	0x2
  3762 189e 22       		.uleb128 0x22
-ARM GAS  /tmp/ccdG71er.s 			page 67
+ARM GAS  /tmp/ccO6m6Rk.s 			page 67
 
 
  3763 189f FA100000 		.4byte	.LASF316
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3817 1914 34180000 		.4byte	0x1834
  3818 1918 00       		.byte	0
  3819 1919 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccdG71er.s 			page 68
+ARM GAS  /tmp/ccO6m6Rk.s 			page 68
 
 
  3820 191a E4010000 		.4byte	.LASF254
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3874 198f 69326300 		.ascii	"i2c\000"
  3875 1993 23       		.byte	0x23
  3876 1994 CA01     		.2byte	0x1ca
-ARM GAS  /tmp/ccdG71er.s 			page 69
+ARM GAS  /tmp/ccO6m6Rk.s 			page 69
 
 
  3877 1996 A2190000 		.4byte	0x19a2
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3931 1a05 E4010000 		.4byte	.LASF254
  3932 1a09 25       		.byte	0x25
  3933 1a0a 6B02     		.2byte	0x26b
-ARM GAS  /tmp/ccdG71er.s 			page 70
+ARM GAS  /tmp/ccO6m6Rk.s 			page 70
 
 
  3934 1a0c 4E1B0000 		.4byte	0x1b4e
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  3988 1a81 16       		.uleb128 0x16
  3989 1a82 76040000 		.4byte	.LASF341
  3990 1a86 25       		.byte	0x25
-ARM GAS  /tmp/ccdG71er.s 			page 71
+ARM GAS  /tmp/ccO6m6Rk.s 			page 71
 
 
  3991 1a87 1402     		.2byte	0x214
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4045 1afd 25       		.byte	0x25
  4046 1afe 4602     		.2byte	0x246
  4047 1b00 531A0000 		.4byte	0x1a53
-ARM GAS  /tmp/ccdG71er.s 			page 72
+ARM GAS  /tmp/ccO6m6Rk.s 			page 72
 
 
  4048 1b04 08       		.byte	0x8
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4102 1b7a DF190000 		.4byte	0x19df
  4103 1b7e 21       		.uleb128 0x21
  4104 1b7f 07       		.byte	0x7
-ARM GAS  /tmp/ccdG71er.s 			page 73
+ARM GAS  /tmp/ccO6m6Rk.s 			page 73
 
 
  4105 1b80 01       		.byte	0x1
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4159 1bef 0C       		.byte	0xc
  4160 1bf0 08       		.uleb128 0x8
  4161 1bf1 3E040000 		.4byte	.LASF360
-ARM GAS  /tmp/ccdG71er.s 			page 74
+ARM GAS  /tmp/ccO6m6Rk.s 			page 74
 
 
  4162 1bf5 26       		.byte	0x26
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4216 1c60 26       		.byte	0x26
  4217 1c61 71       		.byte	0x71
  4218 1c62 80120000 		.4byte	0x1280
-ARM GAS  /tmp/ccdG71er.s 			page 75
+ARM GAS  /tmp/ccO6m6Rk.s 			page 75
 
 
  4219 1c66 08       		.byte	0x8
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4273 1cd5 0F       		.byte	0xf
  4274 1cd6 00       		.byte	0
  4275 1cd7 0C       		.uleb128 0xc
-ARM GAS  /tmp/ccdG71er.s 			page 76
+ARM GAS  /tmp/ccO6m6Rk.s 			page 76
 
 
  4276 1cd8 04       		.byte	0x4
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4330 1d44 77150000 		.4byte	.LASF258
  4331 1d48 28       		.byte	0x28
  4332 1d49 CD       		.byte	0xcd
-ARM GAS  /tmp/ccdG71er.s 			page 77
+ARM GAS  /tmp/ccO6m6Rk.s 			page 77
 
 
  4333 1d4a 5B020000 		.4byte	0x25b
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4387 1db9 28       		.byte	0x28
  4388 1dba 9E       		.byte	0x9e
  4389 1dbb E51D0000 		.4byte	0x1de5
-ARM GAS  /tmp/ccdG71er.s 			page 78
+ARM GAS  /tmp/ccO6m6Rk.s 			page 78
 
 
  4390 1dbf 04       		.byte	0x4
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4444 1e31 0C       		.uleb128 0xc
  4445 1e32 04       		.byte	0x4
  4446 1e33 D7090000 		.4byte	0x9d7
-ARM GAS  /tmp/ccdG71er.s 			page 79
+ARM GAS  /tmp/ccO6m6Rk.s 			page 79
 
 
  4447 1e37 21       		.uleb128 0x21
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4501 1ea0 22       		.uleb128 0x22
  4502 1ea1 6F120000 		.4byte	.LASF395
  4503 1ea5 01       		.byte	0x1
-ARM GAS  /tmp/ccdG71er.s 			page 80
+ARM GAS  /tmp/ccO6m6Rk.s 			page 80
 
 
  4504 1ea6 22       		.uleb128 0x22
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4558 1f1d 08       		.byte	0x8
  4559 1f1e 0B       		.uleb128 0xb
  4560 1f1f 9F070000 		.4byte	.LASF403
-ARM GAS  /tmp/ccdG71er.s 			page 81
+ARM GAS  /tmp/ccO6m6Rk.s 			page 81
 
 
  4561 1f23 2B       		.byte	0x2b
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4615 1f97 0C       		.uleb128 0xc
  4616 1f98 04       		.byte	0x4
  4617 1f99 C41E0000 		.4byte	0x1ec4
-ARM GAS  /tmp/ccdG71er.s 			page 82
+ARM GAS  /tmp/ccO6m6Rk.s 			page 82
 
 
  4618 1f9d 16       		.uleb128 0x16
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4672 2012 A3090000 		.4byte	.LASF412
  4673 2016 2B       		.byte	0x2b
  4674 2017 5802     		.2byte	0x258
-ARM GAS  /tmp/ccdG71er.s 			page 83
+ARM GAS  /tmp/ccO6m6Rk.s 			page 83
 
 
  4675 2019 9D1F0000 		.4byte	0x1f9d
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4729 2090 4A190000 		.4byte	.LASF418
  4730 2094 2B       		.byte	0x2b
  4731 2095 D702     		.2byte	0x2d7
-ARM GAS  /tmp/ccdG71er.s 			page 84
+ARM GAS  /tmp/ccO6m6Rk.s 			page 84
 
 
  4732 2097 C41E0000 		.4byte	0x1ec4
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4786 210f 0B       		.uleb128 0xb
  4787 2110 EB060000 		.4byte	.LASF424
  4788 2114 2D       		.byte	0x2d
-ARM GAS  /tmp/ccdG71er.s 			page 85
+ARM GAS  /tmp/ccO6m6Rk.s 			page 85
 
 
  4789 2115 CA01     		.2byte	0x1ca
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4843 218a F201     		.2byte	0x1f2
  4844 218c 912A0000 		.4byte	0x2a91
  4845 2190 54       		.byte	0x54
-ARM GAS  /tmp/ccdG71er.s 			page 86
+ARM GAS  /tmp/ccO6m6Rk.s 			page 86
 
 
  4846 2191 0B       		.uleb128 0xb
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4900 21ff 2201     		.2byte	0x122
  4901 2201 30220000 		.4byte	0x2230
  4902 2205 22       		.uleb128 0x22
-ARM GAS  /tmp/ccdG71er.s 			page 87
+ARM GAS  /tmp/ccO6m6Rk.s 			page 87
 
 
  4903 2206 0C040000 		.4byte	.LASF443
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  4957 2274 00       		.byte	0
  4958 2275 16       		.uleb128 0x16
  4959 2276 1E0A0000 		.4byte	.LASF458
-ARM GAS  /tmp/ccdG71er.s 			page 88
+ARM GAS  /tmp/ccO6m6Rk.s 			page 88
 
 
  4960 227a 2C       		.byte	0x2c
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5014 22f0 0F       		.uleb128 0xf
  5015 22f1 D3220000 		.4byte	0x22d3
  5016 22f5 0F       		.uleb128 0xf
-ARM GAS  /tmp/ccdG71er.s 			page 89
+ARM GAS  /tmp/ccO6m6Rk.s 			page 89
 
 
  5017 22f6 AC210000 		.4byte	0x21ac
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5071 2374 15       		.uleb128 0x15
  5072 2375 20       		.byte	0x20
  5073 2376 2E       		.byte	0x2e
-ARM GAS  /tmp/ccdG71er.s 			page 90
+ARM GAS  /tmp/ccO6m6Rk.s 			page 90
 
 
  5074 2377 29       		.byte	0x29
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5128 23e3 35       		.byte	0x35
  5129 23e4 74230000 		.4byte	0x2374
  5130 23e8 15       		.uleb128 0x15
-ARM GAS  /tmp/ccdG71er.s 			page 91
+ARM GAS  /tmp/ccO6m6Rk.s 			page 91
 
 
  5131 23e9 20       		.byte	0x20
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5185 2452 10140000 		.4byte	.LASF483
  5186 2456 2E       		.byte	0x2e
  5187 2457 47       		.byte	0x47
-ARM GAS  /tmp/ccdG71er.s 			page 92
+ARM GAS  /tmp/ccO6m6Rk.s 			page 92
 
 
  5188 2458 E8230000 		.4byte	0x23e8
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5242 24c4 00       		.byte	0
  5243 24c5 03       		.uleb128 0x3
  5244 24c6 650F0000 		.4byte	.LASF487
-ARM GAS  /tmp/ccdG71er.s 			page 93
+ARM GAS  /tmp/ccO6m6Rk.s 			page 93
 
 
  5245 24ca 2E       		.byte	0x2e
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5299 2536 F4000000 		.4byte	0xf4
  5300 253a 1C       		.byte	0x1c
  5301 253b 08       		.uleb128 0x8
-ARM GAS  /tmp/ccdG71er.s 			page 94
+ARM GAS  /tmp/ccO6m6Rk.s 			page 94
 
 
  5302 253c 500E0000 		.4byte	.LASF496
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5356 25a8 36120000 		.4byte	.LASF504
  5357 25ac 2E       		.byte	0x2e
  5358 25ad 73       		.byte	0x73
-ARM GAS  /tmp/ccdG71er.s 			page 95
+ARM GAS  /tmp/ccO6m6Rk.s 			page 95
 
 
  5359 25ae F4000000 		.4byte	0xf4
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5413 2623 F4000000 		.4byte	0xf4
  5414 2627 1804     		.2byte	0x418
  5415 2629 25       		.uleb128 0x25
-ARM GAS  /tmp/ccdG71er.s 			page 96
+ARM GAS  /tmp/ccO6m6Rk.s 			page 96
 
 
  5416 262a D80D0000 		.4byte	.LASF514
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5470 269e 53070000 		.4byte	.LASF522
  5471 26a2 2E       		.byte	0x2e
  5472 26a3 8D       		.byte	0x8d
-ARM GAS  /tmp/ccdG71er.s 			page 97
+ARM GAS  /tmp/ccO6m6Rk.s 			page 97
 
 
  5473 26a4 F4000000 		.4byte	0xf4
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5527 2719 F4000000 		.4byte	0xf4
  5528 271d 3408     		.2byte	0x834
  5529 271f 25       		.uleb128 0x25
-ARM GAS  /tmp/ccdG71er.s 			page 98
+ARM GAS  /tmp/ccO6m6Rk.s 			page 98
 
 
  5530 2720 470E0000 		.4byte	.LASF532
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5584 2793 FA0F0000 		.4byte	.LASF539
  5585 2797 2E       		.byte	0x2e
  5586 2798 A8       		.byte	0xa8
-ARM GAS  /tmp/ccdG71er.s 			page 99
+ARM GAS  /tmp/ccO6m6Rk.s 			page 99
 
 
  5587 2799 6B280000 		.4byte	0x286b
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5641 2816 21280000 		.4byte	0x2821
  5642 281a 12       		.uleb128 0x12
  5643 281b 3C000000 		.4byte	0x3c
-ARM GAS  /tmp/ccdG71er.s 			page 100
+ARM GAS  /tmp/ccO6m6Rk.s 			page 100
 
 
  5644 281f 3F       		.byte	0x3f
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5698 2898 0C       		.byte	0xc
  5699 2899 2D       		.byte	0x2d
  5700 289a 0301     		.2byte	0x103
-ARM GAS  /tmp/ccdG71er.s 			page 101
+ARM GAS  /tmp/ccO6m6Rk.s 			page 101
 
 
  5701 289c C8280000 		.4byte	0x28c8
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5755 2911 2C000000 		.4byte	0x2c
  5756 2915 0C       		.byte	0xc
  5757 2916 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 102
+ARM GAS  /tmp/ccO6m6Rk.s 			page 102
 
 
  5758 2917 16       		.uleb128 0x16
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5812 2989 5601     		.2byte	0x156
  5813 298b D9220000 		.4byte	0x22d9
  5814 298f 04       		.byte	0x4
-ARM GAS  /tmp/ccdG71er.s 			page 103
+ARM GAS  /tmp/ccO6m6Rk.s 			page 103
 
 
  5815 2990 0B       		.uleb128 0xb
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5869 2a01 61290000 		.4byte	0x2961
  5870 2a05 16       		.uleb128 0x16
  5871 2a06 A3120000 		.4byte	.LASF564
-ARM GAS  /tmp/ccdG71er.s 			page 104
+ARM GAS  /tmp/ccO6m6Rk.s 			page 104
 
 
  5872 2a0a 2D       		.byte	0x2d
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5926 2a7d 112A0000 		.4byte	0x2a11
  5927 2a81 11       		.uleb128 0x11
  5928 2a82 43030000 		.4byte	0x343
-ARM GAS  /tmp/ccdG71er.s 			page 105
+ARM GAS  /tmp/ccO6m6Rk.s 			page 105
 
 
  5929 2a86 912A0000 		.4byte	0x2a91
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  5983 2b02 18       		.uleb128 0x18
  5984 2b03 00       		.byte	0
  5985 2b04 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 106
+ARM GAS  /tmp/ccO6m6Rk.s 			page 106
 
 
  5986 2b05 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6040 2b7d 01       		.byte	0x1
  6041 2b7e 0F01     		.2byte	0x10f
  6042 2b80 3B010000 		.4byte	0x13b
-ARM GAS  /tmp/ccdG71er.s 			page 107
+ARM GAS  /tmp/ccO6m6Rk.s 			page 107
 
 
  6043 2b84 00000000 		.4byte	.LFB335
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6097 2c18 14       		.byte	0x14
  6098 2c19 6301     		.2byte	0x163
  6099 2c1b 2B       		.uleb128 0x2b
-ARM GAS  /tmp/ccdG71er.s 			page 108
+ARM GAS  /tmp/ccO6m6Rk.s 			page 108
 
 
  6100 2c1c 24340000 		.4byte	0x3424
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6154 2ca0 BA330000 		.4byte	0x33ba
  6155 2ca4 D7010000 		.4byte	.LLST40
  6156 2ca8 33       		.uleb128 0x33
-ARM GAS  /tmp/ccdG71er.s 			page 109
+ARM GAS  /tmp/ccO6m6Rk.s 			page 109
 
 
  6157 2ca9 24000000 		.4byte	.LVL37
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6211 2d1c 272D0000 		.4byte	0x2d27
  6212 2d20 12       		.uleb128 0x12
  6213 2d21 3C000000 		.4byte	0x3c
-ARM GAS  /tmp/ccdG71er.s 			page 110
+ARM GAS  /tmp/ccO6m6Rk.s 			page 110
 
 
  6214 2d25 0A       		.byte	0xa
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6268 2d97 00       		.byte	0
  6269 2d98 33       		.uleb128 0x33
  6270 2d99 0E000000 		.4byte	.LVL30
-ARM GAS  /tmp/ccdG71er.s 			page 111
+ARM GAS  /tmp/ccO6m6Rk.s 			page 111
 
 
  6271 2d9d BF340000 		.4byte	0x34bf
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6325 2e1c 6301     		.2byte	0x163
  6326 2e1e 2B       		.uleb128 0x2b
  6327 2e1f 24340000 		.4byte	0x3424
-ARM GAS  /tmp/ccdG71er.s 			page 112
+ARM GAS  /tmp/ccO6m6Rk.s 			page 112
 
 
  6328 2e23 00000000 		.4byte	.LBB155
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6382 2e9a 39       		.uleb128 0x39
  6383 2e9b 48000000 		.4byte	.Ldebug_ranges0+0x48
  6384 2e9f 38       		.uleb128 0x38
-ARM GAS  /tmp/ccdG71er.s 			page 113
+ARM GAS  /tmp/ccO6m6Rk.s 			page 113
 
 
  6385 2ea0 12340000 		.4byte	0x3412
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6439 2f11 9B160000 		.4byte	0x169b
  6440 2f15 3B       		.uleb128 0x3b
  6441 2f16 60090000 		.4byte	.LASF255
-ARM GAS  /tmp/ccdG71er.s 			page 114
+ARM GAS  /tmp/ccO6m6Rk.s 			page 114
 
 
  6442 2f1a 01       		.byte	0x1
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6496 2f9b 72030000 		.4byte	.LLST12
  6497 2f9f 37       		.uleb128 0x37
  6498 2fa0 D0330000 		.4byte	0x33d0
-ARM GAS  /tmp/ccdG71er.s 			page 115
+ARM GAS  /tmp/ccO6m6Rk.s 			page 115
 
 
  6499 2fa4 02000000 		.4byte	.LBB139
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6553 3034 9D340000 		.4byte	0x349d
  6554 3038 2E       		.uleb128 0x2e
  6555 3039 01       		.uleb128 0x1
-ARM GAS  /tmp/ccdG71er.s 			page 116
+ARM GAS  /tmp/ccO6m6Rk.s 			page 116
 
 
  6556 303a 50       		.byte	0x50
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6610 30af 1B0E0000 		.4byte	.LASF573
  6611 30b3 01       		.byte	0x1
  6612 30b4 73       		.byte	0x73
-ARM GAS  /tmp/ccdG71er.s 			page 117
+ARM GAS  /tmp/ccO6m6Rk.s 			page 117
 
 
  6613 30b5 68160000 		.4byte	0x1668
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6667 3143 12340000 		.4byte	0x3412
  6668 3147 16000000 		.4byte	.LBB136
  6669 314b 04000000 		.4byte	.LBE136-.LBB136
-ARM GAS  /tmp/ccdG71er.s 			page 118
+ARM GAS  /tmp/ccO6m6Rk.s 			page 118
 
 
  6670 314f 14       		.byte	0x14
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6724 31c0 5F       		.byte	0x5f
  6725 31c1 8F160000 		.4byte	0x168f
  6726 31c5 A5040000 		.4byte	.LLST3
-ARM GAS  /tmp/ccdG71er.s 			page 119
+ARM GAS  /tmp/ccO6m6Rk.s 			page 119
 
 
  6727 31c9 2A       		.uleb128 0x2a
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6781 3257 06000000 		.4byte	.LBE120-.LBB120
  6782 325b 14       		.byte	0x14
  6783 325c 7A01     		.2byte	0x17a
-ARM GAS  /tmp/ccdG71er.s 			page 120
+ARM GAS  /tmp/ccO6m6Rk.s 			page 120
 
 
  6784 325e 2B       		.uleb128 0x2b
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6838 32d4 4F       		.byte	0x4f
  6839 32d5 2C       		.uleb128 0x2c
  6840 32d6 51330000 		.4byte	0x3351
-ARM GAS  /tmp/ccdG71er.s 			page 121
+ARM GAS  /tmp/ccO6m6Rk.s 			page 121
 
 
  6841 32da 1D050000 		.4byte	.LLST1
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6895 3345 FE160000 		.4byte	.LASF584
  6896 3349 02       		.byte	0x2
  6897 334a CB03     		.2byte	0x3cb
-ARM GAS  /tmp/ccdG71er.s 			page 122
+ARM GAS  /tmp/ccO6m6Rk.s 			page 122
 
 
  6898 334c 03       		.byte	0x3
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  6952 33c6 00       		.byte	0
  6953 33c7 42       		.uleb128 0x42
  6954 33c8 B6020000 		.4byte	.LASF587
-ARM GAS  /tmp/ccdG71er.s 			page 123
+ARM GAS  /tmp/ccO6m6Rk.s 			page 123
 
 
  6955 33cc 02       		.byte	0x2
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7009 343d 00       		.byte	0
  7010 343e 44       		.uleb128 0x44
  7011 343f F32E0000 		.4byte	0x2ef3
-ARM GAS  /tmp/ccdG71er.s 			page 124
+ARM GAS  /tmp/ccO6m6Rk.s 			page 124
 
 
  7012 3443 00000000 		.4byte	.LFB332
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7066 34bf 46       		.uleb128 0x46
  7067 34c0 0D070000 		.4byte	.LASF601
  7068 34c4 0D070000 		.4byte	.LASF601
-ARM GAS  /tmp/ccdG71er.s 			page 125
+ARM GAS  /tmp/ccO6m6Rk.s 			page 125
 
 
  7069 34c8 1F       		.byte	0x1f
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7123 0018 3E       		.uleb128 0x3e
  7124 0019 0B       		.uleb128 0xb
  7125 001a 03       		.uleb128 0x3
-ARM GAS  /tmp/ccdG71er.s 			page 126
+ARM GAS  /tmp/ccO6m6Rk.s 			page 126
 
 
  7126 001b 08       		.uleb128 0x8
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7180 0051 00       		.byte	0
  7181 0052 00       		.byte	0
  7182 0053 08       		.uleb128 0x8
-ARM GAS  /tmp/ccdG71er.s 			page 127
+ARM GAS  /tmp/ccO6m6Rk.s 			page 127
 
 
  7183 0054 0D       		.uleb128 0xd
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7237 008a 13       		.uleb128 0x13
  7238 008b 38       		.uleb128 0x38
  7239 008c 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccdG71er.s 			page 128
+ARM GAS  /tmp/ccO6m6Rk.s 			page 128
 
 
  7240 008d 00       		.byte	0
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7294 00c3 01       		.uleb128 0x1
  7295 00c4 13       		.uleb128 0x13
  7296 00c5 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 129
+ARM GAS  /tmp/ccO6m6Rk.s 			page 129
 
 
  7297 00c6 00       		.byte	0
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7351 00fc 13       		.uleb128 0x13
  7352 00fd 00       		.byte	0
  7353 00fe 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 130
+ARM GAS  /tmp/ccO6m6Rk.s 			page 130
 
 
  7354 00ff 16       		.uleb128 0x16
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7408 0135 1A       		.uleb128 0x1a
  7409 0136 0D       		.uleb128 0xd
  7410 0137 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 131
+ARM GAS  /tmp/ccO6m6Rk.s 			page 131
 
 
  7411 0138 03       		.uleb128 0x3
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7465 016e 03       		.uleb128 0x3
  7466 016f 08       		.uleb128 0x8
  7467 0170 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccdG71er.s 			page 132
+ARM GAS  /tmp/ccO6m6Rk.s 			page 132
 
 
  7468 0171 0B       		.uleb128 0xb
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7522 01a7 04       		.uleb128 0x4
  7523 01a8 01       		.byte	0x1
  7524 01a9 3E       		.uleb128 0x3e
-ARM GAS  /tmp/ccdG71er.s 			page 133
+ARM GAS  /tmp/ccO6m6Rk.s 			page 133
 
 
  7525 01aa 0B       		.uleb128 0xb
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7579 01e0 00       		.byte	0
  7580 01e1 00       		.byte	0
  7581 01e2 27       		.uleb128 0x27
-ARM GAS  /tmp/ccdG71er.s 			page 134
+ARM GAS  /tmp/ccO6m6Rk.s 			page 134
 
 
  7582 01e3 21       		.uleb128 0x21
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7636 021a 13       		.uleb128 0x13
  7637 021b 34       		.uleb128 0x34
  7638 021c 19       		.uleb128 0x19
-ARM GAS  /tmp/ccdG71er.s 			page 135
+ARM GAS  /tmp/ccO6m6Rk.s 			page 135
 
 
  7639 021d 00       		.byte	0
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7693 0259 0B       		.uleb128 0xb
  7694 025a 3B       		.uleb128 0x3b
  7695 025b 05       		.uleb128 0x5
-ARM GAS  /tmp/ccdG71er.s 			page 136
+ARM GAS  /tmp/ccO6m6Rk.s 			page 136
 
 
  7696 025c 27       		.uleb128 0x27
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7750 0293 00       		.byte	0
  7751 0294 33       		.uleb128 0x33
  7752 0295 898201   		.uleb128 0x4109
-ARM GAS  /tmp/ccdG71er.s 			page 137
+ARM GAS  /tmp/ccO6m6Rk.s 			page 137
 
 
  7753 0298 01       		.byte	0x1
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7807 02cf 55       		.uleb128 0x55
  7808 02d0 17       		.uleb128 0x17
  7809 02d1 58       		.uleb128 0x58
-ARM GAS  /tmp/ccdG71er.s 			page 138
+ARM GAS  /tmp/ccO6m6Rk.s 			page 138
 
 
  7810 02d2 0B       		.uleb128 0xb
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7864 0308 0B       		.uleb128 0xb
  7865 0309 3B       		.uleb128 0x3b
  7866 030a 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccdG71er.s 			page 139
+ARM GAS  /tmp/ccO6m6Rk.s 			page 139
 
 
  7867 030b 27       		.uleb128 0x27
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7921 0343 9542     		.uleb128 0x2115
  7922 0345 19       		.uleb128 0x19
  7923 0346 31       		.uleb128 0x31
-ARM GAS  /tmp/ccdG71er.s 			page 140
+ARM GAS  /tmp/ccO6m6Rk.s 			page 140
 
 
  7924 0347 13       		.uleb128 0x13
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  7978 037d 00       		.byte	0
  7979 037e 03       		.uleb128 0x3
  7980 037f 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccdG71er.s 			page 141
+ARM GAS  /tmp/ccO6m6Rk.s 			page 141
 
 
  7981 0380 3A       		.uleb128 0x3a
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8035 03b7 0B       		.uleb128 0xb
  8036 03b8 00       		.byte	0
  8037 03b9 00       		.byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 142
+ARM GAS  /tmp/ccO6m6Rk.s 			page 142
 
 
  8038 03ba 46       		.uleb128 0x46
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8092 0050 F3       		.byte	0xf3
  8093 0051 01       		.uleb128 0x1
  8094 0052 50       		.byte	0x50
-ARM GAS  /tmp/ccdG71er.s 			page 143
+ARM GAS  /tmp/ccO6m6Rk.s 			page 143
 
 
  8095 0053 23       		.byte	0x23
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8149 00cf 0300     		.2byte	0x3
  8150 00d1 75       		.byte	0x75
  8151 00d2 6C       		.sleb128 -20
-ARM GAS  /tmp/ccdG71er.s 			page 144
+ARM GAS  /tmp/ccO6m6Rk.s 			page 144
 
 
  8152 00d3 9F       		.byte	0x9f
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8206              	.LLST36:
  8207 0154 08000000 		.4byte	.LVL35
  8208 0158 19000000 		.4byte	.LVL36-1
-ARM GAS  /tmp/ccdG71er.s 			page 145
+ARM GAS  /tmp/ccO6m6Rk.s 			page 145
 
 
  8209 015c 0100     		.2byte	0x1
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8263 01db 24000000 		.4byte	.LVL37
  8264 01df 0100     		.2byte	0x1
  8265 01e1 55       		.byte	0x55
-ARM GAS  /tmp/ccdG71er.s 			page 146
+ARM GAS  /tmp/ccO6m6Rk.s 			page 146
 
 
  8266 01e2 00000000 		.4byte	0
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8320 0264 22000000 		.4byte	.LVL32
  8321 0268 25000000 		.4byte	.LVL33-1
  8322 026c 0100     		.2byte	0x1
-ARM GAS  /tmp/ccdG71er.s 			page 147
+ARM GAS  /tmp/ccO6m6Rk.s 			page 147
 
 
  8323 026e 50       		.byte	0x50
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8377              	.LLST27:
  8378 02ef 28000000 		.4byte	.LVL25
  8379 02f3 2E000000 		.4byte	.LVL26
-ARM GAS  /tmp/ccdG71er.s 			page 148
+ARM GAS  /tmp/ccO6m6Rk.s 			page 148
 
 
  8380 02f7 0200     		.2byte	0x2
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8434 0376 15000000 		.4byte	.LVL17-1
  8435 037a 0100     		.2byte	0x1
  8436 037c 53       		.byte	0x53
-ARM GAS  /tmp/ccdG71er.s 			page 149
+ARM GAS  /tmp/ccO6m6Rk.s 			page 149
 
 
  8437 037d 15000000 		.4byte	.LVL17-1
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8491 03ff F3       		.byte	0xf3
  8492 0400 01       		.uleb128 0x1
  8493 0401 51       		.byte	0x51
-ARM GAS  /tmp/ccdG71er.s 			page 150
+ARM GAS  /tmp/ccO6m6Rk.s 			page 150
 
 
  8494 0402 9F       		.byte	0x9f
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8548 0487 00000000 		.4byte	.LVL5
  8549 048b 0F000000 		.4byte	.LVL7-1
  8550 048f 0100     		.2byte	0x1
-ARM GAS  /tmp/ccdG71er.s 			page 151
+ARM GAS  /tmp/ccO6m6Rk.s 			page 151
 
 
  8551 0491 50       		.byte	0x50
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8605 0513 50       		.byte	0x50
  8606 0514 9F       		.byte	0x9f
  8607 0515 00000000 		.4byte	0
-ARM GAS  /tmp/ccdG71er.s 			page 152
+ARM GAS  /tmp/ccO6m6Rk.s 			page 152
 
 
  8608 0519 00000000 		.4byte	0
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8662 0597 0100     		.2byte	0x1
  8663 0599 52       		.byte	0x52
  8664 059a 11000000 		.4byte	.LVL20-1
-ARM GAS  /tmp/ccdG71er.s 			page 153
+ARM GAS  /tmp/ccO6m6Rk.s 			page 153
 
 
  8665 059e 12000000 		.4byte	.LFE332
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8719              		.section	.debug_ranges,"",%progbits
  8720              	.Ldebug_ranges0:
  8721 0000 02000000 		.4byte	.LBB107
-ARM GAS  /tmp/ccdG71er.s 			page 154
+ARM GAS  /tmp/ccO6m6Rk.s 			page 154
 
 
  8722 0004 04000000 		.4byte	.LBE107
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8776              	.Ldebug_line0:
  8777 0000 E2080000 		.section	.debug_str,"MS",%progbits,1
  8777      02002A07 
-ARM GAS  /tmp/ccdG71er.s 			page 155
+ARM GAS  /tmp/ccO6m6Rk.s 			page 155
 
 
  8777      00000201 
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8807 007a 61646363 		.ascii	"adccallback_t\000"
  8807      616C6C62 
  8807      61636B5F 
-ARM GAS  /tmp/ccdG71er.s 			page 156
+ARM GAS  /tmp/ccO6m6Rk.s 			page 156
 
 
  8807      7400
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8837      6E635F74 
  8837      00
  8838              	.LASF602:
-ARM GAS  /tmp/ccdG71er.s 			page 157
+ARM GAS  /tmp/ccO6m6Rk.s 			page 157
 
 
  8839 010a 63685468 		.ascii	"chThdResumeS\000"
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8863      784C6F63 
  8863      6B00
  8864              	.LASF471:
-ARM GAS  /tmp/ccdG71er.s 			page 158
+ARM GAS  /tmp/ccO6m6Rk.s 			page 158
 
 
  8865 01a4 48435453 		.ascii	"HCTSIZ\000"
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8893              	.LASF384:
  8894 0251 53504944 		.ascii	"SPID4\000"
  8894      3400
-ARM GAS  /tmp/ccdG71er.s 			page 159
+ARM GAS  /tmp/ccO6m6Rk.s 			page 159
 
 
  8895              	.LASF385:
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8924      54687265 
  8924      61645265 
  8924      73756D65 
-ARM GAS  /tmp/ccdG71er.s 			page 160
+ARM GAS  /tmp/ccO6m6Rk.s 			page 160
 
 
  8924      4900
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8954 0366 5553425F 		.ascii	"USB_EVENT_ADDRESS\000"
  8954      4556454E 
  8954      545F4144 
-ARM GAS  /tmp/ccdG71er.s 			page 161
+ARM GAS  /tmp/ccO6m6Rk.s 			page 161
 
 
  8954      44524553 
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  8982      64333400 
  8983              	.LASF116:
  8984 03fe 46413152 		.ascii	"FA1R\000"
-ARM GAS  /tmp/ccdG71er.s 			page 162
+ARM GAS  /tmp/ccO6m6Rk.s 			page 162
 
 
  8984      00
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9012      6C6C645F 
  9012      696E6974 
  9012      00
-ARM GAS  /tmp/ccdG71er.s 			page 163
+ARM GAS  /tmp/ccO6m6Rk.s 			page 163
 
 
  9013              	.LASF211:
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9040 051c 444F4550 		.ascii	"DOEPINT\000"
  9040      494E5400 
  9041              	.LASF369:
-ARM GAS  /tmp/ccdG71er.s 			page 164
+ARM GAS  /tmp/ccO6m6Rk.s 			page 164
 
 
  9042 0524 77726974 		.ascii	"writet\000"
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9062      52564544 
  9062      3000
  9063              	.LASF109:
-ARM GAS  /tmp/ccdG71er.s 			page 165
+ARM GAS  /tmp/ccO6m6Rk.s 			page 165
 
 
  9064 065a 52455345 		.ascii	"RESERVED1\000"
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9090 06e5 47434346 		.ascii	"GCCFG\000"
  9090      4700
  9091              	.LASF424:
-ARM GAS  /tmp/ccdG71er.s 			page 166
+ARM GAS  /tmp/ccO6m6Rk.s 			page 166
 
 
  9092 06eb 65703073 		.ascii	"ep0state\000"
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9118 077d 43434D52 		.ascii	"CCMR1\000"
  9118      3100
  9119              	.LASF144:
-ARM GAS  /tmp/ccdG71er.s 			page 167
+ARM GAS  /tmp/ccO6m6Rk.s 			page 167
 
 
  9120 0783 43434D52 		.ascii	"CCMR2\000"
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9149              	.LASF250:
  9150 0805 4144435F 		.ascii	"ADC_ERROR\000"
  9150      4552524F 
-ARM GAS  /tmp/ccdG71er.s 			page 168
+ARM GAS  /tmp/ccO6m6Rk.s 			page 168
 
 
  9150      5200
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9178 0891 6D706F6F 		.ascii	"mpool\000"
  9178      6C00
  9179              	.LASF464:
-ARM GAS  /tmp/ccdG71er.s 			page 169
+ARM GAS  /tmp/ccO6m6Rk.s 			page 169
 
 
  9180 0897 75736265 		.ascii	"usbeventcb_t\000"
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9204 092b 43414E5F 		.ascii	"CAN_READY\000"
  9204      52454144 
  9204      5900
-ARM GAS  /tmp/ccdG71er.s 			page 170
+ARM GAS  /tmp/ccO6m6Rk.s 			page 170
 
 
  9205              	.LASF527:
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9232      54797065 
  9232      44656600 
  9233              	.LASF461:
-ARM GAS  /tmp/ccdG71er.s 			page 171
+ARM GAS  /tmp/ccO6m6Rk.s 			page 171
 
 
  9234 09cc 55534244 		.ascii	"USBDescriptor\000"
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9260 0a59 5553425F 		.ascii	"USB_SELECTED\000"
  9260      53454C45 
  9260      43544544 
-ARM GAS  /tmp/ccdG71er.s 			page 172
+ARM GAS  /tmp/ccO6m6Rk.s 			page 172
 
 
  9260      00
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9288      69676E65 
  9288      6420696E 
  9288      7400
-ARM GAS  /tmp/ccdG71er.s 			page 173
+ARM GAS  /tmp/ccO6m6Rk.s 			page 173
 
 
  9289              	.LASF172:
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9318      74696D65 
  9318      72735F6C 
  9318      6973745F 
-ARM GAS  /tmp/ccdG71er.s 			page 174
+ARM GAS  /tmp/ccO6m6Rk.s 			page 174
 
 
  9319              	.LASF165:
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9344      616C4472 
  9344      69766572 
  9344      564D5400 
-ARM GAS  /tmp/ccdG71er.s 			page 175
+ARM GAS  /tmp/ccO6m6Rk.s 			page 175
 
 
  9345              	.LASF45:
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9370 0cc1 736D7072 		.ascii	"smpr1\000"
  9370      3100
  9371              	.LASF272:
-ARM GAS  /tmp/ccdG71er.s 			page 176
+ARM GAS  /tmp/ccO6m6Rk.s 			page 176
 
 
  9372 0cc7 736D7072 		.ascii	"smpr2\000"
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9398      545F5741 
  9398      4B455550 
  9398      00
-ARM GAS  /tmp/ccdG71er.s 			page 177
+ARM GAS  /tmp/ccO6m6Rk.s 			page 177
 
 
  9399              	.LASF538:
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9426 0df4 6570306E 		.ascii	"ep0next\000"
  9426      65787400 
  9427              	.LASF364:
-ARM GAS  /tmp/ccdG71er.s 			page 178
+ARM GAS  /tmp/ccO6m6Rk.s 			page 178
 
 
  9428 0dfc 696E7374 		.ascii	"instance_offset\000"
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9454      66666572 
  9454      00
  9455              	.LASF533:
-ARM GAS  /tmp/ccdG71er.s 			page 179
+ARM GAS  /tmp/ccO6m6Rk.s 			page 179
 
 
  9456 0e8f 72657376 		.ascii	"resvd83C\000"
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9485              	.LASF366:
  9486 0f17 72656164 		.ascii	"read\000"
  9486      00
-ARM GAS  /tmp/ccdG71er.s 			page 180
+ARM GAS  /tmp/ccO6m6Rk.s 			page 180
 
 
  9487              	.LASF356:
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9514 0fa4 73746D33 		.ascii	"stm32_otg_t\000"
  9514      325F6F74 
  9514      675F7400 
-ARM GAS  /tmp/ccdG71er.s 			page 181
+ARM GAS  /tmp/ccO6m6Rk.s 			page 181
 
 
  9515              	.LASF268:
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9542      5900
  9543              	.LASF557:
  9544 103b 6F75745F 		.ascii	"out_cb\000"
-ARM GAS  /tmp/ccdG71er.s 			page 182
+ARM GAS  /tmp/ccO6m6Rk.s 			page 182
 
 
  9544      636200
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9572      6E747300 
  9573              	.LASF31:
  9574 10d2 74687265 		.ascii	"thread_t\000"
-ARM GAS  /tmp/ccdG71er.s 			page 183
+ARM GAS  /tmp/ccO6m6Rk.s 			page 183
 
 
  9574      61645F74 
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9599              	.LASF433:
  9600 116e 6F746770 		.ascii	"otgparams\000"
  9600      6172616D 
-ARM GAS  /tmp/ccdG71er.s 			page 184
+ARM GAS  /tmp/ccO6m6Rk.s 			page 184
 
 
  9600      7300
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9626 1208 61646352 		.ascii	"adcReleaseBus\000"
  9626      656C6561 
  9626      73654275 
-ARM GAS  /tmp/ccdG71er.s 			page 185
+ARM GAS  /tmp/ccO6m6Rk.s 			page 185
 
 
  9626      7300
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9651              	.LASF564:
  9652 12a3 55534245 		.ascii	"USBEndpointConfig\000"
  9652      6E64706F 
-ARM GAS  /tmp/ccdG71er.s 			page 186
+ARM GAS  /tmp/ccO6m6Rk.s 			page 186
 
 
  9652      696E7443 
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9675      00
  9676              	.LASF32:
  9677 1369 71756575 		.ascii	"queue\000"
-ARM GAS  /tmp/ccdG71er.s 			page 187
+ARM GAS  /tmp/ccO6m6Rk.s 			page 187
 
 
  9677      6500
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9705 13f6 76657273 		.ascii	"version\000"
  9705      696F6E00 
  9706              	.LASF506:
-ARM GAS  /tmp/ccdG71er.s 			page 188
+ARM GAS  /tmp/ccO6m6Rk.s 			page 188
 
 
  9707 13fe 72657376 		.ascii	"resvd140\000"
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9730              	.LASF407:
  9731 1496 75617274 		.ascii	"uartccb_t\000"
  9731      6363625F 
-ARM GAS  /tmp/ccdG71er.s 			page 189
+ARM GAS  /tmp/ccO6m6Rk.s 			page 189
 
 
  9731      7400
@@ -11338,7 +11338,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9762              	.LASF518:
  9763 1524 44434647 		.ascii	"DCFG\000"
  9763      00
-ARM GAS  /tmp/ccdG71er.s 			page 190
+ARM GAS  /tmp/ccO6m6Rk.s 			page 190
 
 
  9764              	.LASF466:
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9791 15a9 50574D5F 		.ascii	"PWM_READY\000"
  9791      52454144 
  9791      5900
-ARM GAS  /tmp/ccdG71er.s 			page 191
+ARM GAS  /tmp/ccO6m6Rk.s 			page 191
 
 
  9792              	.LASF578:
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9821 1637 4A4F4652 		.ascii	"JOFR4\000"
  9821      3400
  9822              	.LASF481:
-ARM GAS  /tmp/ccdG71er.s 			page 192
+ARM GAS  /tmp/ccO6m6Rk.s 			page 192
 
 
  9823 163d 44545846 		.ascii	"DTXFSTS\000"
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9849      725F7400 
  9850              	.LASF476:
  9851 16da 44494550 		.ascii	"DIEPCTL\000"
-ARM GAS  /tmp/ccdG71er.s 			page 193
+ARM GAS  /tmp/ccO6m6Rk.s 			page 193
 
 
  9851      43544C00 
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9881      7273696F 
  9881      6E00
  9882              	.LASF186:
-ARM GAS  /tmp/ccdG71er.s 			page 194
+ARM GAS  /tmp/ccO6m6Rk.s 			page 194
 
 
  9883 176a 6D757465 		.ascii	"mutex_t\000"
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9911      00
  9912              	.LASF435:
  9913 17f4 75736265 		.ascii	"usbep_t\000"
-ARM GAS  /tmp/ccdG71er.s 			page 195
+ARM GAS  /tmp/ccO6m6Rk.s 			page 195
 
 
  9913      705F7400 
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9939      6B5F7370 
  9939      65656400 
  9940              	.LASF69:
-ARM GAS  /tmp/ccdG71er.s 			page 196
+ARM GAS  /tmp/ccO6m6Rk.s 			page 196
 
 
  9941 188e 63685F73 		.ascii	"ch_system_t\000"
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9965      636F6E66 
  9965      69677572 
  9965      6174696F 
-ARM GAS  /tmp/ccdG71er.s 			page 197
+ARM GAS  /tmp/ccO6m6Rk.s 			page 197
 
 
  9966              	.LASF10:
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  9998              	.LASF166:
  9999 19b3 6964656E 		.ascii	"identifier\000"
  9999      74696669 
-ARM GAS  /tmp/ccdG71er.s 			page 198
+ARM GAS  /tmp/ccO6m6Rk.s 			page 198
 
 
  9999      657200
@@ -11836,33 +11836,33 @@ ARM GAS  /tmp/ccdG71er.s 			page 1
  10007      6F6E6669 
  10007      6700
  10008              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q3-update) 7.3.1 20180622 (release) [AR
-ARM GAS  /tmp/ccdG71er.s 			page 199
+ARM GAS  /tmp/ccO6m6Rk.s 			page 199
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hal_adc.c
-     /tmp/ccdG71er.s:18     .text.adcInit:0000000000000000 $t
-     /tmp/ccdG71er.s:26     .text.adcInit:0000000000000000 adcInit
-     /tmp/ccdG71er.s:41     .text.adcObjectInit:0000000000000000 $t
-     /tmp/ccdG71er.s:49     .text.adcObjectInit:0000000000000000 adcObjectInit
-     /tmp/ccdG71er.s:83     .text.adcStart:0000000000000000 $t
-     /tmp/ccdG71er.s:91     .text.adcStart:0000000000000000 adcStart
-     /tmp/ccdG71er.s:171    .text.adcStop:0000000000000000 $t
-     /tmp/ccdG71er.s:179    .text.adcStop:0000000000000000 adcStop
-     /tmp/ccdG71er.s:260    .text.adcStartConversion:0000000000000000 $t
-     /tmp/ccdG71er.s:268    .text.adcStartConversion:0000000000000000 adcStartConversion
-     /tmp/ccdG71er.s:342    .text.adcStartConversionI:0000000000000000 $t
-     /tmp/ccdG71er.s:350    .text.adcStartConversionI:0000000000000000 adcStartConversionI
-     /tmp/ccdG71er.s:381    .text.adcStopConversion:0000000000000000 $t
-     /tmp/ccdG71er.s:389    .text.adcStopConversion:0000000000000000 adcStopConversion
-     /tmp/ccdG71er.s:506    .text.adcStopConversionI:0000000000000000 $t
-     /tmp/ccdG71er.s:514    .text.adcStopConversionI:0000000000000000 adcStopConversionI
-     /tmp/ccdG71er.s:570    .text.adcConvert:0000000000000000 $t
-     /tmp/ccdG71er.s:578    .text.adcConvert:0000000000000000 adcConvert
-     /tmp/ccdG71er.s:662    .text.adcAcquireBus:0000000000000000 $t
-     /tmp/ccdG71er.s:670    .text.adcAcquireBus:0000000000000000 adcAcquireBus
-     /tmp/ccdG71er.s:691    .text.adcReleaseBus:0000000000000000 $t
-     /tmp/ccdG71er.s:699    .text.adcReleaseBus:0000000000000000 adcReleaseBus
+     /tmp/ccO6m6Rk.s:18     .text.adcInit:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:26     .text.adcInit:0000000000000000 adcInit
+     /tmp/ccO6m6Rk.s:41     .text.adcObjectInit:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:49     .text.adcObjectInit:0000000000000000 adcObjectInit
+     /tmp/ccO6m6Rk.s:83     .text.adcStart:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:91     .text.adcStart:0000000000000000 adcStart
+     /tmp/ccO6m6Rk.s:171    .text.adcStop:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:179    .text.adcStop:0000000000000000 adcStop
+     /tmp/ccO6m6Rk.s:260    .text.adcStartConversion:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:268    .text.adcStartConversion:0000000000000000 adcStartConversion
+     /tmp/ccO6m6Rk.s:342    .text.adcStartConversionI:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:350    .text.adcStartConversionI:0000000000000000 adcStartConversionI
+     /tmp/ccO6m6Rk.s:381    .text.adcStopConversion:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:389    .text.adcStopConversion:0000000000000000 adcStopConversion
+     /tmp/ccO6m6Rk.s:506    .text.adcStopConversionI:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:514    .text.adcStopConversionI:0000000000000000 adcStopConversionI
+     /tmp/ccO6m6Rk.s:570    .text.adcConvert:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:578    .text.adcConvert:0000000000000000 adcConvert
+     /tmp/ccO6m6Rk.s:662    .text.adcAcquireBus:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:670    .text.adcAcquireBus:0000000000000000 adcAcquireBus
+     /tmp/ccO6m6Rk.s:691    .text.adcReleaseBus:0000000000000000 $t
+     /tmp/ccO6m6Rk.s:699    .text.adcReleaseBus:0000000000000000 adcReleaseBus
 
 UNDEFINED SYMBOLS
 adc_lld_init

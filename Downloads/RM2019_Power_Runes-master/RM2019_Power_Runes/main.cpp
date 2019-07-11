@@ -300,17 +300,19 @@ int main(void)
 
     static const I2CConfig i2cfg1 = {
         OPMODE_I2C,
-        // 400000,
+        400000,
         // 96000,
-        46000,
-        FAST_DUTY_CYCLE_2};
+        // 46000,
+        FAST_DUTY_CYCLE_16_9};
 
     i2cStart(&I2CD2, &i2cfg1);
-    
+
     // myi2cstart();
 
-    palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4));
-    palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4));
+    palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
+    palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
+    // palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_OUTPUT_OPENDRAIN);
+    // palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_OUTPUT_OPENDRAIN);
 
     palSetLineMode(LINE_C, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
     palSetLineMode(LINE_F, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
@@ -321,10 +323,11 @@ int main(void)
         //sprintf(tempStr, "%d", g_rpm_1);
         palToggleLine(LINE_LED_GREEN);
         for (int i = 0; i < 16; i++)
-            setPWM(i, 0, 4000);
+            {setPWM(i, 10, 4000);
+            chThdSleepMilliseconds(10);}
         uint8_t addr = LED0_ON_L + 4;
         uint8_t rxbuf[20];
         // i2cMasterTransmit(&I2CD2, 0x40, &addr, 1, rxbuf, 20);
-        chThdSleepMilliseconds(1000);
+        chThdSleepMilliseconds(500);
     }
 }

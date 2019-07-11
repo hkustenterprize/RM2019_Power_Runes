@@ -397,7 +397,7 @@ endfiniloop:
                 ldr     r1, =__process_stack_base__
  80002e0:	20000400 	.word	0x20000400
                 ldr     r1, =_textdata_start
- 80002e4:	080062b8 	.word	0x080062b8
+ 80002e4:	080062c4 	.word	0x080062c4
                 ldr     r2, =_data_start
  80002e8:	20000800 	.word	0x20000800
                 ldr     r3, =_data_end
@@ -579,7 +579,7 @@ void board_setup_all(void)
  8000390:	20000b78 	.word	0x20000b78
  8000394:	40020400 	.word	0x40020400
  8000398:	40020000 	.word	0x40020000
- 800039c:	08005f18 	.word	0x08005f18
+ 800039c:	08005f24 	.word	0x08005f24
  80003a0:	20000a48 	.word	0x20000a48
 
 080003a4 <__early_init>:
@@ -944,7 +944,7 @@ void __init_ram_areas(void) {
  80005ac:	f022 0203 	bic.w	r2, r2, #3
  80005b0:	3204      	adds	r2, #4
  80005b2:	2100      	movs	r1, #0
- 80005b4:	f005 fca7 	bl	8005f06 <memset>
+ 80005b4:	f005 fcad 	bl	8005f12 <memset>
  80005b8:	3510      	adds	r5, #16
       p++;
     }
@@ -956,7 +956,7 @@ void __init_ram_areas(void) {
 #endif
 }
  80005be:	bd70      	pop	{r4, r5, r6, pc}
- 80005c0:	08005f38 	.word	0x08005f38
+ 80005c0:	08005f44 	.word	0x08005f44
 
 080005c4 <halInit>:
  *          board-specific initialization is performed by invoking
@@ -1540,7 +1540,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
       memcpy(bp, ibqp->ptr, size);
  80007f0:	4630      	mov	r0, r6
  80007f2:	465a      	mov	r2, fp
- 80007f4:	f005 fb7c 	bl	8005ef0 <memcpy>
+ 80007f4:	f005 fb82 	bl	8005efc <memcpy>
       ibqp->ptr += size;
  80007f8:	6aa3      	ldr	r3, [r4, #40]	; 0x28
  80007fa:	445b      	add	r3, fp
@@ -1988,7 +1988,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
       memcpy(obqp->ptr, bp, size);
  80009ea:	4629      	mov	r1, r5
  80009ec:	465a      	mov	r2, fp
- 80009ee:	f005 fa7f 	bl	8005ef0 <memcpy>
+ 80009ee:	f005 fa85 	bl	8005efc <memcpy>
       obqp->ptr += size;
  80009f2:	6aa3      	ldr	r3, [r4, #40]	; 0x28
  80009f4:	445b      	add	r3, fp
@@ -2293,7 +2293,7 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     memcpy((void *)bp, (void *)iqp->q_rdptr, n);
  8000b3a:	462a      	mov	r2, r5
  8000b3c:	4638      	mov	r0, r7
- 8000b3e:	f005 f9d7 	bl	8005ef0 <memcpy>
+ 8000b3e:	f005 f9dd 	bl	8005efc <memcpy>
     iqp->q_rdptr = iqp->q_buffer;
  8000b42:	68e2      	ldr	r2, [r4, #12]
  8000b44:	61a2      	str	r2, [r4, #24]
@@ -2364,13 +2364,13 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     s2 = n - s1;
  8000b9a:	9301      	str	r3, [sp, #4]
     memcpy((void *)bp, (void *)iqp->q_rdptr, s1);
- 8000b9c:	f005 f9a8 	bl	8005ef0 <memcpy>
+ 8000b9c:	f005 f9ae 	bl	8005efc <memcpy>
     memcpy((void *)bp, (void *)iqp->q_buffer, s2);
  8000ba0:	eb07 0008 	add.w	r0, r7, r8
  8000ba4:	f8dd 8004 	ldr.w	r8, [sp, #4]
  8000ba8:	68e1      	ldr	r1, [r4, #12]
  8000baa:	4642      	mov	r2, r8
- 8000bac:	f005 f9a0 	bl	8005ef0 <memcpy>
+ 8000bac:	f005 f9a6 	bl	8005efc <memcpy>
     iqp->q_rdptr = iqp->q_buffer + s2;
  8000bb0:	68e2      	ldr	r2, [r4, #12]
  8000bb2:	4643      	mov	r3, r8
@@ -2380,7 +2380,7 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     memcpy((void *)bp, (void *)iqp->q_rdptr, n);
  8000bba:	462a      	mov	r2, r5
  8000bbc:	4638      	mov	r0, r7
- 8000bbe:	f005 f997 	bl	8005ef0 <memcpy>
+ 8000bbe:	f005 f99d 	bl	8005efc <memcpy>
     iqp->q_rdptr += n;
  8000bc2:	69a2      	ldr	r2, [r4, #24]
  8000bc4:	442a      	add	r2, r5
@@ -2601,7 +2601,7 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     memcpy((void *)oqp->q_wrptr, (const void *)bp, n);
  8000caa:	462a      	mov	r2, r5
  8000cac:	4639      	mov	r1, r7
- 8000cae:	f005 f91f 	bl	8005ef0 <memcpy>
+ 8000cae:	f005 f925 	bl	8005efc <memcpy>
     oqp->q_wrptr = oqp->q_buffer;
  8000cb2:	68e2      	ldr	r2, [r4, #12]
  8000cb4:	6162      	str	r2, [r4, #20]
@@ -2673,13 +2673,13 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     s2 = n - s1;
  8000d0a:	9301      	str	r3, [sp, #4]
     memcpy((void *)oqp->q_wrptr, (const void *)bp, s1);
- 8000d0c:	f005 f8f0 	bl	8005ef0 <memcpy>
+ 8000d0c:	f005 f8f6 	bl	8005efc <memcpy>
     memcpy((void *)oqp->q_buffer, (const void *)bp, s2);
  8000d10:	eb07 0108 	add.w	r1, r7, r8
  8000d14:	f8dd 8004 	ldr.w	r8, [sp, #4]
  8000d18:	68e0      	ldr	r0, [r4, #12]
  8000d1a:	4642      	mov	r2, r8
- 8000d1c:	f005 f8e8 	bl	8005ef0 <memcpy>
+ 8000d1c:	f005 f8ee 	bl	8005efc <memcpy>
     oqp->q_wrptr = oqp->q_buffer + s2;
  8000d20:	68e2      	ldr	r2, [r4, #12]
  8000d22:	4643      	mov	r3, r8
@@ -2689,7 +2689,7 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     memcpy((void *)oqp->q_wrptr, (const void *)bp, n);
  8000d2a:	462a      	mov	r2, r5
  8000d2c:	4639      	mov	r1, r7
- 8000d2e:	f005 f8df 	bl	8005ef0 <memcpy>
+ 8000d2e:	f005 f8e5 	bl	8005efc <memcpy>
     oqp->q_wrptr += n;
  8000d32:	6962      	ldr	r2, [r4, #20]
  8000d34:	442a      	add	r2, r5
@@ -3042,7 +3042,7 @@ static inline void chEvtObjectInit(event_source_t *esp) {
 }
  8000e94:	b002      	add	sp, #8
  8000e96:	bd70      	pop	{r4, r5, r6, pc}
- 8000e98:	08005fa8 	.word	0x08005fa8
+ 8000e98:	08005fb4 	.word	0x08005fb4
 
 08000e9c <sdIncomingDataI>:
  * @param[in] sdp       pointer to a @p SerialDriver structure
@@ -3306,7 +3306,7 @@ void sduObjectInit(SerialUSBDriver *sdup) {
 }
  8001008:	b005      	add	sp, #20
  800100a:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 800100c:	08005fd0 	.word	0x08005fd0
+ 800100c:	08005fdc 	.word	0x08005fdc
  8001010:	08000f75 	.word	0x08000f75
  8001014:	08000edd 	.word	0x08000edd
 
@@ -4745,9 +4745,9 @@ void _usb_ep0setup(USBDriver *usbp, usbep_t ep) {
  8001794:	f894 0044 	ldrb.w	r0, [r4, #68]	; 0x44
  8001798:	e752      	b.n	8001640 <_usb_ep0setup+0x220>
  800179a:	bf00      	nop
- 800179c:	08006000 	.word	0x08006000
- 80017a0:	08005ff8 	.word	0x08005ff8
- 80017a4:	08005ffc 	.word	0x08005ffc
+ 800179c:	0800600c 	.word	0x0800600c
+ 80017a0:	08006004 	.word	0x08006004
+ 80017a4:	08006008 	.word	0x08006008
 
 080017a8 <_usb_ep0in>:
  * @param[in] usbp      pointer to the @p USBDriver object
@@ -7505,7 +7505,7 @@ void dmaInit(void) {
  800279e:	4638      	mov	r0, r7
  80027a0:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
  80027a2:	bf00      	nop
- 80027a4:	08006004 	.word	0x08006004
+ 80027a4:	08006010 	.word	0x08006010
  80027a8:	40023800 	.word	0x40023800
  80027ac:	20000894 	.word	0x20000894
 
@@ -7828,7 +7828,7 @@ static void i2c_lld_serve_tx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  80029a8:	f002 fc1a 	bl	80051e0 <chSysHalt>
  80029ac:	e7e8      	b.n	8002980 <i2c_lld_serve_tx_end_irq+0xc>
  80029ae:	bf00      	nop
- 80029b0:	080060c4 	.word	0x080060c4
+ 80029b0:	080060d0 	.word	0x080060d0
 
 080029b4 <i2c_lld_serve_rx_end_irq>:
   if ((flags & (STM32_DMA_ISR_TEIF | STM32_DMA_ISR_DMEIF)) != 0) {
@@ -7879,7 +7879,7 @@ static void i2c_lld_serve_rx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  8002a0c:	4801      	ldr	r0, [pc, #4]	; (8002a14 <i2c_lld_serve_rx_end_irq+0x60>)
  8002a0e:	f002 fbe7 	bl	80051e0 <chSysHalt>
  8002a12:	e7d5      	b.n	80029c0 <i2c_lld_serve_rx_end_irq+0xc>
- 8002a14:	080060c4 	.word	0x080060c4
+ 8002a14:	080060d0 	.word	0x080060d0
 
 08002a18 <VectorC4>:
   I2C_TypeDef *dp = i2cp->i2c;
@@ -9969,7 +9969,7 @@ void usb_lld_init(void) {
  8003910:	bd10      	pop	{r4, pc}
  8003912:	bf00      	nop
  8003914:	200009d0 	.word	0x200009d0
- 8003918:	080060f4 	.word	0x080060f4
+ 8003918:	08006100 	.word	0x08006100
 
 0800391c <usb_lld_start>:
   if (usbp->state == USB_STOP) {
@@ -10605,7 +10605,7 @@ void usb_lld_reset(USBDriver *usbp) {
 }
  8003d9e:	bd70      	pop	{r4, r5, r6, pc}
  8003da0:	10008040 	.word	0x10008040
- 8003da4:	080060d0 	.word	0x080060d0
+ 8003da4:	080060dc 	.word	0x080060dc
 
 08003da8 <usb_lld_set_address>:
   stm32_otg_t *otgp = usbp->otg;
@@ -11435,7 +11435,7 @@ static void spi_lld_serve_rx_interrupt(SPIDriver *spip, uint32_t flags) {
  800437e:	2302      	movs	r3, #2
  8004380:	7023      	strb	r3, [r4, #0]
  8004382:	e7e3      	b.n	800434c <spi_lld_serve_rx_interrupt+0x7c>
- 8004384:	080060c4 	.word	0x080060c4
+ 8004384:	080060d0 	.word	0x080060d0
 
 08004388 <spi_lld_serve_tx_interrupt>:
 static void spi_lld_serve_tx_interrupt(SPIDriver *spip, uint32_t flags) {
@@ -11495,7 +11495,7 @@ static void spi_lld_serve_tx_interrupt(SPIDriver *spip, uint32_t flags) {
  80043d2:	bf00      	nop
  80043d4:	20000a48 	.word	0x20000a48
  80043d8:	20000a50 	.word	0x20000a50
- 80043dc:	080060c4 	.word	0x080060c4
+ 80043dc:	080060d0 	.word	0x080060d0
 
 080043e0 <spi_lld_init>:
 /**
@@ -12554,7 +12554,7 @@ static void uart_lld_serve_tx_end_irq(UARTDriver *uartp, uint32_t flags) {
  80049f8:	f000 fbf2 	bl	80051e0 <chSysHalt>
  80049fc:	e7d1      	b.n	80049a2 <uart_lld_serve_tx_end_irq+0xa>
  80049fe:	bf00      	nop
- 8004a00:	080060c4 	.word	0x080060c4
+ 8004a00:	080060d0 	.word	0x080060d0
 
 08004a04 <uart_lld_serve_rx_end_irq>:
   if ((flags & (STM32_DMA_ISR_TEIF | STM32_DMA_ISR_DMEIF)) != 0) {
@@ -12652,7 +12652,7 @@ static void uart_lld_serve_rx_end_irq(UARTDriver *uartp, uint32_t flags) {
  8004a9e:	4303      	orrs	r3, r0
  8004aa0:	6013      	str	r3, [r2, #0]
  8004aa2:	e7d6      	b.n	8004a52 <uart_lld_serve_rx_end_irq+0x4e>
- 8004aa4:	080060c4 	.word	0x080060c4
+ 8004aa4:	080060d0 	.word	0x080060d0
 
 08004aa8 <VectorD4>:
 /**
@@ -13696,12 +13696,12 @@ __STATIC_INLINE void __NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
  80051bc:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
  80051be:	bf00      	nop
  80051c0:	20000d50 	.word	0x20000d50
- 80051c4:	08006120 	.word	0x08006120
+ 80051c4:	0800612c 	.word	0x0800612c
  80051c8:	20000d84 	.word	0x20000d84
  80051cc:	e000ed00 	.word	0xe000ed00
  80051d0:	05fa0300 	.word	0x05fa0300
  80051d4:	e0001000 	.word	0xe0001000
- 80051d8:	08006100 	.word	0x08006100
+ 80051d8:	0800610c 	.word	0x0800610c
  80051dc:	20000d54 	.word	0x20000d54
 
 080051e0 <chSysHalt>:
@@ -16095,7 +16095,7 @@ void DR16_initDBus(void)
  8005c52:	f7fc bdad 	b.w	80027b0 <dmaStreamFree>
  8005c56:	bf00      	nop
  8005c58:	20000b78 	.word	0x20000b78
- 8005c5c:	08006138 	.word	0x08006138
+ 8005c5c:	08006144 	.word	0x08006144
 
 08005c60 <get_descriptor>:
                                            uint16_t lang)
@@ -16132,9 +16132,9 @@ void DR16_initDBus(void)
  8005c80:	2000      	movhi	r0, #0
 }
  8005c82:	4770      	bx	lr
- 8005c84:	08006204 	.word	0x08006204
- 8005c88:	080061b8 	.word	0x080061b8
- 8005c8c:	0800628c 	.word	0x0800628c
+ 8005c84:	08006210 	.word	0x08006210
+ 8005c88:	080061c4 	.word	0x080061c4
+ 8005c8c:	08006298 	.word	0x08006298
 
 08005c90 <sof_handler>:
 
@@ -16209,8 +16209,8 @@ static void sof_handler(USBDriver *usbp)
 }
  8005d0a:	bd10      	pop	{r4, pc}
  8005d0c:	20000e38 	.word	0x20000e38
- 8005d10:	08006158 	.word	0x08006158
- 8005d14:	0800617c 	.word	0x0800617c
+ 8005d10:	08006164 	.word	0x08006164
+ 8005d14:	08006188 	.word	0x08006188
 
 08005d18 <setup_USB>:
 
@@ -16253,8 +16253,8 @@ void setup_USB(void)
  8005d4a:	bf00      	nop
  8005d4c:	20000e38 	.word	0x20000e38
  8005d50:	200009d0 	.word	0x200009d0
- 8005d54:	080061a0 	.word	0x080061a0
- 8005d58:	080061a8 	.word	0x080061a8
+ 8005d54:	080061ac 	.word	0x080061ac
+ 8005d58:	080061b4 	.word	0x080061b4
 
 08005d5c <Flash_SectorBegin>:
  * @param sector Sector to retrieve the beginning address of.
@@ -16347,8 +16347,8 @@ uint8_t pat9125_wr_reg_verify(uint8_t addr, uint8_t data)
 
 int main(void)
 {
- 8005dc0:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
- 8005dc4:	b087      	sub	sp, #28
+ 8005dc0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+ 8005dc4:	b086      	sub	sp, #24
    *   and performs the board-specific initializations.
    * - Kernel initialization, the main() function becomes a thread and the
    *   RTOS is active.
@@ -16362,206 +16362,212 @@ int main(void)
         //g_rpm_1 = 1;
         //sprintf(tempStr, "%d", g_rpm_1);
         palToggleLine(LINE_LED_GREEN);
- 8005dca:	f8df 90a4 	ldr.w	r9, [pc, #164]	; 8005e70 <main+0xb0>
+ 8005dca:	f8df a0b0 	ldr.w	sl, [pc, #176]	; 8005e7c <main+0xbc>
     chSysInit();
  8005dce:	f7ff f9b5 	bl	800513c <chSysInit>
     board_setup_all();
  8005dd2:	f7fa fab5 	bl	8000340 <board_setup_all>
     i2cStart(&I2CD2, &i2cfg1);
- 8005dd6:	4822      	ldr	r0, [pc, #136]	; (8005e60 <main+0xa0>)
- 8005dd8:	4922      	ldr	r1, [pc, #136]	; (8005e64 <main+0xa4>)
+ 8005dd6:	4825      	ldr	r0, [pc, #148]	; (8005e6c <main+0xac>)
+ 8005dd8:	4925      	ldr	r1, [pc, #148]	; (8005e70 <main+0xb0>)
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005dda:	4680      	mov	r8, r0
+ 8005dda:	4681      	mov	r9, r0
     i2cStart(&I2CD2, &i2cfg1);
  8005ddc:	f7fa ffdc 	bl	8000d98 <i2cStart>
-    palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4));
- 8005de0:	f240 2202 	movw	r2, #514	; 0x202
+    palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
+ 8005de0:	f240 2206 	movw	r2, #518	; 0x206
  8005de4:	2101      	movs	r1, #1
- 8005de6:	4648      	mov	r0, r9
+ 8005de6:	4650      	mov	r0, sl
  8005de8:	f7fc fd58 	bl	800289c <_pal_lld_setgroupmode>
-    palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4));
- 8005dec:	f240 2202 	movw	r2, #514	; 0x202
+    palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
+ 8005dec:	f240 2206 	movw	r2, #518	; 0x206
  8005df0:	2102      	movs	r1, #2
- 8005df2:	4648      	mov	r0, r9
+ 8005df2:	4650      	mov	r0, sl
  8005df4:	f7fc fd52 	bl	800289c <_pal_lld_setgroupmode>
     palSetLineMode(LINE_C, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
  8005df8:	2201      	movs	r2, #1
  8005dfa:	f44f 6100 	mov.w	r1, #2048	; 0x800
- 8005dfe:	481a      	ldr	r0, [pc, #104]	; (8005e68 <main+0xa8>)
+ 8005dfe:	481d      	ldr	r0, [pc, #116]	; (8005e74 <main+0xb4>)
  8005e00:	f7fc fd4c 	bl	800289c <_pal_lld_setgroupmode>
     palSetLineMode(LINE_F, PAL_MODE_OUTPUT_PUSHPULL); //for 3.3V
  8005e04:	2201      	movs	r2, #1
  8005e06:	f44f 4180 	mov.w	r1, #16384	; 0x4000
- 8005e0a:	4818      	ldr	r0, [pc, #96]	; (8005e6c <main+0xac>)
+ 8005e0a:	481b      	ldr	r0, [pc, #108]	; (8005e78 <main+0xb8>)
  8005e0c:	f7fc fd46 	bl	800289c <_pal_lld_setgroupmode>
         palToggleLine(LINE_LED_GREEN);
- 8005e10:	f8d9 3014 	ldr.w	r3, [r9, #20]
+ 8005e10:	f8da 3014 	ldr.w	r3, [sl, #20]
  8005e14:	f483 4380 	eor.w	r3, r3, #16384	; 0x4000
- 8005e18:	f8c9 3014 	str.w	r3, [r9, #20]
+ 8005e18:	f8ca 3014 	str.w	r3, [sl, #20]
  8005e1c:	2406      	movs	r4, #6
         on, on >> 8 & 0x0f, off, off >> 8 & 0x0f};
- 8005e1e:	2500      	movs	r5, #0
- 8005e20:	27a0      	movs	r7, #160	; 0xa0
+ 8005e1e:	f04f 080a 	mov.w	r8, #10
+ 8005e22:	2500      	movs	r5, #0
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005e22:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 8005e24:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 8005e28:	9302      	str	r3, [sp, #8]
+ 8005e2a:	aa04      	add	r2, sp, #16
+ 8005e2c:	2305      	movs	r3, #5
+ 8005e2e:	2140      	movs	r1, #64	; 0x40
         on, on >> 8 & 0x0f, off, off >> 8 & 0x0f};
- 8005e26:	f88d 4010 	strb.w	r4, [sp, #16]
- 8005e2a:	3404      	adds	r4, #4
+ 8005e30:	f88d 4010 	strb.w	r4, [sp, #16]
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005e2c:	9302      	str	r3, [sp, #8]
- 8005e2e:	e9cd 5500 	strd	r5, r5, [sp]
+ 8005e34:	e9cd 5500 	strd	r5, r5, [sp]
         on, on >> 8 & 0x0f, off, off >> 8 & 0x0f};
- 8005e32:	260f      	movs	r6, #15
+ 8005e38:	27a0      	movs	r7, #160	; 0xa0
+ 8005e3a:	260f      	movs	r6, #15
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005e34:	2305      	movs	r3, #5
- 8005e36:	aa04      	add	r2, sp, #16
- 8005e38:	2140      	movs	r1, #64	; 0x40
- 8005e3a:	4640      	mov	r0, r8
- 8005e3c:	b2e4      	uxtb	r4, r4
+ 8005e3c:	4648      	mov	r0, r9
+ 8005e3e:	3404      	adds	r4, #4
         on, on >> 8 & 0x0f, off, off >> 8 & 0x0f};
- 8005e3e:	f88d 5011 	strb.w	r5, [sp, #17]
- 8005e42:	f88d 5012 	strb.w	r5, [sp, #18]
- 8005e46:	f88d 7013 	strb.w	r7, [sp, #19]
- 8005e4a:	f88d 6014 	strb.w	r6, [sp, #20]
+ 8005e40:	f88d 8011 	strb.w	r8, [sp, #17]
+ 8005e44:	f88d 5012 	strb.w	r5, [sp, #18]
+ 8005e48:	f88d 7013 	strb.w	r7, [sp, #19]
+ 8005e4c:	f88d 6014 	strb.w	r6, [sp, #20]
+ 8005e50:	b2e4      	uxtb	r4, r4
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005e4e:	f7fa ffb1 	bl	8000db4 <i2cMasterTransmitTimeout>
+ 8005e52:	f7fa ffaf 	bl	8000db4 <i2cMasterTransmitTimeout>
         for (int i = 0; i < 16; i++)
- 8005e52:	2c46      	cmp	r4, #70	; 0x46
- 8005e54:	d1e5      	bne.n	8005e22 <main+0x62>
-            setPWM(i, 0, 4000);
+            {setPWM(i, 10, 4000);
+            chThdSleepMilliseconds(10);}
+ 8005e56:	2064      	movs	r0, #100	; 0x64
+ 8005e58:	f7ff fc46 	bl	80056e8 <chThdSleep>
+        for (int i = 0; i < 16; i++)
+ 8005e5c:	2c46      	cmp	r4, #70	; 0x46
+ 8005e5e:	d1e1      	bne.n	8005e24 <main+0x64>
         uint8_t addr = LED0_ON_L + 4;
         uint8_t rxbuf[20];
         // i2cMasterTransmit(&I2CD2, 0x40, &addr, 1, rxbuf, 20);
-        chThdSleepMilliseconds(1000);
- 8005e56:	f242 7010 	movw	r0, #10000	; 0x2710
- 8005e5a:	f7ff fc45 	bl	80056e8 <chThdSleep>
+        chThdSleepMilliseconds(500);
+ 8005e60:	f241 3088 	movw	r0, #5000	; 0x1388
+ 8005e64:	f7ff fc40 	bl	80056e8 <chThdSleep>
     }
- 8005e5e:	e7d7      	b.n	8005e10 <main+0x50>
- 8005e60:	20000998 	.word	0x20000998
- 8005e64:	080062ac 	.word	0x080062ac
- 8005e68:	40021c00 	.word	0x40021c00
- 8005e6c:	40020c00 	.word	0x40020c00
- 8005e70:	40021400 	.word	0x40021400
+ 8005e68:	e7d2      	b.n	8005e10 <main+0x50>
+ 8005e6a:	bf00      	nop
+ 8005e6c:	20000998 	.word	0x20000998
+ 8005e70:	080062b8 	.word	0x080062b8
+ 8005e74:	40021c00 	.word	0x40021c00
+ 8005e78:	40020c00 	.word	0x40020c00
+ 8005e7c:	40021400 	.word	0x40021400
 
-08005e74 <_ZdlPv>:
+08005e80 <_ZdlPv>:
   return chHeapAlloc(NULL, size);
 }
 
 void operator delete(void *ptr)
 {
   chHeapFree(ptr);
- 8005e74:	f7ff be2a 	b.w	8005acc <chHeapFree>
+ 8005e80:	f7ff be24 	b.w	8005acc <chHeapFree>
 
-08005e78 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev>:
+08005e84 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev>:
        *  things.  The _Base dtor only erases the elements, and note
        *  that if the elements themselves are pointers, the pointed-to
        *  memory is not touched in any way.  Managing the pointer is
        *  the user's responsibility.
        */
       ~list() = default;
- 8005e78:	b538      	push	{r3, r4, r5, lr}
- 8005e7a:	4605      	mov	r5, r0
+ 8005e84:	b538      	push	{r3, r4, r5, lr}
+ 8005e86:	4605      	mov	r5, r0
     void
     _List_base<_Tp, _Alloc>::
     _M_clear() _GLIBCXX_NOEXCEPT
     {
       typedef _List_node<_Tp>  _Node;
       __detail::_List_node_base* __cur = _M_impl._M_node._M_next;
- 8005e7c:	6800      	ldr	r0, [r0, #0]
+ 8005e88:	6800      	ldr	r0, [r0, #0]
       while (__cur != &_M_impl._M_node)
- 8005e7e:	42a8      	cmp	r0, r5
- 8005e80:	d005      	beq.n	8005e8e <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0x16>
+ 8005e8a:	42a8      	cmp	r0, r5
+ 8005e8c:	d005      	beq.n	8005e9a <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0x16>
 	{
 	  _Node* __tmp = static_cast<_Node*>(__cur);
 	  __cur = __tmp->_M_next;
- 8005e82:	6804      	ldr	r4, [r0, #0]
+ 8005e8e:	6804      	ldr	r4, [r0, #0]
 	  {
 	    ::operator delete(__p, std::align_val_t(alignof(_Tp)));
 	    return;
 	  }
 #endif
 	::operator delete(__p);
- 8005e84:	f7ff fff6 	bl	8005e74 <_ZdlPv>
+ 8005e90:	f7ff fff6 	bl	8005e80 <_ZdlPv>
       while (__cur != &_M_impl._M_node)
- 8005e88:	42ac      	cmp	r4, r5
- 8005e8a:	4620      	mov	r0, r4
- 8005e8c:	d1f9      	bne.n	8005e82 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0xa>
- 8005e8e:	4628      	mov	r0, r5
- 8005e90:	bd38      	pop	{r3, r4, r5, pc}
- 8005e92:	bf00      	nop
+ 8005e94:	42ac      	cmp	r4, r5
+ 8005e96:	4620      	mov	r0, r4
+ 8005e98:	d1f9      	bne.n	8005e8e <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0xa>
+ 8005e9a:	4628      	mov	r0, r5
+ 8005e9c:	bd38      	pop	{r3, r4, r5, pc}
+ 8005e9e:	bf00      	nop
 
-08005e94 <_GLOBAL__sub_I__Z16Param_getDefByIDj>:
+08005ea0 <_GLOBAL__sub_I__Z16Param_getDefByIDj>:
 }
 
 /**
  * @brief ShellCommand definition for interfacing with this module
  */
 const ShellCommand g_Persistence_ShellCommand = {PARAM_SHELL_CMD_STR, Param_ShellCmd};
- 8005e94:	b510      	push	{r4, lr}
+ 8005ea0:	b510      	push	{r4, lr}
 static uint8_t *p_PARAM_FLASH_START = Flash_SectorBegin(PARAM_STORAGE_SECTOR);
- 8005e96:	2017      	movs	r0, #23
- 8005e98:	f7ff ff60 	bl	8005d5c <Flash_SectorBegin>
+ 8005ea2:	2017      	movs	r0, #23
+ 8005ea4:	f7ff ff5a 	bl	8005d5c <Flash_SectorBegin>
 	: _Node_alloc_type(), _M_node()
- 8005e9c:	4b06      	ldr	r3, [pc, #24]	; (8005eb8 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x24>)
- 8005e9e:	4a07      	ldr	r2, [pc, #28]	; (8005ebc <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x28>)
+ 8005ea8:	4b06      	ldr	r3, [pc, #24]	; (8005ec4 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x24>)
+ 8005eaa:	4a07      	ldr	r2, [pc, #28]	; (8005ec8 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x28>)
 static std::list<const Param_Definition_t *> params;
- 8005ea0:	4907      	ldr	r1, [pc, #28]	; (8005ec0 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x2c>)
+ 8005eac:	4907      	ldr	r1, [pc, #28]	; (8005ecc <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x2c>)
 static uint8_t *p_PARAM_FLASH_START = Flash_SectorBegin(PARAM_STORAGE_SECTOR);
- 8005ea2:	6010      	str	r0, [r2, #0]
+ 8005eae:	6010      	str	r0, [r2, #0]
 	this->_M_impl._M_node._M_prev = &this->_M_impl._M_node;
- 8005ea4:	e9c3 3300 	strd	r3, r3, [r3]
+ 8005eb0:	e9c3 3300 	strd	r3, r3, [r3]
 	: _Node_alloc_type(), _M_node()
- 8005ea8:	2400      	movs	r4, #0
- 8005eaa:	609c      	str	r4, [r3, #8]
+ 8005eb4:	2400      	movs	r4, #0
+ 8005eb6:	609c      	str	r4, [r3, #8]
 static std::list<const Param_Definition_t *> params;
- 8005eac:	4618      	mov	r0, r3
- 8005eae:	4a05      	ldr	r2, [pc, #20]	; (8005ec4 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x30>)
+ 8005eb8:	4618      	mov	r0, r3
+ 8005eba:	4a05      	ldr	r2, [pc, #20]	; (8005ed0 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x30>)
 const ShellCommand g_Persistence_ShellCommand = {PARAM_SHELL_CMD_STR, Param_ShellCmd};
- 8005eb0:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
+ 8005ebc:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
 static std::list<const Param_Definition_t *> params;
- 8005eb4:	f000 b808 	b.w	8005ec8 <__aeabi_atexit>
- 8005eb8:	20001304 	.word	0x20001304
- 8005ebc:	20001300 	.word	0x20001300
- 8005ec0:	08005e79 	.word	0x08005e79
- 8005ec4:	200012fc 	.word	0x200012fc
+ 8005ec0:	f000 b808 	b.w	8005ed4 <__aeabi_atexit>
+ 8005ec4:	20001304 	.word	0x20001304
+ 8005ec8:	20001300 	.word	0x20001300
+ 8005ecc:	08005e85 	.word	0x08005e85
+ 8005ed0:	200012fc 	.word	0x200012fc
 
-08005ec8 <__aeabi_atexit>:
- 8005ec8:	460b      	mov	r3, r1
- 8005eca:	4601      	mov	r1, r0
- 8005ecc:	4618      	mov	r0, r3
- 8005ece:	f000 b801 	b.w	8005ed4 <__cxa_atexit>
+08005ed4 <__aeabi_atexit>:
+ 8005ed4:	460b      	mov	r3, r1
+ 8005ed6:	4601      	mov	r1, r0
+ 8005ed8:	4618      	mov	r0, r3
+ 8005eda:	f000 b801 	b.w	8005ee0 <__cxa_atexit>
 	...
 
-08005ed4 <__cxa_atexit>:
- 8005ed4:	b510      	push	{r4, lr}
- 8005ed6:	4c05      	ldr	r4, [pc, #20]	; (8005eec <__cxa_atexit+0x18>)
- 8005ed8:	4613      	mov	r3, r2
- 8005eda:	b12c      	cbz	r4, 8005ee8 <__cxa_atexit+0x14>
- 8005edc:	460a      	mov	r2, r1
- 8005ede:	4601      	mov	r1, r0
- 8005ee0:	2002      	movs	r0, #2
- 8005ee2:	f3af 8000 	nop.w
- 8005ee6:	bd10      	pop	{r4, pc}
- 8005ee8:	4620      	mov	r0, r4
- 8005eea:	e7fc      	b.n	8005ee6 <__cxa_atexit+0x12>
- 8005eec:	00000000 	.word	0x00000000
+08005ee0 <__cxa_atexit>:
+ 8005ee0:	b510      	push	{r4, lr}
+ 8005ee2:	4c05      	ldr	r4, [pc, #20]	; (8005ef8 <__cxa_atexit+0x18>)
+ 8005ee4:	4613      	mov	r3, r2
+ 8005ee6:	b12c      	cbz	r4, 8005ef4 <__cxa_atexit+0x14>
+ 8005ee8:	460a      	mov	r2, r1
+ 8005eea:	4601      	mov	r1, r0
+ 8005eec:	2002      	movs	r0, #2
+ 8005eee:	f3af 8000 	nop.w
+ 8005ef2:	bd10      	pop	{r4, pc}
+ 8005ef4:	4620      	mov	r0, r4
+ 8005ef6:	e7fc      	b.n	8005ef2 <__cxa_atexit+0x12>
+ 8005ef8:	00000000 	.word	0x00000000
 
-08005ef0 <memcpy>:
- 8005ef0:	b510      	push	{r4, lr}
- 8005ef2:	1e43      	subs	r3, r0, #1
- 8005ef4:	440a      	add	r2, r1
- 8005ef6:	4291      	cmp	r1, r2
- 8005ef8:	d100      	bne.n	8005efc <memcpy+0xc>
- 8005efa:	bd10      	pop	{r4, pc}
- 8005efc:	f811 4b01 	ldrb.w	r4, [r1], #1
- 8005f00:	f803 4f01 	strb.w	r4, [r3, #1]!
- 8005f04:	e7f7      	b.n	8005ef6 <memcpy+0x6>
+08005efc <memcpy>:
+ 8005efc:	b510      	push	{r4, lr}
+ 8005efe:	1e43      	subs	r3, r0, #1
+ 8005f00:	440a      	add	r2, r1
+ 8005f02:	4291      	cmp	r1, r2
+ 8005f04:	d100      	bne.n	8005f08 <memcpy+0xc>
+ 8005f06:	bd10      	pop	{r4, pc}
+ 8005f08:	f811 4b01 	ldrb.w	r4, [r1], #1
+ 8005f0c:	f803 4f01 	strb.w	r4, [r3, #1]!
+ 8005f10:	e7f7      	b.n	8005f02 <memcpy+0x6>
 
-08005f06 <memset>:
- 8005f06:	4402      	add	r2, r0
- 8005f08:	4603      	mov	r3, r0
- 8005f0a:	4293      	cmp	r3, r2
- 8005f0c:	d100      	bne.n	8005f10 <memset+0xa>
- 8005f0e:	4770      	bx	lr
- 8005f10:	f803 1b01 	strb.w	r1, [r3], #1
- 8005f14:	e7f9      	b.n	8005f0a <memset+0x4>
+08005f12 <memset>:
+ 8005f12:	4402      	add	r2, r0
+ 8005f14:	4603      	mov	r3, r0
+ 8005f16:	4293      	cmp	r3, r2
+ 8005f18:	d100      	bne.n	8005f1c <memset+0xa>
+ 8005f1a:	4770      	bx	lr
+ 8005f1c:	f803 1b01 	strb.w	r1, [r3], #1
+ 8005f20:	e7f9      	b.n	8005f16 <memset+0x4>
