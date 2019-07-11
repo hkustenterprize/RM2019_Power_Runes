@@ -24,7 +24,7 @@ extern int64_t position;
 //#define PAT9125_I2C_ADDR  0x75  //ID=LO
 //#define PAT9125_I2C_ADDR  0x73  //ID=HI
 // #define PAT9125_I2C_ADDR  0x79  //ID=NC
-#define PAT9125_I2C_ADDR  0x70  //ID=NC
+#define PAT9125_I2C_ADDR  0x40  //ID=NC
 #define PAT9125_XRES      0
 #define PAT9125_YRES      240
 

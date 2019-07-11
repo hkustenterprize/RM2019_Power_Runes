@@ -307,7 +307,7 @@ int main(void)
 
     i2cStart(&I2CD2, &i2cfg1);
 
-    // myi2cstart();
+    myi2cstart();
 
     palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
     palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
@@ -322,9 +322,9 @@ int main(void)
         //g_rpm_1 = 1;
         //sprintf(tempStr, "%d", g_rpm_1);
         palToggleLine(LINE_LED_GREEN);
-        for (int i = 0; i < 16; i++)
-            {setPWM(i, 10, 4000);
-            chThdSleepMilliseconds(10);}
+        // for (int i = 0; i < 16; i++)
+        //     {setPWM(i, 10, 4000);
+        //     chThdSleepMilliseconds(10);}
         uint8_t addr = LED0_ON_L + 4;
         uint8_t rxbuf[20];
         // i2cMasterTransmit(&I2CD2, 0x40, &addr, 1, rxbuf, 20);
