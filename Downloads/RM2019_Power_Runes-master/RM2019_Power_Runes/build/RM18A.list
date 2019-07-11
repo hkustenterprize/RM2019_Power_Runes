@@ -356,7 +356,7 @@ endinitloop:
 
                 /* Main program invocation, r0 contains the returned value.*/
                 bl      main
- 80002b6:	f005 ff93 	bl	80061e0 <main>
+ 80002b6:	f005 feb9 	bl	800602c <main>
 
 #if CRT0_CALL_DESTRUCTORS == TRUE
                 /* Destructors invocation.*/
@@ -397,7 +397,7 @@ endfiniloop:
                 ldr     r1, =__process_stack_base__
  80002e0:	20000400 	.word	0x20000400
                 ldr     r1, =_textdata_start
- 80002e4:	08006680 	.word	0x08006680
+ 80002e4:	080064cc 	.word	0x080064cc
                 ldr     r2, =_data_start
  80002e8:	20000800 	.word	0x20000800
                 ldr     r3, =_data_end
@@ -405,7 +405,7 @@ endfiniloop:
                 ldr     r1, =_bss_start
  80002f0:	20000808 	.word	0x20000808
                 ldr     r2, =_bss_end
- 80002f4:	20001884 	.word	0x20001884
+ 80002f4:	20001860 	.word	0x20001860
                 ldr     r4, =__init_array_start
  80002f8:	080001e0 	.word	0x080001e0
                 ldr     r5, =__init_array_end
@@ -579,7 +579,7 @@ void board_setup_all(void)
  8000390:	20000b78 	.word	0x20000b78
  8000394:	40020400 	.word	0x40020400
  8000398:	40020000 	.word	0x40020000
- 800039c:	080062d8 	.word	0x080062d8
+ 800039c:	08006124 	.word	0x08006124
  80003a0:	20000a48 	.word	0x20000a48
 
 080003a4 <__early_init>:
@@ -944,7 +944,7 @@ void __init_ram_areas(void) {
  80005ac:	f022 0203 	bic.w	r2, r2, #3
  80005b0:	3204      	adds	r2, #4
  80005b2:	2100      	movs	r1, #0
- 80005b4:	f005 fe87 	bl	80062c6 <memset>
+ 80005b4:	f005 fdad 	bl	8006112 <memset>
  80005b8:	3510      	adds	r5, #16
       p++;
     }
@@ -956,7 +956,7 @@ void __init_ram_areas(void) {
 #endif
 }
  80005be:	bd70      	pop	{r4, r5, r6, pc}
- 80005c0:	080062f8 	.word	0x080062f8
+ 80005c0:	08006144 	.word	0x08006144
 
 080005c4 <halInit>:
  *          board-specific initialization is performed by invoking
@@ -1540,7 +1540,7 @@ size_t ibqReadTimeout(input_buffers_queue_t *ibqp, uint8_t *bp,
       memcpy(bp, ibqp->ptr, size);
  80007f0:	4630      	mov	r0, r6
  80007f2:	465a      	mov	r2, fp
- 80007f4:	f005 fd5c 	bl	80062b0 <memcpy>
+ 80007f4:	f005 fc82 	bl	80060fc <memcpy>
       ibqp->ptr += size;
  80007f8:	6aa3      	ldr	r3, [r4, #40]	; 0x28
  80007fa:	445b      	add	r3, fp
@@ -1988,7 +1988,7 @@ size_t obqWriteTimeout(output_buffers_queue_t *obqp, const uint8_t *bp,
       memcpy(obqp->ptr, bp, size);
  80009ea:	4629      	mov	r1, r5
  80009ec:	465a      	mov	r2, fp
- 80009ee:	f005 fc5f 	bl	80062b0 <memcpy>
+ 80009ee:	f005 fb85 	bl	80060fc <memcpy>
       obqp->ptr += size;
  80009f2:	6aa3      	ldr	r3, [r4, #40]	; 0x28
  80009f4:	445b      	add	r3, fp
@@ -2293,7 +2293,7 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     memcpy((void *)bp, (void *)iqp->q_rdptr, n);
  8000b3a:	462a      	mov	r2, r5
  8000b3c:	4638      	mov	r0, r7
- 8000b3e:	f005 fbb7 	bl	80062b0 <memcpy>
+ 8000b3e:	f005 fadd 	bl	80060fc <memcpy>
     iqp->q_rdptr = iqp->q_buffer;
  8000b42:	68e2      	ldr	r2, [r4, #12]
  8000b44:	61a2      	str	r2, [r4, #24]
@@ -2364,13 +2364,13 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     s2 = n - s1;
  8000b9a:	9301      	str	r3, [sp, #4]
     memcpy((void *)bp, (void *)iqp->q_rdptr, s1);
- 8000b9c:	f005 fb88 	bl	80062b0 <memcpy>
+ 8000b9c:	f005 faae 	bl	80060fc <memcpy>
     memcpy((void *)bp, (void *)iqp->q_buffer, s2);
  8000ba0:	eb07 0008 	add.w	r0, r7, r8
  8000ba4:	f8dd 8004 	ldr.w	r8, [sp, #4]
  8000ba8:	68e1      	ldr	r1, [r4, #12]
  8000baa:	4642      	mov	r2, r8
- 8000bac:	f005 fb80 	bl	80062b0 <memcpy>
+ 8000bac:	f005 faa6 	bl	80060fc <memcpy>
     iqp->q_rdptr = iqp->q_buffer + s2;
  8000bb0:	68e2      	ldr	r2, [r4, #12]
  8000bb2:	4643      	mov	r3, r8
@@ -2380,7 +2380,7 @@ size_t iqReadTimeout(input_queue_t *iqp, uint8_t *bp,
     memcpy((void *)bp, (void *)iqp->q_rdptr, n);
  8000bba:	462a      	mov	r2, r5
  8000bbc:	4638      	mov	r0, r7
- 8000bbe:	f005 fb77 	bl	80062b0 <memcpy>
+ 8000bbe:	f005 fa9d 	bl	80060fc <memcpy>
     iqp->q_rdptr += n;
  8000bc2:	69a2      	ldr	r2, [r4, #24]
  8000bc4:	442a      	add	r2, r5
@@ -2601,7 +2601,7 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     memcpy((void *)oqp->q_wrptr, (const void *)bp, n);
  8000caa:	462a      	mov	r2, r5
  8000cac:	4639      	mov	r1, r7
- 8000cae:	f005 faff 	bl	80062b0 <memcpy>
+ 8000cae:	f005 fa25 	bl	80060fc <memcpy>
     oqp->q_wrptr = oqp->q_buffer;
  8000cb2:	68e2      	ldr	r2, [r4, #12]
  8000cb4:	6162      	str	r2, [r4, #20]
@@ -2673,13 +2673,13 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     s2 = n - s1;
  8000d0a:	9301      	str	r3, [sp, #4]
     memcpy((void *)oqp->q_wrptr, (const void *)bp, s1);
- 8000d0c:	f005 fad0 	bl	80062b0 <memcpy>
+ 8000d0c:	f005 f9f6 	bl	80060fc <memcpy>
     memcpy((void *)oqp->q_buffer, (const void *)bp, s2);
  8000d10:	eb07 0108 	add.w	r1, r7, r8
  8000d14:	f8dd 8004 	ldr.w	r8, [sp, #4]
  8000d18:	68e0      	ldr	r0, [r4, #12]
  8000d1a:	4642      	mov	r2, r8
- 8000d1c:	f005 fac8 	bl	80062b0 <memcpy>
+ 8000d1c:	f005 f9ee 	bl	80060fc <memcpy>
     oqp->q_wrptr = oqp->q_buffer + s2;
  8000d20:	68e2      	ldr	r2, [r4, #12]
  8000d22:	4643      	mov	r3, r8
@@ -2689,7 +2689,7 @@ size_t oqWriteTimeout(output_queue_t *oqp, const uint8_t *bp,
     memcpy((void *)oqp->q_wrptr, (const void *)bp, n);
  8000d2a:	462a      	mov	r2, r5
  8000d2c:	4639      	mov	r1, r7
- 8000d2e:	f005 fabf 	bl	80062b0 <memcpy>
+ 8000d2e:	f005 f9e5 	bl	80060fc <memcpy>
     oqp->q_wrptr += n;
  8000d32:	6962      	ldr	r2, [r4, #20]
  8000d34:	442a      	add	r2, r5
@@ -3042,7 +3042,7 @@ static inline void chEvtObjectInit(event_source_t *esp) {
 }
  8000e94:	b002      	add	sp, #8
  8000e96:	bd70      	pop	{r4, r5, r6, pc}
- 8000e98:	08006368 	.word	0x08006368
+ 8000e98:	080061b4 	.word	0x080061b4
 
 08000e9c <sdIncomingDataI>:
  * @param[in] sdp       pointer to a @p SerialDriver structure
@@ -3306,7 +3306,7 @@ void sduObjectInit(SerialUSBDriver *sdup) {
 }
  8001008:	b005      	add	sp, #20
  800100a:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 800100c:	08006390 	.word	0x08006390
+ 800100c:	080061dc 	.word	0x080061dc
  8001010:	08000f75 	.word	0x08000f75
  8001014:	08000edd 	.word	0x08000edd
 
@@ -4745,9 +4745,9 @@ void _usb_ep0setup(USBDriver *usbp, usbep_t ep) {
  8001794:	f894 0044 	ldrb.w	r0, [r4, #68]	; 0x44
  8001798:	e752      	b.n	8001640 <_usb_ep0setup+0x220>
  800179a:	bf00      	nop
- 800179c:	080063c0 	.word	0x080063c0
- 80017a0:	080063b8 	.word	0x080063b8
- 80017a4:	080063bc 	.word	0x080063bc
+ 800179c:	0800620c 	.word	0x0800620c
+ 80017a0:	08006204 	.word	0x08006204
+ 80017a4:	08006208 	.word	0x08006208
 
 080017a8 <_usb_ep0in>:
  * @param[in] usbp      pointer to the @p USBDriver object
@@ -7505,7 +7505,7 @@ void dmaInit(void) {
  800279e:	4638      	mov	r0, r7
  80027a0:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
  80027a2:	bf00      	nop
- 80027a4:	080063c4 	.word	0x080063c4
+ 80027a4:	08006210 	.word	0x08006210
  80027a8:	40023800 	.word	0x40023800
  80027ac:	20000894 	.word	0x20000894
 
@@ -7828,7 +7828,7 @@ static void i2c_lld_serve_tx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  80029a8:	f002 fc1a 	bl	80051e0 <chSysHalt>
  80029ac:	e7e8      	b.n	8002980 <i2c_lld_serve_tx_end_irq+0xc>
  80029ae:	bf00      	nop
- 80029b0:	08006484 	.word	0x08006484
+ 80029b0:	080062d0 	.word	0x080062d0
 
 080029b4 <i2c_lld_serve_rx_end_irq>:
   if ((flags & (STM32_DMA_ISR_TEIF | STM32_DMA_ISR_DMEIF)) != 0) {
@@ -7879,7 +7879,7 @@ static void i2c_lld_serve_rx_end_irq(I2CDriver *i2cp, uint32_t flags) {
  8002a0c:	4801      	ldr	r0, [pc, #4]	; (8002a14 <i2c_lld_serve_rx_end_irq+0x60>)
  8002a0e:	f002 fbe7 	bl	80051e0 <chSysHalt>
  8002a12:	e7d5      	b.n	80029c0 <i2c_lld_serve_rx_end_irq+0xc>
- 8002a14:	08006484 	.word	0x08006484
+ 8002a14:	080062d0 	.word	0x080062d0
 
 08002a18 <VectorC4>:
   I2C_TypeDef *dp = i2cp->i2c;
@@ -9969,7 +9969,7 @@ void usb_lld_init(void) {
  8003910:	bd10      	pop	{r4, pc}
  8003912:	bf00      	nop
  8003914:	200009d0 	.word	0x200009d0
- 8003918:	080064b4 	.word	0x080064b4
+ 8003918:	08006300 	.word	0x08006300
 
 0800391c <usb_lld_start>:
   if (usbp->state == USB_STOP) {
@@ -10605,7 +10605,7 @@ void usb_lld_reset(USBDriver *usbp) {
 }
  8003d9e:	bd70      	pop	{r4, r5, r6, pc}
  8003da0:	10008040 	.word	0x10008040
- 8003da4:	08006490 	.word	0x08006490
+ 8003da4:	080062dc 	.word	0x080062dc
 
 08003da8 <usb_lld_set_address>:
   stm32_otg_t *otgp = usbp->otg;
@@ -11435,7 +11435,7 @@ static void spi_lld_serve_rx_interrupt(SPIDriver *spip, uint32_t flags) {
  800437e:	2302      	movs	r3, #2
  8004380:	7023      	strb	r3, [r4, #0]
  8004382:	e7e3      	b.n	800434c <spi_lld_serve_rx_interrupt+0x7c>
- 8004384:	08006484 	.word	0x08006484
+ 8004384:	080062d0 	.word	0x080062d0
 
 08004388 <spi_lld_serve_tx_interrupt>:
 static void spi_lld_serve_tx_interrupt(SPIDriver *spip, uint32_t flags) {
@@ -11495,7 +11495,7 @@ static void spi_lld_serve_tx_interrupt(SPIDriver *spip, uint32_t flags) {
  80043d2:	bf00      	nop
  80043d4:	20000a48 	.word	0x20000a48
  80043d8:	20000a50 	.word	0x20000a50
- 80043dc:	08006484 	.word	0x08006484
+ 80043dc:	080062d0 	.word	0x080062d0
 
 080043e0 <spi_lld_init>:
 /**
@@ -12554,7 +12554,7 @@ static void uart_lld_serve_tx_end_irq(UARTDriver *uartp, uint32_t flags) {
  80049f8:	f000 fbf2 	bl	80051e0 <chSysHalt>
  80049fc:	e7d1      	b.n	80049a2 <uart_lld_serve_tx_end_irq+0xa>
  80049fe:	bf00      	nop
- 8004a00:	08006484 	.word	0x08006484
+ 8004a00:	080062d0 	.word	0x080062d0
 
 08004a04 <uart_lld_serve_rx_end_irq>:
   if ((flags & (STM32_DMA_ISR_TEIF | STM32_DMA_ISR_DMEIF)) != 0) {
@@ -12652,7 +12652,7 @@ static void uart_lld_serve_rx_end_irq(UARTDriver *uartp, uint32_t flags) {
  8004a9e:	4303      	orrs	r3, r0
  8004aa0:	6013      	str	r3, [r2, #0]
  8004aa2:	e7d6      	b.n	8004a52 <uart_lld_serve_rx_end_irq+0x4e>
- 8004aa4:	08006484 	.word	0x08006484
+ 8004aa4:	080062d0 	.word	0x080062d0
 
 08004aa8 <VectorD4>:
 /**
@@ -13696,12 +13696,12 @@ __STATIC_INLINE void __NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
  80051bc:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
  80051be:	bf00      	nop
  80051c0:	20000d50 	.word	0x20000d50
- 80051c4:	080064e8 	.word	0x080064e8
+ 80051c4:	08006334 	.word	0x08006334
  80051c8:	20000d84 	.word	0x20000d84
  80051cc:	e000ed00 	.word	0xe000ed00
  80051d0:	05fa0300 	.word	0x05fa0300
  80051d4:	e0001000 	.word	0xe0001000
- 80051d8:	080064c0 	.word	0x080064c0
+ 80051d8:	0800630c 	.word	0x0800630c
  80051dc:	20000d54 	.word	0x20000d54
 
 080051e0 <chSysHalt>:
@@ -14853,7 +14853,7 @@ thread_t *chThdCreateStatic(void *wsp, size_t size,
  80056fe:	bf00      	nop
  8005700:	20000d54 	.word	0x20000d54
  8005704:	08000329 	.word	0x08000329
- 8005708:	080064e0 	.word	0x080064e0
+ 8005708:	0800632c 	.word	0x0800632c
 
 0800570c <chThdExit>:
  *
@@ -15710,7 +15710,7 @@ void chEvtBroadcastFlagsI(event_source_t *esp, eventflags_t flags) {
 }
  8005a9e:	4770      	bx	lr
  8005aa0:	20000dcc 	.word	0x20000dcc
- 8005aa4:	20001888 	.word	0x20001888
+ 8005aa4:	20001860 	.word	0x20001860
  8005aa8:	20030000 	.word	0x20030000
 
 08005aac <chCoreAllocAlignedWithOffsetI>:
@@ -16193,7 +16193,7 @@ void DR16_initDBus(void)
  8005cc6:	f7fc bd73 	b.w	80027b0 <dmaStreamFree>
  8005cca:	bf00      	nop
  8005ccc:	20000b78 	.word	0x20000b78
- 8005cd0:	08006500 	.word	0x08006500
+ 8005cd0:	0800634c 	.word	0x0800634c
 
 08005cd4 <get_descriptor>:
                                            uint16_t lang)
@@ -16230,9 +16230,9 @@ void DR16_initDBus(void)
  8005cf4:	2000      	movhi	r0, #0
 }
  8005cf6:	4770      	bx	lr
- 8005cf8:	080065cc 	.word	0x080065cc
- 8005cfc:	08006580 	.word	0x08006580
- 8005d00:	08006654 	.word	0x08006654
+ 8005cf8:	08006418 	.word	0x08006418
+ 8005cfc:	080063cc 	.word	0x080063cc
+ 8005d00:	080064a0 	.word	0x080064a0
 
 08005d04 <sof_handler>:
 
@@ -16307,8 +16307,8 @@ static void sof_handler(USBDriver *usbp)
 }
  8005d7e:	bd10      	pop	{r4, pc}
  8005d80:	20000e38 	.word	0x20000e38
- 8005d84:	08006520 	.word	0x08006520
- 8005d88:	08006544 	.word	0x08006544
+ 8005d84:	0800636c 	.word	0x0800636c
+ 8005d88:	08006390 	.word	0x08006390
 
 08005d8c <setup_USB>:
 
@@ -16351,8 +16351,8 @@ void setup_USB(void)
  8005dbe:	bf00      	nop
  8005dc0:	20000e38 	.word	0x20000e38
  8005dc4:	200009d0 	.word	0x200009d0
- 8005dc8:	08006568 	.word	0x08006568
- 8005dcc:	08006570 	.word	0x08006570
+ 8005dc8:	080063b4 	.word	0x080063b4
+ 8005dcc:	080063bc 	.word	0x080063bc
 
 08005dd0 <Flash_SectorBegin>:
  * @param sector Sector to retrieve the beginning address of.
@@ -16419,16 +16419,16 @@ uint8_t *Flash_SectorBegin(flashsector_t sector)
  8005e24:	4770      	bx	lr
  8005e26:	bf00      	nop
 
-08005e28 <_ZL12PAT9125ELThdPv>:
+08005e28 <_ZL12PCA9685ELThdPv>:
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
-static THD_WORKING_AREA(PAT9125ELThd_wa, 1024);
-static THD_FUNCTION(PAT9125ELThd, p)
+static THD_WORKING_AREA(PCA9685ELThd_wa, 1024);
+static THD_FUNCTION(PCA9685ELThd, p)
 {
  8005e28:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
   return ch.rlist.current;
- 8005e2c:	f8df 9064 	ldr.w	r9, [pc, #100]	; 8005e94 <_ZL12PAT9125ELThdPv+0x6c>
+ 8005e2c:	f8df 9064 	ldr.w	r9, [pc, #100]	; 8005e94 <_ZL12PCA9685ELThdPv+0x6c>
   return (bool)((chThdGetSelfX()->flags & CH_FLAG_TERMINATE) != (tmode_t)0);
  8005e30:	f8d9 3018 	ldr.w	r3, [r9, #24]
 
@@ -16440,22 +16440,22 @@ static THD_FUNCTION(PAT9125ELThd, p)
 {
  8005e3c:	b087      	sub	sp, #28
   while (!chThdShouldTerminateX())
- 8005e3e:	d126      	bne.n	8005e8e <_ZL12PAT9125ELThdPv+0x66>
+ 8005e3e:	d126      	bne.n	8005e8e <_ZL12PCA9685ELThdPv+0x66>
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
- 8005e40:	f8df 8054 	ldr.w	r8, [pc, #84]	; 8005e98 <_ZL12PAT9125ELThdPv+0x70>
+ 8005e40:	f8df 8054 	ldr.w	r8, [pc, #84]	; 8005e98 <_ZL12PCA9685ELThdPv+0x70>
 {
  8005e44:	2406      	movs	r4, #6
-  on, on >> 8, off, off >> 8};
+      on, on >> 8, off, off >> 8};
  8005e46:	27a0      	movs	r7, #160	; 0xa0
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
  8005e48:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
-  on, on >> 8, off, off >> 8};
+      on, on >> 8, off, off >> 8};
  8005e4c:	f88d 4010 	strb.w	r4, [sp, #16]
  8005e50:	3404      	adds	r4, #4
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
  8005e52:	9302      	str	r3, [sp, #8]
  8005e54:	e9cd 5500 	strd	r5, r5, [sp]
-  on, on >> 8, off, off >> 8};
+      on, on >> 8, off, off >> 8};
  8005e58:	260f      	movs	r6, #15
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
  8005e5a:	2305      	movs	r3, #5
@@ -16463,7 +16463,7 @@ static THD_FUNCTION(PAT9125ELThd, p)
  8005e5e:	2140      	movs	r1, #64	; 0x40
  8005e60:	4640      	mov	r0, r8
  8005e62:	b2e4      	uxtb	r4, r4
-  on, on >> 8, off, off >> 8};
+      on, on >> 8, off, off >> 8};
  8005e64:	f88d 5011 	strb.w	r5, [sp, #17]
  8005e68:	f88d 5012 	strb.w	r5, [sp, #18]
  8005e6c:	f88d 7013 	strb.w	r7, [sp, #19]
@@ -16474,7 +16474,7 @@ static THD_FUNCTION(PAT9125ELThd, p)
 
     for (uint8_t pwmnum = 0; pwmnum < 16; pwmnum++)
  8005e78:	2c46      	cmp	r4, #70	; 0x46
- 8005e7a:	d1e5      	bne.n	8005e48 <_ZL12PAT9125ELThdPv+0x20>
+ 8005e7a:	d1e5      	bne.n	8005e48 <_ZL12PCA9685ELThdPv+0x20>
     {
       pwm.setPWM(pwmnum, 0, 4000);
     }
@@ -16486,7 +16486,7 @@ static THD_FUNCTION(PAT9125ELThd, p)
   while (!chThdShouldTerminateX())
  8005e86:	f893 3021 	ldrb.w	r3, [r3, #33]	; 0x21
  8005e8a:	075b      	lsls	r3, r3, #29
- 8005e8c:	d5da      	bpl.n	8005e44 <_ZL12PAT9125ELThdPv+0x1c>
+ 8005e8c:	d5da      	bpl.n	8005e44 <_ZL12PCA9685ELThdPv+0x1c>
   }
 }
  8005e8e:	b007      	add	sp, #28
@@ -16494,637 +16494,376 @@ static THD_FUNCTION(PAT9125ELThd, p)
  8005e94:	20000d54 	.word	0x20000d54
  8005e98:	20000998 	.word	0x20000998
 
-08005e9c <_ZN23Adafruit_PWMServoDriver5read8Eh>:
+08005e9c <_Z12PCA_i2cstartv>:
+
+void PCA_i2cstart()
 {
- 8005e9c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  txBuffer[txBufferIndex] = data;
- 8005ea0:	486c      	ldr	r0, [pc, #432]	; (8006054 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1b8>)
-  uint8_t ret = twi_writeTo(txAddress, txBuffer, txBufferLength, 1, true);
- 8005ea2:	4a6d      	ldr	r2, [pc, #436]	; (8006058 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1bc>)
-  txBuffer[txBufferIndex] = data;
- 8005ea4:	7803      	ldrb	r3, [r0, #0]
-  uint8_t ret = twi_writeTo(txAddress, txBuffer, txBufferLength, 1, true);
- 8005ea6:	7815      	ldrb	r5, [r2, #0]
-  txBuffer[txBufferIndex] = data;
- 8005ea8:	4a6c      	ldr	r2, [pc, #432]	; (800605c <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c0>)
-  palClearLine(LINE_B);
- 8005eaa:	4f6d      	ldr	r7, [pc, #436]	; (8006060 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c4>)
-  txBuffer[txBufferIndex] = data;
- 8005eac:	54d1      	strb	r1, [r2, r3]
-{
- 8005eae:	b089      	sub	sp, #36	; 0x24
-  ++txBufferIndex;
- 8005eb0:	f103 0a01 	add.w	sl, r3, #1
-  txBufferLength = txBufferIndex;
- 8005eb4:	4b6b      	ldr	r3, [pc, #428]	; (8006064 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c8>)
-{
- 8005eb6:	9105      	str	r1, [sp, #20]
-  ++txBufferIndex;
- 8005eb8:	fa5f fa8a 	uxtb.w	sl, sl
-  palClearLine(LINE_B);
- 8005ebc:	f44f 5680 	mov.w	r6, #4096	; 0x1000
-  ++txBufferIndex;
- 8005ec0:	f880 a000 	strb.w	sl, [r0]
-  txBufferLength = txBufferIndex;
- 8005ec4:	f883 a000 	strb.w	sl, [r3]
-  chThdSleepMicroseconds(50);
- 8005ec8:	2001      	movs	r0, #1
-  palClearLine(LINE_A);
- 8005eca:	4c67      	ldr	r4, [pc, #412]	; (8006068 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1cc>)
-  palClearLine(LINE_B);
- 8005ecc:	837e      	strh	r6, [r7, #26]
-  chThdSleepMicroseconds(50);
- 8005ece:	f7ff fc45 	bl	800575c <chThdSleep>
-  palClearLine(LINE_A);
- 8005ed2:	2001      	movs	r0, #1
- 8005ed4:	8360      	strh	r0, [r4, #26]
-  chThdSleepMicroseconds(50);
- 8005ed6:	f7ff fc41 	bl	800575c <chThdSleep>
-  swi2c_write(SWI2C_WMSK | ((address & SWI2C_DMSK) << SWI2C_ASHF));
- 8005eda:	006d      	lsls	r5, r5, #1
- 8005edc:	b2ed      	uxtb	r5, r5
- 8005ede:	f04f 0907 	mov.w	r9, #7
-    if (data & (1 << bit))
- 8005ee2:	fa45 f109 	asr.w	r1, r5, r9
-    palSetLine(LINE_A);
- 8005ee6:	f04f 0801 	mov.w	r8, #1
-    if (data & (1 << bit))
- 8005eea:	07ca      	lsls	r2, r1, #31
-  chThdSleepMicroseconds(50);
- 8005eec:	4640      	mov	r0, r8
-    if (data & (1 << bit))
- 8005eee:	f140 8098 	bpl.w	8006022 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x186>
-      palSetLine(LINE_B);
- 8005ef2:	833e      	strh	r6, [r7, #24]
-  chThdSleepMicroseconds(50);
- 8005ef4:	f7ff fc32 	bl	800575c <chThdSleep>
- 8005ef8:	4640      	mov	r0, r8
-    palSetLine(LINE_A);
- 8005efa:	f8a4 8018 	strh.w	r8, [r4, #24]
-  chThdSleepMicroseconds(50);
- 8005efe:	f7ff fc2d 	bl	800575c <chThdSleep>
- 8005f02:	4640      	mov	r0, r8
- 8005f04:	f7ff fc2a 	bl	800575c <chThdSleep>
- 8005f08:	f109 39ff 	add.w	r9, r9, #4294967295	; 0xffffffff
-    palClearLine(LINE_A);
- 8005f0c:	f8a4 801a 	strh.w	r8, [r4, #26]
-  chThdSleepMicroseconds(50);
- 8005f10:	4640      	mov	r0, r8
- 8005f12:	f7ff fc23 	bl	800575c <chThdSleep>
-  for (bit = 7; bit >= 0; bit--)
- 8005f16:	f1b9 3fff 	cmp.w	r9, #4294967295	; 0xffffffff
- 8005f1a:	d1e2      	bne.n	8005ee2 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x46>
-  palSetLine(LINE_B);
- 8005f1c:	4e50      	ldr	r6, [pc, #320]	; (8006060 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c4>)
-  palSetLine(LINE_A);
- 8005f1e:	4d52      	ldr	r5, [pc, #328]	; (8006068 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1cc>)
-  palSetLine(LINE_B);
- 8005f20:	f44f 5780 	mov.w	r7, #4096	; 0x1000
-  chThdSleepMicroseconds(50);
- 8005f24:	2001      	movs	r0, #1
-  palSetLine(LINE_A);
- 8005f26:	4604      	mov	r4, r0
-  palSetLine(LINE_B);
- 8005f28:	8337      	strh	r7, [r6, #24]
-  chThdSleepMicroseconds(50);
- 8005f2a:	f7ff fc17 	bl	800575c <chThdSleep>
- 8005f2e:	4620      	mov	r0, r4
-  palSetLine(LINE_A);
- 8005f30:	832c      	strh	r4, [r5, #24]
-  chThdSleepMicroseconds(50);
- 8005f32:	f7ff fc13 	bl	800575c <chThdSleep>
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005f36:	4639      	mov	r1, r7
- 8005f38:	2205      	movs	r2, #5
-  palClearLine(LINE_A);
- 8005f3a:	836c      	strh	r4, [r5, #26]
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005f3c:	4630      	mov	r0, r6
-  palSetLine(LINE_B);
- 8005f3e:	8337      	strh	r7, [r6, #24]
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005f40:	f7fc fcac 	bl	800289c <_pal_lld_setgroupmode>
-  chThdSleepMicroseconds(50);
- 8005f44:	4620      	mov	r0, r4
- 8005f46:	f7ff fc09 	bl	800575c <chThdSleep>
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005f4a:	4639      	mov	r1, r7
- 8005f4c:	4630      	mov	r0, r6
- 8005f4e:	2205      	movs	r2, #5
- 8005f50:	f7fc fca4 	bl	800289c <_pal_lld_setgroupmode>
-  for (int i = 0; i < length; ++i)
- 8005f54:	f1ba 0f00 	cmp.w	sl, #0
- 8005f58:	d03d      	beq.n	8005fd6 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x13a>
- 8005f5a:	f8df 9100 	ldr.w	r9, [pc, #256]	; 800605c <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c0>
- 8005f5e:	44ca      	add	sl, r9
-    swi2c_write(data[i] & 0xff);
- 8005f60:	f819 8b01 	ldrb.w	r8, [r9], #1
- 8005f64:	f04f 0b07 	mov.w	fp, #7
-    if (data & (1 << bit))
- 8005f68:	fa48 f20b 	asr.w	r2, r8, fp
- 8005f6c:	07d3      	lsls	r3, r2, #31
-      palSetLine(LINE_B);
- 8005f6e:	bf4c      	ite	mi
- 8005f70:	8337      	strhmi	r7, [r6, #24]
-      palClearLine(LINE_B);
- 8005f72:	8377      	strhpl	r7, [r6, #26]
-  chThdSleepMicroseconds(50);
- 8005f74:	f04f 0001 	mov.w	r0, #1
- 8005f78:	bf58      	it	pl
- 8005f7a:	2001      	movpl	r0, #1
- 8005f7c:	f7ff fbee 	bl	800575c <chThdSleep>
- 8005f80:	2001      	movs	r0, #1
-    palSetLine(LINE_A);
- 8005f82:	832c      	strh	r4, [r5, #24]
-  chThdSleepMicroseconds(50);
- 8005f84:	f7ff fbea 	bl	800575c <chThdSleep>
- 8005f88:	2001      	movs	r0, #1
- 8005f8a:	f7ff fbe7 	bl	800575c <chThdSleep>
- 8005f8e:	f10b 3bff 	add.w	fp, fp, #4294967295	; 0xffffffff
-    palClearLine(LINE_A);
- 8005f92:	836c      	strh	r4, [r5, #26]
-  chThdSleepMicroseconds(50);
- 8005f94:	2001      	movs	r0, #1
- 8005f96:	f7ff fbe1 	bl	800575c <chThdSleep>
-  for (bit = 7; bit >= 0; bit--)
- 8005f9a:	f1bb 3fff 	cmp.w	fp, #4294967295	; 0xffffffff
- 8005f9e:	d1e3      	bne.n	8005f68 <_ZN23Adafruit_PWMServoDriver5read8Eh+0xcc>
-  chThdSleepMicroseconds(50);
- 8005fa0:	2001      	movs	r0, #1
-  palSetLine(LINE_B);
- 8005fa2:	8337      	strh	r7, [r6, #24]
-  chThdSleepMicroseconds(50);
- 8005fa4:	f7ff fbda 	bl	800575c <chThdSleep>
- 8005fa8:	2001      	movs	r0, #1
-  palSetLine(LINE_A);
- 8005faa:	832c      	strh	r4, [r5, #24]
-  chThdSleepMicroseconds(50);
- 8005fac:	f7ff fbd6 	bl	800575c <chThdSleep>
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005fb0:	2205      	movs	r2, #5
- 8005fb2:	f44f 5180 	mov.w	r1, #4096	; 0x1000
-  palClearLine(LINE_A);
- 8005fb6:	836c      	strh	r4, [r5, #26]
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005fb8:	4630      	mov	r0, r6
-  palSetLine(LINE_B);
- 8005fba:	8337      	strh	r7, [r6, #24]
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005fbc:	f7fc fc6e 	bl	800289c <_pal_lld_setgroupmode>
-  chThdSleepMicroseconds(50);
- 8005fc0:	2001      	movs	r0, #1
- 8005fc2:	f7ff fbcb 	bl	800575c <chThdSleep>
-  palSetLineMode(LINE_B, PAL_MODE_OUTPUT_OPENDRAIN);
- 8005fc6:	2205      	movs	r2, #5
- 8005fc8:	f44f 5180 	mov.w	r1, #4096	; 0x1000
+ 8005e9c:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+ 8005ea0:	b086      	sub	sp, #24
+      d};
+ 8005ea2:	ad06      	add	r5, sp, #24
+ 8005ea4:	f44f 4300 	mov.w	r3, #32768	; 0x8000
+ 8005ea8:	f825 3d04 	strh.w	r3, [r5, #-4]!
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005eac:	4e59      	ldr	r6, [pc, #356]	; (8006014 <_Z12PCA_i2cstartv+0x178>)
+ 8005eae:	2400      	movs	r4, #0
+ 8005eb0:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
+ 8005eb4:	462a      	mov	r2, r5
+  uint8_t txbuf[1] = {addr};
+ 8005eb6:	f10d 0a18 	add.w	sl, sp, #24
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005eba:	2302      	movs	r3, #2
+ 8005ebc:	2140      	movs	r1, #64	; 0x40
+ 8005ebe:	4630      	mov	r0, r6
+ 8005ec0:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005ec4:	9400      	str	r4, [sp, #0]
+ 8005ec6:	f7fa ff75 	bl	8000db4 <i2cMasterTransmitTimeout>
+  chThdSleepMicroseconds(second);
+ 8005eca:	2001      	movs	r0, #1
+ 8005ecc:	f7ff fc46 	bl	800575c <chThdSleep>
+  uint8_t txbuf[1] = {addr};
+ 8005ed0:	f80a 4d08 	strb.w	r4, [sl, #-8]!
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf, 1);
+ 8005ed4:	f04f 0801 	mov.w	r8, #1
+ 8005ed8:	4652      	mov	r2, sl
+ 8005eda:	4643      	mov	r3, r8
+ 8005edc:	9500      	str	r5, [sp, #0]
+ 8005ede:	9702      	str	r7, [sp, #8]
+ 8005ee0:	4630      	mov	r0, r6
+ 8005ee2:	f8cd 8004 	str.w	r8, [sp, #4]
+ 8005ee6:	2140      	movs	r1, #64	; 0x40
+ 8005ee8:	f7fa ff64 	bl	8000db4 <i2cMasterTransmitTimeout>
+  return rxbuf[0];
+ 8005eec:	f89d 9014 	ldrb.w	r9, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005ef0:	9702      	str	r7, [sp, #8]
+  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
+ 8005ef2:	f009 0c6f 	and.w	ip, r9, #111	; 0x6f
+ 8005ef6:	f04c 0c10 	orr.w	ip, ip, #16
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005efa:	462a      	mov	r2, r5
+ 8005efc:	e9cd 4400 	strd	r4, r4, [sp]
+ 8005f00:	4630      	mov	r0, r6
+ 8005f02:	2302      	movs	r3, #2
+ 8005f04:	2140      	movs	r1, #64	; 0x40
+      d};
+ 8005f06:	f88d c015 	strb.w	ip, [sp, #21]
+ 8005f0a:	f88d 4014 	strb.w	r4, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f0e:	f7fa ff51 	bl	8000db4 <i2cMasterTransmitTimeout>
+      d};
+ 8005f12:	f240 6cfe 	movw	ip, #1790	; 0x6fe
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f16:	462a      	mov	r2, r5
+ 8005f18:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005f1c:	9400      	str	r4, [sp, #0]
+ 8005f1e:	4630      	mov	r0, r6
+ 8005f20:	2302      	movs	r3, #2
+ 8005f22:	2140      	movs	r1, #64	; 0x40
+      d};
+ 8005f24:	f8ad c014 	strh.w	ip, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f28:	f7fa ff44 	bl	8000db4 <i2cMasterTransmitTimeout>
+ 8005f2c:	462a      	mov	r2, r5
+ 8005f2e:	2302      	movs	r3, #2
+ 8005f30:	2140      	movs	r1, #64	; 0x40
+ 8005f32:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005f36:	9400      	str	r4, [sp, #0]
+ 8005f38:	4630      	mov	r0, r6
+      d};
+ 8005f3a:	f88d 9015 	strb.w	r9, [sp, #21]
+ 8005f3e:	f88d 4014 	strb.w	r4, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f42:	f7fa ff37 	bl	8000db4 <i2cMasterTransmitTimeout>
+  chThdSleepMicroseconds(second);
+ 8005f46:	4640      	mov	r0, r8
+ 8005f48:	f7ff fc08 	bl	800575c <chThdSleep>
+  write8(PCA9685_MODE1,
+ 8005f4c:	f069 095f 	orn	r9, r9, #95	; 0x5f
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f50:	462a      	mov	r2, r5
+ 8005f52:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005f56:	9400      	str	r4, [sp, #0]
+ 8005f58:	4630      	mov	r0, r6
+ 8005f5a:	2302      	movs	r3, #2
+ 8005f5c:	2140      	movs	r1, #64	; 0x40
+      d};
+ 8005f5e:	f88d 9015 	strb.w	r9, [sp, #21]
+ 8005f62:	f88d 4014 	strb.w	r4, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f66:	f7fa ff25 	bl	8000db4 <i2cMasterTransmitTimeout>
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf, 1);
+ 8005f6a:	4652      	mov	r2, sl
+ 8005f6c:	4643      	mov	r3, r8
+ 8005f6e:	9500      	str	r5, [sp, #0]
+ 8005f70:	e9cd 8701 	strd	r8, r7, [sp, #4]
+ 8005f74:	4630      	mov	r0, r6
+ 8005f76:	2140      	movs	r1, #64	; 0x40
+  uint8_t txbuf[1] = {addr};
+ 8005f78:	f88d 4010 	strb.w	r4, [sp, #16]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf, 1);
+ 8005f7c:	f7fa ff1a 	bl	8000db4 <i2cMasterTransmitTimeout>
+  return rxbuf[0];
+ 8005f80:	f89d 9014 	ldrb.w	r9, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f84:	9702      	str	r7, [sp, #8]
+  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
+ 8005f86:	f009 0c6f 	and.w	ip, r9, #111	; 0x6f
+ 8005f8a:	f04c 0c10 	orr.w	ip, ip, #16
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005f8e:	462a      	mov	r2, r5
+ 8005f90:	e9cd 4400 	strd	r4, r4, [sp]
+ 8005f94:	4630      	mov	r0, r6
+ 8005f96:	2302      	movs	r3, #2
+ 8005f98:	2140      	movs	r1, #64	; 0x40
+      d};
+ 8005f9a:	f88d c015 	strb.w	ip, [sp, #21]
+ 8005f9e:	f88d 4014 	strb.w	r4, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005fa2:	f7fa ff07 	bl	8000db4 <i2cMasterTransmitTimeout>
+      d};
+ 8005fa6:	f240 3cfe 	movw	ip, #1022	; 0x3fe
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005faa:	462a      	mov	r2, r5
+ 8005fac:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005fb0:	9400      	str	r4, [sp, #0]
+ 8005fb2:	4630      	mov	r0, r6
+ 8005fb4:	2302      	movs	r3, #2
+ 8005fb6:	2140      	movs	r1, #64	; 0x40
+      d};
+ 8005fb8:	f8ad c014 	strh.w	ip, [sp, #20]
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
+ 8005fbc:	f7fa fefa 	bl	8000db4 <i2cMasterTransmitTimeout>
+ 8005fc0:	462a      	mov	r2, r5
+ 8005fc2:	2302      	movs	r3, #2
+ 8005fc4:	2140      	movs	r1, #64	; 0x40
+ 8005fc6:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005fca:	9400      	str	r4, [sp, #0]
  8005fcc:	4630      	mov	r0, r6
- 8005fce:	f7fc fc65 	bl	800289c <_pal_lld_setgroupmode>
-  for (int i = 0; i < length; ++i)
- 8005fd2:	45ca      	cmp	sl, r9
- 8005fd4:	d1c4      	bne.n	8005f60 <_ZN23Adafruit_PWMServoDriver5read8Eh+0xc4>
-  palSetLine(LINE_A);
- 8005fd6:	4b24      	ldr	r3, [pc, #144]	; (8006068 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1cc>)
-  txBufferIndex = 0;
- 8005fd8:	4d1e      	ldr	r5, [pc, #120]	; (8006054 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1b8>)
-  palSetLine(LINE_A);
- 8005fda:	2401      	movs	r4, #1
- 8005fdc:	831c      	strh	r4, [r3, #24]
-  chThdSleepMicroseconds(50);
- 8005fde:	4620      	mov	r0, r4
- 8005fe0:	f7ff fbbc 	bl	800575c <chThdSleep>
-  palSetLine(LINE_B);
- 8005fe4:	4b1e      	ldr	r3, [pc, #120]	; (8006060 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c4>)
- 8005fe6:	f44f 5280 	mov.w	r2, #4096	; 0x1000
-  chThdSleepMicroseconds(50);
- 8005fea:	4620      	mov	r0, r4
-  palSetLine(LINE_B);
- 8005fec:	831a      	strh	r2, [r3, #24]
-  chThdSleepMicroseconds(50);
- 8005fee:	f7ff fbb5 	bl	800575c <chThdSleep>
-  uint8_t txbuf[1]={addr};
- 8005ff2:	aa08      	add	r2, sp, #32
- 8005ff4:	9b05      	ldr	r3, [sp, #20]
- 8005ff6:	f802 3d08 	strb.w	r3, [r2, #-8]!
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
- 8005ffa:	a907      	add	r1, sp, #28
- 8005ffc:	9401      	str	r4, [sp, #4]
- 8005ffe:	4623      	mov	r3, r4
- 8006000:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  txBufferIndex = 0;
- 8006004:	2400      	movs	r4, #0
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
- 8006006:	9002      	str	r0, [sp, #8]
- 8006008:	9100      	str	r1, [sp, #0]
-  txBufferIndex = 0;
- 800600a:	702c      	strb	r4, [r5, #0]
-  txBufferLength = 0;
- 800600c:	4d15      	ldr	r5, [pc, #84]	; (8006064 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1c8>)
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
- 800600e:	4817      	ldr	r0, [pc, #92]	; (800606c <_ZN23Adafruit_PWMServoDriver5read8Eh+0x1d0>)
-  txBufferLength = 0;
- 8006010:	702c      	strb	r4, [r5, #0]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
- 8006012:	2140      	movs	r1, #64	; 0x40
- 8006014:	f7fa fece 	bl	8000db4 <i2cMasterTransmitTimeout>
-}
- 8006018:	f89d 001c 	ldrb.w	r0, [sp, #28]
- 800601c:	b009      	add	sp, #36	; 0x24
- 800601e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-  chThdSleepMicroseconds(50);
- 8006022:	2001      	movs	r0, #1
-      palClearLine(LINE_B);
- 8006024:	837e      	strh	r6, [r7, #26]
-  chThdSleepMicroseconds(50);
- 8006026:	f7ff fb99 	bl	800575c <chThdSleep>
- 800602a:	4640      	mov	r0, r8
-    palSetLine(LINE_A);
- 800602c:	f8a4 8018 	strh.w	r8, [r4, #24]
-  chThdSleepMicroseconds(50);
- 8006030:	f7ff fb94 	bl	800575c <chThdSleep>
- 8006034:	4640      	mov	r0, r8
- 8006036:	f7ff fb91 	bl	800575c <chThdSleep>
- 800603a:	f109 39ff 	add.w	r9, r9, #4294967295	; 0xffffffff
-    palClearLine(LINE_A);
- 800603e:	f8a4 801a 	strh.w	r8, [r4, #26]
-  chThdSleepMicroseconds(50);
- 8006042:	4640      	mov	r0, r8
- 8006044:	f7ff fb8a 	bl	800575c <chThdSleep>
-  for (bit = 7; bit >= 0; bit--)
- 8006048:	f1b9 3fff 	cmp.w	r9, #4294967295	; 0xffffffff
- 800604c:	f47f af49 	bne.w	8005ee2 <_ZN23Adafruit_PWMServoDriver5read8Eh+0x46>
- 8006050:	e764      	b.n	8005f1c <_ZN23Adafruit_PWMServoDriver5read8Eh+0x80>
- 8006052:	bf00      	nop
- 8006054:	2000186c 	.word	0x2000186c
- 8006058:	20001849 	.word	0x20001849
- 800605c:	2000184c 	.word	0x2000184c
- 8006060:	40021c00 	.word	0x40021c00
- 8006064:	2000186d 	.word	0x2000186d
- 8006068:	40022000 	.word	0x40022000
- 800606c:	20000998 	.word	0x20000998
-
-08006070 <_Z10myi2cstartv>:
-
-void myi2cstart()
-{
- 8006070:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
- 8006074:	b087      	sub	sp, #28
       d};
- 8006076:	ad06      	add	r5, sp, #24
- 8006078:	f44f 4300 	mov.w	r3, #32768	; 0x8000
- 800607c:	f825 3d04 	strh.w	r3, [r5, #-4]!
+ 8005fce:	f88d 9015 	strb.w	r9, [sp, #21]
+ 8005fd2:	f88d 4014 	strb.w	r4, [sp, #20]
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006080:	4e50      	ldr	r6, [pc, #320]	; (80061c4 <_Z10myi2cstartv+0x154>)
-  uint8_t oldmode = read8(PCA9685_MODE1);
- 8006082:	f8df 914c 	ldr.w	r9, [pc, #332]	; 80061d0 <_Z10myi2cstartv+0x160>
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006086:	2400      	movs	r4, #0
- 8006088:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
- 800608c:	462a      	mov	r2, r5
- 800608e:	2302      	movs	r3, #2
- 8006090:	2140      	movs	r1, #64	; 0x40
- 8006092:	4630      	mov	r0, r6
- 8006094:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 8006098:	9400      	str	r4, [sp, #0]
- 800609a:	f7fa fe8b 	bl	8000db4 <i2cMasterTransmitTimeout>
+ 8005fd6:	f7fa feed 	bl	8000db4 <i2cMasterTransmitTimeout>
   chThdSleepMicroseconds(second);
- 800609e:	2001      	movs	r0, #1
- 80060a0:	f7ff fb5c 	bl	800575c <chThdSleep>
-  uint8_t oldmode = read8(PCA9685_MODE1);
- 80060a4:	4621      	mov	r1, r4
- 80060a6:	4648      	mov	r0, r9
- 80060a8:	f7ff fef8 	bl	8005e9c <_ZN23Adafruit_PWMServoDriver5read8Eh>
-  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
- 80060ac:	f000 0c6f 	and.w	ip, r0, #111	; 0x6f
-  uint8_t oldmode = read8(PCA9685_MODE1);
- 80060b0:	4680      	mov	r8, r0
-  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
- 80060b2:	f04c 0c10 	orr.w	ip, ip, #16
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 80060b6:	462a      	mov	r2, r5
- 80060b8:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 80060bc:	9400      	str	r4, [sp, #0]
- 80060be:	4630      	mov	r0, r6
- 80060c0:	2302      	movs	r3, #2
- 80060c2:	2140      	movs	r1, #64	; 0x40
-      d};
- 80060c4:	f88d c015 	strb.w	ip, [sp, #21]
- 80060c8:	f88d 4014 	strb.w	r4, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 80060cc:	f7fa fe72 	bl	8000db4 <i2cMasterTransmitTimeout>
-      d};
- 80060d0:	f240 6cfe 	movw	ip, #1790	; 0x6fe
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 80060d4:	462a      	mov	r2, r5
- 80060d6:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 80060da:	9400      	str	r4, [sp, #0]
- 80060dc:	4630      	mov	r0, r6
- 80060de:	2302      	movs	r3, #2
- 80060e0:	2140      	movs	r1, #64	; 0x40
-      d};
- 80060e2:	f8ad c014 	strh.w	ip, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 80060e6:	f7fa fe65 	bl	8000db4 <i2cMasterTransmitTimeout>
- 80060ea:	462a      	mov	r2, r5
- 80060ec:	2302      	movs	r3, #2
- 80060ee:	2140      	movs	r1, #64	; 0x40
- 80060f0:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 80060f4:	9400      	str	r4, [sp, #0]
- 80060f6:	4630      	mov	r0, r6
-      d};
- 80060f8:	f88d 8015 	strb.w	r8, [sp, #21]
- 80060fc:	f88d 4014 	strb.w	r4, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006100:	f7fa fe58 	bl	8000db4 <i2cMasterTransmitTimeout>
-  chThdSleepMicroseconds(second);
- 8006104:	2001      	movs	r0, #1
- 8006106:	f7ff fb29 	bl	800575c <chThdSleep>
+ 8005fda:	4640      	mov	r0, r8
+ 8005fdc:	f7ff fbbe 	bl	800575c <chThdSleep>
   write8(PCA9685_MODE1,
- 800610a:	f068 085f 	orn	r8, r8, #95	; 0x5f
+ 8005fe0:	f069 095f 	orn	r9, r9, #95	; 0x5f
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 800610e:	462a      	mov	r2, r5
- 8006110:	2302      	movs	r3, #2
- 8006112:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 8006116:	9400      	str	r4, [sp, #0]
- 8006118:	4630      	mov	r0, r6
- 800611a:	2140      	movs	r1, #64	; 0x40
+ 8005fe4:	462a      	mov	r2, r5
+ 8005fe6:	e9cd 4701 	strd	r4, r7, [sp, #4]
+ 8005fea:	9400      	str	r4, [sp, #0]
+ 8005fec:	4630      	mov	r0, r6
+ 8005fee:	2302      	movs	r3, #2
+ 8005ff0:	2140      	movs	r1, #64	; 0x40
       d};
- 800611c:	f88d 8015 	strb.w	r8, [sp, #21]
- 8006120:	f88d 4014 	strb.w	r4, [sp, #20]
+ 8005ff2:	f88d 9015 	strb.w	r9, [sp, #21]
+ 8005ff6:	f88d 4014 	strb.w	r4, [sp, #20]
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006124:	f7fa fe46 	bl	8000db4 <i2cMasterTransmitTimeout>
-  uint8_t oldmode = read8(PCA9685_MODE1);
- 8006128:	4621      	mov	r1, r4
- 800612a:	4648      	mov	r0, r9
- 800612c:	f7ff feb6 	bl	8005e9c <_ZN23Adafruit_PWMServoDriver5read8Eh>
-  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
- 8006130:	f000 0c6f 	and.w	ip, r0, #111	; 0x6f
-  uint8_t oldmode = read8(PCA9685_MODE1);
- 8006134:	4680      	mov	r8, r0
-  uint8_t newmode = (oldmode & 0x7F) | 0x10; // sleep
- 8006136:	f04c 0c10 	orr.w	ip, ip, #16
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 800613a:	462a      	mov	r2, r5
- 800613c:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 8006140:	9400      	str	r4, [sp, #0]
- 8006142:	4630      	mov	r0, r6
- 8006144:	2302      	movs	r3, #2
- 8006146:	2140      	movs	r1, #64	; 0x40
-      d};
- 8006148:	f88d c015 	strb.w	ip, [sp, #21]
- 800614c:	f88d 4014 	strb.w	r4, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006150:	f7fa fe30 	bl	8000db4 <i2cMasterTransmitTimeout>
-      d};
- 8006154:	f240 3cfe 	movw	ip, #1022	; 0x3fe
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006158:	462a      	mov	r2, r5
- 800615a:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 800615e:	9400      	str	r4, [sp, #0]
- 8006160:	4630      	mov	r0, r6
- 8006162:	2302      	movs	r3, #2
- 8006164:	2140      	movs	r1, #64	; 0x40
-      d};
- 8006166:	f8ad c014 	strh.w	ip, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 800616a:	f7fa fe23 	bl	8000db4 <i2cMasterTransmitTimeout>
- 800616e:	462a      	mov	r2, r5
- 8006170:	2302      	movs	r3, #2
- 8006172:	2140      	movs	r1, #64	; 0x40
- 8006174:	e9cd 4701 	strd	r4, r7, [sp, #4]
- 8006178:	9400      	str	r4, [sp, #0]
- 800617a:	4630      	mov	r0, r6
-      d};
- 800617c:	f88d 8015 	strb.w	r8, [sp, #21]
- 8006180:	f88d 4014 	strb.w	r4, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006184:	f7fa fe16 	bl	8000db4 <i2cMasterTransmitTimeout>
-  chThdSleepMicroseconds(second);
- 8006188:	2001      	movs	r0, #1
- 800618a:	f7ff fae7 	bl	800575c <chThdSleep>
-  write8(PCA9685_MODE1,
- 800618e:	f068 085f 	orn	r8, r8, #95	; 0x5f
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 8006192:	462a      	mov	r2, r5
- 8006194:	9702      	str	r7, [sp, #8]
- 8006196:	e9cd 4400 	strd	r4, r4, [sp]
- 800619a:	4630      	mov	r0, r6
- 800619c:	2302      	movs	r3, #2
- 800619e:	2140      	movs	r1, #64	; 0x40
-      d};
- 80061a0:	f88d 8015 	strb.w	r8, [sp, #21]
- 80061a4:	f88d 4014 	strb.w	r4, [sp, #20]
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 2, 0, 0);
- 80061a8:	f7fa fe04 	bl	8000db4 <i2cMasterTransmitTimeout>
+ 8005ffa:	f7fa fedb 	bl	8000db4 <i2cMasterTransmitTimeout>
   // Adafruit_PWMServoDriver(0x40);
   pwm.begin();
   pwm.setPWMFreq(1600); // This is the maximum PWM frequency
 
-  // PAT9125init();
-  chThdCreateStatic(PAT9125ELThd_wa, sizeof(PAT9125ELThd_wa),
- 80061ac:	9400      	str	r4, [sp, #0]
- 80061ae:	4b06      	ldr	r3, [pc, #24]	; (80061c8 <_Z10myi2cstartv+0x158>)
- 80061b0:	4806      	ldr	r0, [pc, #24]	; (80061cc <_Z10myi2cstartv+0x15c>)
- 80061b2:	2289      	movs	r2, #137	; 0x89
- 80061b4:	f44f 61aa 	mov.w	r1, #1360	; 0x550
- 80061b8:	f7ff fa6e 	bl	8005698 <chThdCreateStatic>
-                    NORMALPRIO + 9, PAT9125ELThd, NULL);
+  chThdCreateStatic(PCA9685ELThd_wa, sizeof(PCA9685ELThd_wa),
+ 8005ffe:	9400      	str	r4, [sp, #0]
+ 8006000:	4b05      	ldr	r3, [pc, #20]	; (8006018 <_Z12PCA_i2cstartv+0x17c>)
+ 8006002:	4806      	ldr	r0, [pc, #24]	; (800601c <_Z12PCA_i2cstartv+0x180>)
+ 8006004:	2289      	movs	r2, #137	; 0x89
+ 8006006:	f44f 61aa 	mov.w	r1, #1360	; 0x550
+ 800600a:	f7ff fb45 	bl	8005698 <chThdCreateStatic>
+                    NORMALPRIO + 9, PCA9685ELThd, NULL);
 }
- 80061bc:	b007      	add	sp, #28
- 80061be:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 80061c2:	bf00      	nop
- 80061c4:	20000998 	.word	0x20000998
- 80061c8:	08005e29 	.word	0x08005e29
- 80061cc:	200012f8 	.word	0x200012f8
- 80061d0:	20001848 	.word	0x20001848
+ 800600e:	b006      	add	sp, #24
+ 8006010:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+ 8006014:	20000998 	.word	0x20000998
+ 8006018:	08005e29 	.word	0x08005e29
+ 800601c:	200012f8 	.word	0x200012f8
 
-080061d4 <_GLOBAL__sub_I_mydata>:
+08006020 <_GLOBAL__sub_I_rxBuffer>:
   _i2caddr = addr;
- 80061d4:	4b01      	ldr	r3, [pc, #4]	; (80061dc <_GLOBAL__sub_I_mydata+0x8>)
- 80061d6:	2270      	movs	r2, #112	; 0x70
- 80061d8:	701a      	strb	r2, [r3, #0]
-
-uint8_t pat9125_wr_reg_verify(uint8_t addr, uint8_t data)
-{
-  pat9125_wr_reg(addr, data);
-  return pat9125_rd_reg(addr) == data;
+ 8006020:	4b01      	ldr	r3, [pc, #4]	; (8006028 <_GLOBAL__sub_I_rxBuffer+0x8>)
+ 8006022:	2270      	movs	r2, #112	; 0x70
+ 8006024:	701a      	strb	r2, [r3, #0]
 }
- 80061da:	4770      	bx	lr
- 80061dc:	20001848 	.word	0x20001848
+ 8006026:	4770      	bx	lr
+ 8006028:	20001848 	.word	0x20001848
 
-080061e0 <main>:
+0800602c <main>:
         on, on >> 8 & 0x0f, off, off >> 8 & 0x0f};
     i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
 }
 
 int main(void)
 {
- 80061e0:	b510      	push	{r4, lr}
+ 800602c:	b510      	push	{r4, lr}
     palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
     palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
-    
+
     while (true)
     {
         palToggleLine(LINE_LED_GREEN);
- 80061e2:	4c11      	ldr	r4, [pc, #68]	; (8006228 <main+0x48>)
+ 800602e:	4c11      	ldr	r4, [pc, #68]	; (8006074 <main+0x48>)
     halInit();
- 80061e4:	f7fa f9ee 	bl	80005c4 <halInit>
+ 8006030:	f7fa fac8 	bl	80005c4 <halInit>
     chSysInit();
- 80061e8:	f7fe ffa8 	bl	800513c <chSysInit>
+ 8006034:	f7ff f882 	bl	800513c <chSysInit>
     board_setup_all();
- 80061ec:	f7fa f8a8 	bl	8000340 <board_setup_all>
+ 8006038:	f7fa f982 	bl	8000340 <board_setup_all>
     i2cStart(&I2CD2, &i2cfg1);
- 80061f0:	490e      	ldr	r1, [pc, #56]	; (800622c <main+0x4c>)
- 80061f2:	480f      	ldr	r0, [pc, #60]	; (8006230 <main+0x50>)
- 80061f4:	f7fa fdd0 	bl	8000d98 <i2cStart>
-    myi2cstart();
- 80061f8:	f7ff ff3a 	bl	8006070 <_Z10myi2cstartv>
+ 800603c:	490e      	ldr	r1, [pc, #56]	; (8006078 <main+0x4c>)
+ 800603e:	480f      	ldr	r0, [pc, #60]	; (800607c <main+0x50>)
+ 8006040:	f7fa feaa 	bl	8000d98 <i2cStart>
+    PCA_i2cstart();
+ 8006044:	f7ff ff2a 	bl	8005e9c <_Z12PCA_i2cstartv>
     palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 80061fc:	f240 2206 	movw	r2, #518	; 0x206
- 8006200:	2101      	movs	r1, #1
- 8006202:	4620      	mov	r0, r4
- 8006204:	f7fc fb4a 	bl	800289c <_pal_lld_setgroupmode>
+ 8006048:	f240 2206 	movw	r2, #518	; 0x206
+ 800604c:	2101      	movs	r1, #1
+ 800604e:	4620      	mov	r0, r4
+ 8006050:	f7fc fc24 	bl	800289c <_pal_lld_setgroupmode>
     palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
- 8006208:	f240 2206 	movw	r2, #518	; 0x206
- 800620c:	2102      	movs	r1, #2
- 800620e:	4620      	mov	r0, r4
- 8006210:	f7fc fb44 	bl	800289c <_pal_lld_setgroupmode>
+ 8006054:	f240 2206 	movw	r2, #518	; 0x206
+ 8006058:	2102      	movs	r1, #2
+ 800605a:	4620      	mov	r0, r4
+ 800605c:	f7fc fc1e 	bl	800289c <_pal_lld_setgroupmode>
         palToggleLine(LINE_LED_GREEN);
- 8006214:	6963      	ldr	r3, [r4, #20]
- 8006216:	f483 4380 	eor.w	r3, r3, #16384	; 0x4000
- 800621a:	6163      	str	r3, [r4, #20]
+ 8006060:	6963      	ldr	r3, [r4, #20]
+ 8006062:	f483 4380 	eor.w	r3, r3, #16384	; 0x4000
+ 8006066:	6163      	str	r3, [r4, #20]
         //     {setPWM(i, 10, 4000);
         //     chThdSleepMilliseconds(10);}
         uint8_t addr = LED0_ON_L + 4;
         uint8_t rxbuf[20];
         // i2cMasterTransmit(&I2CD2, 0x40, &addr, 1, rxbuf, 20);
         chThdSleepMilliseconds(500);
- 800621c:	f241 3088 	movw	r0, #5000	; 0x1388
- 8006220:	f7ff fa9c 	bl	800575c <chThdSleep>
- 8006224:	e7f6      	b.n	8006214 <main+0x34>
- 8006226:	bf00      	nop
- 8006228:	40021400 	.word	0x40021400
- 800622c:	08006674 	.word	0x08006674
- 8006230:	20000998 	.word	0x20000998
+ 8006068:	f241 3088 	movw	r0, #5000	; 0x1388
+ 800606c:	f7ff fb76 	bl	800575c <chThdSleep>
+ 8006070:	e7f6      	b.n	8006060 <main+0x34>
+ 8006072:	bf00      	nop
+ 8006074:	40021400 	.word	0x40021400
+ 8006078:	080064c0 	.word	0x080064c0
+ 800607c:	20000998 	.word	0x20000998
 
-08006234 <_ZdlPv>:
+08006080 <_ZdlPv>:
   return chHeapAlloc(NULL, size);
 }
 
 void operator delete(void *ptr)
 {
   chHeapFree(ptr);
- 8006234:	f7ff bc84 	b.w	8005b40 <chHeapFree>
+ 8006080:	f7ff bd5e 	b.w	8005b40 <chHeapFree>
 
-08006238 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev>:
+08006084 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev>:
        *  things.  The _Base dtor only erases the elements, and note
        *  that if the elements themselves are pointers, the pointed-to
        *  memory is not touched in any way.  Managing the pointer is
        *  the user's responsibility.
        */
       ~list() = default;
- 8006238:	b538      	push	{r3, r4, r5, lr}
- 800623a:	4605      	mov	r5, r0
+ 8006084:	b538      	push	{r3, r4, r5, lr}
+ 8006086:	4605      	mov	r5, r0
     void
     _List_base<_Tp, _Alloc>::
     _M_clear() _GLIBCXX_NOEXCEPT
     {
       typedef _List_node<_Tp>  _Node;
       __detail::_List_node_base* __cur = _M_impl._M_node._M_next;
- 800623c:	6800      	ldr	r0, [r0, #0]
+ 8006088:	6800      	ldr	r0, [r0, #0]
       while (__cur != &_M_impl._M_node)
- 800623e:	42a8      	cmp	r0, r5
- 8006240:	d005      	beq.n	800624e <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0x16>
+ 800608a:	42a8      	cmp	r0, r5
+ 800608c:	d005      	beq.n	800609a <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0x16>
 	{
 	  _Node* __tmp = static_cast<_Node*>(__cur);
 	  __cur = __tmp->_M_next;
- 8006242:	6804      	ldr	r4, [r0, #0]
+ 800608e:	6804      	ldr	r4, [r0, #0]
 	  {
 	    ::operator delete(__p, std::align_val_t(alignof(_Tp)));
 	    return;
 	  }
 #endif
 	::operator delete(__p);
- 8006244:	f7ff fff6 	bl	8006234 <_ZdlPv>
+ 8006090:	f7ff fff6 	bl	8006080 <_ZdlPv>
       while (__cur != &_M_impl._M_node)
- 8006248:	42ac      	cmp	r4, r5
- 800624a:	4620      	mov	r0, r4
- 800624c:	d1f9      	bne.n	8006242 <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0xa>
- 800624e:	4628      	mov	r0, r5
- 8006250:	bd38      	pop	{r3, r4, r5, pc}
- 8006252:	bf00      	nop
+ 8006094:	42ac      	cmp	r4, r5
+ 8006096:	4620      	mov	r0, r4
+ 8006098:	d1f9      	bne.n	800608e <_ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED1Ev+0xa>
+ 800609a:	4628      	mov	r0, r5
+ 800609c:	bd38      	pop	{r3, r4, r5, pc}
+ 800609e:	bf00      	nop
 
-08006254 <_GLOBAL__sub_I__Z16Param_getDefByIDj>:
+080060a0 <_GLOBAL__sub_I__Z16Param_getDefByIDj>:
 }
 
 /**
  * @brief ShellCommand definition for interfacing with this module
  */
 const ShellCommand g_Persistence_ShellCommand = {PARAM_SHELL_CMD_STR, Param_ShellCmd};
- 8006254:	b510      	push	{r4, lr}
+ 80060a0:	b510      	push	{r4, lr}
 static uint8_t *p_PARAM_FLASH_START = Flash_SectorBegin(PARAM_STORAGE_SECTOR);
- 8006256:	2017      	movs	r0, #23
- 8006258:	f7ff fdba 	bl	8005dd0 <Flash_SectorBegin>
+ 80060a2:	2017      	movs	r0, #23
+ 80060a4:	f7ff fe94 	bl	8005dd0 <Flash_SectorBegin>
 	: _Node_alloc_type(), _M_node()
- 800625c:	4b06      	ldr	r3, [pc, #24]	; (8006278 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x24>)
- 800625e:	4a07      	ldr	r2, [pc, #28]	; (800627c <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x28>)
+ 80060a8:	4b06      	ldr	r3, [pc, #24]	; (80060c4 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x24>)
+ 80060aa:	4a07      	ldr	r2, [pc, #28]	; (80060c8 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x28>)
 static std::list<const Param_Definition_t *> params;
- 8006260:	4907      	ldr	r1, [pc, #28]	; (8006280 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x2c>)
+ 80060ac:	4907      	ldr	r1, [pc, #28]	; (80060cc <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x2c>)
 static uint8_t *p_PARAM_FLASH_START = Flash_SectorBegin(PARAM_STORAGE_SECTOR);
- 8006262:	6010      	str	r0, [r2, #0]
+ 80060ae:	6010      	str	r0, [r2, #0]
 	this->_M_impl._M_node._M_prev = &this->_M_impl._M_node;
- 8006264:	e9c3 3300 	strd	r3, r3, [r3]
+ 80060b0:	e9c3 3300 	strd	r3, r3, [r3]
 	: _Node_alloc_type(), _M_node()
- 8006268:	2400      	movs	r4, #0
- 800626a:	609c      	str	r4, [r3, #8]
+ 80060b4:	2400      	movs	r4, #0
+ 80060b6:	609c      	str	r4, [r3, #8]
 static std::list<const Param_Definition_t *> params;
- 800626c:	4618      	mov	r0, r3
- 800626e:	4a05      	ldr	r2, [pc, #20]	; (8006284 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x30>)
+ 80060b8:	4618      	mov	r0, r3
+ 80060ba:	4a05      	ldr	r2, [pc, #20]	; (80060d0 <_GLOBAL__sub_I__Z16Param_getDefByIDj+0x30>)
 const ShellCommand g_Persistence_ShellCommand = {PARAM_SHELL_CMD_STR, Param_ShellCmd};
- 8006270:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
+ 80060bc:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
 static std::list<const Param_Definition_t *> params;
- 8006274:	f000 b808 	b.w	8006288 <__aeabi_atexit>
- 8006278:	20001878 	.word	0x20001878
- 800627c:	20001874 	.word	0x20001874
- 8006280:	08006239 	.word	0x08006239
- 8006284:	20001870 	.word	0x20001870
+ 80060c0:	f000 b808 	b.w	80060d4 <__aeabi_atexit>
+ 80060c4:	20001854 	.word	0x20001854
+ 80060c8:	20001850 	.word	0x20001850
+ 80060cc:	08006085 	.word	0x08006085
+ 80060d0:	2000184c 	.word	0x2000184c
 
-08006288 <__aeabi_atexit>:
- 8006288:	460b      	mov	r3, r1
- 800628a:	4601      	mov	r1, r0
- 800628c:	4618      	mov	r0, r3
- 800628e:	f000 b801 	b.w	8006294 <__cxa_atexit>
+080060d4 <__aeabi_atexit>:
+ 80060d4:	460b      	mov	r3, r1
+ 80060d6:	4601      	mov	r1, r0
+ 80060d8:	4618      	mov	r0, r3
+ 80060da:	f000 b801 	b.w	80060e0 <__cxa_atexit>
 	...
 
-08006294 <__cxa_atexit>:
- 8006294:	b510      	push	{r4, lr}
- 8006296:	4c05      	ldr	r4, [pc, #20]	; (80062ac <__cxa_atexit+0x18>)
- 8006298:	4613      	mov	r3, r2
- 800629a:	b12c      	cbz	r4, 80062a8 <__cxa_atexit+0x14>
- 800629c:	460a      	mov	r2, r1
- 800629e:	4601      	mov	r1, r0
- 80062a0:	2002      	movs	r0, #2
- 80062a2:	f3af 8000 	nop.w
- 80062a6:	bd10      	pop	{r4, pc}
- 80062a8:	4620      	mov	r0, r4
- 80062aa:	e7fc      	b.n	80062a6 <__cxa_atexit+0x12>
- 80062ac:	00000000 	.word	0x00000000
+080060e0 <__cxa_atexit>:
+ 80060e0:	b510      	push	{r4, lr}
+ 80060e2:	4c05      	ldr	r4, [pc, #20]	; (80060f8 <__cxa_atexit+0x18>)
+ 80060e4:	4613      	mov	r3, r2
+ 80060e6:	b12c      	cbz	r4, 80060f4 <__cxa_atexit+0x14>
+ 80060e8:	460a      	mov	r2, r1
+ 80060ea:	4601      	mov	r1, r0
+ 80060ec:	2002      	movs	r0, #2
+ 80060ee:	f3af 8000 	nop.w
+ 80060f2:	bd10      	pop	{r4, pc}
+ 80060f4:	4620      	mov	r0, r4
+ 80060f6:	e7fc      	b.n	80060f2 <__cxa_atexit+0x12>
+ 80060f8:	00000000 	.word	0x00000000
 
-080062b0 <memcpy>:
- 80062b0:	b510      	push	{r4, lr}
- 80062b2:	1e43      	subs	r3, r0, #1
- 80062b4:	440a      	add	r2, r1
- 80062b6:	4291      	cmp	r1, r2
- 80062b8:	d100      	bne.n	80062bc <memcpy+0xc>
- 80062ba:	bd10      	pop	{r4, pc}
- 80062bc:	f811 4b01 	ldrb.w	r4, [r1], #1
- 80062c0:	f803 4f01 	strb.w	r4, [r3, #1]!
- 80062c4:	e7f7      	b.n	80062b6 <memcpy+0x6>
+080060fc <memcpy>:
+ 80060fc:	b510      	push	{r4, lr}
+ 80060fe:	1e43      	subs	r3, r0, #1
+ 8006100:	440a      	add	r2, r1
+ 8006102:	4291      	cmp	r1, r2
+ 8006104:	d100      	bne.n	8006108 <memcpy+0xc>
+ 8006106:	bd10      	pop	{r4, pc}
+ 8006108:	f811 4b01 	ldrb.w	r4, [r1], #1
+ 800610c:	f803 4f01 	strb.w	r4, [r3, #1]!
+ 8006110:	e7f7      	b.n	8006102 <memcpy+0x6>
 
-080062c6 <memset>:
- 80062c6:	4402      	add	r2, r0
- 80062c8:	4603      	mov	r3, r0
- 80062ca:	4293      	cmp	r3, r2
- 80062cc:	d100      	bne.n	80062d0 <memset+0xa>
- 80062ce:	4770      	bx	lr
- 80062d0:	f803 1b01 	strb.w	r1, [r3], #1
- 80062d4:	e7f9      	b.n	80062ca <memset+0x4>
+08006112 <memset>:
+ 8006112:	4402      	add	r2, r0
+ 8006114:	4603      	mov	r3, r0
+ 8006116:	4293      	cmp	r3, r2
+ 8006118:	d100      	bne.n	800611c <memset+0xa>
+ 800611a:	4770      	bx	lr
+ 800611c:	f803 1b01 	strb.w	r1, [r3], #1
+ 8006120:	e7f9      	b.n	8006116 <memset+0x4>

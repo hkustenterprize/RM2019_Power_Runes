@@ -7,7 +7,7 @@
 
 #include "spiconfig.h"
 
-extern void PCA_i2cstart();
+extern void myi2cstart();
 extern int64_t position;
 
 //SWI2C configuration

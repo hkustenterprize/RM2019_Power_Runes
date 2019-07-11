@@ -72,7 +72,7 @@ int main(void)
 
     i2cStart(&I2CD2, &i2cfg1);
 
-    myi2cstart();
+    PCA_i2cstart();
 
     palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
     palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
