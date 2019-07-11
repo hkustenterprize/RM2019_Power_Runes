@@ -325,7 +325,7 @@ void PCA_i2cstart()
 {
   // Adafruit_PWMServoDriver(0x40);
   pwm.begin();
-  pwm.setPWMFreq(1600); // This is the maximum PWM frequency
+  pwm.setPWMFreq(1000); // This is the maximum PWM frequency
 
   chThdCreateStatic(PCA9685ELThd_wa, sizeof(PCA9685ELThd_wa),
                     NORMALPRIO + 9, PCA9685ELThd, NULL);
