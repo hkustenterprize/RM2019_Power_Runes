@@ -23,6 +23,7 @@ bool flip = true;
 uint8_t randomnum;
 uint8_t randomselected= 5;// 5
 bool fanpre[5] = {false, false, false, false, false};
+uint8_t past_num = -1;
 
 void setup() {
   Serial.begin(9600);
@@ -76,6 +77,10 @@ void time_count() {
 void actived() {
   if(((start_time %5 ==0)&&(flip==true))||(start_time %5==2)&&(flip==false)){
     Serial.print("Select");
+    randomselected=0;
+    for(int i=0;i<5;i++)if(fan[i]==false)randomselected++;
+    if(past_num>-1&&randomselected>1)randomselected--;
+    else past_num=-1;
     randomnum = random(0,randomselected);
     Serial.println(randomnum);
     for(int i=0;i<5;i++){
@@ -85,11 +90,18 @@ void actived() {
         pwm.setPWM(i+6,0,4000);
         fanpre[i]=true;
       }
+      else if(i==past_num){
+        randomnum++;
+        pwm.setPWM(i+6,4000,0);
+        pwm.setPWM(i+1,4000,0);
+        fanpre[i]=false;
+      }
       else{
         if(i==randomnum){
           pwm.setPWM(i+6,0,4000);
           pwm.setPWM(i+1,4000,0);
           fanpre[i]=true;
+          past_num = i;
         }
         else{
           pwm.setPWM(i+6,4000,0);
@@ -132,10 +144,12 @@ void loop() {
     pwm.setPWM(0, 0, 4000);
     Serial.println("able to activate");
     actived();
+    Serial.println(past_num);
   }
   else if(start_time >=180 && start_time <240){
     for(uint16_t i=0; i<16; i++)pwm.setPWM(i, 4000, 0);
     for(int i=0;i<5;i++)fan[i]=false;
+//    past_num =-1;
     Serial.println("unable to activate");
   }
   else if(start_time >=240 && start_time <420){
