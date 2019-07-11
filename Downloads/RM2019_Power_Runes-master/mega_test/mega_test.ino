@@ -17,7 +17,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 // our servo # counter
 uint8_t servonum = 0;
-uint16_t start_time =50; //should change to 0
+uint16_t start_time =0; //should change to 0
 bool fan[5] = {false, false, false, false, false};//all false
 bool flip = true;
 uint8_t randomnum;
