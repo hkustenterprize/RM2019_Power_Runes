@@ -4,15 +4,6 @@
   Belows are hardware i2c, use PCA9685 PWM driver chip
 */
 
-uint8_t rxBuffer[32];
-uint8_t rxBufferIndex = 0;
-uint8_t rxBufferLength = 0;
-
-uint8_t txAddress = 0;
-uint8_t txBuffer[32];
-uint8_t txBufferIndex = 0;
-uint8_t txBufferLength = 0;
-
 /*!
  *  @brief  Instantiates a new PCA9685 PWM driver chip with the I2C address on a
  * TwoWire interface
@@ -178,32 +169,6 @@ uint8_t Adafruit_PWMServoDriver::getPWM(uint8_t num)
  *  @param  off At what point in the 4096-part cycle to turn the PWM output OFF
  */
 
-// must be called in:
-// slave tx event callback
-// or after beginTransmission(address)
-size_t write(uint8_t data)
-{
-  // if(transmitting){
-  // in master transmitter mode
-  // don't bother if buffer is full
-  // if(txBufferLength >= BUFFER_LENGTH){
-  //   setWriteError();
-  //   return 0;
-  // }
-  // put byte in tx buffer
-  txBuffer[txBufferIndex] = data;
-  ++txBufferIndex;
-  // update amount in buffer
-  txBufferLength = txBufferIndex;
-  // }else{
-  // in slave send mode
-  // reply to master
-  // twi_transmit(&data, 1);
-  // }
-  return 1;
-}
-
-
 void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off)
 {
 #ifdef ENABLE_DEBUG_OUTPUT
@@ -214,20 +179,6 @@ void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off)
   Serial.print("->");
   Serial.println(off);
 #endif
-  // swi2c_start();
-  // swi2c_write(SWI2C_WMSK | ((0x40 & SWI2C_DMSK) << SWI2C_ASHF));
-  // swi2c_ack();
-  // swi2c_write(LED0_ON_L + 4 * num);
-  // swi2c_ack();
-  // swi2c_write(on);
-  // swi2c_ack();
-  // swi2c_write((on >> 8) );//& 0b111);
-  // swi2c_ack();
-  // swi2c_write(off);
-  // swi2c_ack();
-  // swi2c_write((off >> 8) );//& 0b111);
-  // swi2c_ack();
-  // swi2c_stop();
   uint8_t txbuf[5] = {
       LED0_ON_L + 4 * num,
       on, on >> 8, off, off >> 8};
