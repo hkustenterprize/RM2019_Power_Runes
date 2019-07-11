@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccSr6e0N.s 			page 1
+ARM GAS  /tmp/cclU3Lzp.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
   55              		.cfi_endproc
   56              	.LFE136:
   57              		.size	__early_init, .-__early_init
-ARM GAS  /tmp/ccSr6e0N.s 			page 2
+ARM GAS  /tmp/cclU3Lzp.s 			page 2
 
 
   58 0002 00BF     		.section	.text.__late_init,"ax",%progbits
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  112              		@ args = 0, pretend = 0, frame = 0
  113              		@ frame_needed = 0, uses_anonymous_args = 0
  114              	.LVL0:
-ARM GAS  /tmp/ccSr6e0N.s 			page 3
+ARM GAS  /tmp/cclU3Lzp.s 			page 3
 
 
  115              		.loc 1 193 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  169 0048 1035     		adds	r5, r5, #16
  170              	.LVL10:
  171              	.LBE2:
-ARM GAS  /tmp/ccSr6e0N.s 			page 4
+ARM GAS  /tmp/cclU3Lzp.s 			page 4
 
 
  172              		.loc 1 215 0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  226              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
  227              		.file 4 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/core_cm4.h"
  228              		.file 5 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/system_stm32f4xx.h"
-ARM GAS  /tmp/ccSr6e0N.s 			page 5
+ARM GAS  /tmp/cclU3Lzp.s 			page 5
 
 
  229              		.file 6 "<built-in>"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  283 0070 02       		.uleb128 0x2
  284 0071 08       		.byte	0x8
  285 0072 05       		.byte	0x5
-ARM GAS  /tmp/ccSr6e0N.s 			page 6
+ARM GAS  /tmp/cclU3Lzp.s 			page 6
 
 
  286 0073 48020000 		.4byte	.LASF9
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  340 00e9 4E       		.byte	0x4e
  341 00ea DE000000 		.4byte	0xde
  342 00ee 09       		.uleb128 0x9
-ARM GAS  /tmp/ccSr6e0N.s 			page 7
+ARM GAS  /tmp/cclU3Lzp.s 			page 7
 
 
  343 00ef 97000000 		.4byte	0x97
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  397 015e 13040000 		.4byte	.LASF24
  398 0162 01       		.byte	0x1
  399 0163 41       		.byte	0x41
-ARM GAS  /tmp/ccSr6e0N.s 			page 8
+ARM GAS  /tmp/cclU3Lzp.s 			page 8
 
 
  400 0164 AC000000 		.4byte	0xac
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  454 01dc 47       		.byte	0x47
  455 01dd AC000000 		.4byte	0xac
  456 01e1 08       		.uleb128 0x8
-ARM GAS  /tmp/ccSr6e0N.s 			page 9
+ARM GAS  /tmp/cclU3Lzp.s 			page 9
 
 
  457 01e2 E1040000 		.4byte	.LASF36
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  511 025a 08       		.uleb128 0x8
  512 025b CE020000 		.4byte	.LASF47
  513 025f 01       		.byte	0x1
-ARM GAS  /tmp/ccSr6e0N.s 			page 10
+ARM GAS  /tmp/cclU3Lzp.s 			page 10
 
 
  514 0260 50       		.byte	0x50
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  568 02d8 5D       		.byte	0x5d
  569 02d9 CD020000 		.4byte	0x2cd
  570 02dd 05       		.uleb128 0x5
-ARM GAS  /tmp/ccSr6e0N.s 			page 11
+ARM GAS  /tmp/cclU3Lzp.s 			page 11
 
 
  571 02de 03       		.byte	0x3
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  625 0356 9C       		.byte	0x9c
  626 0357 15       		.uleb128 0x15
  627 0358 99020000 		.4byte	.LASF57
-ARM GAS  /tmp/ccSr6e0N.s 			page 12
+ARM GAS  /tmp/cclU3Lzp.s 			page 12
 
 
  628 035c 01       		.byte	0x1
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  682 001c 00       		.byte	0
  683 001d 00       		.byte	0
  684 001e 03       		.uleb128 0x3
-ARM GAS  /tmp/ccSr6e0N.s 			page 13
+ARM GAS  /tmp/cclU3Lzp.s 			page 13
 
 
  685 001f 16       		.uleb128 0x16
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  739 0055 08       		.uleb128 0x8
  740 0056 34       		.uleb128 0x34
  741 0057 00       		.byte	0
-ARM GAS  /tmp/ccSr6e0N.s 			page 14
+ARM GAS  /tmp/cclU3Lzp.s 			page 14
 
 
  742 0058 03       		.uleb128 0x3
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  796 008e 49       		.uleb128 0x49
  797 008f 13       		.uleb128 0x13
  798 0090 38       		.uleb128 0x38
-ARM GAS  /tmp/ccSr6e0N.s 			page 15
+ARM GAS  /tmp/cclU3Lzp.s 			page 15
 
 
  799 0091 0B       		.uleb128 0xb
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  853 00c8 00       		.byte	0
  854 00c9 03       		.uleb128 0x3
  855 00ca 08       		.uleb128 0x8
-ARM GAS  /tmp/ccSr6e0N.s 			page 16
+ARM GAS  /tmp/cclU3Lzp.s 			page 16
 
 
  856 00cb 3A       		.uleb128 0x3a
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  910 0107 11       		.uleb128 0x11
  911 0108 01       		.uleb128 0x1
  912 0109 12       		.uleb128 0x12
-ARM GAS  /tmp/ccSr6e0N.s 			page 17
+ARM GAS  /tmp/cclU3Lzp.s 			page 17
 
 
  913 010a 06       		.uleb128 0x6
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  967 0142 18       		.uleb128 0x18
  968 0143 2E       		.uleb128 0x2e
  969 0144 00       		.byte	0
-ARM GAS  /tmp/ccSr6e0N.s 			page 18
+ARM GAS  /tmp/cclU3Lzp.s 			page 18
 
 
  970 0145 3F       		.uleb128 0x3f
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1024 0054 18000000 		.4byte	.LVL4
  1025 0058 1C000000 		.4byte	.LVL5
  1026 005c 0300     		.2byte	0x3
-ARM GAS  /tmp/ccSr6e0N.s 			page 19
+ARM GAS  /tmp/cclU3Lzp.s 			page 19
 
 
  1027 005e 72       		.byte	0x72
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1081 0018 00000000 		.4byte	0
  1082 001c 00000000 		.4byte	0
  1083              		.section	.debug_line,"",%progbits
-ARM GAS  /tmp/ccSr6e0N.s 			page 20
+ARM GAS  /tmp/cclU3Lzp.s 			page 20
 
 
  1084              	.Ldebug_line0:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1101 011e 73686F72 		.ascii	"short int\000"
  1101      7420696E 
  1101      7400
-ARM GAS  /tmp/ccSr6e0N.s 			page 21
+ARM GAS  /tmp/cclU3Lzp.s 			page 21
 
 
  1102              	.LASF62:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1123              	.LASF35:
  1124 01eb 5F5F7261 		.ascii	"__ram2_noinit__\000"
  1124      6D325F6E 
-ARM GAS  /tmp/ccSr6e0N.s 			page 22
+ARM GAS  /tmp/cclU3Lzp.s 			page 22
 
 
  1124      6F696E69 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1145      6C656172 
  1145      5F5F00
  1146              	.LASF4:
-ARM GAS  /tmp/ccSr6e0N.s 			page 23
+ARM GAS  /tmp/cclU3Lzp.s 			page 23
 
 
  1147 02c4 5F5F7569 		.ascii	"__uint8_t\000"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1168              	.LASF14:
  1169 036d 75696E74 		.ascii	"uint32_t\000"
  1169      33325F74 
-ARM GAS  /tmp/ccSr6e0N.s 			page 24
+ARM GAS  /tmp/cclU3Lzp.s 			page 24
 
 
  1169      00
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1191      6E7400
  1192              	.LASF24:
  1193 0413 5F5F7261 		.ascii	"__ram0_init_text__\000"
-ARM GAS  /tmp/ccSr6e0N.s 			page 25
+ARM GAS  /tmp/cclU3Lzp.s 			page 25
 
 
  1193      6D305F69 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1215 04b5 5F5F7261 		.ascii	"__ram1_noinit__\000"
  1215      6D315F6E 
  1215      6F696E69 
-ARM GAS  /tmp/ccSr6e0N.s 			page 26
+ARM GAS  /tmp/cclU3Lzp.s 			page 26
 
 
  1215      745F5F00 
@@ -1528,24 +1528,24 @@ ARM GAS  /tmp/ccSr6e0N.s 			page 1
  1225      745F6172 
  1225      656100
  1226              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q3-update) 7.3.1 20180622 (release) [AR
-ARM GAS  /tmp/ccSr6e0N.s 			page 27
+ARM GAS  /tmp/cclU3Lzp.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crt1.c
-     /tmp/ccSr6e0N.s:18     .text.__core_init:0000000000000000 $t
-     /tmp/ccSr6e0N.s:26     .text.__core_init:0000000000000000 __core_init
-     /tmp/ccSr6e0N.s:40     .text.__early_init:0000000000000000 $t
-     /tmp/ccSr6e0N.s:48     .text.__early_init:0000000000000000 __early_init
-     /tmp/ccSr6e0N.s:59     .text.__late_init:0000000000000000 $t
-     /tmp/ccSr6e0N.s:67     .text.__late_init:0000000000000000 __late_init
-     /tmp/ccSr6e0N.s:78     .text.__default_exit:0000000000000000 $t
-     /tmp/ccSr6e0N.s:86     .text.__default_exit:0000000000000000 __default_exit
-     /tmp/ccSr6e0N.s:100    .text.__init_ram_areas:0000000000000000 $t
-     /tmp/ccSr6e0N.s:108    .text.__init_ram_areas:0000000000000000 __init_ram_areas
-     /tmp/ccSr6e0N.s:181    .text.__init_ram_areas:0000000000000050 $d
-     /tmp/ccSr6e0N.s:186    .rodata.ram_areas:0000000000000000 $d
-     /tmp/ccSr6e0N.s:190    .rodata.ram_areas:0000000000000000 ram_areas
+     /tmp/cclU3Lzp.s:18     .text.__core_init:0000000000000000 $t
+     /tmp/cclU3Lzp.s:26     .text.__core_init:0000000000000000 __core_init
+     /tmp/cclU3Lzp.s:40     .text.__early_init:0000000000000000 $t
+     /tmp/cclU3Lzp.s:48     .text.__early_init:0000000000000000 __early_init
+     /tmp/cclU3Lzp.s:59     .text.__late_init:0000000000000000 $t
+     /tmp/cclU3Lzp.s:67     .text.__late_init:0000000000000000 __late_init
+     /tmp/cclU3Lzp.s:78     .text.__default_exit:0000000000000000 $t
+     /tmp/cclU3Lzp.s:86     .text.__default_exit:0000000000000000 __default_exit
+     /tmp/cclU3Lzp.s:100    .text.__init_ram_areas:0000000000000000 $t
+     /tmp/cclU3Lzp.s:108    .text.__init_ram_areas:0000000000000000 __init_ram_areas
+     /tmp/cclU3Lzp.s:181    .text.__init_ram_areas:0000000000000050 $d
+     /tmp/cclU3Lzp.s:186    .rodata.ram_areas:0000000000000000 $d
+     /tmp/cclU3Lzp.s:190    .rodata.ram_areas:0000000000000000 ram_areas
 
 UNDEFINED SYMBOLS
 memset

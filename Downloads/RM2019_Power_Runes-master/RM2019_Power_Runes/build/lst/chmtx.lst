@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu7hgvD.s 			page 1
+ARM GAS  /tmp/ccrvAUSO.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
   55              		.global	chMtxLock
   56              		.syntax unified
   57              		.thumb
-ARM GAS  /tmp/ccu7hgvD.s 			page 2
+ARM GAS  /tmp/ccrvAUSO.s 			page 2
 
 
   58              		.thumb_func
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  112              	.LVL5:
  113 001a 07D9     		bls	.L6
  114              	.LVL6:
-ARM GAS  /tmp/ccu7hgvD.s 			page 3
+ARM GAS  /tmp/ccrvAUSO.s 			page 3
 
 
  115              	.L12:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  169 004c 6C62     		str	r4, [r5, #36]
  170              		.loc 1 214 0
  171 004e FFF7FEFF 		bl	chSchGoSleepS
-ARM GAS  /tmp/ccu7hgvD.s 			page 4
+ARM GAS  /tmp/ccrvAUSO.s 			page 4
 
 
  172              	.LVL13:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  226              		.loc 2 591 0
  227 006a 9068     		ldr	r0, [r2, #8]
  228 006c 8842     		cmp	r0, r1
-ARM GAS  /tmp/ccu7hgvD.s 			page 5
+ARM GAS  /tmp/ccrvAUSO.s 			page 5
 
 
  229 006e 35D3     		bcc	.L30
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  283              	.LBE160:
  284              	.LBE174:
  285              		.loc 1 233 0
-ARM GAS  /tmp/ccu7hgvD.s 			page 6
+ARM GAS  /tmp/ccrvAUSO.s 			page 6
 
 
  286 0098 AB6B     		ldr	r3, [r5, #56]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  340              	.LVL29:
  341              	.LBE164:
  342              	.LBE166:
-ARM GAS  /tmp/ccu7hgvD.s 			page 7
+ARM GAS  /tmp/ccrvAUSO.s 			page 7
 
 
  343              		.loc 1 173 0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  397 00de 7268     		ldr	r2, [r6, #4]
  398              	.LVL38:
  399 00e0 C3E90062 		strd	r6, r2, [r3]
-ARM GAS  /tmp/ccu7hgvD.s 			page 8
+ARM GAS  /tmp/ccrvAUSO.s 			page 8
 
 
  400              		.loc 2 594 0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  454              		.loc 1 140 0
  455 0006 9569     		ldr	r5, [r2, #24]
  456              	.LVL41:
-ARM GAS  /tmp/ccu7hgvD.s 			page 9
+ARM GAS  /tmp/ccrvAUSO.s 			page 9
 
 
  457              		.loc 1 146 0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  511              	.LBB195:
  512              	.LBB193:
  513              		.loc 2 593 0
-ARM GAS  /tmp/ccu7hgvD.s 			page 10
+ARM GAS  /tmp/ccrvAUSO.s 			page 10
 
 
  514 003e C5E90063 		strd	r6, r3, [r5]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  568 0062 8842     		cmp	r0, r1
  569 0064 32D3     		bcc	.L62
  570              	.LVL54:
-ARM GAS  /tmp/ccu7hgvD.s 			page 11
+ARM GAS  /tmp/ccrvAUSO.s 			page 11
 
 
  571              	.L47:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  625              	.LBE221:
  626              		.loc 1 233 0
  627 008e AB6B     		ldr	r3, [r5, #56]
-ARM GAS  /tmp/ccu7hgvD.s 			page 12
+ARM GAS  /tmp/ccrvAUSO.s 			page 12
 
 
  628 0090 C0E90253 		strd	r5, r3, [r0, #8]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  682              	.LVL67:
  683              	.LBE215:
  684              	.LBE214:
-ARM GAS  /tmp/ccu7hgvD.s 			page 13
+ARM GAS  /tmp/ccrvAUSO.s 			page 13
 
 
  685              		.loc 1 165 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  739              	.LFE296:
  740              		.size	chMtxLockS, .-chMtxLockS
  741              		.section	.text.chMtxTryLock,"ax",%progbits
-ARM GAS  /tmp/ccu7hgvD.s 			page 14
+ARM GAS  /tmp/ccrvAUSO.s 			page 14
 
 
  742              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  796              	@ 493 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
  797 0010 83F31188 		MSR basepri, r3
  798              	@ 0 "" 2
-ARM GAS  /tmp/ccu7hgvD.s 			page 15
+ARM GAS  /tmp/ccrvAUSO.s 			page 15
 
 
  799              	.LVL78:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  853              	.L73:
  854              		.align	2
  855              	.L72:
-ARM GAS  /tmp/ccu7hgvD.s 			page 16
+ARM GAS  /tmp/ccrvAUSO.s 			page 16
 
 
  856 002c 00000000 		.word	ch
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  910              	.LBE258:
  911              		.cfi_endproc
  912              	.LFE298:
-ARM GAS  /tmp/ccu7hgvD.s 			page 17
+ARM GAS  /tmp/ccrvAUSO.s 			page 17
 
 
  913              		.size	chMtxTryLockS, .-chMtxTryLockS
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  967              	.LBE265:
  968              	.LBE264:
  969              		.loc 1 344 0
-ARM GAS  /tmp/ccu7hgvD.s 			page 18
+ARM GAS  /tmp/ccrvAUSO.s 			page 18
 
 
  970 000e C368     		ldr	r3, [r0, #12]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1024 0036 2046     		mov	r0, r4
  1025              	.LVL99:
  1026              	.LBB276:
-ARM GAS  /tmp/ccu7hgvD.s 			page 19
+ARM GAS  /tmp/ccrvAUSO.s 			page 19
 
 
  1027              	.LBB275:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1081              	@ 493 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
  1082 0058 83F31188 		MSR basepri, r3
  1083              	@ 0 "" 2
-ARM GAS  /tmp/ccu7hgvD.s 			page 20
+ARM GAS  /tmp/ccrvAUSO.s 			page 20
 
 
  1084              	.LVL106:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1138              	.LVL109:
  1139              		.loc 1 430 0
  1140 0008 C368     		ldr	r3, [r0, #12]
-ARM GAS  /tmp/ccu7hgvD.s 			page 21
+ARM GAS  /tmp/ccrvAUSO.s 			page 21
 
 
  1141 000a AB63     		str	r3, [r5, #56]
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1195              		.loc 2 609 0
  1196 0030 0B60     		str	r3, [r1]
  1197              	.LBE298:
-ARM GAS  /tmp/ccu7hgvD.s 			page 22
+ARM GAS  /tmp/ccrvAUSO.s 			page 22
 
 
  1198              	.LBE300:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1252              		.fpu fpv4-sp-d16
  1253              		.type	chMtxUnlockAllS, %function
  1254              	chMtxUnlockAllS:
-ARM GAS  /tmp/ccu7hgvD.s 			page 23
+ARM GAS  /tmp/ccrvAUSO.s 			page 23
 
 
  1255              	.LFB301:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1309              	.LBB310:
  1310              		.loc 2 609 0
  1311 001a 1168     		ldr	r1, [r2]
-ARM GAS  /tmp/ccu7hgvD.s 			page 24
+ARM GAS  /tmp/ccrvAUSO.s 			page 24
 
 
  1312 001c 1960     		str	r1, [r3]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1366              		.loc 1 524 0
  1367              		.cfi_startproc
  1368              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccu7hgvD.s 			page 25
+ARM GAS  /tmp/ccrvAUSO.s 			page 25
 
 
  1369              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1423              	.LBE326:
  1424              	.LBE325:
  1425              	.LBE324:
-ARM GAS  /tmp/ccu7hgvD.s 			page 26
+ARM GAS  /tmp/ccrvAUSO.s 			page 26
 
 
  1426              	.LBE323:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1480              		.syntax unified
  1481              	@ 493 "./RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
  1482 0040 83F31188 		MSR basepri, r3
-ARM GAS  /tmp/ccu7hgvD.s 			page 27
+ARM GAS  /tmp/ccrvAUSO.s 			page 27
 
 
  1483              	@ 0 "" 2
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1537 0006 00000000 		.4byte	.Ldebug_abbrev0
  1538 000a 04       		.byte	0x4
  1539 000b 01       		.uleb128 0x1
-ARM GAS  /tmp/ccu7hgvD.s 			page 28
+ARM GAS  /tmp/ccrvAUSO.s 			page 28
 
 
  1540 000c F1050000 		.4byte	.LASF170
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1594 007e 03       		.uleb128 0x3
  1595 007f 44030000 		.4byte	.LASF10
  1596 0083 05       		.byte	0x5
-ARM GAS  /tmp/ccu7hgvD.s 			page 29
+ARM GAS  /tmp/ccrvAUSO.s 			page 29
 
 
  1597 0084 4D       		.byte	0x4d
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1651 00f6 70030000 		.4byte	.LASF21
  1652 00fa 07       		.byte	0x7
  1653 00fb 27       		.byte	0x27
-ARM GAS  /tmp/ccu7hgvD.s 			page 30
+ARM GAS  /tmp/ccrvAUSO.s 			page 30
 
 
  1654 00fc DF000000 		.4byte	0xdf
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1708 0174 02       		.byte	0x2
  1709 0175 8F       		.byte	0x8f
  1710 0176 76020000 		.4byte	0x276
-ARM GAS  /tmp/ccu7hgvD.s 			page 31
+ARM GAS  /tmp/ccrvAUSO.s 			page 31
 
 
  1711 017a 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1765 01e6 22       		.byte	0x22
  1766 01e7 0A       		.uleb128 0xa
  1767 01e8 7500     		.ascii	"u\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 32
+ARM GAS  /tmp/ccrvAUSO.s 			page 32
 
 
  1768 01ea 02       		.byte	0x2
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1822 025d 07       		.uleb128 0x7
  1823 025e DB050000 		.4byte	.LASF49
  1824 0262 04       		.byte	0x4
-ARM GAS  /tmp/ccu7hgvD.s 			page 33
+ARM GAS  /tmp/ccrvAUSO.s 			page 33
 
 
  1825 0263 02       		.byte	0x2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1879 02d1 51040000 		.4byte	.LASF32
  1880 02d5 02       		.byte	0x2
  1881 02d6 6001     		.2byte	0x160
-ARM GAS  /tmp/ccu7hgvD.s 			page 34
+ARM GAS  /tmp/ccrvAUSO.s 			page 34
 
 
  1882 02d8 21010000 		.4byte	0x121
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1936 0349 EC000000 		.4byte	.LASF50
  1937 034d 02       		.byte	0x2
  1938 034e 3A01     		.2byte	0x13a
-ARM GAS  /tmp/ccu7hgvD.s 			page 35
+ARM GAS  /tmp/ccrvAUSO.s 			page 35
 
 
  1939 0350 4A070000 		.4byte	0x74a
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  1993 03c4 61040000 		.4byte	0x461
  1994 03c8 08       		.byte	0x8
  1995 03c9 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccu7hgvD.s 			page 36
+ARM GAS  /tmp/ccrvAUSO.s 			page 36
 
 
  1996 03ca 05050000 		.4byte	.LASF64
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2050 043d A8000000 		.4byte	.LASF72
  2051 0441 02       		.byte	0x2
  2052 0442 A001     		.2byte	0x1a0
-ARM GAS  /tmp/ccu7hgvD.s 			page 37
+ARM GAS  /tmp/ccrvAUSO.s 			page 37
 
 
  2053 0444 58010000 		.4byte	0x158
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2107 04bd 0B       		.byte	0xb
  2108 04be 4F       		.byte	0x4f
  2109 04bf B3040000 		.4byte	0x4b3
-ARM GAS  /tmp/ccu7hgvD.s 			page 38
+ARM GAS  /tmp/ccrvAUSO.s 			page 38
 
 
  2110 04c3 03       		.uleb128 0x3
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2164 0533 73323000 		.ascii	"s20\000"
  2165 0537 0D       		.byte	0xd
  2166 0538 5F01     		.2byte	0x15f
-ARM GAS  /tmp/ccu7hgvD.s 			page 39
+ARM GAS  /tmp/ccrvAUSO.s 			page 39
 
 
  2167 053a C3040000 		.4byte	0x4c3
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2221 05af C3040000 		.4byte	0x4c3
  2222 05b3 34       		.byte	0x34
  2223 05b4 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccu7hgvD.s 			page 40
+ARM GAS  /tmp/ccrvAUSO.s 			page 40
 
 
  2224 05b5 73333000 		.ascii	"s30\000"
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2278 0624 72313100 		.ascii	"r11\000"
  2279 0628 0D       		.byte	0xd
  2280 0629 7301     		.2byte	0x173
-ARM GAS  /tmp/ccu7hgvD.s 			page 41
+ARM GAS  /tmp/ccrvAUSO.s 			page 41
 
 
  2281 062b C3040000 		.4byte	0x4c3
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2335 0697 17       		.uleb128 0x17
  2336 0698 B3000000 		.4byte	.LASF89
  2337 069c 02       		.byte	0x2
-ARM GAS  /tmp/ccu7hgvD.s 			page 42
+ARM GAS  /tmp/ccrvAUSO.s 			page 42
 
 
  2338 069d E7       		.byte	0xe7
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2392 070d 00       		.byte	0
  2393 070e 08       		.uleb128 0x8
  2394 070f EB050000 		.4byte	.LASF95
-ARM GAS  /tmp/ccu7hgvD.s 			page 43
+ARM GAS  /tmp/ccrvAUSO.s 			page 43
 
 
  2395 0713 10       		.byte	0x10
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2449 0780 35       		.byte	0x35
  2450 0781 53080000 		.4byte	0x853
  2451 0785 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 44
+ARM GAS  /tmp/ccrvAUSO.s 			page 44
 
 
  2452 0786 08       		.uleb128 0x8
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2506 07f2 08       		.uleb128 0x8
  2507 07f3 6C070000 		.4byte	.LASF108
  2508 07f7 12       		.byte	0x12
-ARM GAS  /tmp/ccu7hgvD.s 			page 45
+ARM GAS  /tmp/ccrvAUSO.s 			page 45
 
 
  2509 07f8 3F       		.byte	0x3f
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2563 0864 9B010000 		.4byte	.LASF116
  2564 0868 12       		.byte	0x12
  2565 0869 47       		.byte	0x47
-ARM GAS  /tmp/ccu7hgvD.s 			page 46
+ARM GAS  /tmp/ccrvAUSO.s 			page 46
 
 
  2566 086a 72070000 		.4byte	0x772
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2620 08dc 0C       		.uleb128 0xc
  2621 08dd 04       		.byte	0x4
  2622 08de B4000000 		.4byte	0xb4
-ARM GAS  /tmp/ccu7hgvD.s 			page 47
+ARM GAS  /tmp/ccrvAUSO.s 			page 47
 
 
  2623 08e2 03       		.uleb128 0x3
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2677 094e 0C       		.byte	0xc
  2678 094f 00       		.byte	0
  2679 0950 03       		.uleb128 0x3
-ARM GAS  /tmp/ccu7hgvD.s 			page 48
+ARM GAS  /tmp/ccrvAUSO.s 			page 48
 
 
  2680 0951 7B020000 		.4byte	.LASF129
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2734 09c0 C6090000 		.4byte	0x9c6
  2735 09c4 00       		.byte	0
  2736 09c5 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 49
+ARM GAS  /tmp/ccrvAUSO.s 			page 49
 
 
  2737 09c6 0C       		.uleb128 0xc
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2791 0a3a CC090000 		.4byte	0x9cc
  2792 0a3e 3C       		.byte	0x3c
  2793 0a3f 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccu7hgvD.s 			page 50
+ARM GAS  /tmp/ccrvAUSO.s 			page 50
 
 
  2794 0a40 02080000 		.4byte	.LASF141
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2848 0abe 4C020000 		.4byte	0x24c
  2849 0ac2 22       		.uleb128 0x22
  2850 0ac3 76130000 		.4byte	0x1376
-ARM GAS  /tmp/ccu7hgvD.s 			page 51
+ARM GAS  /tmp/ccrvAUSO.s 			page 51
 
 
  2851 0ac7 20000000 		.4byte	.LBB328
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2905 0b52 04000000 		.4byte	.LBB316
  2906 0b56 98020000 		.4byte	.Ldebug_ranges0+0x298
  2907 0b5a 0D       		.byte	0xd
-ARM GAS  /tmp/ccu7hgvD.s 			page 52
+ARM GAS  /tmp/ccrvAUSO.s 			page 52
 
 
  2908 0b5b 6202     		.2byte	0x262
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  2962 0bdf 01       		.uleb128 0x1
  2963 0be0 54       		.byte	0x54
  2964 0be1 2C       		.uleb128 0x2c
-ARM GAS  /tmp/ccu7hgvD.s 			page 53
+ARM GAS  /tmp/ccrvAUSO.s 			page 53
 
 
  2965 0be2 60020000 		.4byte	.Ldebug_ranges0+0x260
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3019 0c6b 00       		.byte	0
  3020 0c6c 00       		.byte	0
  3021 0c6d 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccu7hgvD.s 			page 54
+ARM GAS  /tmp/ccrvAUSO.s 			page 54
 
 
  3022 0c6e 32020000 		.4byte	.LASF147
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3076 0cfd D5130000 		.4byte	0x13d5
  3077 0d01 16000000 		.4byte	.LBB294
  3078 0d05 02000000 		.4byte	.LBE294-.LBB294
-ARM GAS  /tmp/ccu7hgvD.s 			page 55
+ARM GAS  /tmp/ccrvAUSO.s 			page 55
 
 
  3079 0d09 10       		.byte	0x10
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3133 0d89 05       		.uleb128 0x5
  3134 0d8a 790D0000 		.4byte	0xd79
  3135 0d8e 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccu7hgvD.s 			page 56
+ARM GAS  /tmp/ccrvAUSO.s 			page 56
 
 
  3136 0d8f 0A010000 		.4byte	.LASF149
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3190 0e21 29       		.uleb128 0x29
  3191 0e22 D5130000 		.4byte	0x13d5
  3192 0e26 1A000000 		.4byte	.LBB271
-ARM GAS  /tmp/ccu7hgvD.s 			page 57
+ARM GAS  /tmp/ccrvAUSO.s 			page 57
 
 
  3193 0e2a 02000000 		.4byte	.LBE271-.LBB271
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3247 0eab 25140000 		.4byte	0x1425
  3248 0eaf 06000000 		.4byte	.LBB262
  3249 0eb3 06000000 		.4byte	.LBE262-.LBB262
-ARM GAS  /tmp/ccu7hgvD.s 			page 58
+ARM GAS  /tmp/ccrvAUSO.s 			page 58
 
 
  3250 0eb7 0D       		.byte	0xd
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3304 0f37 00       		.byte	0
  3305 0f38 13       		.uleb128 0x13
  3306 0f39 3F070000 		.4byte	0x73f
-ARM GAS  /tmp/ccu7hgvD.s 			page 59
+ARM GAS  /tmp/ccrvAUSO.s 			page 59
 
 
  3307 0f3d 480F0000 		.4byte	0xf48
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3361 0fbd 22       		.uleb128 0x22
  3362 0fbe 50130000 		.4byte	0x1350
  3363 0fc2 02000000 		.4byte	.LBB236
-ARM GAS  /tmp/ccu7hgvD.s 			page 60
+ARM GAS  /tmp/ccrvAUSO.s 			page 60
 
 
  3364 0fc6 06000000 		.4byte	.LBE236-.LBB236
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3418 1052 E0010000 		.4byte	.Ldebug_ranges0+0x1e0
  3419 1056 2B       		.uleb128 0x2b
  3420 1057 13140000 		.4byte	0x1413
-ARM GAS  /tmp/ccu7hgvD.s 			page 61
+ARM GAS  /tmp/ccrvAUSO.s 			page 61
 
 
  3421 105b 0E000000 		.4byte	.LBB247
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3475 10d0 BF100000 		.4byte	0x10bf
  3476 10d4 3F       		.uleb128 0x3f
  3477 10d5 D2030000 		.4byte	.LASF153
-ARM GAS  /tmp/ccu7hgvD.s 			page 62
+ARM GAS  /tmp/ccrvAUSO.s 			page 62
 
 
  3478 10d9 01       		.byte	0x1
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3532 1161 B2100000 		.4byte	0x10b2
  3533 1165 20000000 		.4byte	.Ldebug_ranges0+0x20
  3534 1169 25       		.uleb128 0x25
-ARM GAS  /tmp/ccu7hgvD.s 			page 63
+ARM GAS  /tmp/ccrvAUSO.s 			page 63
 
 
  3535 116a B3100000 		.4byte	0x10b3
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3589 11fa 82000000 		.4byte	.LBB156
  3590 11fe 90000000 		.4byte	.Ldebug_ranges0+0x90
  3591 1202 01       		.byte	0x1
-ARM GAS  /tmp/ccu7hgvD.s 			page 64
+ARM GAS  /tmp/ccrvAUSO.s 			page 64
 
 
  3592 1203 CA       		.byte	0xca
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3646 1284 52000000 		.4byte	.LBB178
  3647 1288 E8000000 		.4byte	.Ldebug_ranges0+0xe8
  3648 128c 01       		.byte	0x1
-ARM GAS  /tmp/ccu7hgvD.s 			page 65
+ARM GAS  /tmp/ccrvAUSO.s 			page 65
 
 
  3649 128d 7F       		.byte	0x7f
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3703 1306 3F070000 		.4byte	0x73f
  3704 130a 15130000 		.4byte	0x1315
  3705 130e 14       		.uleb128 0x14
-ARM GAS  /tmp/ccu7hgvD.s 			page 66
+ARM GAS  /tmp/ccrvAUSO.s 			page 66
 
 
  3706 130f 37000000 		.4byte	0x37
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3760 1387 35       		.uleb128 0x35
  3761 1388 74717000 		.ascii	"tqp\000"
  3762 138c 02       		.byte	0x2
-ARM GAS  /tmp/ccu7hgvD.s 			page 67
+ARM GAS  /tmp/ccrvAUSO.s 			page 67
 
 
  3763 138d 5E02     		.2byte	0x25e
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3817 1402 13140000 		.4byte	0x1413
  3818 1406 35       		.uleb128 0x35
  3819 1407 74717000 		.ascii	"tqp\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 68
+ARM GAS  /tmp/ccrvAUSO.s 			page 68
 
 
  3820 140b 02       		.byte	0x2
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3874 148e 23       		.uleb128 0x23
  3875 148f B2130000 		.4byte	0x13b2
  3876 1493 14060000 		.4byte	.LLST21
-ARM GAS  /tmp/ccu7hgvD.s 			page 69
+ARM GAS  /tmp/ccrvAUSO.s 			page 69
 
 
  3877 1497 2C       		.uleb128 0x2c
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3931 1521 2F150000 		.4byte	0x152f
  3932 1525 23       		.uleb128 0x23
  3933 1526 6A130000 		.4byte	0x136a
-ARM GAS  /tmp/ccu7hgvD.s 			page 70
+ARM GAS  /tmp/ccrvAUSO.s 			page 70
 
 
  3934 152a D4060000 		.4byte	.LLST27
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  3988 15b1 0A000000 		.4byte	.LBB259
  3989 15b5 16000000 		.4byte	.LBE259-.LBB259
  3990 15b9 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 71
+ARM GAS  /tmp/ccrvAUSO.s 			page 71
 
 
  3991 15ba 00       		.byte	0
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4045 0023 3A       		.uleb128 0x3a
  4046 0024 0B       		.uleb128 0xb
  4047 0025 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccu7hgvD.s 			page 72
+ARM GAS  /tmp/ccrvAUSO.s 			page 72
 
 
  4048 0026 0B       		.uleb128 0xb
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4102 005c 49       		.uleb128 0x49
  4103 005d 13       		.uleb128 0x13
  4104 005e 38       		.uleb128 0x38
-ARM GAS  /tmp/ccu7hgvD.s 			page 73
+ARM GAS  /tmp/ccrvAUSO.s 			page 73
 
 
  4105 005f 0B       		.uleb128 0xb
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4159 0095 13       		.uleb128 0x13
  4160 0096 00       		.byte	0
  4161 0097 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 74
+ARM GAS  /tmp/ccrvAUSO.s 			page 74
 
 
  4162 0098 0D       		.uleb128 0xd
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4216 00ce 00       		.byte	0
  4217 00cf 12       		.uleb128 0x12
  4218 00d0 34       		.uleb128 0x34
-ARM GAS  /tmp/ccu7hgvD.s 			page 75
+ARM GAS  /tmp/ccrvAUSO.s 			page 75
 
 
  4219 00d1 00       		.byte	0
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4273 0107 0B       		.uleb128 0xb
  4274 0108 01       		.uleb128 0x1
  4275 0109 13       		.uleb128 0x13
-ARM GAS  /tmp/ccu7hgvD.s 			page 76
+ARM GAS  /tmp/ccrvAUSO.s 			page 76
 
 
  4276 010a 00       		.byte	0
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4330 0140 19       		.uleb128 0x19
  4331 0141 49       		.uleb128 0x49
  4332 0142 13       		.uleb128 0x13
-ARM GAS  /tmp/ccu7hgvD.s 			page 77
+ARM GAS  /tmp/ccrvAUSO.s 			page 77
 
 
  4333 0143 01       		.uleb128 0x1
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4387 017a 18       		.uleb128 0x18
  4388 017b 00       		.byte	0
  4389 017c 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 78
+ARM GAS  /tmp/ccrvAUSO.s 			page 78
 
 
  4390 017d 1F       		.uleb128 0x1f
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4444 01b3 23       		.uleb128 0x23
  4445 01b4 05       		.uleb128 0x5
  4446 01b5 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 79
+ARM GAS  /tmp/ccrvAUSO.s 			page 79
 
 
  4447 01b6 31       		.uleb128 0x31
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4501 01ee 00       		.byte	0
  4502 01ef 29       		.uleb128 0x29
  4503 01f0 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccu7hgvD.s 			page 80
+ARM GAS  /tmp/ccrvAUSO.s 			page 80
 
 
  4504 01f1 01       		.byte	0x1
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4558 0227 00       		.byte	0
  4559 0228 03       		.uleb128 0x3
  4560 0229 08       		.uleb128 0x8
-ARM GAS  /tmp/ccu7hgvD.s 			page 81
+ARM GAS  /tmp/ccrvAUSO.s 			page 81
 
 
  4561 022a 3A       		.uleb128 0x3a
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4615 0263 01       		.uleb128 0x1
  4616 0264 13       		.uleb128 0x13
  4617 0265 00       		.byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 82
+ARM GAS  /tmp/ccrvAUSO.s 			page 82
 
 
  4618 0266 00       		.byte	0
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4672 02a1 00       		.byte	0
  4673 02a2 36       		.uleb128 0x36
  4674 02a3 34       		.uleb128 0x34
-ARM GAS  /tmp/ccu7hgvD.s 			page 83
+ARM GAS  /tmp/ccrvAUSO.s 			page 83
 
 
  4675 02a4 00       		.byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4729 02db 0B       		.uleb128 0xb
  4730 02dc 01       		.byte	0x1
  4731 02dd 31       		.uleb128 0x31
-ARM GAS  /tmp/ccu7hgvD.s 			page 84
+ARM GAS  /tmp/ccrvAUSO.s 			page 84
 
 
  4732 02de 13       		.uleb128 0x13
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4786 0314 0B       		.uleb128 0xb
  4787 0315 3B       		.uleb128 0x3b
  4788 0316 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccu7hgvD.s 			page 85
+ARM GAS  /tmp/ccrvAUSO.s 			page 85
 
 
  4789 0317 49       		.uleb128 0x49
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4843 034e 31       		.uleb128 0x31
  4844 034f 13       		.uleb128 0x13
  4845 0350 52       		.uleb128 0x52
-ARM GAS  /tmp/ccu7hgvD.s 			page 86
+ARM GAS  /tmp/ccrvAUSO.s 			page 86
 
 
  4846 0351 01       		.uleb128 0x1
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4900 0387 0E       		.uleb128 0xe
  4901 0388 3A       		.uleb128 0x3a
  4902 0389 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccu7hgvD.s 			page 87
+ARM GAS  /tmp/ccrvAUSO.s 			page 87
 
 
  4903 038a 3B       		.uleb128 0x3b
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  4957 03c0 19       		.uleb128 0x19
  4958 03c1 49       		.uleb128 0x49
  4959 03c2 13       		.uleb128 0x13
-ARM GAS  /tmp/ccu7hgvD.s 			page 88
+ARM GAS  /tmp/ccrvAUSO.s 			page 88
 
 
  4960 03c3 20       		.uleb128 0x20
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5014 03fd 3C       		.uleb128 0x3c
  5015 03fe 19       		.uleb128 0x19
  5016 03ff 6E       		.uleb128 0x6e
-ARM GAS  /tmp/ccu7hgvD.s 			page 89
+ARM GAS  /tmp/ccrvAUSO.s 			page 89
 
 
  5017 0400 0E       		.uleb128 0xe
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5071 006d 0200     		.2byte	0x2
  5072 006f 30       		.byte	0x30
  5073 0070 9F       		.byte	0x9f
-ARM GAS  /tmp/ccu7hgvD.s 			page 90
+ARM GAS  /tmp/ccrvAUSO.s 			page 90
 
 
  5074 0071 00000000 		.4byte	0
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5128 0101 55       		.byte	0x55
  5129 0102 42000000 		.4byte	.LVL120
  5130 0106 48000000 		.4byte	.LVL121
-ARM GAS  /tmp/ccu7hgvD.s 			page 91
+ARM GAS  /tmp/ccrvAUSO.s 			page 91
 
 
  5131 010a 0100     		.2byte	0x1
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5185 019a 52000000 		.4byte	.LVL104
  5186 019e 0400     		.2byte	0x4
  5187 01a0 F3       		.byte	0xf3
-ARM GAS  /tmp/ccu7hgvD.s 			page 92
+ARM GAS  /tmp/ccrvAUSO.s 			page 92
 
 
  5188 01a1 01       		.uleb128 0x1
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5242 0231 0300     		.2byte	0x3
  5243 0233 08       		.byte	0x8
  5244 0234 20       		.byte	0x20
-ARM GAS  /tmp/ccu7hgvD.s 			page 93
+ARM GAS  /tmp/ccrvAUSO.s 			page 93
 
 
  5245 0235 9F       		.byte	0x9f
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5299 02b9 00000000 		.4byte	0
  5300 02bd 00000000 		.4byte	0
  5301              	.LLST32:
-ARM GAS  /tmp/ccu7hgvD.s 			page 94
+ARM GAS  /tmp/ccrvAUSO.s 			page 94
 
 
  5302 02c1 08000000 		.4byte	.LVL75
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5356 0351 20       		.byte	0x20
  5357 0352 9F       		.byte	0x9f
  5358 0353 00000000 		.4byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 95
+ARM GAS  /tmp/ccrvAUSO.s 			page 95
 
 
  5359 0357 00000000 		.4byte	0
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5413              	.LLST6:
  5414 03ec 2E000000 		.4byte	.LVL8
  5415 03f0 32000000 		.4byte	.LVL9
-ARM GAS  /tmp/ccu7hgvD.s 			page 96
+ARM GAS  /tmp/ccrvAUSO.s 			page 96
 
 
  5416 03f4 0100     		.2byte	0x1
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5470 0485 DE000000 		.4byte	.LVL37
  5471 0489 EA000000 		.4byte	.LVL39
  5472 048d 0200     		.2byte	0x2
-ARM GAS  /tmp/ccu7hgvD.s 			page 97
+ARM GAS  /tmp/ccrvAUSO.s 			page 97
 
 
  5473 048f 73       		.byte	0x73
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5527 0520 00000000 		.4byte	0
  5528              	.LLST16:
  5529 0524 52000000 		.4byte	.LVL13
-ARM GAS  /tmp/ccu7hgvD.s 			page 98
+ARM GAS  /tmp/ccrvAUSO.s 			page 98
 
 
  5530 0528 58000000 		.4byte	.LVL14
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5584 05b3 E4000000 		.4byte	.LFE296
  5585 05b7 0100     		.2byte	0x1
  5586 05b9 55       		.byte	0x55
-ARM GAS  /tmp/ccu7hgvD.s 			page 99
+ARM GAS  /tmp/ccrvAUSO.s 			page 99
 
 
  5587 05ba 00000000 		.4byte	0
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5641 0650 0100     		.2byte	0x1
  5642 0652 53       		.byte	0x53
  5643 0653 00000000 		.4byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 100
+ARM GAS  /tmp/ccrvAUSO.s 			page 100
 
 
  5644 0657 00000000 		.4byte	0
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5698 06e7 A6000000 		.4byte	.LVL63
  5699 06eb C2000000 		.4byte	.LVL68
  5700 06ef 0100     		.2byte	0x1
-ARM GAS  /tmp/ccu7hgvD.s 			page 101
+ARM GAS  /tmp/ccrvAUSO.s 			page 101
 
 
  5701 06f1 56       		.byte	0x56
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5755 000c 0000     		.2byte	0
  5756 000e 0000     		.2byte	0
  5757 0010 00000000 		.4byte	.LFB294
-ARM GAS  /tmp/ccu7hgvD.s 			page 102
+ARM GAS  /tmp/ccrvAUSO.s 			page 102
 
 
  5758 0014 0A000000 		.4byte	.LFE294-.LFB294
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5812 0084 EA000000 		.4byte	.LBE172
  5813 0088 00000000 		.4byte	0
  5814 008c 00000000 		.4byte	0
-ARM GAS  /tmp/ccu7hgvD.s 			page 103
+ARM GAS  /tmp/ccrvAUSO.s 			page 103
 
 
  5815 0090 82000000 		.4byte	.LBB156
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5869 0168 00000000 		.4byte	0
  5870 016c 00000000 		.4byte	0
  5871 0170 78000000 		.4byte	.LBB203
-ARM GAS  /tmp/ccu7hgvD.s 			page 104
+ARM GAS  /tmp/ccrvAUSO.s 			page 104
 
 
  5872 0174 80000000 		.4byte	.LBE203
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5926 024c 32000000 		.4byte	.LBE300
  5927 0250 34000000 		.4byte	.LBB301
  5928 0254 36000000 		.4byte	.LBE301
-ARM GAS  /tmp/ccu7hgvD.s 			page 105
+ARM GAS  /tmp/ccrvAUSO.s 			page 105
 
 
  5929 0258 00000000 		.4byte	0
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  5983              		.section	.debug_line,"",%progbits
  5984              	.Ldebug_line0:
  5985 0000 DE060000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  /tmp/ccu7hgvD.s 			page 106
+ARM GAS  /tmp/ccrvAUSO.s 			page 106
 
 
  5985      02002103 
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6012              	.LASF120:
  6013 007b 6D656D67 		.ascii	"memgetfunc_t\000"
  6013      65746675 
-ARM GAS  /tmp/ccu7hgvD.s 			page 107
+ARM GAS  /tmp/ccrvAUSO.s 			page 107
 
 
  6013      6E635F74 
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6037      68617200 
  6038              	.LASF100:
  6039 0122 73697A65 		.ascii	"size\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 108
+ARM GAS  /tmp/ccrvAUSO.s 			page 108
 
 
  6039      00
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6067      6D707400 
  6068              	.LASF168:
  6069 01b1 63685363 		.ascii	"chSchRescheduleS\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 109
+ARM GAS  /tmp/ccrvAUSO.s 			page 109
 
 
  6069      68526573 
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6095 023f 756E7369 		.ascii	"unsigned int\000"
  6095      676E6564 
  6095      20696E74 
-ARM GAS  /tmp/ccu7hgvD.s 			page 110
+ARM GAS  /tmp/ccrvAUSO.s 			page 110
 
 
  6095      00
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6125      64696E67 
  6125      00
  6126              	.LASF133:
-ARM GAS  /tmp/ccu7hgvD.s 			page 111
+ARM GAS  /tmp/ccrvAUSO.s 			page 111
 
 
  6127 02cc 64796E5F 		.ascii	"dyn_list_t\000"
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6155 035f 7265616C 		.ascii	"realprio\000"
  6155      7072696F 
  6155      00
-ARM GAS  /tmp/ccu7hgvD.s 			page 112
+ARM GAS  /tmp/ccrvAUSO.s 			page 112
 
 
  6156              	.LASF101:
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6178      6E657300 
  6179              	.LASF81:
  6180 0433 706F7274 		.ascii	"port_context\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 113
+ARM GAS  /tmp/ccrvAUSO.s 			page 113
 
 
  6180      5F636F6E 
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6206      7A6500
  6207              	.LASF119:
  6208 04c9 5F426F6F 		.ascii	"_Bool\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 114
+ARM GAS  /tmp/ccrvAUSO.s 			page 114
 
 
  6208      6C00
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6234      382D436F 
  6235              	.LASF173:
  6236 0577 63684D74 		.ascii	"chMtxTryLock\000"
-ARM GAS  /tmp/ccu7hgvD.s 			page 115
+ARM GAS  /tmp/ccrvAUSO.s 			page 115
 
 
  6236      78547279 
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6259      6E203236 
  6259      31393037 
  6260 0657 61742D61 		.ascii	"at-abi=hard -mfpu=fpv4-sp-d16 -ggdb -O3 -std=c11 -f"
-ARM GAS  /tmp/ccu7hgvD.s 			page 116
+ARM GAS  /tmp/ccrvAUSO.s 			page 116
 
 
  6260      62693D68 
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6283              	.LASF57:
  6284 0735 76746675 		.ascii	"vtfunc_t\000"
  6284      6E635F74 
-ARM GAS  /tmp/ccu7hgvD.s 			page 117
+ARM GAS  /tmp/ccrvAUSO.s 			page 117
 
 
  6284      00
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6308      5F686561 
  6308      64657200 
  6309              	.LASF109:
-ARM GAS  /tmp/ccu7hgvD.s 			page 118
+ARM GAS  /tmp/ccrvAUSO.s 			page 118
 
 
  6310 07dd 6F66665F 		.ascii	"off_name\000"
@@ -7078,44 +7078,44 @@ ARM GAS  /tmp/ccu7hgvD.s 			page 1
  6335              	.LASF43:
  6336 0871 6D74786C 		.ascii	"mtxlist\000"
  6336      69737400 
-ARM GAS  /tmp/ccu7hgvD.s 			page 119
+ARM GAS  /tmp/ccrvAUSO.s 			page 119
 
 
  6337              	.LASF121:
  6338 0879 6E657874 		.ascii	"nextmem\000"
  6338      6D656D00 
  6339              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q3-update) 7.3.1 20180622 (release) [AR
-ARM GAS  /tmp/ccu7hgvD.s 			page 120
+ARM GAS  /tmp/ccrvAUSO.s 			page 120
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chmtx.c
-     /tmp/ccu7hgvD.s:18     .text.chMtxObjectInit:0000000000000000 $t
-     /tmp/ccu7hgvD.s:26     .text.chMtxObjectInit:0000000000000000 chMtxObjectInit
-     /tmp/ccu7hgvD.s:53     .text.chMtxLock:0000000000000000 $t
-     /tmp/ccu7hgvD.s:61     .text.chMtxLock:0000000000000000 chMtxLock
-     /tmp/ccu7hgvD.s:417    .text.chMtxLock:00000000000000f0 $d
-     /tmp/ccu7hgvD.s:427    .text.chMtxLockS:0000000000000000 $t
-     /tmp/ccu7hgvD.s:435    .text.chMtxLockS:0000000000000000 chMtxLockS
-     /tmp/ccu7hgvD.s:734    .text.chMtxLockS:00000000000000e0 $d
-     /tmp/ccu7hgvD.s:742    .text.chMtxTryLock:0000000000000000 $t
-     /tmp/ccu7hgvD.s:750    .text.chMtxTryLock:0000000000000000 chMtxTryLock
-     /tmp/ccu7hgvD.s:856    .text.chMtxTryLock:000000000000002c $d
-     /tmp/ccu7hgvD.s:861    .text.chMtxTryLockS:0000000000000000 $t
-     /tmp/ccu7hgvD.s:869    .text.chMtxTryLockS:0000000000000000 chMtxTryLockS
-     /tmp/ccu7hgvD.s:908    .text.chMtxTryLockS:000000000000001c $d
-     /tmp/ccu7hgvD.s:915    .text.chMtxUnlock:0000000000000000 $t
-     /tmp/ccu7hgvD.s:923    .text.chMtxUnlock:0000000000000000 chMtxUnlock
-     /tmp/ccu7hgvD.s:1098   .text.chMtxUnlock:0000000000000060 $d
-     /tmp/ccu7hgvD.s:1103   .text.chMtxUnlockS:0000000000000000 $t
-     /tmp/ccu7hgvD.s:1111   .text.chMtxUnlockS:0000000000000000 chMtxUnlockS
-     /tmp/ccu7hgvD.s:1241   .text.chMtxUnlockS:000000000000004c $d
-     /tmp/ccu7hgvD.s:1246   .text.chMtxUnlockAllS:0000000000000000 $t
-     /tmp/ccu7hgvD.s:1254   .text.chMtxUnlockAllS:0000000000000000 chMtxUnlockAllS
-     /tmp/ccu7hgvD.s:1350   .text.chMtxUnlockAllS:000000000000003c $d
-     /tmp/ccu7hgvD.s:1356   .text.chMtxUnlockAll:0000000000000000 $t
-     /tmp/ccu7hgvD.s:1364   .text.chMtxUnlockAll:0000000000000000 chMtxUnlockAll
-     /tmp/ccu7hgvD.s:1509   .text.chMtxUnlockAll:0000000000000050 $d
+     /tmp/ccrvAUSO.s:18     .text.chMtxObjectInit:0000000000000000 $t
+     /tmp/ccrvAUSO.s:26     .text.chMtxObjectInit:0000000000000000 chMtxObjectInit
+     /tmp/ccrvAUSO.s:53     .text.chMtxLock:0000000000000000 $t
+     /tmp/ccrvAUSO.s:61     .text.chMtxLock:0000000000000000 chMtxLock
+     /tmp/ccrvAUSO.s:417    .text.chMtxLock:00000000000000f0 $d
+     /tmp/ccrvAUSO.s:427    .text.chMtxLockS:0000000000000000 $t
+     /tmp/ccrvAUSO.s:435    .text.chMtxLockS:0000000000000000 chMtxLockS
+     /tmp/ccrvAUSO.s:734    .text.chMtxLockS:00000000000000e0 $d
+     /tmp/ccrvAUSO.s:742    .text.chMtxTryLock:0000000000000000 $t
+     /tmp/ccrvAUSO.s:750    .text.chMtxTryLock:0000000000000000 chMtxTryLock
+     /tmp/ccrvAUSO.s:856    .text.chMtxTryLock:000000000000002c $d
+     /tmp/ccrvAUSO.s:861    .text.chMtxTryLockS:0000000000000000 $t
+     /tmp/ccrvAUSO.s:869    .text.chMtxTryLockS:0000000000000000 chMtxTryLockS
+     /tmp/ccrvAUSO.s:908    .text.chMtxTryLockS:000000000000001c $d
+     /tmp/ccrvAUSO.s:915    .text.chMtxUnlock:0000000000000000 $t
+     /tmp/ccrvAUSO.s:923    .text.chMtxUnlock:0000000000000000 chMtxUnlock
+     /tmp/ccrvAUSO.s:1098   .text.chMtxUnlock:0000000000000060 $d
+     /tmp/ccrvAUSO.s:1103   .text.chMtxUnlockS:0000000000000000 $t
+     /tmp/ccrvAUSO.s:1111   .text.chMtxUnlockS:0000000000000000 chMtxUnlockS
+     /tmp/ccrvAUSO.s:1241   .text.chMtxUnlockS:000000000000004c $d
+     /tmp/ccrvAUSO.s:1246   .text.chMtxUnlockAllS:0000000000000000 $t
+     /tmp/ccrvAUSO.s:1254   .text.chMtxUnlockAllS:0000000000000000 chMtxUnlockAllS
+     /tmp/ccrvAUSO.s:1350   .text.chMtxUnlockAllS:000000000000003c $d
+     /tmp/ccrvAUSO.s:1356   .text.chMtxUnlockAll:0000000000000000 $t
+     /tmp/ccrvAUSO.s:1364   .text.chMtxUnlockAll:0000000000000000 chMtxUnlockAll
+     /tmp/ccrvAUSO.s:1509   .text.chMtxUnlockAll:0000000000000050 $d
 
 UNDEFINED SYMBOLS
 chSchGoSleepS

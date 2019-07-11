@@ -13,7 +13,8 @@ build/obj/judgeProtocol2019V1_1.o: \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdbool.h \
- RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h config/chconf.h \
+ RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h \
+ RM18A-ChibiOS18-Core/defaultConf/chconf.h \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chchecks.h \
  RM18A-ChibiOS18-Core/chibios/os/license/chlicense.h \
  RM18A-ChibiOS18-Core/chibios/os/license/chcustomer.h \
@@ -25,7 +26,7 @@ build/obj/judgeProtocol2019V1_1.o: \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chalign.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore.h \
  RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h \
- board/board.h \
+ RM18A-ChibiOS18-Core/defaultBoard/board.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f427xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/core_cm4.h \
@@ -39,7 +40,7 @@ build/obj/judgeProtocol2019V1_1.o: \
  RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore_timer.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_st.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.h \
- config/mcuconf.h \
+ RM18A-ChibiOS18-Core/defaultConf/mcuconf.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chtrace.h \
@@ -64,8 +65,9 @@ build/obj/judgeProtocol2019V1_1.o: \
  RM18A-ChibiOS18-Core/chibios/os/oslib/include/chobjfifos.h \
  RM18A-ChibiOS18-Core/chibios/os/oslib/include/chpipes.h \
  RM18A-ChibiOS18-Core/chibios/os/oslib/include/chfactory.h \
- RM18A-ChibiOS18-Core/chibios/os/rt/include/chdynamic.h config/halconf.h \
- config/mcuconf.h \
+ RM18A-ChibiOS18-Core/chibios/os/rt/include/chdynamic.h \
+ RM18A-ChibiOS18-Core/defaultConf/halconf.h \
+ RM18A-ChibiOS18-Core/defaultConf/mcuconf.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/hal_lld.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/hal_lld_type1.h \
@@ -96,10 +98,9 @@ build/obj/judgeProtocol2019V1_1.o: \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_dac.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_gpt.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2c.h \
- RM18A-ChibiOS18-Core/chibios/os/hal/lib/fallback/I2C/hal_i2c_lld.h \
+ RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2s.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_icu.h \
- RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_mac.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_pwm.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.h \
@@ -164,7 +165,7 @@ RM18A-ChibiOS18-Core/chibios/os/hal/osal/rt/osal.h:
 
 RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h:
 
-config/chconf.h:
+RM18A-ChibiOS18-Core/defaultConf/chconf.h:
 
 RM18A-ChibiOS18-Core/chibios/os/rt/include/chchecks.h:
 
@@ -188,7 +189,7 @@ RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore.h:
 
 RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-board/board.h:
+RM18A-ChibiOS18-Core/defaultBoard/board.h:
 
 RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h:
 
@@ -216,7 +217,7 @@ RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_st.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.h:
 
-config/mcuconf.h:
+RM18A-ChibiOS18-Core/defaultConf/mcuconf.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/stm32_registry.h:
 
@@ -268,9 +269,9 @@ RM18A-ChibiOS18-Core/chibios/os/oslib/include/chfactory.h:
 
 RM18A-ChibiOS18-Core/chibios/os/rt/include/chdynamic.h:
 
-config/halconf.h:
+RM18A-ChibiOS18-Core/defaultConf/halconf.h:
 
-config/mcuconf.h:
+RM18A-ChibiOS18-Core/defaultConf/mcuconf.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/hal_lld.h:
 
@@ -332,13 +333,11 @@ RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_gpt.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2c.h:
 
-RM18A-ChibiOS18-Core/chibios/os/hal/lib/fallback/I2C/hal_i2c_lld.h:
+RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2s.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_icu.h:
-
-RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_mac.h:
 

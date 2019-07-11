@@ -15,7 +15,8 @@ build/obj/chfactory.o: \
  /usr/arm-none-eabi/include/sys/lock.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
  /usr/arm-none-eabi/include/sys/string.h \
- RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h config/chconf.h \
+ RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h \
+ RM18A-ChibiOS18-Core/defaultConf/chconf.h \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chchecks.h \
  RM18A-ChibiOS18-Core/chibios/os/license/chlicense.h \
  RM18A-ChibiOS18-Core/chibios/os/license/chcustomer.h \
@@ -32,7 +33,7 @@ build/obj/chfactory.o: \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chalign.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore.h \
  RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h \
- board/board.h \
+ RM18A-ChibiOS18-Core/defaultBoard/board.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f427xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/core_cm4.h \
@@ -46,7 +47,7 @@ build/obj/chfactory.o: \
  RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore_timer.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_st.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.h \
- config/mcuconf.h \
+ RM18A-ChibiOS18-Core/defaultConf/mcuconf.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
  RM18A-ChibiOS18-Core/chibios/os/rt/include/chtrace.h \
@@ -107,7 +108,7 @@ build/obj/chfactory.o: \
 
 RM18A-ChibiOS18-Core/chibios/os/rt/include/ch.h:
 
-config/chconf.h:
+RM18A-ChibiOS18-Core/defaultConf/chconf.h:
 
 RM18A-ChibiOS18-Core/chibios/os/rt/include/chchecks.h:
 
@@ -141,7 +142,7 @@ RM18A-ChibiOS18-Core/chibios/os/common/ports/ARMCMx/chcore.h:
 
 RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-board/board.h:
+RM18A-ChibiOS18-Core/defaultBoard/board.h:
 
 RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h:
 
@@ -169,7 +170,7 @@ RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_st.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.h:
 
-config/mcuconf.h:
+RM18A-ChibiOS18-Core/defaultConf/mcuconf.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/STM32F4xx/stm32_registry.h:
 

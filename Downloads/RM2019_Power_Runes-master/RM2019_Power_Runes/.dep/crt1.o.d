@@ -9,7 +9,7 @@ build/obj/crt1.o: \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdbool.h \
  RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h \
- board/board.h \
+ RM18A-ChibiOS18-Core/defaultBoard/board.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f427xx.h \
  RM18A-ChibiOS18-Core/chibios/os/common/ext/ARM/CMSIS/Core/Include/core_cm4.h \
@@ -37,7 +37,7 @@ build/obj/crt1.o: \
 
 RM18A-ChibiOS18-Core/chibios/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-board/board.h:
+RM18A-ChibiOS18-Core/defaultBoard/board.h:
 
 RM18A-ChibiOS18-Core/chibios/os/common/ext/ST/STM32F4xx/stm32f4xx.h:
 

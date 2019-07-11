@@ -94,7 +94,7 @@ build/obj/hal_icu_lld.o: \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_dac.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_gpt.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2c.h \
- RM18A-ChibiOS18-Core/chibios/os/hal/lib/fallback/I2C/hal_i2c_lld.h \
+ RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2s.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_icu.h \
  RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.h \
@@ -313,7 +313,7 @@ RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_gpt.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2c.h:
 
-RM18A-ChibiOS18-Core/chibios/os/hal/lib/fallback/I2C/hal_i2c_lld.h:
+RM18A-ChibiOS18-Core/chibios/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.h:
 
 RM18A-ChibiOS18-Core/chibios/os/hal/include/hal_i2s.h:
 
