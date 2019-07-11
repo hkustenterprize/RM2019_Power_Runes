@@ -628,8 +628,8 @@ void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off)
   // swi2c_ack();
   // swi2c_stop();
   uint8_t txbuf[5] = {
-  LED0_ON_L + 4 * num,
-  on, on >> 8, off, off >> 8};
+      LED0_ON_L + 4 * num,
+      on, on >> 8, off, off >> 8};
   i2cMasterTransmit(&I2CD2, 0x40, txbuf, 5, 0, 0);
 }
 
@@ -692,11 +692,10 @@ uint8_t Adafruit_PWMServoDriver::read8(uint8_t addr)
   write(addr);
   // _i2c->endTransmission();
   endTransmission();
-  uint8_t txbuf[1]={addr};
+  uint8_t txbuf[1] = {addr};
   uint8_t rxbuf[1];
-  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf,1);
+  i2cMasterTransmit(&I2CD2, 0x40, txbuf, 1, rxbuf, 1);
   return rxbuf[0];
-
 }
 
 void Adafruit_PWMServoDriver::write8(uint8_t addr, uint8_t d)

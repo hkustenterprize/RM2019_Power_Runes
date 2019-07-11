@@ -38,7 +38,6 @@
 #include "spiconfig.h"
 #include "i2c.hpp"
 
-
 void setPWM(uint8_t num, uint16_t on, uint16_t off)
 {
 
@@ -77,7 +76,7 @@ int main(void)
 
     palSetLineMode(LINE_VL53L0X_I2C_SDA, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
     palSetLineMode(LINE_VL53L0X_I2C_SCL, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
-    
+
     while (true)
     {
         palToggleLine(LINE_LED_GREEN);
