@@ -3576,7 +3576,7 @@ LOAD build/obj/Snail_Sentry.o
  *(SORT_BY_NAME(.fini_array.*))
                 0x00000000080001e8                __fini_array_end = .
 
-.text           0x00000000080001e8     0x5ebe
+.text           0x00000000080001e8     0x5ec6
                 0x00000000080001e8                __text_base = .
  *(.text)
  .text          0x00000000080001e8      0x120 build/obj/crt0_v7m.o
@@ -4298,144 +4298,144 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000008005dd0       0x58 build/obj/flash.o
                 0x0000000008005dd0                Flash_SectorBegin
  .text._ZL12PCA9685ELThdPv
-                0x0000000008005e28       0x74 build/obj/i2c.o
+                0x0000000008005e28       0x7c build/obj/i2c.o
  .text._ZN23Adafruit_PWMServoDriver10setPWMFreqEf.constprop.2
-                0x0000000008005e9c       0xb4 build/obj/i2c.o
+                0x0000000008005ea4       0xb4 build/obj/i2c.o
  .text._Z12PCA_i2cstartv
-                0x0000000008005f50       0x54 build/obj/i2c.o
-                0x0000000008005f50                PCA_i2cstart()
+                0x0000000008005f58       0x54 build/obj/i2c.o
+                0x0000000008005f58                PCA_i2cstart()
  .text.startup._GLOBAL__sub_I__ZN23Adafruit_PWMServoDriverC2Eh
-                0x0000000008005fa4        0xc build/obj/i2c.o
+                0x0000000008005fac        0xc build/obj/i2c.o
  .text.startup.main
-                0x0000000008005fb0       0x54 build/obj/main.o
-                0x0000000008005fb0                main
- .text._ZdlPv   0x0000000008006004        0x4 build/obj/missingImpl.o
-                0x0000000008006004                operator delete(void*)
+                0x0000000008005fb8       0x54 build/obj/main.o
+                0x0000000008005fb8                main
+ .text._ZdlPv   0x000000000800600c        0x4 build/obj/missingImpl.o
+                0x000000000800600c                operator delete(void*)
  .text._ZNSt7__cxx114listIPK16Param_DefinitionSaIS3_EED2Ev
-                0x0000000008006008       0x1c build/obj/Persistence.o
-                0x0000000008006008                std::__cxx11::list<Param_Definition const*, std::allocator<Param_Definition const*> >::~list()
-                0x0000000008006008                std::__cxx11::list<Param_Definition const*, std::allocator<Param_Definition const*> >::~list()
+                0x0000000008006010       0x1c build/obj/Persistence.o
+                0x0000000008006010                std::__cxx11::list<Param_Definition const*, std::allocator<Param_Definition const*> >::~list()
+                0x0000000008006010                std::__cxx11::list<Param_Definition const*, std::allocator<Param_Definition const*> >::~list()
  .text.startup._GLOBAL__sub_I__Z16Param_getDefByIDj
-                0x0000000008006024       0x34 build/obj/Persistence.o
+                0x000000000800602c       0x34 build/obj/Persistence.o
  .text.__aeabi_atexit
-                0x0000000008006058        0xa /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libstdc++_nano.a(atexit_arm.o)
-                0x0000000008006058                __aeabi_atexit
- *fill*         0x0000000008006062        0x2 
+                0x0000000008006060        0xa /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libstdc++_nano.a(atexit_arm.o)
+                0x0000000008006060                __aeabi_atexit
+ *fill*         0x000000000800606a        0x2 
  .text.__cxa_atexit
-                0x0000000008006064       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-cxa_atexit.o)
-                0x0000000008006064                __cxa_atexit
- .text.memcpy   0x0000000008006080       0x16 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008006080                memcpy
- .text.memset   0x0000000008006096       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memset.o)
-                0x0000000008006096                memset
+                0x000000000800606c       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-cxa_atexit.o)
+                0x000000000800606c                __cxa_atexit
+ .text.memcpy   0x0000000008006088       0x16 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008006088                memcpy
+ .text.memset   0x000000000800609e       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memset.o)
+                0x000000000800609e                memset
  *(.glue_7t)
- .glue_7t       0x00000000080060a6        0x0 linker stubs
+ .glue_7t       0x00000000080060ae        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00000000080060a6        0x0 linker stubs
+ .glue_7        0x00000000080060ae        0x0 linker stubs
  *(.gcc*)
-                0x00000000080060a6                __text_end = .
+                0x00000000080060ae                __text_end = .
 
-.vfp11_veneer   0x00000000080060a8        0x0
- .vfp11_veneer  0x00000000080060a8        0x0 linker stubs
+.vfp11_veneer   0x00000000080060b0        0x0
+ .vfp11_veneer  0x00000000080060b0        0x0 linker stubs
 
-.v4_bx          0x00000000080060a8        0x0
- .v4_bx         0x00000000080060a8        0x0 linker stubs
+.v4_bx          0x00000000080060b0        0x0
+ .v4_bx         0x00000000080060b0        0x0 linker stubs
 
-.iplt           0x00000000080060a8        0x0
- .iplt          0x00000000080060a8        0x0 build/obj/crt0_v7m.o
+.iplt           0x00000000080060b0        0x0
+ .iplt          0x00000000080060b0        0x0 build/obj/crt0_v7m.o
 
-.rodata         0x00000000080060a8      0x3a8
-                0x00000000080060a8                __rodata_base__ = .
+.rodata         0x00000000080060b0      0x3a8
+                0x00000000080060b0                __rodata_base__ = .
  *(.rodata)
  *(.rodata.*)
  .rodata.SPI1_Config.9999
-                0x00000000080060a8       0x10 build/obj/boardSetup.o
+                0x00000000080060b0       0x10 build/obj/boardSetup.o
  .rodata.ram_areas
-                0x00000000080060b8       0x80 build/obj/crt1.o
- .rodata.vmt    0x0000000008006138       0x28 build/obj/hal_serial.o
- .rodata.vmt    0x0000000008006160       0x28 build/obj/hal_serial_usb.o
+                0x00000000080060c0       0x80 build/obj/crt1.o
+ .rodata.vmt    0x0000000008006140       0x28 build/obj/hal_serial.o
+ .rodata.vmt    0x0000000008006168       0x28 build/obj/hal_serial_usb.o
  .rodata.active_status
-                0x0000000008006188        0x2 build/obj/hal_usb.o
- *fill*         0x000000000800618a        0x2 
- .rodata.halted_status
-                0x000000000800618c        0x2 build/obj/hal_usb.o
- *fill*         0x000000000800618e        0x2 
- .rodata.zero_status
                 0x0000000008006190        0x2 build/obj/hal_usb.o
  *fill*         0x0000000008006192        0x2 
+ .rodata.halted_status
+                0x0000000008006194        0x2 build/obj/hal_usb.o
+ *fill*         0x0000000008006196        0x2 
+ .rodata.zero_status
+                0x0000000008006198        0x2 build/obj/hal_usb.o
+ *fill*         0x000000000800619a        0x2 
  .rodata._stm32_dma_streams
-                0x0000000008006194       0xc0 build/obj/stm32_dma.o
-                0x0000000008006194                _stm32_dma_streams
+                0x000000000800619c       0xc0 build/obj/stm32_dma.o
+                0x000000000800619c                _stm32_dma_streams
  .rodata.i2c_lld_serve_tx_end_irq.str1.4
-                0x0000000008006254        0xc build/obj/hal_i2c_lld.o
+                0x000000000800625c        0xc build/obj/hal_i2c_lld.o
  .rodata.ep0config
-                0x0000000008006260       0x24 build/obj/hal_usb_lld.o
+                0x0000000008006268       0x24 build/obj/hal_usb_lld.o
  .rodata.fsparams
-                0x0000000008006284        0xc build/obj/hal_usb_lld.o
+                0x000000000800628c        0xc build/obj/hal_usb_lld.o
  .rodata.spi_lld_serve_rx_interrupt.str1.4
-                0x0000000008006290        0xc build/obj/hal_spi_lld.o
+                0x0000000008006298        0xc build/obj/hal_spi_lld.o
  .rodata.uart_lld_serve_tx_end_irq.str1.4
-                0x0000000008006290        0xc build/obj/hal_uart_lld.o
+                0x0000000008006298        0xc build/obj/hal_uart_lld.o
  .rodata.idle_descriptor.8236
-                0x0000000008006290       0x18 build/obj/chsys.o
+                0x0000000008006298       0x18 build/obj/chsys.o
  .rodata.str1.4
-                0x00000000080062a8        0x5 build/obj/chsys.o
- *fill*         0x00000000080062ad        0x3 
+                0x00000000080062b0        0x5 build/obj/chsys.o
+ *fill*         0x00000000080062b5        0x3 
  .rodata.chThdCreateStatic.str1.4
-                0x00000000080062b0        0x8 build/obj/chthreads.o
+                0x00000000080062b8        0x8 build/obj/chthreads.o
                                           0x7 (size before relaxing)
  .rodata.ch_debug
-                0x00000000080062b8       0x16 build/obj/chregistry.o
-                0x00000000080062b8                ch_debug
- *fill*         0x00000000080062ce        0x2 
+                0x00000000080062c0       0x16 build/obj/chregistry.o
+                0x00000000080062c0                ch_debug
+ *fill*         0x00000000080062d6        0x2 
  .rodata.s_DR16_UART_Config.10060
-                0x00000000080062d0       0x20 build/obj/DR16.o
+                0x00000000080062d8       0x20 build/obj/DR16.o
  .rodata.ep1config
-                0x00000000080062f0       0x24 build/obj/usbcfg.o
+                0x00000000080062f8       0x24 build/obj/usbcfg.o
  .rodata.ep2config
-                0x0000000008006314       0x24 build/obj/usbcfg.o
+                0x000000000800631c       0x24 build/obj/usbcfg.o
  .rodata.serusbcfg
-                0x0000000008006338        0x8 build/obj/usbcfg.o
-                0x0000000008006338                serusbcfg
+                0x0000000008006340        0x8 build/obj/usbcfg.o
+                0x0000000008006340                serusbcfg
  .rodata.usbcfg
-                0x0000000008006340       0x10 build/obj/usbcfg.o
-                0x0000000008006340                usbcfg
+                0x0000000008006348       0x10 build/obj/usbcfg.o
+                0x0000000008006348                usbcfg
  .rodata.vcom_configuration_descriptor
-                0x0000000008006350        0x8 build/obj/usbcfg.o
+                0x0000000008006358        0x8 build/obj/usbcfg.o
  .rodata.vcom_configuration_descriptor_data
-                0x0000000008006358       0x43 build/obj/usbcfg.o
- *fill*         0x000000000800639b        0x1 
+                0x0000000008006360       0x43 build/obj/usbcfg.o
+ *fill*         0x00000000080063a3        0x1 
  .rodata.vcom_device_descriptor
-                0x000000000800639c        0x8 build/obj/usbcfg.o
+                0x00000000080063a4        0x8 build/obj/usbcfg.o
  .rodata.vcom_device_descriptor_data
-                0x00000000080063a4       0x12 build/obj/usbcfg.o
- *fill*         0x00000000080063b6        0x2 
+                0x00000000080063ac       0x12 build/obj/usbcfg.o
+ *fill*         0x00000000080063be        0x2 
  .rodata.vcom_string0
-                0x00000000080063b8        0x4 build/obj/usbcfg.o
+                0x00000000080063c0        0x4 build/obj/usbcfg.o
  .rodata.vcom_string1
-                0x00000000080063bc       0x26 build/obj/usbcfg.o
- *fill*         0x00000000080063e2        0x2 
+                0x00000000080063c4       0x26 build/obj/usbcfg.o
+ *fill*         0x00000000080063ea        0x2 
  .rodata.vcom_string2
-                0x00000000080063e4       0x38 build/obj/usbcfg.o
+                0x00000000080063ec       0x38 build/obj/usbcfg.o
  .rodata.vcom_string3
-                0x000000000800641c        0x8 build/obj/usbcfg.o
+                0x0000000008006424        0x8 build/obj/usbcfg.o
  .rodata.vcom_strings
-                0x0000000008006424       0x20 build/obj/usbcfg.o
+                0x000000000800642c       0x20 build/obj/usbcfg.o
  .rodata._ZZ4mainE6i2cfg1
-                0x0000000008006444        0xc build/obj/main.o
-                0x0000000008006450                . = ALIGN (0x4)
-                0x0000000008006450                __rodata_end__ = .
+                0x000000000800644c        0xc build/obj/main.o
+                0x0000000008006458                . = ALIGN (0x4)
+                0x0000000008006458                __rodata_end__ = .
 
-.rel.dyn        0x0000000008006450        0x0
- .rel.iplt      0x0000000008006450        0x0 build/obj/crt0_v7m.o
+.rel.dyn        0x0000000008006458        0x0
+ .rel.iplt      0x0000000008006458        0x0 build/obj/crt0_v7m.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x0000000008006450        0x0
-                0x0000000008006450                __exidx_start = .
+.ARM.exidx      0x0000000008006458        0x0
+                0x0000000008006458                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000008006450                __exidx_end = .
+                0x0000000008006458                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -4443,10 +4443,10 @@ LOAD build/obj/Snail_Sentry.o
 .eh_frame
  *(.eh_frame)
 
-.data           0x0000000020000800        0x8 load address 0x0000000008006450
+.data           0x0000000020000800        0x8 load address 0x0000000008006458
                 [!provide]                        PROVIDE (_textdata = LOADADDR (.data))
                 [!provide]                        PROVIDE (_data = .)
-                0x0000000008006450                _textdata_start = LOADADDR (.data)
+                0x0000000008006458                _textdata_start = LOADADDR (.data)
                 0x0000000020000800                _data_start = .
  *(.data)
  *(.data.*)
@@ -4458,10 +4458,10 @@ LOAD build/obj/Snail_Sentry.o
                 [!provide]                        PROVIDE (_edata = .)
                 0x0000000020000808                _data_end = .
 
-.igot.plt       0x0000000020000808        0x0 load address 0x0000000008006458
+.igot.plt       0x0000000020000808        0x0 load address 0x0000000008006460
  .igot.plt      0x0000000020000808        0x0 build/obj/crt0_v7m.o
 
-.bss            0x0000000020000808     0x1058 load address 0x0000000008006458
+.bss            0x0000000020000808     0x1058 load address 0x0000000008006460
                 0x0000000020000808                _bss_start = .
  *(.bss)
  *(.bss.*)
@@ -4592,14 +4592,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000000000000                __flash7_size__ = LENGTH (flash7)
                 0x0000000000000000                __flash7_end__ = (__flash7_start__ + __flash7_size__)
 
-.ram0_init      0x0000000020001860        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram0_init_text__ = LOADADDR (.ram0_init)
+.ram0_init      0x0000000020001860        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram0_init_text__ = LOADADDR (.ram0_init)
                 0x0000000020001860                __ram0_init__ = .
  *(.ram0_init)
  *(.ram0_init.*)
                 0x0000000020001860                . = ALIGN (0x4)
 
-.ram0           0x0000000020001860        0x0 load address 0x0000000008006458
+.ram0           0x0000000020001860        0x0 load address 0x0000000008006460
                 0x0000000020001860                __ram0_clear__ = .
  *(.ram0_clear)
  *(.ram0_clear.*)
@@ -4610,14 +4610,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000020001860                . = ALIGN (0x4)
                 0x0000000020001860                __ram0_free__ = .
 
-.ram1_init      0x0000000020000000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram1_init_text__ = LOADADDR (.ram1_init)
+.ram1_init      0x0000000020000000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram1_init_text__ = LOADADDR (.ram1_init)
                 0x0000000020000000                __ram1_init__ = .
  *(.ram1_init)
  *(.ram1_init.*)
                 0x0000000020000000                . = ALIGN (0x4)
 
-.ram1           0x0000000020000000        0x0 load address 0x0000000008006458
+.ram1           0x0000000020000000        0x0 load address 0x0000000008006460
                 0x0000000020000000                __ram1_clear__ = .
  *(.ram1_clear)
  *(.ram1_clear.*)
@@ -4628,14 +4628,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                __ram1_free__ = .
 
-.ram2_init      0x000000002001c000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram2_init_text__ = LOADADDR (.ram2_init)
+.ram2_init      0x000000002001c000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram2_init_text__ = LOADADDR (.ram2_init)
                 0x000000002001c000                __ram2_init__ = .
  *(.ram2_init)
  *(.ram2_init.*)
                 0x000000002001c000                . = ALIGN (0x4)
 
-.ram2           0x000000002001c000        0x0 load address 0x0000000008006458
+.ram2           0x000000002001c000        0x0 load address 0x0000000008006460
                 0x000000002001c000                __ram2_clear__ = .
  *(.ram2_clear)
  *(.ram2_clear.*)
@@ -4646,14 +4646,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x000000002001c000                . = ALIGN (0x4)
                 0x000000002001c000                __ram2_free__ = .
 
-.ram3_init      0x0000000020020000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram3_init_text__ = LOADADDR (.ram3_init)
+.ram3_init      0x0000000020020000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram3_init_text__ = LOADADDR (.ram3_init)
                 0x0000000020020000                __ram3_init__ = .
  *(.ram3_init)
  *(.ram3_init.*)
                 0x0000000020020000                . = ALIGN (0x4)
 
-.ram3           0x0000000020020000        0x0 load address 0x0000000008006458
+.ram3           0x0000000020020000        0x0 load address 0x0000000008006460
                 0x0000000020020000                __ram3_clear__ = .
  *(.ram3_clear)
  *(.ram3_clear.*)
@@ -4664,14 +4664,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000020020000                . = ALIGN (0x4)
                 0x0000000020020000                __ram3_free__ = .
 
-.ram4_init      0x0000000010000000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram4_init_text__ = LOADADDR (.ram4_init)
+.ram4_init      0x0000000010000000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram4_init_text__ = LOADADDR (.ram4_init)
                 0x0000000010000000                __ram4_init__ = .
  *(.ram4_init)
  *(.ram4_init.*)
                 0x0000000010000000                . = ALIGN (0x4)
 
-.ram4           0x0000000010000000        0x0 load address 0x0000000008006458
+.ram4           0x0000000010000000        0x0 load address 0x0000000008006460
                 0x0000000010000000                __ram4_clear__ = .
  *(.ram4_clear)
  *(.ram4_clear.*)
@@ -4682,14 +4682,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                __ram4_free__ = .
 
-.ram5_init      0x0000000040024000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram5_init_text__ = LOADADDR (.ram5_init)
+.ram5_init      0x0000000040024000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram5_init_text__ = LOADADDR (.ram5_init)
                 0x0000000040024000                __ram5_init__ = .
  *(.ram5_init)
  *(.ram5_init.*)
                 0x0000000040024000                . = ALIGN (0x4)
 
-.ram5           0x0000000040024000        0x0 load address 0x0000000008006458
+.ram5           0x0000000040024000        0x0 load address 0x0000000008006460
                 0x0000000040024000                __ram5_clear__ = .
  *(.ram5_clear)
  *(.ram5_clear.*)
@@ -4700,14 +4700,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000040024000                . = ALIGN (0x4)
                 0x0000000040024000                __ram5_free__ = .
 
-.ram6_init      0x0000000000000000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram6_init_text__ = LOADADDR (.ram6_init)
+.ram6_init      0x0000000000000000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram6_init_text__ = LOADADDR (.ram6_init)
                 0x0000000000000000                __ram6_init__ = .
  *(.ram6_init)
  *(.ram6_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram6           0x0000000000000000        0x0 load address 0x0000000008006458
+.ram6           0x0000000000000000        0x0 load address 0x0000000008006460
                 0x0000000000000000                __ram6_clear__ = .
  *(.ram6_clear)
  *(.ram6_clear.*)
@@ -4718,14 +4718,14 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram6_free__ = .
 
-.ram7_init      0x0000000000000000        0x0 load address 0x0000000008006458
-                0x0000000008006458                __ram7_init_text__ = LOADADDR (.ram7_init)
+.ram7_init      0x0000000000000000        0x0 load address 0x0000000008006460
+                0x0000000008006460                __ram7_init_text__ = LOADADDR (.ram7_init)
                 0x0000000000000000                __ram7_init__ = .
  *(.ram7_init)
  *(.ram7_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram7           0x0000000000000000        0x0 load address 0x0000000008006458
+.ram7           0x0000000000000000        0x0 load address 0x0000000008006460
                 0x0000000000000000                __ram7_clear__ = .
  *(.ram7_clear)
  *(.ram7_clear.*)
@@ -4736,11 +4736,11 @@ LOAD build/obj/Snail_Sentry.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram7_free__ = .
 
-.flash0         0x0000000008006458        0x0
-                0x0000000008006458                __flash0_init__ = .
+.flash0         0x0000000008006460        0x0
+                0x0000000008006460                __flash0_init__ = .
  *(.flash0_init)
  *(.flash0_init.*)
-                0x0000000008006458                __flash0_free__ = .
+                0x0000000008006460                __flash0_free__ = .
 
 .flash1         0x00000000081e0000        0x0
                 0x00000000081e0000                __flash1_init__ = .
@@ -4988,7 +4988,7 @@ OUTPUT(build/RM18A.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 build/obj/missingImpl.o
  .comment       0x000000000000007f       0x80 build/obj/Persistence.o
 
-.debug_line     0x0000000000000000    0x1b22b
+.debug_line     0x0000000000000000    0x1b22c
  .debug_line    0x0000000000000000       0xec build/obj/crt0_v7m.o
  .debug_line    0x00000000000000ec       0x85 build/obj/vectors.o
  .debug_line    0x0000000000000171       0x99 build/obj/chcoreasm_v7m.o
@@ -5039,13 +5039,13 @@ OUTPUT(build/RM18A.elf elf32-littlearm)
  .debug_line    0x0000000000016680      0x804 build/obj/DR16.o
  .debug_line    0x0000000000016e84      0x808 build/obj/usbcfg.o
  .debug_line    0x000000000001768c      0xb01 build/obj/flash.o
- .debug_line    0x000000000001818d      0xb69 build/obj/i2c.o
- .debug_line    0x0000000000018cf6      0x969 build/obj/main.o
- .debug_line    0x000000000001965f      0x428 build/obj/syscalls_cpp.o
- .debug_line    0x0000000000019a87      0x5f7 build/obj/missingImpl.o
- .debug_line    0x000000000001a07e     0x11ad build/obj/Persistence.o
+ .debug_line    0x000000000001818d      0xb6a build/obj/i2c.o
+ .debug_line    0x0000000000018cf7      0x969 build/obj/main.o
+ .debug_line    0x0000000000019660      0x428 build/obj/syscalls_cpp.o
+ .debug_line    0x0000000000019a88      0x5f7 build/obj/missingImpl.o
+ .debug_line    0x000000000001a07f     0x11ad build/obj/Persistence.o
 
-.debug_info     0x0000000000000000    0x9b453
+.debug_info     0x0000000000000000    0x9b451
  .debug_info    0x0000000000000000       0x26 build/obj/crt0_v7m.o
  .debug_info    0x0000000000000026       0x26 build/obj/vectors.o
  .debug_info    0x000000000000004c       0x26 build/obj/chcoreasm_v7m.o
@@ -5096,11 +5096,11 @@ OUTPUT(build/RM18A.elf elf32-littlearm)
  .debug_info    0x0000000000079820     0x318c build/obj/DR16.o
  .debug_info    0x000000000007c9ac     0x342a build/obj/usbcfg.o
  .debug_info    0x000000000007fdd6     0x3e3d build/obj/flash.o
- .debug_info    0x0000000000083c13     0x5a99 build/obj/i2c.o
- .debug_info    0x00000000000896ac     0x4991 build/obj/main.o
- .debug_info    0x000000000008e03d     0x1462 build/obj/syscalls_cpp.o
- .debug_info    0x000000000008f49f     0x308d build/obj/missingImpl.o
- .debug_info    0x000000000009252c     0x8f27 build/obj/Persistence.o
+ .debug_info    0x0000000000083c13     0x5a97 build/obj/i2c.o
+ .debug_info    0x00000000000896aa     0x4991 build/obj/main.o
+ .debug_info    0x000000000008e03b     0x1462 build/obj/syscalls_cpp.o
+ .debug_info    0x000000000008f49d     0x308d build/obj/missingImpl.o
+ .debug_info    0x000000000009252a     0x8f27 build/obj/Persistence.o
 
 .debug_abbrev   0x0000000000000000     0xca67
  .debug_abbrev  0x0000000000000000       0x14 build/obj/crt0_v7m.o
@@ -5494,7 +5494,7 @@ OUTPUT(build/RM18A.elf elf32-littlearm)
  .debug_frame   0x000000000000449c       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00000000000044c4       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg_nano.a(lib_a-memset.o)
 
-.debug_loc      0x0000000000000000    0x1535a
+.debug_loc      0x0000000000000000    0x1535c
  .debug_loc     0x0000000000000000      0x1b6 build/obj/board.o
  .debug_loc     0x00000000000001b6       0xaa build/obj/crt1.o
  .debug_loc     0x0000000000000260       0x26 build/obj/hal_st.o
@@ -5538,11 +5538,11 @@ OUTPUT(build/RM18A.elf elf32-littlearm)
  .debug_loc     0x0000000000011601       0x4a build/obj/DR16.o
  .debug_loc     0x000000000001164b      0x1e2 build/obj/usbcfg.o
  .debug_loc     0x000000000001182d      0xe92 build/obj/flash.o
- .debug_loc     0x00000000000126bf      0xc84 build/obj/i2c.o
- .debug_loc     0x0000000000013343       0x63 build/obj/main.o
- .debug_loc     0x00000000000133a6       0x42 build/obj/syscalls_cpp.o
- .debug_loc     0x00000000000133e8       0x84 build/obj/missingImpl.o
- .debug_loc     0x000000000001346c     0x1eee build/obj/Persistence.o
+ .debug_loc     0x00000000000126bf      0xc86 build/obj/i2c.o
+ .debug_loc     0x0000000000013345       0x63 build/obj/main.o
+ .debug_loc     0x00000000000133a8       0x42 build/obj/syscalls_cpp.o
+ .debug_loc     0x00000000000133ea       0x84 build/obj/missingImpl.o
+ .debug_loc     0x000000000001346e     0x1eee build/obj/Persistence.o
 
 Cross Reference Table
 

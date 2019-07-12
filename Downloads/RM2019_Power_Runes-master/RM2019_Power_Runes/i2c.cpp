@@ -265,7 +265,7 @@ static THD_FUNCTION(PCA9685ELThd, p)
 
     for (uint8_t pwmnum = 0; pwmnum < 16; pwmnum++)
     {
-      pwm.setPWM(pwmnum, 0, 4000);
+      pwm.setPWM(pwmnum, 2000, 4000);
     }
 
     chThdSleepMilliseconds(10);
